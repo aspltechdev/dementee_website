@@ -1,0 +1,2405 @@
+/* =====================================================
+   UI / UX DESIGN PAGE
+===================================================== */
+
+.uiux-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 18px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+
+  overflow-x: hidden;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.uiux-hero {
+  width: 86%;
+  max-width: 1280px;
+
+  margin: 80px auto 0;
+
+  text-align: center;
+}
+
+
+/* COURSE BADGE */
+
+.uiux-course-badge {
+  width: fit-content;
+  height: 30px;
+
+  margin: 0 auto 30px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: #564be3;
+  background: #ffffff;
+
+  border: 1px solid #ddd9e2;
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.uiux-course-badge span {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  background: #ee5b6d;
+
+  border-radius: 50%;
+}
+
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.uiux-hero h1 {
+  margin: 0;
+
+  color: #261039;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: clamp(48px, 5vw, 68px);
+  font-weight: 800;
+
+  line-height: 0.94;
+  letter-spacing: -2.5px;
+}
+
+.uiux-hero h1 span {
+  color: transparent;
+
+  background: linear-gradient(
+    90deg,
+    #8154d9 0%,
+    #a75bc8 45%,
+    #d7668c 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+/* HERO DESCRIPTION */
+
+.uiux-hero-description {
+  max-width: 750px;
+
+  margin: 30px auto 0;
+
+  color: #57505a;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   TOOLS YOU WILL MASTER
+===================================================== */
+
+.uiux-tools {
+  margin-top: 70px;
+}
+
+.uiux-tools h3 {
+  margin: 0 0 28px;
+
+  color: #716b72;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* TOOL LIST */
+
+.uiux-tools-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+
+/* TOOL PILL */
+
+.uiux-tool {
+  min-width: 115px;
+  height: 38px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #2c2830;
+  background: #ffffff;
+
+  border: 1px solid #ddd9df;
+  border-radius: 999px;
+
+  box-shadow: 0 3px 8px rgba(26, 16, 40, 0.03);
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   TOOL ICONS
+===================================================== */
+
+.tool-dot {
+  width: 10px;
+  height: 10px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+}
+
+.figma-dot {
+  background: linear-gradient(
+    180deg,
+    #ef526b 0%,
+    #8c56d9 50%,
+    #5948e3 100%
+  );
+}
+
+.canva-dot {
+  background: #32c7e5;
+}
+
+.balsamiq-dot {
+  background: #e73561;
+}
+
+
+/* PHOTOSHOP / ILLUSTRATOR / MIRO */
+
+.tool-box {
+  width: 17px;
+  height: 17px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.ps-tool {
+  color: #31a8ff;
+  background: #001e36;
+}
+
+.ai-tool {
+  color: #ff9a00;
+  background: #330000;
+}
+
+.miro-tool {
+  color: #111111;
+  background: #ffd02f;
+}
+
+
+/* =====================================================
+   JOURNEY PLAN SECTION
+===================================================== */
+
+.uiux-journey-section {
+  width: 100%;
+
+  margin-top: 115px;
+  padding: 0 0 90px;
+}
+
+
+/* JOURNEY HEADING */
+
+.uiux-journey-heading {
+  width: 86%;
+  max-width: 1280px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+/* STEP BADGE */
+
+.uiux-step-badge {
+  width: fit-content;
+
+  margin: 0 auto 24px;
+  padding: 8px 20px;
+
+  color: #5b4be4;
+  background: #eeeeef;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+
+/* JOURNEY TITLE */
+
+.uiux-journey-heading h2 {
+  margin: 0;
+
+  color: #271435;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 33px;
+  font-weight: 800;
+
+  line-height: 1.15;
+}
+
+.uiux-journey-heading h2 span {
+  color: #5a4fe6;
+}
+
+
+/* JOURNEY DESCRIPTION */
+
+.uiux-journey-heading p {
+  max-width: 610px;
+
+  margin: 15px auto 0;
+
+  color: #575159;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   WEEK CARDS
+===================================================== */
+
+.uiux-week-grid {
+  width: 92%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* NORMAL WEEK CARD */
+
+.uiux-week-card {
+  min-height: 205px;
+
+  padding: 20px 19px;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd9df;
+  border-radius: 15px;
+
+  box-shadow: 0 7px 20px rgba(24, 15, 35, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.uiux-week-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 28px rgba(24, 15, 35, 0.08);
+}
+
+
+/* =====================================================
+   WEEK LABELS
+===================================================== */
+
+.week-label {
+  width: fit-content;
+
+  margin-bottom: 18px;
+  padding: 6px 15px;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 7px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* WEEK 01 */
+
+.week-blue {
+  color: #5a4ee4;
+  background: #e9e9f5;
+}
+
+
+/* WEEK 03 */
+
+.week-pink {
+  color: #e65c6a;
+  background: #f6e8ea;
+}
+
+
+/* WEEK 06 */
+
+.week-yellow {
+  color: #342b10;
+  background: #fff1bd;
+}
+
+
+/* WEEK 09 */
+
+.week-purple {
+  color: #5849e0;
+  background: #e9e7f5;
+}
+
+
+/* WEEK 12 */
+
+.week-final {
+  color: #17120a;
+  background: #ffd513;
+}
+
+
+/* =====================================================
+   WEEK CARD CONTENT
+===================================================== */
+
+.uiux-week-card h3 {
+  margin: 0 0 18px;
+
+  color: #15101d;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  line-height: 1.15;
+}
+
+.uiux-week-card p {
+  margin: 0;
+
+  color: #5e575f;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  line-height: 1.65;
+}
+
+
+/* =====================================================
+   FEATURED WEEK 12 CARD
+===================================================== */
+
+.uiux-week-featured {
+  color: #ffffff;
+
+  background: #11192c;
+
+  border-color: #11192c;
+}
+
+.uiux-week-featured h3 {
+  color: #ffffff;
+}
+
+.uiux-week-featured p {
+  color: rgba(255, 255, 255, 0.83);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .uiux-hero,
+  .uiux-journey-heading {
+    width: 90%;
+  }
+
+  .uiux-week-grid {
+    width: 90%;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 750px) {
+
+  .uiux-hero {
+    width: calc(100% - 40px);
+
+    margin-top: 55px;
+  }
+
+  .uiux-hero h1 {
+    font-size: 46px;
+
+    line-height: 1;
+  }
+
+  .uiux-hero-description {
+    max-width: 550px;
+
+    font-size: 12px;
+  }
+
+  .uiux-tools {
+    margin-top: 50px;
+  }
+
+  .uiux-journey-section {
+    margin-top: 85px;
+  }
+
+  .uiux-week-grid {
+    width: calc(100% - 40px);
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 520px) {
+
+  .uiux-page {
+    padding-top: 10px;
+  }
+
+  /* HERO */
+
+  .uiux-hero {
+    width: calc(100% - 28px);
+
+    margin-top: 45px;
+  }
+
+  .uiux-course-badge {
+    height: 28px;
+
+    margin-bottom: 24px;
+
+    padding: 0 13px;
+
+    font-size: 8px;
+  }
+
+  .uiux-hero h1 {
+    font-size: 38px;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .uiux-hero-description {
+    margin-top: 22px;
+
+    font-size: 11px;
+
+    line-height: 1.65;
+  }
+
+
+  /* TOOLS */
+
+  .uiux-tools {
+    margin-top: 45px;
+  }
+
+  .uiux-tools h3 {
+    margin-bottom: 20px;
+
+    font-size: 9px;
+  }
+
+  .uiux-tools-list {
+    gap: 9px;
+  }
+
+  .uiux-tool {
+    min-width: 100px;
+    height: 34px;
+
+    padding: 0 12px;
+
+    font-size: 10px;
+  }
+
+
+  /* JOURNEY */
+
+  .uiux-journey-section {
+    margin-top: 75px;
+
+    padding-bottom: 55px;
+  }
+
+  .uiux-journey-heading {
+    width: calc(100% - 28px);
+
+    margin-bottom: 35px;
+  }
+
+  .uiux-step-badge {
+    margin-bottom: 18px;
+
+    padding: 7px 15px;
+  }
+
+  .uiux-journey-heading h2 {
+    font-size: 28px;
+  }
+
+  .uiux-journey-heading p {
+    font-size: 10px;
+  }
+
+
+  /* WEEK CARDS */
+
+  .uiux-week-grid {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .uiux-week-card {
+    min-height: auto;
+
+    padding: 20px;
+
+    border-radius: 14px;
+  }
+
+  .uiux-week-card h3 {
+    font-size: 16px;
+  }
+
+  .uiux-week-card p {
+    font-size: 10px;
+  }
+}
+
+/* =====================================================
+   CAREER POTENTIAL
+===================================================== */
+
+.uiux-career-section {
+  width: 100%;
+  padding: 70px 0 95px;
+  background: #ffffff;
+}
+
+.uiux-career-heading {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 58px;
+  text-align: center;
+}
+
+.uiux-career-badge {
+  width: fit-content;
+  margin: 0 auto 23px;
+  padding: 7px 23px;
+
+  color: #6554e8;
+  background: #e9e9eb;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.uiux-career-heading h2 {
+  margin: 0;
+
+  color: #19102f;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.uiux-career-heading h2 span {
+  color: #df5d65;
+}
+
+.uiux-career-heading p {
+  margin: 14px 0 0;
+
+  color: #39343d;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   CAREER CARDS
+===================================================== */
+
+.uiux-career-grid {
+  width: 86%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px 24px;
+}
+
+.uiux-career-card {
+  min-height: 145px;
+
+  padding: 23px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #d7d4d8;
+  border-radius: 12px;
+}
+
+.uiux-career-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.uiux-career-card h3 {
+  margin: 25px 0 0;
+
+  color: #1c1235;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.uiux-salary {
+  flex-shrink: 0;
+
+  text-align: right;
+
+  font-family: "Outfit", "Inter", sans-serif;
+}
+
+.uiux-salary span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #716d73;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.uiux-salary strong {
+  display: block;
+
+  color: #e54e59;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  line-height: 1.05;
+}
+
+.uiux-career-card > p {
+  max-width: 260px;
+
+  margin: 14px 0 0;
+
+  color: #5d575f;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+
+  line-height: 1.65;
+}
+
+
+/* =====================================================
+   REASONS TO CHOOSE US
+===================================================== */
+
+.uiux-reasons {
+  width: 86%;
+  max-width: 1250px;
+
+  margin: 90px auto 0;
+}
+
+.uiux-reasons > h2 {
+  margin: 0 0 50px;
+
+  color: #16102b;
+
+  text-align: center;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 31px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.uiux-reasons > h2 span {
+  color: #d84e71;
+}
+
+
+/* REASON CARDS */
+
+.uiux-reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 27px 36px;
+}
+
+.uiux-reason-card {
+  min-height: 94px;
+
+  padding: 17px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 17px;
+
+  background: #ffffff;
+
+  border: 1px solid #d7d4d8;
+  border-radius: 22px;
+}
+
+.uiux-reason-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1eff2;
+
+  border-radius: 9px;
+
+  font-size: 25px;
+}
+
+.uiux-reason-card p {
+  margin: 0;
+
+  color: #332d38;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   INVEST / COURSE PRICE CTA
+===================================================== */
+
+.uiux-invest-card {
+  width: 86%;
+  max-width: 1250px;
+  min-height: 405px;
+
+  margin: 95px auto 0;
+  padding: 55px 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(85, 74, 231, 0.16),
+      transparent 38%
+    ),
+    #11192d;
+
+  border-radius: 25px;
+}
+
+
+/* LEFT SIDE */
+
+.uiux-invest-content {
+  flex: 1;
+  max-width: 560px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.uiux-invest-badge {
+  width: fit-content;
+
+  margin-bottom: 32px;
+  padding: 7px 22px;
+
+  color: #ffd60a;
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.uiux-invest-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 39px;
+  font-weight: 800;
+
+  line-height: 0.95;
+  letter-spacing: -1.2px;
+}
+
+.uiux-invest-content h2 span {
+  color: #ffd400;
+}
+
+
+/* BENEFITS */
+
+.uiux-invest-benefits {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.uiux-invest-benefits div {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.uiux-invest-benefits span {
+  width: 19px;
+  height: 19px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffd500;
+
+  border: 2px solid #ffd500;
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   PRICE CARD
+===================================================== */
+
+.uiux-price-card {
+  width: 385px;
+  min-height: 330px;
+
+  padding: 32px 45px 27px;
+
+  flex-shrink: 0;
+
+  background: #ffffff;
+
+  border-radius: 23px;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.uiux-price-card h3 {
+  margin: 0 0 20px;
+
+  color: #ff4569;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.uiux-course-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  color: #232226;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.uiux-course-price small {
+  margin: 7px 4px 0 0;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* PRICE DETAILS */
+
+.uiux-price-details {
+  width: fit-content;
+
+  margin: 23px auto 24px;
+
+  text-align: left;
+}
+
+.uiux-price-details p {
+  margin: 0 0 13px;
+
+  color: #504b51;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+/* ENROLL BUTTON */
+
+.uiux-enroll-btn {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    #df6c92 0%,
+    #d269ad 45%,
+    #5949e9 100%
+  );
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.uiux-enroll-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(104, 73, 225, 0.25);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .uiux-career-grid {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .uiux-reasons {
+    width: 90%;
+  }
+
+  .uiux-reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .uiux-invest-card {
+    width: 90%;
+
+    padding: 50px 45px;
+
+    gap: 35px;
+  }
+
+  .uiux-price-card {
+    width: 350px;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .uiux-career-section {
+    padding-top: 55px;
+  }
+
+  .uiux-career-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uiux-reasons {
+    margin-top: 70px;
+  }
+
+  .uiux-reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uiux-invest-card {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 45px 35px;
+  }
+
+  .uiux-invest-content {
+    max-width: none;
+  }
+
+  .uiux-price-card {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .uiux-career-heading {
+    width: calc(100% - 28px);
+    margin-bottom: 38px;
+  }
+
+  .uiux-career-heading h2 {
+    font-size: 27px;
+  }
+
+  .uiux-career-grid,
+  .uiux-reasons,
+  .uiux-invest-card {
+    width: calc(100% - 28px);
+  }
+
+  .uiux-career-card {
+    min-height: 135px;
+    padding: 19px;
+  }
+
+  .uiux-career-card h3 {
+    font-size: 17px;
+  }
+
+  .uiux-reasons > h2 {
+    margin-bottom: 35px;
+
+    font-size: 27px;
+  }
+
+  .uiux-reason-card {
+    min-height: 82px;
+
+    border-radius: 18px;
+  }
+
+  .uiux-reason-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 21px;
+  }
+
+  .uiux-invest-card {
+    margin-top: 70px;
+
+    padding: 35px 22px;
+
+    border-radius: 20px;
+  }
+
+  .uiux-invest-content h2 {
+    font-size: 34px;
+  }
+
+  .uiux-price-card {
+    min-height: auto;
+
+    padding: 28px 22px;
+
+    border-radius: 18px;
+  }
+
+  .uiux-course-price {
+    font-size: 42px;
+  }
+}
+
+/* =====================================================
+   EXPERT GUIDANCE
+===================================================== */
+
+.uiux-experts-section {
+  width: 100%;
+  padding: 80px 0 75px;
+  background: #ffffff;
+}
+
+.uiux-experts-heading {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.uiux-experts-badge {
+  width: fit-content;
+  margin: 0 auto 24px;
+  padding: 7px 22px;
+
+  color: #5b4ce8;
+  background: #e9e9ea;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.uiux-experts-heading h2 {
+  margin: 0;
+
+  color: #17102f;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+}
+
+.uiux-experts-heading h2 span {
+  color: #5749f0;
+}
+
+
+/* =====================================================
+   MENTOR CARDS
+===================================================== */
+
+.uiux-mentor-grid {
+  width: 62%;
+  max-width: 820px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 46px;
+}
+
+.uiux-mentor-card {
+  min-height: 250px;
+
+  padding: 22px 22px 18px;
+
+  position: relative;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-right: 1px solid #d3d0d5;
+  border-radius: 18px;
+}
+
+.uiux-mentor-card:last-child {
+  border-right: none;
+}
+
+.uiux-mentor-image {
+  width: 92px;
+  height: 92px;
+
+  margin: 0 auto 16px;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  padding: 3px;
+}
+
+.uiux-mentor-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.mentor-one {
+  border: 3px solid #6653ef;
+}
+
+.mentor-two {
+  border: 3px solid #ff4d73;
+}
+
+.mentor-three {
+  border: 3px solid #252533;
+}
+
+.uiux-mentor-card h3 {
+  margin: 0 0 6px;
+
+  color: #17102f;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.mentor-role {
+  margin: 0;
+
+  color: #161119;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.mentor-role-purple {
+  color: #5546f0;
+}
+
+.mentor-role-pink {
+  color: #ff426b;
+}
+
+.uiux-linkedin {
+  width: 27px;
+  height: 27px;
+
+  position: absolute;
+  right: 18px;
+  bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #271438;
+
+  background: #ffffff;
+
+  border: 1px solid #4a285e;
+  border-radius: 50%;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   DREAM JOB
+===================================================== */
+
+.uiux-dream-job {
+  width: 90%;
+  max-width: 1250px;
+
+  margin: 90px auto 0;
+
+  text-align: center;
+}
+
+.uiux-dream-job h2 {
+  margin: 0;
+
+  color: #18102e;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 33px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.uiux-dream-job h2 span {
+  color: #dc5a62;
+}
+
+.uiux-dream-job > p {
+  margin: 18px 0 0;
+
+  color: #322d35;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   COMPANY LOGOS
+===================================================== */
+
+.uiux-company-logos {
+  width: 100%;
+
+  margin-top: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  align-items: center;
+
+  column-gap: 30px;
+  row-gap: 55px;
+}
+
+.uiux-company-logos img {
+  width: 100%;
+  max-width: 115px;
+  max-height: 48px;
+
+  margin: 0 auto;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .uiux-mentor-grid {
+    width: 78%;
+  }
+
+  .uiux-company-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .uiux-experts-section {
+    padding-top: 60px;
+  }
+
+  .uiux-mentor-grid {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    border: none;
+
+    gap: 18px;
+  }
+
+  .uiux-mentor-card {
+    border: 1px solid #d3d0d5;
+    border-radius: 18px;
+  }
+
+  .uiux-dream-job {
+    margin-top: 70px;
+  }
+
+  .uiux-company-logos {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px 20px;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .uiux-experts-heading {
+    width: calc(100% - 28px);
+  }
+
+  .uiux-experts-heading h2 {
+    font-size: 27px;
+  }
+
+  .uiux-mentor-grid {
+    width: calc(100% - 28px);
+  }
+
+  .uiux-dream-job {
+    width: calc(100% - 28px);
+  }
+
+  .uiux-dream-job h2 {
+    font-size: 28px;
+  }
+
+  .uiux-company-logos {
+    margin-top: 45px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px 22px;
+  }
+
+  .uiux-company-logos img {
+    max-width: 100px;
+    max-height: 42px;
+  }
+}
+
+/* =====================================================
+   STUDENT OUTCOMES / PORTFOLIO
+===================================================== */
+
+.uiux-outcomes-section {
+  width: 100%;
+
+  padding: 70px 0 85px;
+
+  background-color: #ffffff;
+  background-image: radial-gradient(#ece9ef 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+
+/* =====================================================
+   OUTCOMES HEADING
+===================================================== */
+
+.uiux-outcomes-heading {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.uiux-outcomes-badge {
+  width: fit-content;
+
+  margin: 0 auto 27px;
+
+  padding: 8px 24px;
+
+  color: #1c1722;
+  background: #fff0c9;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.uiux-outcomes-heading h2 {
+  margin: 0;
+
+  color: #17102e;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 33px;
+  font-weight: 800;
+
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.uiux-outcomes-heading h2 span {
+  color: #5547eb;
+}
+
+
+/* =====================================================
+   SLIDER WRAPPER
+===================================================== */
+
+.uiux-outcomes-slider {
+  width: 90%;
+  max-width: 1350px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   PROJECT GRID
+===================================================== */
+
+.uiux-outcomes-grid {
+  width: 82%;
+  max-width: 1050px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 48px;
+}
+
+
+/* =====================================================
+   PROJECT CARD
+===================================================== */
+
+.uiux-project-card {
+  min-height: 300px;
+
+  padding: 12px 12px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #d8d4da;
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+.uiux-project-image {
+  width: 100%;
+  height: 205px;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+}
+
+.uiux-project-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.uiux-project-card h3 {
+  margin: 18px 8px 0;
+
+  color: #17102f;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+/* =====================================================
+   SLIDER ARROWS
+===================================================== */
+
+.uiux-slider-arrow {
+  width: 38px;
+  height: 38px;
+
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #27203a;
+  background: #ffffff;
+
+  border: 2px solid #363047;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  z-index: 2;
+}
+
+.uiux-slider-arrow-left {
+  left: 0;
+}
+
+.uiux-slider-arrow-right {
+  right: 0;
+}
+
+.uiux-slider-arrow:hover {
+  background: #211937;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   DYNAMIC SLIDER DOTS
+===================================================== */
+
+.uiux-slider-dots {
+  margin-top: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.uiux-slider-dots button {
+  width: 10px;
+  height: 10px;
+
+  padding: 0;
+
+  display: block;
+
+  background: #dddddf;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.uiux-slider-dots button:hover {
+  transform: scale(1.15);
+}
+
+.uiux-slider-dots button.active {
+  background: #e06a60;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+  .uiux-outcomes-grid {
+    width: 84%;
+
+    gap: 24px;
+  }
+
+  .uiux-project-image {
+    height: 180px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .uiux-outcomes-grid {
+    width: 82%;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .uiux-project-card:nth-child(3) {
+    display: none;
+  }
+
+  .uiux-slider-arrow-left {
+    left: 5px;
+  }
+
+  .uiux-slider-arrow-right {
+    right: 5px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .uiux-outcomes-section {
+    padding: 55px 0 65px;
+  }
+
+  .uiux-outcomes-heading {
+    width: calc(100% - 28px);
+
+    margin-bottom: 40px;
+  }
+
+  .uiux-outcomes-heading h2 {
+    font-size: 28px;
+  }
+
+  .uiux-outcomes-grid {
+    width: calc(100% - 80px);
+
+    grid-template-columns: 1fr;
+  }
+
+  .uiux-project-card:nth-child(2),
+  .uiux-project-card:nth-child(3) {
+    display: none;
+  }
+
+  .uiux-project-card {
+    min-height: auto;
+  }
+
+  .uiux-project-image {
+    height: 190px;
+  }
+
+  .uiux-slider-arrow {
+    width: 34px;
+    height: 34px;
+
+    font-size: 18px;
+  }
+
+  .uiux-slider-arrow-left {
+    left: 0;
+  }
+
+  .uiux-slider-arrow-right {
+    right: 0;
+  }
+
+  .uiux-slider-dots {
+    margin-top: 30px;
+  }
+}
+
+/* =====================================================
+   FAQ SECTION
+===================================================== */
+
+.uiux-faq-section {
+  width: 100%;
+  padding: 70px 0 120px;
+
+  background: #ffffff;
+}
+
+.uiux-faq-heading {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.uiux-faq-badge {
+  width: fit-content;
+
+  margin: 0 auto 25px;
+  padding: 7px 22px;
+
+  color: #5749ea;
+  background: #e9e9eb;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.uiux-faq-heading h2 {
+  margin: 0;
+
+  color: #17102e;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+
+/* =====================================================
+   FAQ LIST
+===================================================== */
+
+.uiux-faq-list {
+  width: 60%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.uiux-faq-item {
+  overflow: hidden;
+
+  background: #f4f6ff;
+
+  border: 1px solid #d9dce7;
+  border-radius: 12px;
+}
+
+.uiux-faq-question {
+  width: 100%;
+  min-height: 72px;
+
+  padding: 0 22px 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #17152c;
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.uiux-faq-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #17152c;
+  background: #ffffff;
+
+  border: 1px solid #dddde2;
+  border-radius: 50%;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.uiux-faq-answer {
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transition:
+    max-height 0.3s ease,
+    opacity 0.25s ease,
+    padding 0.3s ease;
+}
+
+.uiux-faq-answer p {
+  margin: 0;
+
+  padding: 0 35px 25px;
+
+  color: #66606d;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.7;
+}
+
+.uiux-faq-item.active .uiux-faq-answer {
+  max-height: 180px;
+
+  opacity: 1;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.uiux-footer {
+  width: 100%;
+
+  padding: 48px 0 20px;
+
+  color: #ffffff;
+
+  background: #11192d;
+}
+
+.uiux-footer-inner {
+  width: 84%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    0.8fr
+    0.9fr
+    0.9fr;
+
+  gap: 55px;
+}
+
+
+/* =====================================================
+   FOOTER BRAND
+===================================================== */
+
+.uiux-footer-brand {
+  max-width: 390px;
+}
+
+.uiux-footer-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.uiux-footer-logo-mark {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #ee4e75,
+    #734df0,
+    #ffcc00
+  );
+
+  border-radius: 50%;
+
+  font-size: 17px;
+}
+
+.uiux-footer-logo strong {
+  display: block;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.uiux-footer-logo span {
+  display: block;
+
+  margin-top: -2px;
+
+  color: #f33574;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  text-align: right;
+}
+
+
+/* =====================================================
+   ADDRESS
+===================================================== */
+
+.uiux-footer-address {
+  margin-top: 48px;
+}
+
+.uiux-footer-address h3,
+.uiux-footer-column h3 {
+  margin: 0 0 24px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.uiux-footer-address p {
+  max-width: 330px;
+
+  margin: 0 0 17px;
+
+  color: #f1f0f5;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 11px;
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.uiux-footer-column {
+  padding-top: 52px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.uiux-footer-column a {
+  margin-bottom: 18px;
+
+  color: #f4f2f7;
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 11px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.uiux-footer-column a:hover {
+  opacity: 0.7;
+}
+
+
+/* =====================================================
+   ENROLL BUTTON
+===================================================== */
+
+.uiux-footer-info {
+  padding-top: 0;
+}
+
+.uiux-footer-enroll {
+  min-width: 140px;
+  height: 40px;
+
+  margin-bottom: 35px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #16122a !important;
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  font-weight: 700 !important;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.uiux-footer-bottom {
+  width: 84%;
+  max-width: 1280px;
+
+  margin: 38px auto 0;
+  padding-top: 22px;
+
+  text-align: center;
+
+  color: #f0eef5;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+  font-family: "Outfit", "Inter", sans-serif;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .uiux-faq-list {
+    width: 78%;
+  }
+
+  .uiux-footer-inner {
+    width: 90%;
+
+    grid-template-columns: 1.6fr 1fr 1fr;
+  }
+
+  .uiux-footer-info {
+    grid-column: 2 / 4;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .uiux-faq-section {
+    padding: 55px 0 75px;
+  }
+
+  .uiux-faq-heading {
+    width: calc(100% - 28px);
+
+    margin-bottom: 38px;
+  }
+
+  .uiux-faq-heading h2 {
+    font-size: 27px;
+  }
+
+  .uiux-faq-list {
+    width: calc(100% - 28px);
+  }
+
+  .uiux-faq-question {
+    min-height: 68px;
+
+    padding: 0 16px 0 18px;
+
+    font-size: 11px;
+  }
+
+  .uiux-faq-answer p {
+    padding: 0 18px 20px;
+  }
+
+
+  /* FOOTER */
+
+  .uiux-footer {
+    padding-top: 40px;
+  }
+
+  .uiux-footer-inner {
+    width: calc(100% - 36px);
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .uiux-footer-brand {
+    max-width: none;
+  }
+
+  .uiux-footer-address {
+    margin-top: 35px;
+  }
+
+  .uiux-footer-column,
+  .uiux-footer-info {
+    padding-top: 0;
+  }
+
+  .uiux-footer-info {
+    grid-column: auto;
+  }
+
+  .uiux-footer-bottom {
+    width: calc(100% - 36px);
+
+    margin-top: 25px;
+  }
+}

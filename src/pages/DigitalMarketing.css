@@ -1,0 +1,2432 @@
+/* =====================================================
+   DIGITAL MARKETING PAGE
+===================================================== */
+
+.digital-marketing-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 18px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ded9e4 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+
+/* =====================================================
+   NAVBAR WIDTH ON THIS PAGE
+===================================================== */
+
+.digital-marketing-page > .navbar {
+  width: 76%;
+  max-width: 1280px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.dm-hero {
+  width: 90%;
+  max-width: 1280px;
+
+  margin: 78px auto 0;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   COURSE BADGE
+===================================================== */
+
+.dm-course-badge {
+  width: fit-content;
+  height: 34px;
+
+  margin: 0 auto 35px;
+
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #e75b62;
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid #d9d5db;
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.dm-course-badge span {
+  width: 8px;
+  height: 8px;
+
+  background: #e85d69;
+
+  border-radius: 50%;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.dm-main-title {
+  margin: 0;
+
+  color: #251036;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(52px, 5.3vw, 76px);
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+
+  font-weight: 800;
+}
+
+.dm-main-title span {
+  color: transparent;
+
+  background: linear-gradient(
+    90deg,
+    #8055d8 0%,
+    #aa5cb8 45%,
+    #e06681 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.dm-hero-description {
+  max-width: 760px;
+
+  margin: 30px auto 0;
+
+  color: #4e4950;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.dm-hero-buttons {
+  margin-top: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.dm-enroll-btn,
+.dm-syllabus-btn {
+  height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dm-enroll-btn {
+  min-width: 220px;
+
+  padding: 0 30px;
+
+  color: #ffffff;
+
+  background: #ff315e;
+
+  box-shadow: 0 7px 18px rgba(255, 49, 94, 0.15);
+}
+
+.dm-syllabus-btn {
+  min-width: 180px;
+
+  padding: 0 27px;
+
+  color: #21172f;
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid #d6d1d8;
+}
+
+.dm-enroll-btn:hover,
+.dm-syllabus-btn:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   TOOLS SECTION
+===================================================== */
+
+.dm-tools-section {
+  margin-top: 78px;
+}
+
+.dm-tools-section h3 {
+  margin: 0 0 35px;
+
+  color: #686268;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  font-weight: 800;
+}
+
+.dm-tools-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+}
+
+
+/* =====================================================
+   TOOL PILLS
+===================================================== */
+
+.dm-tool-pill {
+  min-width: 125px;
+  height: 40px;
+
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #17121d;
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid #d9d5dc;
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow: 0 3px 8px rgba(27, 14, 39, 0.025);
+}
+
+.dm-tool-icon {
+  width: 19px;
+  height: 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+
+/* GOOGLE */
+
+.dm-google {
+  color: #4285f4;
+}
+
+
+/* META */
+
+.dm-meta {
+  color: #0866ff;
+
+  font-size: 21px;
+}
+
+
+/* INSTAGRAM */
+
+.dm-instagram {
+  color: #f33674;
+
+  border: 2px solid #f33674;
+  border-radius: 5px;
+
+  font-size: 9px;
+}
+
+
+/* HOSTINGER */
+
+.dm-hostinger {
+  color: #7255e8;
+
+  font-size: 14px;
+}
+
+
+/* SEMRUSH */
+
+.dm-semrush {
+  color: #ff4e32;
+}
+
+
+/* WORDPRESS */
+
+.dm-wordpress {
+  color: #1678a5;
+
+  border: 1.5px solid #1678a5;
+  border-radius: 50%;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   WHY CHOOSE INTRO
+===================================================== */
+
+.dm-why-intro {
+  width: 90%;
+  max-width: 1280px;
+
+  margin: 105px auto 0;
+
+  padding-bottom: 65px;
+
+  text-align: center;
+}
+
+.dm-why-intro h2 {
+  margin: 0;
+
+  color: #21102f;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 37px;
+  line-height: 1.02;
+
+  letter-spacing: -1.4px;
+
+  font-weight: 800;
+}
+
+.dm-why-intro h2 span {
+  color: #dd5d65;
+}
+
+.dm-why-intro p {
+  max-width: 700px;
+
+  margin: 27px auto 0;
+
+  color: #514b51;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.55;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .digital-marketing-page > .navbar {
+    width: 90%;
+  }
+
+  .dm-hero {
+    width: 90%;
+  }
+
+  .dm-main-title {
+    font-size: 58px;
+  }
+
+  .dm-tools-list {
+    gap: 14px;
+  }
+
+  .dm-tool-pill {
+    min-width: 120px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .digital-marketing-page {
+    padding-top: 10px;
+  }
+
+  .digital-marketing-page > .navbar {
+    width: calc(100% - 24px);
+  }
+
+  .dm-hero {
+    width: calc(100% - 28px);
+
+    margin-top: 55px;
+  }
+
+  .dm-course-badge {
+    margin-bottom: 28px;
+
+    font-size: 9px;
+  }
+
+  .dm-main-title {
+    font-size: 44px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+  }
+
+  .dm-hero-description {
+    margin-top: 24px;
+
+    font-size: 13px;
+  }
+
+  .dm-desktop-break {
+    display: none;
+  }
+
+  .dm-hero-buttons {
+    margin-top: 35px;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .dm-enroll-btn,
+  .dm-syllabus-btn {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .dm-tools-section {
+    margin-top: 60px;
+  }
+
+  .dm-tools-section h3 {
+    font-size: 11px;
+  }
+
+  .dm-tools-list {
+    gap: 10px;
+  }
+
+  .dm-tool-pill {
+    min-width: 135px;
+
+    font-size: 11px;
+  }
+
+  .dm-why-intro {
+    width: calc(100% - 28px);
+
+    margin-top: 80px;
+  }
+
+  .dm-why-intro h2 {
+    font-size: 31px;
+  }
+
+  .dm-why-intro p {
+    font-size: 13px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+  .dm-main-title {
+    font-size: 38px;
+  }
+
+  .dm-tool-pill {
+    min-width: 125px;
+  }
+
+  .dm-why-intro h2 {
+    font-size: 28px;
+  }
+}
+
+/* =====================================================
+   DIGITAL MARKETING BENEFIT CARDS
+===================================================== */
+
+.dm-benefits-section {
+  width: 100%;
+  padding: 15px 0 55px;
+}
+
+.dm-benefits-grid {
+  width: 72%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    0.8fr
+    0.8fr;
+
+  gap: 24px;
+}
+
+
+/* =====================================================
+   BENEFIT CARD
+===================================================== */
+
+.dm-benefit-card {
+  min-height: 185px;
+
+  padding: 22px 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e0dce1;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 28px rgba(32, 18, 42, 0.08);
+}
+
+.dm-benefit-dark {
+  grid-column: span 2;
+
+  color: #ffffff;
+
+  background: #111a2d;
+
+  border-color: #111a2d;
+}
+
+.dm-benefit-wide {
+  grid-column: span 2;
+}
+
+
+/* =====================================================
+   BENEFIT NUMBER
+===================================================== */
+
+.dm-benefit-number {
+  width: 30px;
+  height: 30px;
+
+  margin-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dm-number-yellow {
+  color: #ffd400;
+  background: rgba(255, 212, 0, 0.12);
+}
+
+.dm-number-purple {
+  color: #231538;
+  background: #f0edf4;
+}
+
+.dm-number-yellow-soft {
+  color: #563f0b;
+  background: #fff1c8;
+}
+
+.dm-number-pink {
+  color: #d95a73;
+  background: #f9e8ed;
+}
+
+
+/* =====================================================
+   BENEFIT CONTENT
+===================================================== */
+
+.dm-benefit-card h3 {
+  margin: 0 0 18px;
+
+  color: #241035;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.dm-benefit-dark h3 {
+  color: #ffffff;
+}
+
+.dm-benefit-card p {
+  margin: 0;
+
+  max-width: 560px;
+
+  color: #57515a;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  line-height: 1.65;
+
+  font-weight: 500;
+}
+
+.dm-benefit-dark p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* =====================================================
+   SKILL SET SECTION
+===================================================== */
+
+.dm-skill-section {
+  width: 100%;
+
+  padding: 60px 0 95px;
+
+  background: #ffffff;
+}
+
+.dm-skill-heading {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.dm-skill-badge {
+  width: fit-content;
+
+  margin: 0 auto 28px;
+  padding: 7px 19px;
+
+  color: #5a4ee8;
+  background: #e9e9eb;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dm-skill-heading h2 {
+  margin: 0;
+
+  color: #17102d;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 29px;
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.dm-skill-heading h2 span {
+  color: #5b4cec;
+}
+
+
+/* =====================================================
+   SKILL GRID
+===================================================== */
+
+.dm-skill-grid {
+  width: 86%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px 28px;
+}
+
+.dm-skill-card {
+  min-height: 70px;
+
+  padding: 14px 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd8df;
+  border-radius: 12px;
+}
+
+.dm-skill-icon {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 19px;
+}
+
+.dm-wordpress-icon {
+  color: #ffffff;
+
+  background: #0d7da8;
+
+  border-radius: 50%;
+
+  font-family: Georgia, serif;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.dm-wix-icon {
+  color: #ffffff;
+
+  background: #050505;
+
+  border-radius: 2px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.dm-skill-card span {
+  color: #21162c;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   CAREER SCOPE
+===================================================== */
+
+.dm-career-scope-section {
+  width: 100%;
+
+  padding: 30px 0 50px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dm-career-scope-heading {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.dm-job-badge {
+  width: fit-content;
+
+  margin: 0 auto 27px;
+  padding: 7px 20px;
+
+  color: #df5a61;
+  background: #eeeeef;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dm-career-scope-heading h2 {
+  margin: 0;
+
+  color: #201031;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.dm-career-scope-heading h2 span {
+  color: #de5d62;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .dm-benefits-grid {
+    width: 90%;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dm-benefit-dark,
+  .dm-benefit-wide {
+    grid-column: auto;
+  }
+
+  .dm-skill-grid {
+    width: 90%;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .dm-benefits-grid {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .dm-benefit-card {
+    min-height: auto;
+
+    padding: 20px;
+
+    border-radius: 16px;
+  }
+
+  .dm-benefit-card h3 {
+    font-size: 17px;
+  }
+
+  .dm-skill-section {
+    padding: 55px 0 70px;
+  }
+
+  .dm-skill-heading {
+    width: calc(100% - 28px);
+
+    margin-bottom: 38px;
+  }
+
+  .dm-skill-heading h2 {
+    font-size: 26px;
+  }
+
+  .dm-skill-grid {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .dm-skill-card {
+    min-height: 64px;
+  }
+
+  .dm-career-scope-heading {
+    width: calc(100% - 28px);
+  }
+
+  .dm-career-scope-heading h2 {
+    font-size: 27px;
+  }
+}
+
+/* =====================================================
+   CAREER ROLES
+===================================================== */
+
+.dm-career-roles-section {
+  width: 100%;
+  padding: 15px 0 90px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dm-career-roles-grid {
+  width: 86%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px 30px;
+}
+
+.dm-career-role-card {
+  min-height: 180px;
+
+  padding: 28px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd9df;
+  border-radius: 17px;
+}
+
+.dm-career-role-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1eef1;
+
+  border-radius: 9px;
+
+  font-size: 23px;
+}
+
+.dm-career-role-card h3 {
+  margin: 30px 0 0;
+
+  max-width: 150px;
+
+  color: #1b102d;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.08;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   SYLLABUS BREAKDOWN
+===================================================== */
+
+.dm-syllabus-section {
+  width: 100%;
+
+  padding: 70px 0 95px;
+
+  background: #ffffff;
+}
+
+.dm-syllabus-heading {
+  width: 90%;
+  max-width: 900px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.dm-syllabus-heading h2 {
+  margin: 0;
+
+  color: #1d102f;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 31px;
+  line-height: 1.03;
+
+  font-weight: 800;
+
+  letter-spacing: -0.9px;
+}
+
+.dm-syllabus-heading h2 span {
+  color: #5a4bed;
+}
+
+.dm-syllabus-heading p {
+  margin: 24px auto 0;
+
+  color: #444047;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   WEEK TABS
+===================================================== */
+
+.dm-week-tabs {
+  width: 70%;
+  max-width: 760px;
+
+  margin: 0 auto 45px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 60px;
+}
+
+.dm-week-tab {
+  height: 38px;
+
+  padding: 0 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 15px;
+
+  color: #28222c;
+  background: #fff9fa;
+
+  border: 1px solid #eadfe1;
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.dm-week-tab span {
+  color: #ff5d55;
+
+  font-size: 13px;
+}
+
+.dm-week-tab.active {
+  color: #ffffff;
+  background: #d84b4e;
+
+  border-color: #d84b4e;
+}
+
+.dm-week-tab.active span {
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   PHASE CARD
+===================================================== */
+
+.dm-phase-card {
+  width: 66%;
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 30px 32px 35px;
+
+  background: #f7f9fc;
+
+  border: 1px solid #cfd2d8;
+  border-radius: 18px;
+}
+
+.dm-phase-title-row {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.dm-phase-badge {
+  width: fit-content;
+
+  padding: 7px 18px;
+
+  color: #dd5c63;
+  background: #eeeeef;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dm-phase-title-row h3 {
+  margin: 0;
+
+  color: #1a1128;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   PHASE TOPICS
+===================================================== */
+
+.dm-phase-content-grid {
+  margin-top: 28px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.dm-phase-topic-card {
+  min-height: 110px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #d8d9dd;
+  border-radius: 12px;
+}
+
+.dm-phase-topic-card h4 {
+  margin: 0 0 13px;
+
+  color: #18101f;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1.3;
+}
+
+.dm-phase-topic-card p {
+  margin: 0;
+
+  color: #625d64;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .dm-career-roles-grid {
+    width: 90%;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dm-week-tabs {
+    width: 85%;
+
+    gap: 25px;
+  }
+
+  .dm-phase-card {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .dm-career-roles-section {
+    padding-bottom: 70px;
+  }
+
+  .dm-career-roles-grid {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .dm-career-role-card {
+    min-height: 130px;
+
+    padding: 20px;
+  }
+
+  .dm-career-role-card h3 {
+    margin-top: 20px;
+  }
+
+
+  /* SYLLABUS */
+
+  .dm-syllabus-section {
+    padding: 55px 0 70px;
+  }
+
+  .dm-syllabus-heading {
+    width: calc(100% - 28px);
+
+    margin-bottom: 35px;
+  }
+
+  .dm-syllabus-heading h2 {
+    font-size: 27px;
+  }
+
+  .dm-week-tabs {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+  }
+
+  .dm-week-tab {
+    justify-content: center;
+  }
+
+  .dm-phase-card {
+    width: calc(100% - 28px);
+
+    padding: 24px 20px;
+  }
+
+  .dm-phase-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .dm-phase-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   DIGITAL MARKETING PRICING SECTION
+===================================================== */
+
+.dm-pricing-section {
+  width: 100%;
+
+  padding: 70px 0 70px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dm-pricing-card {
+  width: 84%;
+  max-width: 1180px;
+  min-height: 300px;
+
+  margin: 0 auto;
+
+  padding: 38px 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  background:
+    radial-gradient(
+      circle at 55% 50%,
+      rgba(100, 80, 230, 0.18),
+      transparent 38%
+    ),
+    #11192d;
+
+  border-radius: 23px;
+}
+
+
+/* =====================================================
+   PRICING LEFT
+===================================================== */
+
+.dm-pricing-content {
+  flex: 1;
+}
+
+.dm-pricing-badge {
+  width: fit-content;
+
+  margin-bottom: 20px;
+
+  padding: 6px 17px;
+
+  color: #ffd500;
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dm-pricing-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 35px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -1.2px;
+}
+
+.dm-pricing-content h2 span {
+  color: #ffd400;
+}
+
+.dm-pricing-details {
+  margin-top: 28px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.dm-pricing-details p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   PRICING BOX
+===================================================== */
+
+.dm-pricing-box {
+  width: 330px;
+  min-height: 220px;
+
+  padding: 28px 38px 24px;
+
+  flex-shrink: 0;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.dm-pricing-box h3 {
+  margin: 0 0 18px;
+
+  color: #ff4269;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dm-price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  color: #232228;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -1.8px;
+}
+
+.dm-price small {
+  margin: 6px 4px 0 0;
+
+  font-size: 20px;
+}
+
+.dm-pricing-box > p {
+  margin: 15px 0 18px;
+
+  color: #666067;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.dm-pricing-enroll-btn {
+  width: 100%;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    #ff5f83,
+    #e95b9d,
+    #594ce9
+  );
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   TARGET AUDIENCE
+===================================================== */
+
+.dm-target-section {
+  width: 100%;
+
+  padding: 35px 0 95px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dm-target-heading {
+  width: 90%;
+  max-width: 900px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.dm-target-badge {
+  width: fit-content;
+
+  margin: 0 auto 25px;
+
+  padding: 7px 20px;
+
+  color: #e05d62;
+  background: #eeeeef;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dm-target-heading h2 {
+  margin: 0;
+
+  color: #19102a;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 31px;
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -0.9px;
+}
+
+.dm-target-heading h2 span {
+  color: #d84f55;
+}
+
+
+/* =====================================================
+   TARGET CARDS
+===================================================== */
+
+.dm-target-grid {
+  width: 84%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 28px;
+}
+
+.dm-target-card {
+  min-height: 255px;
+
+  padding: 28px 34px;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd9df;
+  border-radius: 20px;
+}
+
+.dm-target-card-dark {
+  color: #ffffff;
+
+  background: #11192d;
+
+  border-color: #11192d;
+}
+
+.dm-target-icon {
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0edf1;
+
+  border-radius: 9px;
+
+  font-size: 21px;
+}
+
+.dm-target-icon-dark {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dm-target-card h3 {
+  margin: 0 0 18px;
+
+  color: #21122f;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.dm-target-card-dark h3 {
+  color: #ffffff;
+}
+
+.dm-target-card p {
+  max-width: 490px;
+
+  margin: 0;
+
+  color: #554e58;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+.dm-target-card-dark p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .dm-pricing-card {
+    width: 90%;
+
+    padding: 40px;
+
+    gap: 30px;
+  }
+
+  .dm-pricing-box {
+    width: 310px;
+  }
+
+  .dm-target-grid {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .dm-pricing-card {
+    width: calc(100% - 28px);
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 32px 25px;
+  }
+
+  .dm-pricing-box {
+    width: 100%;
+  }
+
+  .dm-target-heading {
+    width: calc(100% - 28px);
+  }
+
+  .dm-target-grid {
+    width: calc(100% - 28px);
+
+    grid-template-columns: 1fr;
+  }
+
+  .dm-target-heading h2 {
+    font-size: 27px;
+  }
+}
+
+/* =====================================================
+   LEARN FROM THE BEST
+===================================================== */
+
+.dm-mentors-section {
+  width: 100%;
+
+  padding: 70px 0 95px;
+
+  background: #11192d;
+}
+
+.dm-mentors-container {
+  width: 86%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.dm-mentors-container > h2 {
+  margin: 0 0 60px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.dm-mentors-container > h2 span {
+  color: #ffd400;
+}
+
+
+/* =====================================================
+   MENTOR GRID
+===================================================== */
+
+.dm-mentors-grid {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 48px;
+}
+
+.dm-mentor-card {
+  min-height: 205px;
+
+  padding: 20px 18px;
+
+  position: relative;
+
+  background: #3a4253;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 17px;
+
+  text-align: center;
+}
+
+.dm-mentor-photo {
+  width: 78px;
+  height: 78px;
+
+  margin: 0 auto 15px;
+
+  padding: 3px;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.dm-mentor-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.dm-mentor-purple {
+  border: 3px solid #6654f2;
+}
+
+.dm-mentor-pink {
+  border: 3px solid #ff536f;
+}
+
+.dm-mentor-dark {
+  border: 3px solid #181823;
+}
+
+.dm-mentor-card h3 {
+  margin: 0 0 5px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dm-mentor-card p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.dm-linkedin {
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+
+  right: 16px;
+  bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   FINAL WHITE SECTION
+===================================================== */
+
+.dm-final-section {
+  width: 100%;
+
+  padding: 85px 0 105px;
+
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   JOURNEY CTA
+===================================================== */
+
+.dm-journey-cta {
+  width: 88%;
+  max-width: 1200px;
+  min-height: 190px;
+
+  margin: 0 auto;
+
+  padding: 38px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background: linear-gradient(
+    100deg,
+    #d96283 0%,
+    #ad5fac 40%,
+    #5049df 100%
+  );
+
+  border-radius: 25px;
+}
+
+.dm-journey-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.dm-journey-content p {
+  max-width: 550px;
+
+  margin: 18px 0 0;
+
+  color: rgba(255, 255, 255, 0.94);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+.dm-journey-enroll {
+  min-width: 130px;
+  height: 38px;
+
+  padding: 0 20px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #18110a;
+
+  background: #ffd30b;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.dm-faq-wrap {
+  width: 68%;
+  max-width: 850px;
+
+  margin: 70px auto 0;
+}
+
+.dm-faq-wrap > h2 {
+  margin: 0 0 45px;
+
+  color: #18102e;
+
+  text-align: center;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.dm-faq-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.dm-faq-item {
+  overflow: hidden;
+
+  background: #f4f6ff;
+
+  border: 1px solid #d8dce6;
+  border-radius: 11px;
+}
+
+.dm-faq-question {
+  width: 100%;
+  min-height: 66px;
+
+  padding: 0 17px 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #17152d;
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dm-faq-icon {
+  width: 27px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #18152c;
+  background: #ffffff;
+
+  border: 1px solid #dddde3;
+  border-radius: 50%;
+
+  font-size: 16px;
+}
+
+.dm-faq-answer {
+  max-height: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transition:
+    max-height 0.3s ease,
+    opacity 0.25s ease;
+}
+
+.dm-faq-answer p {
+  margin: 0;
+
+  padding: 0 35px 22px;
+
+  color: #625c66;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.dm-faq-item.active .dm-faq-answer {
+  max-height: 170px;
+
+  opacity: 1;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 850px) {
+
+  .dm-mentors-grid {
+    max-width: 700px;
+
+    gap: 25px;
+  }
+
+  .dm-journey-cta {
+    width: 90%;
+
+    padding: 35px 40px;
+  }
+
+  .dm-faq-wrap {
+    width: 82%;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .dm-mentors-grid {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    max-width: 320px;
+  }
+
+  .dm-journey-cta {
+    width: calc(100% - 28px);
+
+    padding: 30px 24px;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dm-journey-enroll {
+    width: 100%;
+  }
+
+  .dm-faq-wrap {
+    width: calc(100% - 28px);
+
+    margin-top: 60px;
+  }
+
+  .dm-faq-wrap > h2 {
+    margin-bottom: 35px;
+
+    font-size: 27px;
+  }
+
+  .dm-faq-question {
+    padding: 0 14px 0 18px;
+
+    font-size: 10px;
+  }
+
+  .dm-faq-answer p {
+    padding: 0 18px 20px;
+  }
+}
+
+/* =====================================================
+   DIGITAL MARKETING FOOTER
+===================================================== */
+
+.dm-footer {
+  width: 100%;
+
+  padding: 45px 0 20px;
+
+  background: #11192d;
+
+  color: #ffffff;
+}
+
+.dm-footer-container {
+  width: 86%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    0.8fr
+    0.9fr
+    0.9fr;
+
+  gap: 60px;
+}
+
+
+/* =====================================================
+   FOOTER BRAND
+===================================================== */
+
+.dm-footer-brand {
+  max-width: 390px;
+}
+
+.dm-footer-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 34px;
+}
+
+.dm-footer-logo-mark {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #ee4e75,
+    #704fe9,
+    #ffd100
+  );
+
+  border-radius: 50%;
+
+  font-size: 17px;
+}
+
+.dm-footer-logo strong {
+  display: block;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dm-footer-logo span {
+  display: block;
+
+  margin-top: -2px;
+
+  color: #f33574;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   ADDRESS
+===================================================== */
+
+.dm-footer-brand h3,
+.dm-footer-column h3 {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dm-footer-brand p {
+  margin: 0 0 16px;
+
+  color: #f0eef5;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  line-height: 1.55;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.dm-footer-column {
+  padding-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.dm-footer-column a {
+  margin-bottom: 16px;
+
+  color: #f2f0f6;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.dm-footer-column a:hover {
+  opacity: 0.7;
+}
+
+
+/* =====================================================
+   ENROLL BUTTON
+===================================================== */
+
+.dm-footer-info {
+  padding-top: 0;
+}
+
+.dm-footer-enroll {
+  min-width: 120px;
+  height: 34px;
+
+  margin-bottom: 28px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #171228 !important;
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  font-weight: 700 !important;
+}
+
+
+/* =====================================================
+   FOOTER DIVIDER
+===================================================== */
+
+.dm-footer-divider {
+  width: 88%;
+  max-width: 1250px;
+
+  height: 1px;
+
+  margin: 34px auto 0;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.dm-footer-bottom {
+  padding-top: 18px;
+
+  text-align: center;
+
+  color: #f0eef5;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 950px) {
+
+  .dm-footer-container {
+    width: 90%;
+
+    grid-template-columns:
+      1.5fr
+      1fr
+      1fr;
+
+    gap: 40px;
+  }
+
+  .dm-footer-info {
+    grid-column: 2 / 4;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .dm-footer {
+    padding-top: 38px;
+  }
+
+  .dm-footer-container {
+    width: calc(100% - 36px);
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .dm-footer-column,
+  .dm-footer-info {
+    padding-top: 0;
+  }
+
+  .dm-footer-info {
+    grid-column: auto;
+  }
+
+  .dm-footer-divider {
+    width: calc(100% - 36px);
+  }
+}
