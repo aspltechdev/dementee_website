@@ -1,0 +1,912 @@
+.full-stack-page {
+  --fs-purple: #1f0d3b;
+  --fs-dark: #11172c;
+  --fs-orange: #ff6b16;
+  --fs-red: #ef3b3f;
+  --fs-blue: #5148e8;
+  --fs-text: #45414a;
+  --fs-light-text: #68646c;
+  --fs-border: #dedde3;
+  --fs-light-bg: #f8f8fa;
+
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #fff;
+  color: var(--fs-purple);
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================================
+   COMMON
+========================================= */
+
+.full-stack-page *,
+.full-stack-page *::before,
+.full-stack-page *::after {
+  box-sizing: border-box;
+}
+
+.fs-container {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+.fs-section-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.fs-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: #fff0e9;
+  color: var(--fs-orange);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.fs-blue-label {
+  background: #efefff;
+  color: var(--fs-blue);
+}
+
+.fs-orange-label {
+  background: #fff0e9;
+  color: var(--fs-orange);
+}
+
+.fs-section-heading h2 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.fs-section-heading h2 span {
+  color: var(--fs-orange);
+}
+
+.fs-section-heading p {
+  max-width: 690px;
+  margin: 20px auto 0;
+  color: var(--fs-light-text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.fs-hero {
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 110px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(255, 107, 22, 0.09),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(81, 72, 232, 0.1),
+      transparent 30%
+    ),
+    #fff;
+}
+
+.fs-hero-content {
+  width: min(850px, 100%);
+}
+
+.fs-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 17px;
+  border: 1px solid #e7dce9;
+  border-radius: 40px;
+  color: var(--fs-purple);
+  background: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.fs-pill span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--fs-orange);
+}
+
+.fs-hero h1 {
+  margin: 27px 0 20px;
+  font-size: clamp(55px, 8vw, 94px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  color: var(--fs-purple);
+}
+
+.fs-hero h1 span {
+  color: var(--fs-orange);
+}
+
+.fs-hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--fs-light-text);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.fs-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.fs-primary-btn,
+.fs-secondary-btn {
+  min-width: 155px;
+  padding: 14px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.fs-primary-btn {
+  background: var(--fs-purple);
+  color: #fff;
+}
+
+.fs-secondary-btn {
+  border: 1px solid var(--fs-purple);
+  color: var(--fs-purple);
+  background: #fff;
+}
+
+.fs-primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.fs-secondary-btn:hover {
+  background: var(--fs-purple);
+  color: #fff;
+}
+
+/* =========================================
+   TECHNOLOGIES
+========================================= */
+
+.fs-technologies {
+  padding: 110px 0;
+  background: #fff;
+}
+
+.fs-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fs-tech-card {
+  min-height: 220px;
+  padding: 32px;
+  border: 1px solid var(--fs-border);
+  border-radius: 16px;
+  background: #fff;
+  transition: 0.25s ease;
+}
+
+.fs-tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(31, 13, 59, 0.08);
+}
+
+.fs-tech-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  background: #f1eff8;
+  color: var(--fs-purple);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.fs-tech-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.fs-tech-card p {
+  margin: 0;
+  color: var(--fs-light-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   CURRICULUM
+========================================= */
+
+.fs-curriculum {
+  padding: 115px 0;
+  background: var(--fs-light-bg);
+}
+
+.fs-curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fs-curriculum-card {
+  position: relative;
+  min-height: 300px;
+  padding: 35px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--fs-border);
+}
+
+.fs-module-number {
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #dedbe5;
+}
+
+.fs-module-label {
+  margin-bottom: 12px;
+  color: var(--fs-orange);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.fs-curriculum-card h3 {
+  margin: 0 0 14px;
+  font-size: 23px;
+}
+
+.fs-curriculum-card p {
+  margin: 0;
+  color: var(--fs-light-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.fs-projects {
+  padding: 115px 0;
+  background: #fff;
+}
+
+.fs-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fs-project-card {
+  position: relative;
+  min-height: 245px;
+  padding: 35px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--fs-purple);
+  color: #fff;
+}
+
+.fs-project-number {
+  margin-bottom: 70px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.fs-project-card h3 {
+  margin: 0 0 12px;
+  font-size: 25px;
+}
+
+.fs-project-card p {
+  max-width: 470px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   CAREERS
+========================================= */
+
+.fs-careers {
+  padding: 115px 0;
+  background: var(--fs-light-bg);
+}
+
+.fs-career-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.fs-career-card {
+  padding: 30px 25px;
+  border: 1px solid var(--fs-border);
+  border-radius: 15px;
+  background: #fff;
+}
+
+.fs-career-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  background: #fff0e9;
+  color: var(--fs-orange);
+}
+
+.fs-career-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.fs-career-card p {
+  margin: 0;
+  color: var(--fs-light-text);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   SUCCESS STORIES
+========================================= */
+
+.fs-success {
+  padding: 115px 0;
+}
+
+.fs-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.fs-testimonial-card {
+  overflow: hidden;
+  border: 1px solid var(--fs-border);
+  border-radius: 15px;
+  background: #fff;
+}
+
+.fs-testimonial-image {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+}
+
+.fs-testimonial-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.fs-testimonial-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--fs-purple);
+  font-size: 17px;
+}
+
+.fs-testimonial-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px;
+}
+
+.fs-testimonial-info strong {
+  font-size: 15px;
+}
+
+.fs-testimonial-info span {
+  color: var(--fs-light-text);
+  font-size: 12px;
+}
+
+/* =========================================
+   PRICING
+========================================= */
+
+.fs-pricing {
+  padding: 110px 0;
+  background: var(--fs-light-bg);
+}
+
+.fs-pricing-container {
+  width: min(1100px, calc(100% - 80px));
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+  margin: auto;
+}
+
+.fs-pricing-content .fs-label {
+  margin-bottom: 20px;
+}
+
+.fs-pricing-content h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.fs-pricing-content h2 span {
+  color: var(--fs-orange);
+}
+
+.fs-pricing-description {
+  max-width: 530px;
+  margin: 22px 0;
+  color: var(--fs-light-text);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.fs-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.fs-features div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--fs-text);
+  font-size: 13px;
+}
+
+.fs-features svg {
+  color: var(--fs-orange);
+}
+
+.fs-price-card {
+  padding: 40px;
+  border-radius: 18px;
+  background: var(--fs-purple);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(31, 13, 59, 0.2);
+}
+
+.fs-old-price {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.fs-current-price {
+  margin: 5px 0 20px;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.fs-payment-highlight {
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fs-saving,
+.fs-emi {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+}
+
+.fs-enroll-btn {
+  display: block;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 7px;
+  background: var(--fs-orange);
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================
+   VISION CTA
+========================================= */
+
+.fs-vision {
+  padding: 80px 0;
+  background:
+    linear-gradient(
+      110deg,
+      #ff6718 0%,
+      #ef3d51 48%,
+      #5148e8 100%
+    );
+}
+
+.fs-vision-container {
+  width: min(1100px, calc(100% - 80px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: auto;
+  color: #fff;
+}
+
+.fs-vision-label {
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.fs-vision h2 {
+  margin: 0;
+  font-size: clamp(35px, 5vw, 55px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.fs-vision-button {
+  flex-shrink: 0;
+  padding: 15px 28px;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--fs-purple);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================
+   FAQ
+========================================= */
+
+.fs-faq {
+  padding: 110px 0;
+  background: #fff;
+}
+
+.fs-faq-list {
+  max-width: 900px;
+  margin: auto;
+}
+
+.fs-faq-item {
+  border-bottom: 1px solid var(--fs-border);
+}
+
+.fs-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0;
+  border: 0;
+  background: transparent;
+  color: var(--fs-purple);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.fs-faq-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--fs-border);
+  border-radius: 50%;
+}
+
+.fs-faq-answer {
+  padding: 0 50px 25px 0;
+}
+
+.fs-faq-answer p {
+  margin: 0;
+  color: var(--fs-light-text);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.fs-footer {
+  padding: 75px 0 30px;
+  background: var(--fs-dark);
+  color: #fff;
+}
+
+.fs-footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.4fr 1.2fr auto;
+  gap: 40px;
+}
+
+.fs-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.fs-footer-logo-mark {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--fs-orange);
+}
+
+.fs-footer-logo strong,
+.fs-footer-logo span {
+  display: block;
+}
+
+.fs-footer-logo strong {
+  font-size: 16px;
+}
+
+.fs-footer-logo span {
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+}
+
+.fs-footer-brand h3,
+.fs-footer-column h3 {
+  margin: 0 0 18px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.fs-footer-brand p {
+  max-width: 260px;
+  margin: 0 0 9px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.fs-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.fs-footer-column a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.fs-footer-column a:hover {
+  color: #fff;
+}
+
+.fs-footer-enroll {
+  align-self: start;
+  padding: 13px 20px;
+  border-radius: 5px;
+  background: var(--fs-orange);
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.fs-footer-divider {
+  height: 1px;
+  margin: 50px 0 22px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.fs-footer-bottom {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .fs-container {
+    width: min(100% - 40px, 700px);
+  }
+
+  .fs-tech-grid,
+  .fs-curriculum-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fs-career-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fs-pricing-container {
+    width: min(100% - 40px, 700px);
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .fs-footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fs-footer-brand {
+    grid-column: span 2;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .fs-hero {
+    min-height: 600px;
+    padding: 80px 20px;
+  }
+
+  .fs-hero h1 {
+    font-size: 55px;
+    letter-spacing: -2.5px;
+  }
+
+  .fs-hero p {
+    font-size: 14px;
+  }
+
+  .fs-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fs-primary-btn,
+  .fs-secondary-btn {
+    width: 200px;
+  }
+
+  .fs-technologies,
+  .fs-curriculum,
+  .fs-projects,
+  .fs-careers,
+  .fs-success,
+  .fs-pricing,
+  .fs-faq {
+    padding: 80px 0;
+  }
+
+  .fs-tech-grid,
+  .fs-curriculum-grid,
+  .fs-project-grid,
+  .fs-career-grid,
+  .fs-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fs-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .fs-section-heading h2 {
+    font-size: 35px;
+  }
+
+  .fs-features {
+    grid-template-columns: 1fr;
+  }
+
+  .fs-vision {
+    padding: 65px 0;
+  }
+
+  .fs-vision-container {
+    width: calc(100% - 40px);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fs-vision-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fs-footer-top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .fs-footer-brand {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .fs-container,
+  .fs-pricing-container {
+    width: calc(100% - 30px);
+  }
+
+  .fs-hero h1 {
+    font-size: 45px;
+  }
+
+  .fs-tech-card,
+  .fs-curriculum-card,
+  .fs-project-card {
+    padding: 25px;
+  }
+
+  .fs-price-card {
+    padding: 30px 20px;
+  }
+
+  .fs-current-price {
+    font-size: 45px;
+  }
+}

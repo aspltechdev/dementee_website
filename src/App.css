@@ -1013,8 +1013,12 @@
 
 .course-stack {
   position: relative;
-}
+   padding-bottom: 50px;
 
+  /* Gives the final sticky card enough scroll space
+     to reach the same position as the cards above it */
+
+}
 /*
   IMPORTANT:
 
@@ -1257,28 +1261,18 @@
 
   .courses-title {
     font-size: 27px;
-
     margin-bottom: 40px;
   }
 
   .course-card,
   .course-card-2 {
     top: 75px;
-
     min-height: auto;
-
     padding: 25px;
-
     grid-template-columns: 1fr;
-
     gap: 28px;
-
     border-radius: 22px;
   }
-
-  /*
-    Put image after text on mobile.
-  */
 
   .course-card-2 .course-image {
     order: 2;
@@ -1294,14 +1288,6 @@
 
   .course-badge {
     margin-bottom: 22px;
-  }
-
-  .course-info h3 {
-    font-size: 23px;
-  }
-
-  .course-line {
-    margin: 26px 0 20px;
   }
 }
 
@@ -4352,9 +4338,29 @@
 /* LEFT SIDE */
 
 .journey-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+/* First card stays full width */
+.journey-card:first-child {
+  grid-column: 1 / -1;
+}
+
+/* 2023 and 2024 sit beside each other */
+.journey-card:nth-child(2),
+.journey-card:nth-child(3) {
+  grid-column: auto;
+}
+
+/* 2026 goes below */
+.journey-card:nth-child(4) {
+  grid-column: 1 / -1;
+}
+/* Keep the first card exactly as the main/first card */
+.journey-card:first-child {
+  grid-column: 1 / -1;
 }
 
 .journey-card {
@@ -5567,4 +5573,2408 @@ body {
     height: auto;
   }
 }
+/* ============================================================
+   DE MENTEE
+   FULL STACK DEVELOPMENT PAGE
+   FIGMA MATCH
+   ============================================================ */
 
+
+/* ============================================================
+   FONT
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* ============================================================
+   ROOT
+   ============================================================ */
+
+.full-stack-page {
+  --purple: #21103d;
+  --purple-light: #5d46e8;
+
+  --red: #ed353b;
+  --pink: #d75c91;
+
+  --text: #21103d;
+  --body: #4f4b55;
+  --muted: #77727b;
+
+  --border: #dddade;
+  --card-bg: #ffffff;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  font-family: "Poppins", sans-serif;
+
+  color: var(--text);
+  background: #ffffff;
+}
+
+.full-stack-page *,
+.full-stack-page *::before,
+.full-stack-page *::after {
+  box-sizing: border-box;
+}
+
+.full-stack-page img {
+  max-width: 100%;
+}
+
+.full-stack-page a {
+  text-decoration: none;
+}
+
+.full-stack-page button {
+  font-family: inherit;
+}
+
+
+/* ============================================================
+   TOP AREA BACKGROUND
+   HERO + TECHNOLOGIES + CURRICULUM
+   ============================================================ */
+
+.fs-hero,
+.fs-technologies-section,
+.fs-curriculum-section {
+  background-color: #fafafa;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(33, 16, 61, 0.13) 1px,
+      transparent 1.3px
+    );
+
+  background-size: 27px 27px;
+}
+
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+
+.full-stack-page .navbar {
+  position: relative;
+  z-index: 100;
+
+  width: 738px;
+  max-width: calc(100% - 80px);
+
+  height: 45px;
+
+  margin: 24px auto 0;
+
+  padding: 0 9px 0 23px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #e2e0e4;
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  box-shadow:
+    0 7px 18px rgba(30, 20, 40, 0.09);
+}
+
+
+/* logo */
+
+.full-stack-page .logo {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.full-stack-page .logo-mark {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #ef2e62,
+    #7656e8
+  );
+
+  color: #fff;
+
+  font-size: 11px;
+}
+
+.full-stack-page .logo-text {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1;
+}
+
+.full-stack-page .logo-text strong {
+  color: #222;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.full-stack-page .logo-text span {
+  margin-top: 2px;
+
+  color: #e52d55;
+
+  font-size: 5px;
+  font-weight: 700;
+}
+
+
+/* navigation */
+
+.full-stack-page .nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 27px;
+}
+
+.full-stack-page .nav-links > a,
+.full-stack-page .courses-dropdown-btn,
+.full-stack-page .nav-more {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #39353e;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.full-stack-page .nav-links > a:hover,
+.full-stack-page .courses-dropdown-btn:hover,
+.full-stack-page .nav-more:hover {
+  color: var(--red);
+}
+
+
+/* get in touch */
+
+.full-stack-page .get-in-touch {
+  width: 99px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    100deg,
+    #765ce0,
+    #d46182
+  );
+
+  color: #fff !important;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* ============================================================
+   NAVBAR DROPDOWN
+   ============================================================ */
+
+.full-stack-page .courses-dropdown {
+  position: relative;
+}
+
+.full-stack-page .courses-dropdown-menu {
+  position: absolute;
+
+  top: 24px;
+  left: 50%;
+
+  z-index: 999;
+
+  width: 180px;
+
+  padding: 7px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform:
+    translate(-50%, -5px);
+
+  border: 1px solid #dedce1;
+  border-radius: 10px;
+
+  background: #fff;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+
+  transition: 0.2s ease;
+}
+
+.full-stack-page .courses-dropdown:hover
+.courses-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translate(-50%, 0);
+}
+
+.full-stack-page .courses-dropdown-menu a {
+  display: block;
+
+  padding: 9px 10px;
+
+  border-radius: 5px;
+
+  color: #333;
+
+  font-size: 9px;
+}
+
+.full-stack-page .courses-dropdown-menu a:hover {
+  background: #f8f5fa;
+
+  color: var(--red);
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.fs-hero {
+  width: 100%;
+
+  min-height: 320px;
+
+  margin-top: 0;
+
+  padding: 70px 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.fs-hero-content {
+  width: 100%;
+  max-width: 850px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* hide code image from previous implementation */
+
+.fs-hero-visual {
+  display: none !important;
+}
+
+
+/* badge */
+
+.fs-red-pill {
+  height: 30px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0 13px;
+
+  border: 1px solid #cfccd2;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.3);
+
+  color: var(--red);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.3px;
+}
+
+.fs-red-pill span {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--red);
+}
+
+
+/* hero heading */
+
+.fs-hero h1 {
+  margin: 31px 0 0;
+
+  color: var(--purple);
+
+  font-size: 51px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -2.6px;
+}
+
+.fs-hero h1 span {
+  background: linear-gradient(
+    100deg,
+    #a65ab7 0%,
+    #c65b9d 50%,
+    #e35b81 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* description */
+
+.fs-hero-content > p {
+  width: 650px;
+  max-width: 90%;
+
+  margin: 23px auto 0;
+
+  color: #49454d;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+
+  font-weight: 500;
+}
+
+
+/* Figma has no hero buttons */
+
+.fs-hero-actions,
+.fs-hero-points {
+  display: none !important;
+}
+
+
+/* ============================================================
+   TECHNOLOGIES
+   ============================================================ */
+
+.fs-technologies-section {
+  position: relative;
+  z-index: 3;
+
+  width: 832px;
+  max-width: calc(100% - 90px);
+
+  min-height: 207px;
+
+  margin: 30px auto 0;
+
+  padding: 27px 34px 25px;
+
+  border: 1px solid #d9d6db;
+
+  border-radius: 20px;
+
+  background-color: #fff;
+
+  background-image: none;
+
+  box-shadow:
+    0 13px 27px rgba(35, 25, 45, 0.10);
+}
+
+
+/* heading */
+
+.fs-technologies-section .fs-section-heading {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
+  text-align: left;
+}
+
+.fs-technologies-section .fs-label {
+  margin: 0 0 11px;
+
+  color: #77737a;
+
+  font-size: 9px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0;
+}
+
+.fs-technologies-section .fs-section-heading h2 {
+  margin: 0;
+
+  color: var(--purple);
+
+  font-size: 21px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -0.6px;
+}
+
+.fs-technologies-section .fs-section-heading h2 span {
+  color: inherit;
+}
+
+.fs-technologies-section .fs-line {
+  width: 100%;
+  height: 1px;
+
+  margin: 22px 0 0;
+
+  background: #dcd9de;
+}
+
+
+/* technology cards */
+
+.fs-tech-grid {
+  width: 100%;
+
+  margin-top: 19px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 19px;
+}
+
+.fs-tech-card {
+  height: 68px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dedce0;
+
+  border-radius: 10px;
+
+  background: #f8f8f8;
+}
+
+.fs-tech-icon {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5px;
+
+  border-radius: 5px;
+
+  background: #f1f0f2;
+
+  font-size: 15px;
+}
+
+.fs-tech-card strong {
+  color: #17151b;
+
+  font-size: 9px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+
+/* ============================================================
+   CURRICULUM
+   ============================================================ */
+
+.fs-curriculum-section {
+  width: 100%;
+
+  padding: 87px 30px 70px;
+
+  background-color: #fafafa;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(33, 16, 61, 0.13) 1px,
+      transparent 1.3px
+    );
+
+  background-size: 27px 27px;
+}
+
+.fs-curriculum-container {
+  width: 832px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* heading */
+
+.fs-curriculum-section .fs-section-heading {
+  max-width: 550px;
+
+  margin: 0 auto 41px;
+
+  text-align: center;
+}
+
+.fs-curriculum-section .fs-label {
+  display: inline-flex;
+
+  margin: 0 0 21px;
+
+  padding: 7px 18px;
+
+  border-radius: 20px;
+
+  background: #eae9f4;
+
+  color: #5c4ee8;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2px;
+}
+
+.fs-curriculum-section .fs-section-heading h2 {
+  margin: 0;
+
+  color: var(--purple);
+
+  font-size: 28px;
+
+  line-height: 1.12;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.fs-curriculum-section .fs-section-heading h2 span {
+  color: var(--red);
+}
+
+
+/* ============================================================
+   MODULE CARDS
+   ============================================================ */
+
+.fs-module-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 39px;
+}
+
+.fs-module-card {
+  position: relative;
+
+  min-height: 242px;
+
+  padding: 20px 25px;
+
+  border: 1px solid #dddade;
+
+  border-radius: 17px;
+
+  background: #fff;
+
+  box-shadow:
+    0 11px 24px rgba(35, 25, 45, 0.09);
+}
+
+
+/* module badge */
+
+.fs-module-top {
+  display: block;
+}
+
+.fs-module-top > span {
+  display: inline-flex;
+
+  padding: 6px 14px;
+
+  border-radius: 20px;
+
+  background: #f9eeee;
+
+  color: var(--red);
+
+  font-size: 7px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+/* remove old number */
+
+.fs-module-number {
+  display: none !important;
+}
+
+
+/* module heading */
+
+.fs-module-card h3 {
+  margin: 19px 0 13px;
+
+  color: var(--purple);
+
+  font-size: 16px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+
+/* divider */
+
+.fs-module-divider {
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  margin: 0 0 14px;
+
+  background: #e2dfe3;
+}
+
+
+/* In case divider isn't in current JSX */
+
+.fs-module-card h3 + p {
+  padding-top: 14px;
+
+  border-top: 1px solid #e2dfe3;
+}
+
+
+/* description */
+
+.fs-module-card > p {
+  margin: 0;
+
+  color: #69656d;
+
+  font-size: 9.5px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+
+/* remove old "View Module" */
+
+.fs-module-bottom {
+  display: none !important;
+}
+
+
+/* remove roadmap */
+
+.fs-roadmap {
+  display: none !important;
+}
+
+
+/* ============================================================
+   PROJECTS
+   ============================================================ */
+
+.fs-projects-section {
+  width: 100%;
+
+  padding: 72px 30px 85px;
+
+  background: #fff;
+}
+
+.fs-projects-container {
+  width: 840px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* heading */
+
+.fs-project-heading {
+  max-width: 700px;
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+.fs-project-heading .fs-label {
+  display: inline-flex;
+
+  margin-bottom: 18px;
+
+  padding: 7px 20px;
+
+  border-radius: 20px;
+
+  background: #e9e9e9;
+
+  color: var(--red);
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+.fs-project-heading h2 {
+  margin: 0 !important;
+
+  color: var(--purple) !important;
+
+  font-size: 28px !important;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.fs-project-heading h2 span {
+  color: var(--red) !important;
+}
+
+.fs-project-heading > p:last-child {
+  margin-top: 20px;
+
+  color: #4e4a52;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+
+/* ============================================================
+   PROJECT GRID
+   ============================================================ */
+
+.fs-project-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.25fr 0.85fr;
+
+  gap: 28px 28px;
+}
+
+
+/* Make cards look like Figma */
+
+.fs-project-card {
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+
+  border: 1px solid #dedbe0;
+
+  border-radius: 20px;
+
+  background: #fff;
+
+  box-shadow:
+    0 9px 20px rgba(35, 25, 45, 0.07);
+}
+
+
+/* Title ABOVE image */
+
+.fs-project-info {
+  order: 1;
+
+  padding: 27px 30px 15px;
+}
+
+.fs-project-info h3 {
+  margin: 0;
+
+  color: var(--purple);
+
+  font-size: 17px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+}
+
+
+/* Hide descriptions + view project
+   because Figma project cards don't show them */
+
+.fs-project-info p,
+.fs-project-link {
+  display: none !important;
+}
+
+
+/* Image */
+
+.fs-project-image {
+  order: 2;
+
+  position: relative;
+
+  width: calc(100% - 34px);
+
+  height: 195px;
+
+  margin: 0 17px 17px;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+}
+
+.fs-project-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* Figma has no dark project overlay */
+
+.fs-project-overlay {
+  display: none !important;
+}
+
+
+/* First two project cards */
+
+.fs-project-card:nth-child(1),
+.fs-project-card:nth-child(2) {
+  min-height: 292px;
+}
+
+
+/* Last two */
+
+.fs-project-card:nth-child(3),
+.fs-project-card:nth-child(4) {
+  min-height: 292px;
+}
+
+
+/* ============================================================
+   CAREER PATHWAYS
+   ============================================================ */
+
+.fs-career-section {
+  width: 100%;
+
+  padding: 74px 30px 82px;
+
+  background: #fff;
+}
+
+.fs-career-container {
+  width: 840px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* heading */
+
+.fs-career-section .fs-section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+}
+
+.fs-career-section .fs-label {
+  display: inline-flex;
+
+  padding: 7px 20px;
+
+  border-radius: 20px;
+
+  background: #e9e9e9;
+
+  color: #5d4ee8;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+.fs-career-section .fs-section-heading h2 {
+  margin-top: 18px;
+
+  color: var(--purple);
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+.fs-career-section .fs-section-heading h2 span {
+  color: var(--red);
+}
+
+.fs-career-section .fs-section-heading > p:last-child {
+  margin-top: 18px;
+
+  color: #4e4a52;
+
+  font-size: 12px;
+}
+
+
+/* role cards */
+
+.fs-role-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.fs-role-card {
+  position: relative;
+
+  min-height: 166px;
+
+  padding: 17px 18px;
+
+  border: 1px solid #dedbe0;
+
+  border-radius: 18px;
+
+  background: #fff;
+}
+
+
+/* icon */
+
+.fs-role-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 10px;
+
+  border-radius: 6px;
+
+  background: #f2eff2;
+
+  font-size: 13px;
+}
+
+
+/* title */
+
+.fs-role-card h3 {
+  margin: 0;
+
+  color: var(--purple);
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+/* description */
+
+.fs-role-card > p {
+  margin: 9px 0 12px;
+
+  color: #68646b;
+
+  font-size: 8.5px;
+
+  line-height: 1.65;
+}
+
+
+/* divider before salary */
+
+.fs-role-salary {
+  position: absolute;
+
+  left: 18px;
+  right: 18px;
+
+  bottom: 12px;
+
+  padding-top: 10px;
+
+  border-top: 1px solid #e0dde1;
+
+  color: #77737a;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+/* arrow */
+
+.fs-role-arrow {
+  display: none;
+}
+
+
+/* ============================================================
+   SUCCESS STORIES / TESTIMONIALS
+   ============================================================ */
+
+.fs-testimonials-section {
+  width: 100%;
+
+  padding: 83px 30px 90px;
+
+  background: #fff;
+}
+
+.fs-testimonials-container {
+  width: 840px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* heading */
+
+.fs-testimonials-section .fs-section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 47px;
+
+  text-align: center;
+}
+
+.fs-testimonials-section .fs-label {
+  display: inline-flex;
+
+  padding: 7px 21px;
+
+  border-radius: 20px;
+
+  background: #e9e9e9;
+
+  color: var(--red);
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+.fs-testimonials-section .fs-section-heading h2 {
+  margin-top: 18px;
+
+  color: var(--purple);
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+.fs-testimonials-section .fs-section-heading h2 span {
+  color: var(--red);
+}
+
+.fs-testimonials-section .fs-section-heading > p:last-child {
+  margin-top: 19px;
+
+  color: #4e4a52;
+
+  font-size: 12px;
+}
+
+
+/* testimonials */
+
+.fs-testimonial-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.fs-testimonial-card {
+  position: relative;
+
+  min-height: 157px;
+
+  padding: 15px;
+
+  border: 1px solid #dedbe0;
+
+  border-radius: 15px;
+
+  background: #fff;
+}
+
+
+/* stars */
+
+.fs-testimonial-card::before {
+  content: "★★★★★";
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #ffc72c;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+}
+
+.fs-testimonial-quote {
+  display: none;
+}
+
+.fs-testimonial-card > p {
+  margin: 0;
+
+  color: #49464d;
+
+  font-size: 9px;
+
+  line-height: 1.65;
+
+  font-style: italic;
+}
+
+
+/* author */
+
+.fs-testimonial-author {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 14px;
+
+  padding-top: 10px;
+
+  border-top: 1px solid #dedbe0;
+}
+
+.fs-testimonial-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #a9363a;
+
+  color: #fff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.fs-testimonial-author strong {
+  display: block;
+
+  color: #1f1c23;
+
+  font-size: 9px;
+}
+
+.fs-testimonial-author span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #777;
+
+  font-size: 8px;
+}
+
+
+/* ============================================================
+   PRICING
+   ============================================================ */
+
+.fs-pricing-section {
+  width: 100%;
+
+  padding: 65px 30px 70px;
+
+  background: #fff;
+}
+
+.fs-pricing-container {
+  position: relative;
+
+  width: 850px;
+  max-width: 100%;
+
+  min-height: 310px;
+
+  margin: 0 auto;
+
+  padding: 38px 45px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 300px;
+
+  align-items: center;
+
+  gap: 40px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background:
+    radial-gradient(
+      circle at 55% 50%,
+      rgba(70, 56, 160, 0.25),
+      transparent 45%
+    ),
+    #10172c;
+}
+
+
+/* left */
+
+.fs-pricing-content {
+  max-width: 460px;
+}
+
+.fs-pricing-content .fs-label {
+  display: inline-flex;
+
+  padding: 6px 15px;
+
+  border: 1px solid #42485b;
+
+  border-radius: 20px;
+
+  background: #262d43;
+
+  color: #ffcc00;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+.fs-pricing-content h2 {
+  margin: 18px 0 0;
+
+  color: #fff;
+
+  font-size: 35px;
+
+  line-height: 0.99;
+
+  font-weight: 800;
+
+  letter-spacing: -1.2px;
+}
+
+.fs-pricing-content h2 span {
+  background: linear-gradient(
+    100deg,
+    #ffb72b,
+    #f65c9b,
+    #754ee9
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.fs-pricing-content > p:not(.fs-label) {
+  display: none;
+}
+
+
+/* pricing feature list */
+
+.fs-pricing-points {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 13px 30px;
+
+  margin-top: 28px;
+}
+
+.fs-pricing-points div {
+  color: #fff;
+
+  font-size: 9px;
+
+  font-weight: 500;
+}
+
+
+/* ============================================================
+   PRICE CARD
+   ============================================================ */
+
+.fs-price-card {
+  width: 100%;
+
+  min-height: 240px;
+
+  padding: 25px 28px;
+
+  border-radius: 18px;
+
+  background: #fff;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+.fs-price-badge {
+  display: block;
+
+  padding: 0;
+
+  background: none;
+
+  color: #ff3f69;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0;
+}
+
+.fs-price-card h3 {
+  display: none;
+}
+
+.fs-price {
+  margin-top: 14px;
+
+  color: #262329;
+
+  font-size: 39px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.fs-price span {
+  color: #262329;
+
+  font-size: 24px;
+}
+
+.fs-price-card > p {
+  margin-top: 13px;
+
+  color: #68636a;
+
+  font-size: 9px;
+}
+
+.fs-price-divider {
+  display: none;
+}
+
+.fs-price-card ul {
+  margin: 12px 0 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.fs-price-card li {
+  padding: 5px 0;
+
+  color: #666169;
+
+  font-size: 9px;
+}
+
+.fs-price-btn {
+  width: 100%;
+
+  height: 33px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 12px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #ff5b83,
+    #5843e8
+  );
+
+  color: #fff !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.fs-cta-section {
+  width: 100%;
+
+  padding: 34px 30px 75px;
+
+  background: #fff;
+}
+
+.fs-cta-container {
+  position: relative;
+
+  width: 900px;
+  max-width: 100%;
+
+  min-height: 225px;
+
+  margin: 0 auto;
+
+  padding: 45px 58px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #c93558 0%,
+      #8b48aa 45%,
+      #514fe0 100%
+    );
+}
+
+
+/* CTA text */
+
+.fs-cta-content {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 650px;
+}
+
+.fs-cta-content .fs-label {
+  display: none;
+}
+
+.fs-cta-content h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 29px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+}
+
+.fs-cta-content h2 span {
+  color: #fff;
+}
+
+.fs-cta-content > p:not(.fs-label) {
+  max-width: 580px;
+
+  margin: 14px 0 19px;
+
+  color: #fff;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+
+/* yellow button */
+
+.fs-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 103px;
+
+  height: 31px;
+
+  padding: 0 16px;
+
+  border-radius: 20px;
+
+  background: #ffd21c;
+
+  color: #17130d !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+/* image circle */
+
+.fs-cta-code {
+  position: absolute;
+
+  z-index: 2;
+
+  right: 34px;
+  top: 50%;
+
+  width: 145px;
+  height: 145px;
+
+  transform: translateY(-50%);
+
+  border: 8px solid rgba(255,255,255,0.23);
+
+  border-radius: 50%;
+
+  background:
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=85")
+    center / cover no-repeat;
+}
+
+.fs-cta-code div {
+  display: none;
+}
+
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+
+.fs-faq-section {
+  width: 100%;
+
+  padding: 82px 30px 92px;
+
+  background: #fff;
+}
+
+.fs-faq-container {
+  width: 620px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* heading */
+
+.fs-faq-section .fs-section-heading {
+  max-width: none;
+
+  margin: 0 0 43px;
+
+  text-align: center;
+}
+
+.fs-faq-section .fs-label {
+  display: none;
+}
+
+.fs-faq-section .fs-section-heading h2 {
+  margin: 0;
+
+  color: var(--purple);
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.fs-faq-section .fs-section-heading h2 span {
+  color: inherit;
+}
+
+.fs-faq-section .fs-section-heading > p:last-child {
+  display: none;
+}
+
+
+/* FAQ items */
+
+.fs-faq-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+  border: 0;
+}
+
+.fs-faq-item {
+  overflow: hidden;
+
+  border: 1px solid #d9dce5;
+
+  border-radius: 9px;
+
+  background: #f5f7fc;
+}
+
+.fs-faq-question {
+  width: 100%;
+
+  min-height: 59px;
+
+  padding: 0 15px 0 33px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #19152a;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.fs-faq-icon {
+  width: 26px;
+  height: 26px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dfe0e5;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  color: #26212f;
+}
+
+.fs-faq-open .fs-faq-icon {
+  border-color: var(--red);
+
+  background: var(--red);
+
+  color: #fff;
+}
+
+.fs-faq-answer {
+  padding: 0 33px 18px;
+}
+
+.fs-faq-answer p {
+  margin: 0;
+
+  color: #6c6871;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.fs-footer {
+  width: 100%;
+
+  padding: 37px 55px 17px;
+
+  background: #10172b;
+
+  color: #fff;
+}
+
+.fs-footer-container {
+  width: 850px;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+.fs-footer-top {
+  display: grid;
+
+  grid-template-columns:
+    1.55fr
+    0.7fr
+    0.85fr
+    0.8fr;
+
+  gap: 45px;
+}
+
+
+/* footer brand */
+
+.fs-footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.fs-footer-logo-mark {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #ef2e62,
+    #6d52e5
+  );
+
+  color: #fff;
+
+  font-size: 14px;
+}
+
+.fs-footer-logo strong {
+  display: block;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+.fs-footer-logo span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #e92d62;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.fs-footer-brand > p {
+  max-width: 275px;
+
+  margin: 24px 0 0;
+
+  color: #fff;
+
+  font-size: 10px;
+
+  line-height: 1.65;
+}
+
+
+/* footer columns */
+
+.fs-footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.fs-footer-column h3 {
+  margin: 0 0 17px;
+
+  color: #fff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+.fs-footer-column a,
+.fs-footer-column p {
+  margin: 0 0 10px;
+
+  color: #e1e1e5;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+.fs-footer-column a:hover {
+  color: #fff;
+}
+
+
+/* footer divider */
+
+.fs-footer-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 31px 0 16px;
+
+  background: #30374a;
+}
+
+
+/* bottom */
+
+.fs-footer-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.fs-footer-bottom > span {
+  color: #e2e3e8;
+
+  font-size: 9px;
+}
+
+.fs-footer-bottom > div {
+  display: none;
+}
+
+
+/* ============================================================
+   DESKTOP - KEEP FIGMA PROPORTIONS
+   ============================================================ */
+
+@media (min-width: 1200px) {
+
+  .fs-hero {
+    min-height: 325px;
+
+    padding-top: 72px;
+  }
+
+  .fs-technologies-section {
+    margin-top: 30px;
+  }
+
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .full-stack-page .navbar {
+    width: calc(100% - 50px);
+  }
+
+  .fs-tech-grid {
+    gap: 10px;
+  }
+
+  .fs-module-grid {
+    gap: 20px;
+  }
+
+  .fs-project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fs-role-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fs-pricing-container {
+    grid-template-columns: 1fr;
+
+    padding: 40px;
+  }
+
+  .fs-price-card {
+    width: 330px;
+
+    margin: 0 auto;
+  }
+
+  .fs-footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  /* navbar */
+
+  .full-stack-page .navbar {
+    width: calc(100% - 24px);
+
+    max-width: none;
+
+    height: 48px;
+
+    margin-top: 12px;
+
+    padding-left: 14px;
+    padding-right: 7px;
+  }
+
+  .full-stack-page .nav-links {
+    display: none;
+  }
+
+  .full-stack-page .get-in-touch {
+    width: 90px;
+
+    height: 31px;
+
+    font-size: 8px;
+  }
+
+
+  /* hero */
+
+  .fs-hero {
+    min-height: 310px;
+
+    padding: 58px 16px 0;
+  }
+
+  .fs-red-pill {
+    height: 29px;
+
+    padding: 0 12px;
+
+    font-size: 8px;
+  }
+
+  .fs-hero h1 {
+    margin-top: 26px;
+
+    font-size: clamp(38px, 12vw, 53px);
+
+    letter-spacing: -2px;
+  }
+
+  .fs-hero-content > p {
+    width: 100%;
+
+    max-width: 430px;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+  }
+
+
+  /* technologies */
+
+  .fs-technologies-section {
+    width: calc(100% - 24px);
+
+    max-width: none;
+
+    min-height: auto;
+
+    margin-top: 25px;
+
+    padding: 23px 15px 18px;
+
+    border-radius: 17px;
+  }
+
+  .fs-technologies-section .fs-label {
+    font-size: 8px;
+  }
+
+  .fs-technologies-section .fs-section-heading h2 {
+    font-size: 20px;
+  }
+
+  .fs-tech-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-top: 16px;
+  }
+
+  .fs-tech-card {
+    height: 75px;
+  }
+
+
+  /* curriculum */
+
+  .fs-curriculum-section {
+    padding: 65px 14px 60px;
+  }
+
+  .fs-curriculum-section .fs-section-heading h2 {
+    font-size: 26px;
+  }
+
+  .fs-module-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .fs-module-card {
+    min-height: 215px;
+
+    padding: 20px;
+  }
+
+
+  /* projects */
+
+  .fs-projects-section {
+    padding: 65px 14px;
+  }
+
+  .fs-project-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .fs-project-card {
+    min-height: auto !important;
+  }
+
+  .fs-project-image {
+    height: 190px;
+  }
+
+
+  /* career */
+
+  .fs-career-section {
+    padding: 65px 14px;
+  }
+
+  .fs-role-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* testimonials */
+
+  .fs-testimonials-section {
+    padding: 65px 14px;
+  }
+
+  .fs-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* pricing */
+
+  .fs-pricing-section {
+    padding: 50px 14px;
+  }
+
+  .fs-pricing-container {
+    padding: 32px 23px;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .fs-pricing-content h2 {
+    font-size: 32px;
+  }
+
+  .fs-pricing-points {
+    grid-template-columns: 1fr;
+  }
+
+  .fs-price-card {
+    width: 100%;
+  }
+
+
+  /* CTA */
+
+  .fs-cta-section {
+    padding: 25px 12px 65px;
+  }
+
+  .fs-cta-container {
+    min-height: 270px;
+
+    padding: 38px 25px;
+  }
+
+  .fs-cta-content h2 {
+    font-size: 28px;
+  }
+
+  .fs-cta-content > p:not(.fs-label) {
+    max-width: 330px;
+
+    font-size: 10px;
+  }
+
+  .fs-cta-code {
+    width: 100px;
+    height: 100px;
+
+    right: 18px;
+
+    opacity: 0.75;
+  }
+
+
+  /* FAQ */
+
+  .fs-faq-section {
+    padding: 65px 14px 70px;
+  }
+
+  .fs-faq-section .fs-section-heading h2 {
+    font-size: 26px;
+  }
+
+  .fs-faq-question {
+    min-height: 57px;
+
+    padding-left: 18px;
+
+    font-size: 10px;
+  }
+
+  .fs-faq-answer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  /* footer */
+
+  .fs-footer {
+    padding: 45px 20px 20px;
+  }
+
+  .fs-footer-top {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px 25px;
+  }
+
+  .fs-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .fs-footer-bottom {
+    justify-content: center;
+  }
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 420px) {
+
+  .fs-hero {
+    padding-top: 50px;
+  }
+
+  .fs-hero h1 {
+    font-size: 39px;
+
+    letter-spacing: -1.8px;
+  }
+
+  .fs-tech-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .fs-project-image {
+    height: 175px;
+  }
+
+  .fs-footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .fs-footer-brand {
+    grid-column: auto;
+  }
+}

@@ -1,9 +1,10 @@
 import "./App.css";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import { ArrowRight, Play, Plus, Minus } from "lucide-react";
+import { ChevronDown, ArrowRight, Play, Plus, Minus } from "lucide-react";
 import UIUXDesign from "./pages/UIUXDesign";
 import DigitalMarketing from "./pages/DigitalMarketing";
+import AppRoutes from "./routes/AppRoutes";
 import {
   Routes,
   Route,
@@ -258,14 +259,14 @@ const faqs = [
 
           <div className="course-line"></div>
 
-          <div className="course-footer">
-            <span>Duration : 12 Weeks</span>
+       <div className="course-footer">
+  <span>Duration : 12 Weeks</span>
 
-            <a href="#">
-              VIEW DETAILS
-              <ArrowRight size={14} />
-            </a>
-          </div>
+  <Link to="/courses/ui-ux-design">
+    VIEW DETAILS
+    <ArrowRight size={14} />
+  </Link>
+</div>
         </div>
 
         <div className="course-image">
@@ -327,14 +328,14 @@ const faqs = [
 
           <div className="course-line"></div>
 
-          <div className="course-footer">
-            <span>Duration : 2 Months</span>
+        <div className="course-footer">
+  <span>Duration : 2 Months</span>
 
-            <a href="#">
-              VIEW DETAILS
-              <ArrowRight size={14} />
-            </a>
-          </div>
+  <Link to="/courses/full-stack-development">
+    VIEW DETAILS
+    <ArrowRight size={14} />
+  </Link>
+</div>
         </div>
 
         <div className="course-image">
@@ -1045,25 +1046,10 @@ const faqs = [
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-
-      <Route
-        path="/about"
-        element={<About />}
-      />
-
-      <Route
-        path="/courses/ui-ux-design"
-        element={<UIUXDesign />}
-      />
-
-      <Route
-        path="/courses/digital-marketing"
-        element={<DigitalMarketing />}
-      />
-    </Routes>
+    <AppRoutes
+      HomePage={HomePage}
+    
+    />
   );
 }
-
 export default App;

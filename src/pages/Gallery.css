@@ -1,0 +1,849 @@
+/* =====================================================
+   GALLERY PAGE
+===================================================== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.gallery-page {
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: visible;
+
+
+  color: #210d3c;
+
+  font-family: "Poppins", sans-serif;
+
+  background: #f8f8f8;
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+.gallery-page main {
+  background-color: #f8f8f8;
+
+  background-image: radial-gradient(
+    #dddddf 1px,
+    transparent 1px
+  );
+
+  background-size: 17px 17px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.gallery-hero {
+  min-height: 400px;
+
+  padding-top: 135px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.gallery-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  height: 28px;
+
+  padding: 0 15px;
+
+  border: 1px solid #cfcfe0;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  color: #5148e8;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+}
+
+
+.gallery-badge span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #5148e8;
+}
+
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.gallery-hero h1 {
+  margin: 25px 0 17px;
+
+  color: #210d3c;
+
+  font-size: 49px;
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+
+.gallery-hero h1 span {
+  background: linear-gradient(
+    90deg,
+    #574edb 0%,
+    #d45d84 100%
+  );
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.gallery-hero p {
+  margin: 0;
+
+  color: #45414a;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   FILTER BAR
+===================================================== */
+
+.gallery-filters {
+  width: 460px;
+
+  height: 35px;
+
+  margin-top: 28px;
+
+  padding: 4px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-radius: 25px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.gallery-filter {
+  flex: 1;
+
+  height: 27px;
+
+  padding: 0 8px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #34303a;
+
+  font-family: inherit;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+
+.gallery-filter.active {
+  color: #e15e62;
+}
+
+
+/* =====================================================
+   GALLERY AREA
+===================================================== */
+
+.gallery-area {
+  width: 100%;
+
+  padding-bottom: 80px;
+}
+
+
+.gallery-wrapper {
+  width: 900px;
+
+  max-width: calc(100% - 100px);
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.gallery-block {
+  margin-bottom: 58px;
+}
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.gallery-block-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+
+.gallery-section-number {
+  width: 29px;
+  height: 29px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #e9e9ed;
+
+  color: #5148e8;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+.gallery-block-title h2 {
+  margin: 0;
+
+  color: #25103e;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+
+/* =====================================================
+   IMAGE STRIP
+===================================================== */
+
+.gallery-strip {
+  display: flex;
+  gap: 27px;
+
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding-bottom: 8px;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: thin;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* =====================================================
+   IMAGE CARD
+===================================================== */
+
+.gallery-card {
+  position: relative;
+
+  flex: 0 0 265px;
+
+  width: 265px;
+  height: 188px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: #ddd;
+}
+
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =====================================================
+   PLAY BUTTON
+===================================================== */
+
+.gallery-play {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: #e96d58;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+
+.gallery-play svg {
+  margin-left: 2px;
+}
+
+
+/* =====================================================
+   RIGHT ARROW
+===================================================== */
+
+.gallery-arrow {
+  position: absolute;
+
+  right: 12px;
+
+  top: 50%;
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  color: #21103c;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.gallery-arrow:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.gallery-footer {
+  width: 100%;
+
+  padding: 36px 0 22px;
+
+  background: #10172b;
+
+  color: #fff;
+}
+
+
+.gallery-footer-inner {
+  width: 900px;
+
+  max-width: calc(100% - 100px);
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   FOOTER CONTENT
+===================================================== */
+
+.gallery-footer-content {
+  display: grid;
+
+  grid-template-columns:
+    2.2fr
+    1fr
+    1.25fr
+    1fr;
+
+  gap: 45px;
+
+  min-height: 215px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.gallery-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 32px;
+}
+
+
+.gallery-logo-symbol {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #ef3b3f,
+    #f2c335,
+    #5b4bd9
+  );
+
+  color: #fff;
+
+  font-size: 15px;
+}
+
+
+.gallery-logo-name strong {
+  display: block;
+
+  color: #fff;
+
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+
+.gallery-logo-name span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #e72e72;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   FOOTER HEADINGS
+===================================================== */
+
+.gallery-brand h3,
+.gallery-footer-column h3 {
+  margin: 0 0 18px;
+
+  color: #f4f2fb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   ADDRESS
+===================================================== */
+
+.gallery-brand p {
+  max-width: 300px;
+
+  margin: 0 0 13px;
+
+  color: rgba(255, 255, 255, 0.76);
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   FOOTER LINKS
+===================================================== */
+
+.gallery-footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.gallery-footer-column a {
+  color: rgba(255, 255, 255, 0.78);
+
+  text-decoration: none;
+
+  font-size: 11px;
+}
+
+
+.gallery-footer-column a:hover {
+  color: #fff;
+}
+
+
+/* =====================================================
+   ENROLL
+===================================================== */
+
+.gallery-enroll {
+  align-self: flex-start;
+
+  margin-bottom: 20px;
+
+  padding: 10px 25px;
+
+  border-radius: 25px;
+
+  background: #fff;
+
+  color: #21103c !important;
+
+  font-size: 10px !important;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   FOOTER LINE
+===================================================== */
+
+.gallery-footer-line {
+  width: 100%;
+
+  height: 1px;
+
+  margin-top: 15px;
+
+  margin-bottom: 19px;
+
+  background: rgba(255, 255, 255, 0.17);
+}
+
+
+/* =====================================================
+   COPYRIGHT
+===================================================== */
+
+.gallery-copyright {
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+  .gallery-wrapper {
+    max-width: calc(100% - 60px);
+  }
+
+  .gallery-strip {
+    width: 100%;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .gallery-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-footer-inner {
+    max-width: calc(100% - 60px);
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .gallery-hero {
+    padding-top: 120px;
+
+    min-height: 390px;
+  }
+
+
+  .gallery-hero h1 {
+    font-size: 40px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .gallery-hero p {
+    font-size: 12px;
+  }
+
+
+  .desktop-break {
+    display: none;
+  }
+
+
+  .gallery-filters {
+    width: 100%;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    scrollbar-width: none;
+  }
+
+
+  .gallery-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .gallery-filter {
+    flex: 0 0 auto;
+
+    padding: 0 12px;
+  }
+
+
+  .gallery-wrapper {
+    max-width: calc(100% - 30px);
+  }
+
+
+  .gallery-strip {
+    gap: 17px;
+
+    overflow-x: auto;
+  }
+
+
+  .gallery-card {
+    flex-basis: 270px;
+
+    width: 270px;
+
+    height: 190px;
+
+    border-radius: 20px;
+  }
+
+
+  .gallery-footer-inner {
+    max-width: calc(100% - 40px);
+  }
+
+
+  .gallery-footer-content {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px 25px;
+  }
+
+
+  .gallery-brand {
+    grid-column: span 2;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 450px) {
+
+  .gallery-hero h1 {
+    font-size: 34px;
+  }
+
+
+  .gallery-block-title h2 {
+    font-size: 16px;
+  }
+
+
+  .gallery-card {
+    flex-basis: 250px;
+
+    width: 250px;
+
+    height: 175px;
+  }
+
+
+  .gallery-footer-content {
+    grid-template-columns: 1fr;
+  }
+
+
+  .gallery-brand {
+    grid-column: auto;
+  }
+
+}
+/* =====================================================
+   LEFT ARROW
+===================================================== */
+
+.gallery-left-arrow {
+  position: absolute;
+
+  left: 12px;
+  top: 50%;
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #21103c;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.gallery-left-arrow:hover {
+  transform: translateY(-50%) scale(1.05);
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.15);
+}
