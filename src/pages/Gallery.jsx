@@ -1,22 +1,29 @@
 import React, { useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "./Gallery.css";
 
+import about1 from "../assets/about1.png";
+import about2 from "../assets/about2.png";
+import about3 from "../assets/about3.png";
+import about4 from "../assets/about4.png";
+import about5 from "../assets/about5.png";
+
 function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All");
   const galleryRefs = useRef({});
+
   const scrollGallery = (sectionNumber, direction) => {
-  const gallery = galleryRefs.current[sectionNumber];
+    const gallery = galleryRefs.current[sectionNumber];
 
-  if (!gallery) return;
+    if (!gallery) return;
 
-  gallery.scrollBy({
-    left: direction === "left" ? -300 : 300,
-    behavior: "smooth",
-  });
-};
+    gallery.scrollBy({
+      left: direction === "left" ? -300 : 300,
+      behavior: "smooth",
+    });
+  };
 
   const categories = [
     "All",
@@ -26,11 +33,6 @@ function Gallery() {
     "Session Videos",
   ];
 
-  /*
-    Replace these image URLs with your actual gallery images
-    once you have them in src/assets.
-  */
-
   const sections = [
     {
       number: "01",
@@ -38,13 +40,7 @@ function Gallery() {
       category: "Workshops",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=90",
-        },
-        {
-          src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1000&q=90",
-        },
-        {
-          src: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=90",
+          src: about1,
           arrow: true,
         },
       ],
@@ -56,20 +52,8 @@ function Gallery() {
       category: "Podcast Videos",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1000&q=90",
+          src: about2,
           video: true,
-        },
-        {
-          src: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=1000&q=90",
-          video: true,
-        },
-        {
-          src: "https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&w=1000&q=90",
-          video: true,
-        },
-        {
-          src: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=90",
-          arrow: true,
         },
       ],
     },
@@ -80,13 +64,7 @@ function Gallery() {
       category: "Convocation",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1000&q=90",
-        },
-        {
-          src: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1000&q=90",
-        },
-        {
-          src: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=1000&q=90",
+          src: about3,
           arrow: true,
         },
       ],
@@ -98,15 +76,11 @@ function Gallery() {
       category: "Session Videos",
       images: [
         {
-          src: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=1000&q=90",
+          src: about4,
           video: true,
         },
         {
-          src: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=90",
-          video: true,
-        },
-        {
-          src: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=1000&q=90",
+          src: about5,
           video: true,
           arrow: true,
         },
@@ -124,7 +98,11 @@ function Gallery() {
   return (
     <div className="gallery-page">
 
+      {/* ================= NAVBAR ================= */}
+
       <Navbar />
+
+      {/* ================= MAIN ================= */}
 
       <main>
 
@@ -155,6 +133,7 @@ function Gallery() {
             {categories.map((category) => (
               <button
                 key={category}
+                type="button"
                 className={
                   activeFilter === category
                     ? "gallery-filter active"
@@ -169,7 +148,6 @@ function Gallery() {
           </div>
 
         </section>
-
 
         {/* ================= GALLERY SECTIONS ================= */}
 
@@ -198,16 +176,16 @@ function Gallery() {
 
                 </div>
 
-
                 {/* IMAGE STRIP */}
 
-               <div
-  className="gallery-strip"
-  ref={(element) => {
-    galleryRefs.current[section.number] = element;
-  }}
->
-  {section.images.map((image, index) => (
+                <div
+                  className="gallery-strip"
+                  ref={(element) => {
+                    galleryRefs.current[section.number] = element;
+                  }}
+                >
+
+                  {section.images.map((image, index) => (
 
                     <div
                       className="gallery-card"
@@ -219,13 +197,13 @@ function Gallery() {
                         alt={section.title}
                       />
 
-
-                      {/* VIDEO PLAY */}
+                      {/* VIDEO PLAY BUTTON */}
 
                       {image.video && (
                         <button
                           className="gallery-play"
                           type="button"
+                          aria-label="Play video"
                         >
                           <Play
                             size={17}
@@ -234,13 +212,16 @@ function Gallery() {
                         </button>
                       )}
 
-
                       {/* NEXT BUTTON */}
 
                       {image.arrow && (
                         <button
                           className="gallery-arrow"
                           type="button"
+                          aria-label="Next image"
+                          onClick={() =>
+                            scrollGallery(section.number, "right")
+                          }
                         >
                           <ArrowRight size={19} />
                         </button>
@@ -261,7 +242,6 @@ function Gallery() {
         </section>
 
       </main>
-
 
       {/* ================= FOOTER ================= */}
 
@@ -288,7 +268,6 @@ function Gallery() {
 
               </div>
 
-
               <h3>ADDRESS</h3>
 
               <p>
@@ -307,7 +286,6 @@ function Gallery() {
               </p>
 
             </div>
-
 
             {/* EXPLORE */}
 
@@ -337,7 +315,6 @@ function Gallery() {
 
             </div>
 
-
             {/* COURSES */}
 
             <div className="gallery-footer-column">
@@ -357,7 +334,6 @@ function Gallery() {
               </Link>
 
             </div>
-
 
             {/* INFORMATION */}
 
@@ -383,7 +359,6 @@ function Gallery() {
             </div>
 
           </div>
-
 
           <div className="gallery-footer-line"></div>
 

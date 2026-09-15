@@ -1,6 +1,7 @@
 /* =====================================================
    GALLERY PAGE
 ===================================================== */
+
 html,
 body {
   margin: 0;
@@ -8,18 +9,14 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .gallery-page {
   width: 100%;
   min-height: 100vh;
-
   overflow-x: hidden;
   overflow-y: visible;
-
-
   color: #210d3c;
-
   font-family: "Poppins", sans-serif;
-
   background: #f8f8f8;
 }
 
@@ -46,18 +43,13 @@ body {
 
 .gallery-hero {
   min-height: 400px;
-
   padding-top: 135px;
-
   padding-left: 20px;
   padding-right: 20px;
 
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   text-align: center;
 }
 
@@ -68,37 +60,28 @@ body {
 
 .gallery-badge {
   display: inline-flex;
-
   align-items: center;
-
   gap: 8px;
 
   height: 28px;
-
   padding: 0 15px;
 
   border: 1px solid #cfcfe0;
-
   border-radius: 20px;
 
   background: rgba(255, 255, 255, 0.6);
-
   color: #5148e8;
 
   font-size: 10px;
-
   font-weight: 700;
-
   letter-spacing: 0.4px;
 }
-
 
 .gallery-badge span {
   width: 7px;
   height: 7px;
 
   border-radius: 50%;
-
   background: #5148e8;
 }
 
@@ -113,14 +96,10 @@ body {
   color: #210d3c;
 
   font-size: 49px;
-
   line-height: 1.08;
-
   font-weight: 800;
-
   letter-spacing: -2px;
 }
-
 
 .gallery-hero h1 span {
   background: linear-gradient(
@@ -130,9 +109,7 @@ body {
   );
 
   -webkit-background-clip: text;
-
   background-clip: text;
-
   -webkit-text-fill-color: transparent;
 }
 
@@ -147,9 +124,7 @@ body {
   color: #45414a;
 
   font-size: 13px;
-
   line-height: 1.7;
-
   font-weight: 400;
 }
 
@@ -160,17 +135,13 @@ body {
 
 .gallery-filters {
   width: 460px;
-
   height: 35px;
 
   margin-top: 28px;
-
   padding: 4px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
 
   border-radius: 25px;
@@ -181,31 +152,24 @@ body {
     0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-
 .gallery-filter {
   flex: 1;
 
   height: 27px;
-
   padding: 0 8px;
 
   border: 0;
-
   background: transparent;
 
   color: #34303a;
 
   font-family: inherit;
-
   font-size: 8px;
-
   font-weight: 600;
 
   cursor: pointer;
-
   white-space: nowrap;
 }
-
 
 .gallery-filter.active {
   color: #e15e62;
@@ -218,14 +182,11 @@ body {
 
 .gallery-area {
   width: 100%;
-
   padding-bottom: 80px;
 }
 
-
 .gallery-wrapper {
   width: 900px;
-
   max-width: calc(100% - 100px);
 
   margin: 0 auto;
@@ -247,35 +208,28 @@ body {
 
 .gallery-block-title {
   display: flex;
-
   align-items: center;
-
   gap: 10px;
 
   margin-bottom: 25px;
 }
-
 
 .gallery-section-number {
   width: 29px;
   height: 29px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   border-radius: 9px;
 
   background: #e9e9ed;
-
   color: #5148e8;
 
   font-size: 10px;
-
   font-weight: 700;
 }
-
 
 .gallery-block-title h2 {
   margin: 0;
@@ -283,11 +237,8 @@ body {
   color: #25103e;
 
   font-size: 18px;
-
   line-height: 1;
-
   font-weight: 800;
-
   letter-spacing: -0.4px;
 }
 
@@ -308,11 +259,11 @@ body {
   padding-bottom: 8px;
 
   scroll-behavior: smooth;
-
   scrollbar-width: thin;
 
   -webkit-overflow-scrolling: touch;
 }
+
 
 /* =====================================================
    IMAGE CARD
@@ -332,7 +283,6 @@ body {
 
   background: #ddd;
 }
-
 
 .gallery-card img {
   width: 100%;
@@ -358,23 +308,19 @@ body {
   height: 37px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   transform: translate(-50%, -50%);
 
   border: 0;
-
   border-radius: 50%;
 
   background: #e96d58;
-
   color: #fff;
 
   cursor: pointer;
 }
-
 
 .gallery-play svg {
   margin-left: 2px;
@@ -389,36 +335,38 @@ body {
   position: absolute;
 
   right: 12px;
-
   top: 50%;
 
   width: 35px;
   height: 35px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   transform: translateY(-50%);
 
   border: 0;
-
   border-radius: 50%;
 
   background: #fff;
-
   color: #21103c;
 
   cursor: pointer;
 
   box-shadow:
     0 3px 8px rgba(0, 0, 0, 0.1);
-}
 
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
 
 .gallery-arrow:hover {
   transform: translateY(-50%) scale(1.05);
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -436,10 +384,8 @@ body {
   color: #fff;
 }
 
-
 .gallery-footer-inner {
   width: 900px;
-
   max-width: calc(100% - 100px);
 
   margin: 0 auto;
@@ -471,21 +417,17 @@ body {
 
 .gallery-logo {
   display: flex;
-
   align-items: center;
-
   gap: 8px;
 
   margin-bottom: 32px;
 }
-
 
 .gallery-logo-symbol {
   width: 37px;
   height: 37px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -503,17 +445,14 @@ body {
   font-size: 15px;
 }
 
-
 .gallery-logo-name strong {
   display: block;
 
   color: #fff;
 
   font-size: 17px;
-
   line-height: 1;
 }
-
 
 .gallery-logo-name span {
   display: block;
@@ -523,7 +462,6 @@ body {
   color: #e72e72;
 
   font-size: 9px;
-
   font-weight: 600;
 }
 
@@ -539,7 +477,6 @@ body {
   color: #f4f2fb;
 
   font-size: 13px;
-
   font-weight: 700;
 }
 
@@ -556,7 +493,6 @@ body {
   color: rgba(255, 255, 255, 0.76);
 
   font-size: 11px;
-
   line-height: 1.55;
 }
 
@@ -567,12 +503,9 @@ body {
 
 .gallery-footer-column {
   display: flex;
-
   flex-direction: column;
-
   gap: 12px;
 }
-
 
 .gallery-footer-column a {
   color: rgba(255, 255, 255, 0.78);
@@ -581,7 +514,6 @@ body {
 
   font-size: 11px;
 }
-
 
 .gallery-footer-column a:hover {
   color: #fff;
@@ -596,7 +528,6 @@ body {
   align-self: flex-start;
 
   margin-bottom: 20px;
-
   padding: 10px 25px;
 
   border-radius: 25px;
@@ -606,7 +537,6 @@ body {
   color: #21103c !important;
 
   font-size: 10px !important;
-
   font-weight: 700;
 }
 
@@ -617,11 +547,9 @@ body {
 
 .gallery-footer-line {
   width: 100%;
-
   height: 1px;
 
   margin-top: 15px;
-
   margin-bottom: 19px;
 
   background: rgba(255, 255, 255, 0.17);
@@ -678,27 +606,21 @@ body {
 
   .gallery-hero {
     padding-top: 120px;
-
     min-height: 390px;
   }
 
-
   .gallery-hero h1 {
     font-size: 40px;
-
     letter-spacing: -1.5px;
   }
-
 
   .gallery-hero p {
     font-size: 12px;
   }
 
-
   .desktop-break {
     display: none;
   }
-
 
   .gallery-filters {
     width: 100%;
@@ -710,53 +632,41 @@ body {
     scrollbar-width: none;
   }
 
-
   .gallery-filters::-webkit-scrollbar {
     display: none;
   }
 
-
   .gallery-filter {
     flex: 0 0 auto;
-
     padding: 0 12px;
   }
-
 
   .gallery-wrapper {
     max-width: calc(100% - 30px);
   }
 
-
   .gallery-strip {
     gap: 17px;
-
     overflow-x: auto;
   }
 
-
   .gallery-card {
     flex-basis: 270px;
-
     width: 270px;
-
     height: 190px;
 
     border-radius: 20px;
   }
 
-
   .gallery-footer-inner {
     max-width: calc(100% - 40px);
   }
-
 
   .gallery-footer-content {
     grid-template-columns: 1fr 1fr;
 
     gap: 35px 25px;
   }
-
 
   .gallery-brand {
     grid-column: span 2;
@@ -775,75 +685,22 @@ body {
     font-size: 34px;
   }
 
-
   .gallery-block-title h2 {
     font-size: 16px;
   }
 
-
   .gallery-card {
     flex-basis: 250px;
-
     width: 250px;
-
     height: 175px;
   }
-
 
   .gallery-footer-content {
     grid-template-columns: 1fr;
   }
 
-
   .gallery-brand {
     grid-column: auto;
   }
 
-}
-/* =====================================================
-   LEFT ARROW
-===================================================== */
-
-.gallery-left-arrow {
-  position: absolute;
-
-  left: 12px;
-  top: 50%;
-
-  width: 35px;
-  height: 35px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  transform: translateY(-50%);
-
-  border: none;
-
-  border-radius: 50%;
-
-  background: #ffffff;
-
-  color: #21103c;
-
-  cursor: pointer;
-
-  z-index: 5;
-
-  box-shadow:
-    0 3px 8px rgba(0, 0, 0, 0.1);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-
-.gallery-left-arrow:hover {
-  transform: translateY(-50%) scale(1.05);
-
-  box-shadow:
-    0 5px 12px rgba(0, 0, 0, 0.15);
 }

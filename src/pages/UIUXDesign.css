@@ -1515,18 +1515,39 @@
   width: 100%;
   max-width: 115px;
   max-height: 48px;
-
   margin: 0 auto;
-
   object-fit: contain;
-
   display: block;
+
+  filter: grayscale(100%) contrast(120%);
+}
+.company-logo img {
+  width: 115px;
+  height: 48px;
+  object-fit: contain;
+  filter: grayscale(100%);
 }
 
 
 /* =====================================================
    RESPONSIVE
 ===================================================== */
+
+.microsoft-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.microsoft-logo img {
+  width: 115px;
+  height: 48px;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(120%);
+  transform: scale(2.7);
+  transform-origin: center center;
+}
 
 @media (max-width: 1050px) {
 
@@ -2134,12 +2155,17 @@
 .uiux-footer-brand {
   max-width: 390px;
 }
-
 .uiux-footer-logo {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
+}
 
-  gap: 8px;
+.uiux-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 .uiux-footer-logo-mark {

@@ -1,19 +1,19 @@
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import dementeelogo from "../assets/dementeelogo.png";
 
 function Navbar() {
   return (
     <header className="navbar">
 
       {/* LOGO */}
-      <Link to="/" className="logo">
-        <div className="logo-mark">✦</div>
-
-        <div className="logo-text">
-          <strong>De mentee</strong>
-          <span>Technologies</span>
-        </div>
-      </Link>
+   <Link to="/" className="logo">
+  <img
+    src={dementeelogo}
+    alt="De Mentee Technologies"
+    className="dementee-logo"
+  />
+</Link>
 
 
       {/* NAVIGATION */}
@@ -31,19 +31,21 @@ function Navbar() {
         </Link>
 
 
-        {/* COURSES DROPDOWN */}
+        {/* ================= COURSES ================= */}
         <div className="courses-dropdown">
 
           <button
-            className="courses-dropdown-btn"
             type="button"
+            className="courses-dropdown-btn"
           >
-            Courses
+            <span>Courses</span>
+
             <ChevronDown
               className="courses-chevron"
-              size={15}
+              size={14}
             />
           </button>
+
 
           <div className="courses-dropdown-menu">
 
@@ -68,44 +70,49 @@ function Navbar() {
         </div>
 
 
-        {/* MORE DROPDOWN */}
-        <div className="courses-dropdown">
+        {/* ================= MORE ================= */}
+          <div className="more-dropdown">
 
           <button
-            className="courses-dropdown-btn"
             type="button"
+            className="more-dropdown-btn"
           >
-            More
-            <ChevronDown size={14} />
+            <span>More</span>
+
+            <ChevronDown
+              className="more-chevron"
+              size={14}
+            />
           </button>
 
-          <div className="courses-dropdown-menu">
+
+         
+        
+
+
+          <div className="more-dropdown-menu">
+
+            <Link to="/alumni">
+              Alumni
+            </Link>
 
             <Link to="/blog">
               Blog
             </Link>
 
-            <Link to="/alumni">
-              Alumni 
-            </Link>
-
-            
-            <Link to="/gallery">
-              Gallery
-            </Link>
-
             <Link to="/creator">
-              Creator Page
+              Creator
             </Link>
 
           </div>
 
-        </div>
-
-
+</div>
 
         {/* CONTACT */}
-        <Link to="/contact">
+        <Link
+          to="/contact"
+          className="contact-nav-link"
+        >
           Contact Us
         </Link>
 

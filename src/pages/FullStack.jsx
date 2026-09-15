@@ -1,151 +1,48 @@
 import React, { useState } from "react";
+import { ChevronDown, Plus, Minus } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Plus, Minus, Play, Check } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "./FullStack.css";
+import footerlogo from "../assets/footerlogo.png";
 
-function FullStack() {
+import reactimage from "../assets/reactimage.png";
+import nodeimage from "../assets/nodeimage.png";
+import expressimage from "../assets/expressimage.png";
+import mongoimage from "../assets/mongoimage.png";
+import javascriptimage from "../assets/javascriptimage.png";
+import tailwindimage from "../assets/tailwingimage.png";
+
+const FullStack = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
-  const technologies = [
-    {
-      title: "React.js",
-      description: "Build modern, interactive user interfaces.",
-    },
-    {
-      title: "Node.js",
-      description: "Create scalable server-side applications.",
-    },
-    {
-      title: "Express.js",
-      description: "Build fast and flexible backend APIs.",
-    },
-    {
-      title: "MongoDB",
-      description: "Work with flexible NoSQL databases.",
-    },
-    {
-      title: "Javascript",
-      description:
-        "Master the language behind modern web applications.",
-    },
-    {
-      title: "Tailwind CSS",
-      description:
-        "Design responsive and modern interfaces.",
-    },
-  ];
-
-  const curriculum = [
-    {
-      number: "01",
-      module: "MODULE 01",
-      title: "Frontend Development",
-      description:
-        "Master HTML, CSS, JavaScript, React.js and modern frontend development practices.",
-    },
-    {
-      number: "02",
-      module: "MODULE 02",
-      title: "Backend Development",
-      description:
-        "Build scalable APIs using Node.js, Express.js and learn how modern backend systems work.",
-    },
-    {
-      number: "03",
-      module: "MODULE 03",
-      title: "Database & Deployment",
-      description:
-        "Work with MongoDB, authentication, APIs and deployment workflows used in real projects.",
-    },
-  ];
-
-  const projects = [
-    "E-Commerce Platform",
-    "Admin Dashboard",
-    "Netflix Clone",
-    "Real-Time Chat App",
-  ];
-
-  const careers = [
-    {
-      title: "Full Stack Developer",
-      description:
-        "Build complete web applications across frontend and backend systems.",
-    },
-    {
-      title: "Frontend Developer",
-      description:
-        "Create modern, responsive and interactive user experiences.",
-    },
-    {
-      title: "Backend Developer",
-      description:
-        "Develop APIs, databases and scalable server-side applications.",
-    },
-    {
-      title: "Software Engineer",
-      description:
-        "Design, develop and maintain production-ready software solutions.",
-    },
-  ];
-
-  const testimonials = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85",
-      name: "Name",
-      company: "Company",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=85",
-      name: "Name",
-      company: "Company",
-    },
-  ];
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
   const faqs = [
-    {
-      question: "Do I need prior coding experience?",
-      answer:
-        "No. The course is structured to take learners from the fundamentals through advanced full stack development.",
-    },
-    {
-      question: "What technologies will I learn?",
-      answer:
-        "You will work with HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB and Tailwind CSS.",
-    },
-    {
-      question: "Will I build real-world projects?",
-      answer:
-        "Yes. The curriculum includes practical projects designed around real-world applications and business requirements.",
-    },
-    {
-      question: "Will I receive a certificate?",
-      answer:
-        "Yes. You will receive a certificate of completion after successfully completing the course.",
-    },
-    {
-      question: "Is EMI available?",
-      answer:
-        "Yes. EMI is available as 3 monthly payments of ₹15,000.",
-    },
+    "Do I need prior coding experience to join this course?",
+    "Will I get assistance with job placement and interviews?",
+    "What if I miss a live class?",
   ];
 
   return (
     <div className="full-stack-page">
 
+      {/* =====================================================
+          NAVBAR
+      ===================================================== */}
+
       <Navbar />
 
-      {/* =========================================
+
+      {/* =====================================================
           HERO
-      ========================================= */}
+      ===================================================== */}
 
       <section className="fs-hero">
-        <div className="fs-hero-content">
+        <div className="fs-hero-container">
 
-          <div className="fs-pill">
+          <div className="fs-course-badge">
             <span></span>
             FULL STACK DEVELOPMENT COURSE
           </div>
@@ -155,146 +52,168 @@ function FullStack() {
           </h1>
 
           <p>
-            Master modern web development from frontend to backend
-            and build real-world applications that are ready for
-            production.
+            Learn the complete web development stack from frontend to backend
+            and gain the practical skills needed to build modern, scalable web
+            applications.
           </p>
 
-          <div className="fs-hero-buttons">
 
-            <a
-              href="#pricing"
-              className="fs-primary-btn"
-            >
-              Enroll Now
-            </a>
+          {/* TECHNOLOGIES */}
 
-            <a
-              href="#curriculum"
-              className="fs-secondary-btn"
-            >
-              View Curriculum
-            </a>
+          <div className="fs-technologies-card">
 
-          </div>
+            <div className="fs-tech-heading">
+              <span>TECHNOLOGIES INCLUDED</span>
 
-        </div>
-      </section>
-
-
-      {/* =========================================
-          TECHNOLOGIES
-      ========================================= */}
-
-      <section className="fs-technologies">
-
-        <div className="fs-container">
-
-          <div className="fs-section-heading">
-
-            <div className="fs-label">
-              TECHNOLOGIES INCLUDED
+              <h2>Master the Modern Web Stack</h2>
             </div>
 
-            <h2>
-              Master the{" "}
-              <span>Modern Web Stack</span>
-            </h2>
+            <div className="fs-tech-divider"></div>
+<div className="fs-tech-grid">
 
-          </div>
+  <div className="fs-tech-card">
+    <div className="fs-tech-icon">
+      <img src={reactimage} alt="React.js" />
+    </div>
+    <strong>React.js</strong>
+  </div>
 
+  <div className="fs-tech-card">
+    <div className="fs-tech-icon">
+      <img src={nodeimage} alt="Node.js" />
+    </div>
+    <strong>Node.js</strong>
+  </div>
 
-          <div className="fs-tech-grid">
+  <div className="fs-tech-card">
+    <div className="fs-tech-icon">
+      <img src={expressimage} alt="Express.js" />
+    </div>
+    <strong>Express.js</strong>
+  </div>
 
-            {technologies.map((technology) => (
+  <div className="fs-tech-card">
+    <div className="fs-tech-icon">
+      <img src={mongoimage} alt="MongoDB" />
+    </div>
+    <strong>MongoDB</strong>
+  </div>
 
-              <article
-                className="fs-tech-card"
-                key={technology.title}
-              >
+  <div className="fs-tech-card">
+    <div className="fs-tech-icon">
+      <img src={javascriptimage} alt="Javascript" />
+    </div>
+    <strong>Javascript</strong>
+  </div>
 
-                <div className="fs-tech-icon">
-                  {technology.title.charAt(0)}
-                </div>
+  <div className="fs-tech-card">
+    <div className="fs-tech-icon">
+      <img src={tailwindimage} alt="Tailwind CSS" />
+    </div>
+    <strong>Tailwind CSS</strong>
+  </div>
 
-                <h3>
-                  {technology.title}
-                </h3>
-
-                <p>
-                  {technology.description}
-                </p>
-
-              </article>
-
-            ))}
-
+</div>
           </div>
 
         </div>
-
       </section>
 
 
-      {/* =========================================
-          CURRICULUM
-      ========================================= */}
+      {/* =====================================================
+          CURRICULUM ROAD MAP
+      ===================================================== */}
 
-      <section
-        className="fs-curriculum"
-        id="curriculum"
-      >
+      <section className="fs-curriculum">
 
         <div className="fs-container">
 
           <div className="fs-section-heading">
 
-            <div className="fs-label fs-blue-label">
+            <div className="fs-label purple-label">
               CURRICULUM ROAD MAP
             </div>
 
             <h2>
-              Structured Learning From Concept To{" "}
-              <span>Code.</span>
+              Structured Learning
+              <span>From Concept To Code.</span>
             </h2>
-
-            <p>
-              A structured curriculum designed to take you from
-              the fundamentals of web development to building and
-              deploying production-ready applications.
-            </p>
 
           </div>
 
 
           <div className="fs-curriculum-grid">
 
-            {curriculum.map((item) => (
+            {/* MODULE 1 */}
 
-              <article
-                className="fs-curriculum-card"
-                key={item.number}
-              >
+            <article className="fs-curriculum-card">
 
-                <div className="fs-module-number">
-                  {item.number}
-                </div>
+              <div className="fs-module-label">
+                MODULE 1
+              </div>
 
-                <div className="fs-module-label">
-                  {item.module}
-                </div>
+              <h3>
+                Frontend foundation
+                <br />
+                &amp; Modern Js
+              </h3>
 
-                <h3>
-                  {item.title}
-                </h3>
+              <div className="fs-card-divider"></div>
 
-                <p>
-                  {item.description}
-                </p>
+              <p>
+                Master HTML5, CSS3, Flexbox/Grid, Responsive Web Design, ES6
+                JavaScript, DOM Manipulation, and Tailwind CSS.
+              </p>
 
-              </article>
+            </article>
 
-            ))}
+
+            {/* MODULE 2 */}
+
+            <article className="fs-curriculum-card">
+
+              <div className="fs-module-label">
+                MODULE 2
+              </div>
+
+              <h3>
+                React js &amp; Next js
+                <br />
+                Ecosystem
+              </h3>
+
+              <div className="fs-card-divider"></div>
+
+              <p>
+                Deep dive into React components, State management, React Hooks,
+                Next.js App Router, SSR, and API integration.
+              </p>
+
+            </article>
+
+
+            {/* MODULE 3 */}
+
+            <article className="fs-curriculum-card">
+
+              <div className="fs-module-label">
+                MODULE 3
+              </div>
+
+              <h3>
+                Backend Development
+                <br />
+                &amp; Databases
+              </h3>
+
+              <div className="fs-card-divider"></div>
+
+              <p>
+                Build RESTful APIs with Node.js &amp; Express. Learn MongoDB
+                schemas, JWT authentication, and security best practices.
+              </p>
+
+            </article>
 
           </div>
 
@@ -303,69 +222,109 @@ function FullStack() {
       </section>
 
 
-      {/* =========================================
+      {/* =====================================================
           PROJECTS
-      ========================================= */}
+      ===================================================== */}
 
-      <section className="fs-projects">
+   {/* =====================================================
+    PROJECTS
+===================================================== */}
 
-        <div className="fs-container">
+<section className="fs-projects">
+  <div className="fs-container">
 
-          <div className="fs-section-heading">
+    <div className="fs-project-heading">
 
-            <div className="fs-label">
-              REAL WORLD APPLICATION
-            </div>
+      <div className="fs-label red-label">
+        REAL WORLD APPLICATION
+      </div>
 
-            <h2>
-              Projects You'll{" "}
-              <span>Build</span>
-            </h2>
+      <h2>
+        Projects You'll <span>Build</span>
+      </h2>
 
-            <p>
-              Learn by building practical applications inspired
-              by real-world products and business requirements.
-            </p>
+      <p>
+        Build high-impact web apps featuring dynamic UI previews to build
+        a job-ready portfolio.
+      </p>
 
-          </div>
+    </div>
 
 
-          <div className="fs-project-grid">
+    <div className="fs-project-grid">
 
-            {projects.map((project, index) => (
+      {/* E-COMMERCE */}
 
-              <article
-                className="fs-project-card"
-                key={project}
-              >
+      <article className="fs-project-card fs-project-large">
 
-                <div className="fs-project-number">
-                  0{index + 1}
-                </div>
+        <h3>E-Commerce Website</h3>
 
-                <h3>
-                  {project}
-                </h3>
-
-                <p>
-                  Build a practical application while applying
-                  the concepts learned throughout the course.
-                </p>
-
-              </article>
-
-            ))}
-
-          </div>
-
+        <div className="fs-project-image">
+          <img
+            src={tailwindimage}
+            alt="E-Commerce Website"
+          />
         </div>
 
-      </section>
+      </article>
 
 
-      {/* =========================================
-          CAREER OPPORTUNITIES
-      ========================================= */}
+      {/* ADMIN */}
+
+      <article className="fs-project-card">
+
+        <h3>Admin Dashboard</h3>
+
+        <div className="fs-project-image">
+          <img
+            src={tailwindimage}
+            alt="Admin Dashboard"
+          />
+        </div>
+
+      </article>
+
+
+      {/* NETFLIX */}
+
+      <article className="fs-project-card">
+
+        <h3>Netflix Clone</h3>
+
+        <div className="fs-project-image">
+          <img
+            src={tailwindimage}
+            alt="Netflix Clone"
+          />
+        </div>
+
+      </article>
+
+
+      {/* CHAT */}
+
+      <article className="fs-project-card">
+
+        <h3>Real Time Chat App</h3>
+
+        <div className="fs-project-image">
+          <img
+            src={tailwindimage}
+            alt="Real Time Chat App"
+          />
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+      {/* =====================================================
+          CAREER PATHWAYS
+      ===================================================== */}
 
       <section className="fs-careers">
 
@@ -373,18 +332,17 @@ function FullStack() {
 
           <div className="fs-section-heading">
 
-            <div className="fs-label fs-orange-label">
-              CAREER OPPORTUNITIES
+            <div className="fs-label purple-label">
+              CAREER PATHWAYS
             </div>
 
             <h2>
-              Where Can These Skills{" "}
-              <span>Take You?</span>
+              Roles You Can <span>Target</span>
             </h2>
 
             <p>
-              Build the skills needed to step into some of the
-              most in-demand roles in the technology industry.
+              Prepare for high-demand tech positions across top tech startups
+              and MNCs.
             </p>
 
           </div>
@@ -392,28 +350,92 @@ function FullStack() {
 
           <div className="fs-career-grid">
 
-            {careers.map((career) => (
+            {/* CARD 1 */}
 
-              <article
-                className="fs-career-card"
-                key={career.title}
-              >
+            <article className="fs-career-card">
 
-                <div className="fs-career-icon">
-                  ✦
-                </div>
+              <div className="fs-career-icon">
+                💻
+              </div>
 
-                <h3>
-                  {career.title}
-                </h3>
+              <h3>Full Stack Engineer</h3>
 
-                <p>
-                  {career.description}
-                </p>
+              <p>
+                Build end-to-end web applications, handling both client UI and
+                server logic.
+              </p>
 
-              </article>
+              <span>
+                Avg Salary: ₹8L - ₹18L/yr
+              </span>
 
-            ))}
+            </article>
+
+
+            {/* CARD 2 */}
+
+            <article className="fs-career-card">
+
+              <div className="fs-career-icon">
+                ⚛️
+              </div>
+
+              <h3>Frontend Developer</h3>
+
+              <p>
+                Specialize in crafting high-performance, pixel-perfect user
+                interfaces in React &amp; Next.js.
+              </p>
+
+              <span>
+                Avg Salary: ₹6L - ₹14L/yr
+              </span>
+
+            </article>
+
+
+            {/* CARD 3 */}
+
+            <article className="fs-career-card">
+
+              <div className="fs-career-icon">
+                ⚙️
+              </div>
+
+              <h3>Backend Developer</h3>
+
+              <p>
+                Architect scalable APIs, manage MongoDB databases, and handle
+                microservices architecture.
+              </p>
+
+              <span>
+                Avg Salary: ₹7L - ₹16L/yr
+              </span>
+
+            </article>
+
+
+            {/* CARD 4 */}
+
+            <article className="fs-career-card">
+
+              <div className="fs-career-icon">
+                🚀
+              </div>
+
+              <h3>Technical Founder</h3>
+
+              <p>
+                Turn your digital product ideas into real, scalable SaaS
+                products independently.
+              </p>
+
+              <span>
+                Unlimited Potential
+              </span>
+
+            </article>
 
           </div>
 
@@ -422,32 +444,26 @@ function FullStack() {
       </section>
 
 
-      {/* =========================================
+      {/* =====================================================
           SUCCESS STORIES
-      ========================================= */}
+      ===================================================== */}
 
-      <section
-        className="fs-success"
-        id="success"
-      >
+      <section className="fs-success">
 
         <div className="fs-container">
 
           <div className="fs-section-heading">
 
-            <div className="fs-label">
+            <div className="fs-label red-label">
               SUCCESS STORIES
             </div>
 
             <h2>
-              Built By{" "}
-              <span>Learners.</span>
+              What Our <span>Students Say</span>
             </h2>
 
             <p>
-              Hear from learners who developed practical skills
-              and built projects that helped them move forward
-              in their careers.
+              Hear directly from graduates who transformed their coding journey.
             </p>
 
           </div>
@@ -455,46 +471,97 @@ function FullStack() {
 
           <div className="fs-testimonial-grid">
 
-            {testimonials.map(
-              (testimonial, index) => (
+            {/* TESTIMONIAL 1 */}
 
-                <article
-                  className="fs-testimonial-card"
-                  key={index}
-                >
+            <article className="fs-testimonial-card">
 
-                  <div className="fs-testimonial-image">
+              <div className="fs-stars">
+                ★ ★ ★ ★ ★
+              </div>
 
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                    />
+              <p className="fs-testimonial-quote">
+                “ Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                text used in laying out print, graphic or web designs.”
+              </p>
 
-                    <div className="fs-testimonial-play">
-                      <Play
-                        size={18}
-                        fill="currentColor"
-                      />
-                    </div>
+              <div className="fs-testimonial-divider"></div>
 
-                  </div>
+              <div className="fs-testimonial-user">
 
-                  <div className="fs-testimonial-info">
+                <div className="fs-user-avatar">
+                  R
+                </div>
 
-                    <strong>
-                      {testimonial.name}
-                    </strong>
+                <div>
+                  <strong>Name</strong>
+                  <span>Company</span>
+                </div>
 
-                    <span>
-                      {testimonial.company}
-                    </span>
+              </div>
 
-                  </div>
+            </article>
 
-                </article>
 
-              )
-            )}
+            {/* TESTIMONIAL 2 */}
+
+            <article className="fs-testimonial-card">
+
+              <div className="fs-stars">
+                ★ ★ ★ ★ ★
+              </div>
+
+              <p className="fs-testimonial-quote">
+                “ Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                text used in laying out print, graphic or web designs.”
+              </p>
+
+              <div className="fs-testimonial-divider"></div>
+
+              <div className="fs-testimonial-user">
+
+                <div className="fs-user-avatar">
+                  R
+                </div>
+
+                <div>
+                  <strong>Name</strong>
+                  <span>Company</span>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            {/* TESTIMONIAL 3 */}
+
+            <article className="fs-testimonial-card">
+
+              <div className="fs-stars">
+                ★ ★ ★ ★ ★
+              </div>
+
+              <p className="fs-testimonial-quote">
+                “ Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                text used in laying out print, graphic or web designs.”
+              </p>
+
+              <div className="fs-testimonial-divider"></div>
+
+              <div className="fs-testimonial-user">
+
+                <div className="fs-user-avatar">
+                  R
+                </div>
+
+                <div>
+                  <strong>Name</strong>
+                  <span>Company</span>
+                </div>
+
+              </div>
+
+            </article>
 
           </div>
 
@@ -503,54 +570,48 @@ function FullStack() {
       </section>
 
 
-      {/* =========================================
-          PRICING
-      ========================================= */}
+      {/* =====================================================
+          PRICING / ENROLL
+      ===================================================== */}
 
-      <section
-        className="fs-pricing"
-        id="pricing"
-      >
+      <section className="fs-pricing-section">
 
         <div className="fs-pricing-container">
 
-          <div className="fs-pricing-content">
+          <div className="fs-pricing-left">
 
-            <div className="fs-label">
+            <div className="fs-pricing-badge">
               FULL STACK COURSE
             </div>
 
             <h2>
-              Learn Full Stack Development,
+              Learn Full Stack
+              <br />
+              Development,
               <br />
               <span>Build Your Future.</span>
             </h2>
-
-            <p className="fs-pricing-description">
-              Everything you need to become a production-ready
-              full stack developer.
-            </p>
 
 
             <div className="fs-features">
 
               <div>
-                <Check size={18} />
+                <span>✓</span>
                 Live Interactive Classes
               </div>
 
               <div>
-                <Check size={18} />
+                <span>✓</span>
                 Certificate of Completion
               </div>
 
               <div>
-                <Check size={18} />
+                <span>✓</span>
                 Real World Projects
               </div>
 
               <div>
-                <Check size={18} />
+                <span>✓</span>
                 Portfolio Review
               </div>
 
@@ -561,32 +622,33 @@ function FullStack() {
 
           <div className="fs-price-card">
 
-            <div className="fs-old-price">
+            <h3>
+              Full Stack Development Course
+            </h3>
+
+            <div className="fs-price">
               ₹45,000
             </div>
 
-            <div className="fs-current-price">
-              ₹35,000
-            </div>
+            <ul>
 
-            <div className="fs-payment-highlight">
-              🔥 Single Payment: ₹35,000
-            </div>
+              <li>
+                🔥 Single Payment: ₹35,000
+              </li>
 
-            <div className="fs-saving">
-              💰 Save ₹10,000 Today
-            </div>
+              <li>
+                💰 Save ₹10,000 Today
+              </li>
 
-            <div className="fs-emi">
-              💳 EMI Available – 3 x ₹15,000
-            </div>
+              <li>
+                💳 EMI Available – 3 x ₹15,000
+              </li>
 
-            <a
-              href="#enquiry"
-              className="fs-enroll-btn"
-            >
+            </ul>
+
+            <button>
               Enroll now
-            </a>
+            </button>
 
           </div>
 
@@ -595,122 +657,100 @@ function FullStack() {
       </section>
 
 
-      {/* =========================================
-          CTA
-      ========================================= */}
+      {/* =====================================================
+          VISION CTA
+      ===================================================== */}
 
-      <section
-        className="fs-vision"
-        id="enquiry"
-      >
+      <section className="fs-vision">
 
         <div className="fs-vision-container">
 
-          <div>
-
-            <div className="fs-vision-label">
-              OUR VISION
-            </div>
+          <div className="fs-vision-content">
 
             <h2>
-              Your Future Starts
-              <br />
-              With One Decision.
+              Ready to Build the Future with Code?
             </h2>
+
+            <p>
+              Join our Full Stack Development program and develop the skills,
+              projects, and confidence needed to become a professional software
+              developer.
+            </p>
+
+            <button>
+              ENROLL NOW
+            </button>
 
           </div>
 
-          <a
-            href="#pricing"
-            className="fs-vision-button"
-          >
-            ENQUIRY NOW
-          </a>
+
+          <div className="fs-vision-image">
+
+            <img
+              src="/images/full-stack-learning.jpg"
+              alt="Full Stack Development"
+            />
+
+          </div>
 
         </div>
 
       </section>
 
 
-      {/* =========================================
+      {/* =====================================================
           FAQ
-      ========================================= */}
+      ===================================================== */}
 
       <section className="fs-faq">
 
-        <div className="fs-container">
+        <div className="fs-faq-container">
 
-          <div className="fs-section-heading">
-
-            <h2>
-              Common{" "}
-              <span>Questions?</span>
-            </h2>
-
-          </div>
+          <h2>
+            Frequently Asked Questions ?
+          </h2>
 
 
           <div className="fs-faq-list">
 
-            {faqs.map((faq, index) => {
+            {faqs.map((question, index) => (
 
-              const isOpen =
-                openFaq === index;
+              <div
+                className={`fs-faq-item ${
+                  openFaq === index ? "active" : ""
+                }`}
+                key={index}
+              >
 
-              return (
-
-                <div
-                  className={`fs-faq-item ${
-                    isOpen
-                      ? "fs-faq-open"
-                      : ""
-                  }`}
-                  key={faq.question}
+                <button
+                  type="button"
+                  onClick={() => toggleFaq(index)}
                 >
 
-                  <button
-                    type="button"
-                    className="fs-faq-question"
-                    onClick={() =>
-                      setOpenFaq(
-                        isOpen ? null : index
-                      )
-                    }
-                  >
+                  <span>
+                    {question}
+                  </span>
 
-                    <span>
-                      {faq.question}
-                    </span>
-
-                    <span className="fs-faq-icon">
-
-                      {isOpen ? (
-                        <Minus size={17} />
-                      ) : (
-                        <Plus size={17} />
-                      )}
-
-                    </span>
-
-                  </button>
-
-
-                  {isOpen && (
-
-                    <div className="fs-faq-answer">
-
-                      <p>
-                        {faq.answer}
-                      </p>
-
-                    </div>
-
+                  {openFaq === index ? (
+                    <Minus size={14} />
+                  ) : (
+                    <Plus size={14} />
                   )}
 
-                </div>
+                </button>
 
-              );
-            })}
+
+                {openFaq === index && (
+                  <div className="fs-faq-answer">
+                    Yes. Our Full Stack Development course is designed to
+                    provide practical learning, live classes, projects and
+                    guidance throughout the program.
+                  </div>
+                )}
+
+              </div>
+
+            ))}
 
           </div>
 
@@ -719,165 +759,103 @@ function FullStack() {
       </section>
 
 
-      {/* =========================================
+      {/* =====================================================
           FOOTER
-      ========================================= */}
+      ===================================================== */}
 
       <footer className="fs-footer">
 
-        <div className="fs-container">
+        <div className="fs-footer-container">
 
-          <div className="fs-footer-top">
+          <div className="fs-footer-brand">
 
-            {/* BRAND */}
+          <Link to="/" className="fs-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</Link>
 
-            <div className="fs-footer-brand">
+            <h4>ADDRESS</h4>
 
-              <div className="fs-footer-logo">
+            <p>
+              Address: 142, 2nd Floor, Kamaraj Salai, Puducherry,
+              <br />
+              605013
+            </p>
 
-                <div className="fs-footer-logo-mark">
-                  ✦
-                </div>
+            <p>
+              Phone: +91 88703 97432
+            </p>
 
-                <div>
+            <p>
+              info@dementee.in
+            </p>
 
-                  <strong>
-                    De mentee
-                  </strong>
-
-                  <span>
-                    Technologies
-                  </span>
-
-                </div>
-
-              </div>
-
-
-              <h3>
-                ADDRESS
-              </h3>
-
-              <p>
-                Address : 142, 2nd Floor,
-                Kamaraj Salai, Puducherry,
-                605013
-              </p>
-
-              <p>
-                Phone: +91 88703 97432
-              </p>
-
-              <p>
-                info@dementee.in
-              </p>
-
-            </div>
+          </div>
 
 
-            {/* EXPLORE */}
+          <div className="fs-footer-column">
 
-            <div className="fs-footer-column">
+            <h4>EXPLORE</h4>
 
-              <h3>
-                EXPLORE
-              </h3>
+            <Link to="/">Home</Link>
+            <Link to="/alumni">Success story</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/contact">Contact us</Link>
 
-              <Link to="/">
-                Home
-              </Link>
-
-              <a href="#success">
-                Success story
-              </a>
-
-              <a href="#blog">
-                Blog
-              </a>
-
-              <Link to="/about">
-                About us
-              </Link>
-
-              <a href="#contact">
-                Contact us
-              </a>
-
-            </div>
+          </div>
 
 
-            {/* COURSES */}
+          <div className="fs-footer-column">
 
-            <div className="fs-footer-column">
+            <h4>OUR COURSES</h4>
 
-              <h3>
-                OUR COURSES
-              </h3>
+            <Link to="/courses/ui-ux-design">
+              UI / UX Designer
+            </Link>
 
-              <Link to="/courses/ui-ux-design">
-                UI / UX Designer
-              </Link>
+            <Link to="/courses/digital-marketing">
+              Digital marketing
+            </Link>
 
-              <Link to="/courses/digital-marketing">
-                Digital marketing
-              </Link>
+            <Link to="/courses/full-stack-development">
+              Web Development
+            </Link>
 
-              <Link to="/courses/full-stack-development">
-                Web Development
-              </Link>
-
-              <Link to="/courses/career-gap">
-                Career Gap Opportunity
-              </Link>
-
-            </div>
+          </div>
 
 
-            {/* INFORMATION */}
+          <div className="fs-footer-column">
 
-            <div className="fs-footer-column">
-
-              <h3>
-                INFORMATION
-              </h3>
-
-              <a href="#privacy">
-                Privacy policy
-              </a>
-
-              <a href="#terms">
-                Terms & Conditions
-              </a>
-
-            </div>
-
-
-            {/* ENROLL */}
-
-            <a
-              href="#pricing"
-              className="fs-footer-enroll"
-            >
+            <button className="footer-enroll">
               Enroll Today
-            </a>
+            </button>
+
+            <h4>INFORMATION</h4>
+
+            <Link to="#">
+              Privacy policy
+            </Link>
+
+            <Link to="#">
+              Terms &amp; Conditions
+            </Link>
 
           </div>
 
+        </div>
 
-          <div className="fs-footer-divider"></div>
 
-
-          <div className="fs-footer-bottom">
-            © 2024 De Mentee Academy.
-            All Rights Reserved
-          </div>
-
+        <div className="fs-footer-bottom">
+          © 2024 De Mentee Academy. All Rights Reserved
         </div>
 
       </footer>
 
     </div>
   );
-}
+};
 
 export default FullStack;

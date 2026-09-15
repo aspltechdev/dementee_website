@@ -1,35 +1,41 @@
 import { Routes, Route } from "react-router-dom";
 
+import Home from "../pages/Home/Home";
 import About from "../pages/About";
+import Gallery from "../pages/Gallery";
 import UIUXDesign from "../pages/UIUXDesign";
 import DigitalMarketing from "../pages/DigitalMarketing";
-import CareerGap from "../pages/CareerGap";
 import FullStack from "../pages/FullStack";
-import Contact from "../pages/Contact";
-import Blog from "../pages/Blog";
+import CareerGap from "../pages/CareerGap";
+
 import Alumni from "../pages/Alumni";
-import Gallery from "../pages/Gallery";
+import Blog from "../pages/Blog";
+import Contact from "../pages/Contact";
 import CreatorPage from "../pages/CreatorPage";
-function AppRoutes({ HomePage }) {
+
+function AppRoutes() {
   return (
     <Routes>
 
-      {/* HOME */}
+      {/* ================= HOME ================= */}
       <Route
         path="/"
-        element={<HomePage />}
+        element={<Home />}
       />
 
-
-      {/* ABOUT */}
+      {/* ================= ABOUT ================= */}
       <Route
         path="/about"
         element={<About />}
       />
 
+      {/* ================= GALLERY ================= */}
+      <Route
+        path="/gallery"
+        element={<Gallery />}
+      />
 
-      {/* COURSES */}
-
+      {/* ================= COURSES ================= */}
       <Route
         path="/courses/ui-ux-design"
         element={<UIUXDesign />}
@@ -50,32 +56,23 @@ function AppRoutes({ HomePage }) {
         element={<CareerGap />}
       />
 
+      {/* ================= OTHER PAGES ================= */}
 
-      {/* CONTACT */}
-      <Route
-        path="/contact"
-        element={<Contact />}
-      />
-
-      {/* BLOG */}
-      <Route
-        path="/blog"
-        element={<Blog />}
-      />
-
-      {/* ALUMNI */}
       <Route
         path="/alumni"
         element={<Alumni />}
       />
 
-      {/* GALLERY */}
       <Route
-        path="/gallery"
-        element={<Gallery />}
+        path="/blog"
+        element={<Blog />}
       />
 
-      {/* CREATOR PAGE */}
+      <Route
+        path="/contact"
+        element={<Contact />}
+      />
+
       <Route
         path="/creator"
         element={<CreatorPage />}

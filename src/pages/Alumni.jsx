@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "./Alumni.css";
+import footerlogo from "../assets/footerlogo.png";
 
 function Alumni() {
   const [visibleAlumni, setVisibleAlumni] = useState(8);
@@ -302,25 +303,12 @@ function Alumni() {
 
             <div className="alumni-footer-brand">
 
-              <div className="alumni-footer-logo">
-
-                <div className="alumni-footer-logo-mark">
-                  ✦
-                </div>
-
-                <div className="alumni-footer-logo-text">
-
-                  <strong>
-                    De mentee
-                  </strong>
-
-                  <span>
-                    Technologies
-                  </span>
-
-                </div>
-
-              </div>
+            <div className="alumni-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
 
 
               <h3>

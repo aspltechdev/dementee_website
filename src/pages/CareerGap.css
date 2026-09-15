@@ -1087,10 +1087,15 @@
 
 .cg-footer-logo {
   display: flex;
-
   align-items: center;
+  margin-bottom: 32px;
+}
 
-  gap: 8px;
+.cg-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 

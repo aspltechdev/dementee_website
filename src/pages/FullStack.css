@@ -1,912 +1,2135 @@
-.full-stack-page {
-  --fs-purple: #1f0d3b;
-  --fs-dark: #11172c;
-  --fs-orange: #ff6b16;
-  --fs-red: #ef3b3f;
-  --fs-blue: #5148e8;
-  --fs-text: #45414a;
-  --fs-light-text: #68646c;
-  --fs-border: #dedde3;
-  --fs-light-bg: #f8f8fa;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
 
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-  background: #fff;
-  color: var(--fs-purple);
-  font-family: "Poppins", sans-serif;
-}
 
-/* =========================================
-   COMMON
-========================================= */
+/* =========================================================
+   GLOBAL
+========================================================= */
 
-.full-stack-page *,
-.full-stack-page *::before,
-.full-stack-page *::after {
+* {
   box-sizing: border-box;
 }
 
-.fs-container {
-  width: min(1180px, calc(100% - 80px));
-  margin: 0 auto;
+html {
+  scroll-behavior: smooth;
 }
 
-.fs-section-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  color: #210c3b;
+
+  background: #ffffff;
+}
+
+.full-stack-page {
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  background: #ffffff;
+}
+
+.full-stack-page button {
+  font-family: inherit;
+}
+
+.full-stack-page img {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   COMMON CONTAINERS
+========================================================= */
+
+.fs-container {
+  width: 86%;
+  max-width: 1440px;
+
+  margin: 0 auto;
 }
 
 .fs-label {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-  padding: 8px 16px;
+  width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 8px 22px;
+
   border-radius: 30px;
-  background: #fff0e9;
-  color: var(--fs-orange);
+
   font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2px;
 }
 
-.fs-blue-label {
-  background: #efefff;
-  color: var(--fs-blue);
+.purple-label {
+  background: #eeeeee;
+
+  color: #5546f2;
 }
 
-.fs-orange-label {
-  background: #fff0e9;
-  color: var(--fs-orange);
+.red-label {
+  background: #eeeeee;
+
+  color: #ef4a4a;
 }
 
-.fs-section-heading h2 {
-  margin: 0;
-  font-size: clamp(34px, 4vw, 54px);
-  line-height: 1.12;
-  font-weight: 700;
-  letter-spacing: -1.5px;
-}
 
-.fs-section-heading h2 span {
-  color: var(--fs-orange);
-}
-
-.fs-section-heading p {
-  max-width: 690px;
-  margin: 20px auto 0;
-  color: var(--fs-light-text);
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-/* =========================================
+/* =========================================================
    HERO
-========================================= */
+========================================================= */
 
 .fs-hero {
-  min-height: 690px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 40px 110px;
+  width: 100%;
+
+  padding: 70px 0 70px;
+
+  background-color: #fafafa;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(48, 36, 65, 0.14) 1.2px,
+      transparent 1.2px
+    );
+
+  background-size: 20px 20px;
+}
+
+.fs-hero-container {
+  width: 86%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+
   text-align: center;
-  background:
-    radial-gradient(
-      circle at 15% 20%,
-      rgba(255, 107, 22, 0.09),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 85% 80%,
-      rgba(81, 72, 232, 0.1),
-      transparent 30%
-    ),
-    #fff;
 }
 
-.fs-hero-content {
-  width: min(850px, 100%);
-}
 
-.fs-pill {
-  display: inline-flex;
+/* Course badge */
+
+.fs-course-badge {
+  width: fit-content;
+
+  margin: 0 auto 28px;
+
+  padding: 8px 18px;
+
+  display: flex;
+
   align-items: center;
-  gap: 9px;
-  padding: 9px 17px;
-  border: 1px solid #e7dce9;
-  border-radius: 40px;
-  color: var(--fs-purple);
-  background: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+
+  gap: 7px;
+
+  border: 1px solid #ddd9df;
+
+  border-radius: 30px;
+
+  background: #f8f7f8;
+
+  color: #ef3d43;
+
+  font-size: 10px;
+
+  line-height: 1;
+
+  font-weight: 800;
 }
 
-.fs-pill span {
-  width: 7px;
-  height: 7px;
+.fs-course-badge span {
+  width: 5px;
+  height: 5px;
+
   border-radius: 50%;
-  background: var(--fs-orange);
+
+  background: #ef3d43;
 }
+
+
+/* Hero heading */
 
 .fs-hero h1 {
-  margin: 27px 0 20px;
-  font-size: clamp(55px, 8vw, 94px);
-  line-height: 0.98;
-  letter-spacing: -4px;
-  color: var(--fs-purple);
-}
-
-.fs-hero h1 span {
-  color: var(--fs-orange);
-}
-
-.fs-hero p {
-  max-width: 680px;
-  margin: 0 auto;
-  color: var(--fs-light-text);
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-.fs-hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  margin-top: 35px;
-}
-
-.fs-primary-btn,
-.fs-secondary-btn {
-  min-width: 155px;
-  padding: 14px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  transition: 0.25s ease;
-}
-
-.fs-primary-btn {
-  background: var(--fs-purple);
-  color: #fff;
-}
-
-.fs-secondary-btn {
-  border: 1px solid var(--fs-purple);
-  color: var(--fs-purple);
-  background: #fff;
-}
-
-.fs-primary-btn:hover {
-  transform: translateY(-2px);
-}
-
-.fs-secondary-btn:hover {
-  background: var(--fs-purple);
-  color: #fff;
-}
-
-/* =========================================
-   TECHNOLOGIES
-========================================= */
-
-.fs-technologies {
-  padding: 110px 0;
-  background: #fff;
-}
-
-.fs-tech-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.fs-tech-card {
-  min-height: 220px;
-  padding: 32px;
-  border: 1px solid var(--fs-border);
-  border-radius: 16px;
-  background: #fff;
-  transition: 0.25s ease;
-}
-
-.fs-tech-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 35px rgba(31, 13, 59, 0.08);
-}
-
-.fs-tech-icon {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  background: #f1eff8;
-  color: var(--fs-purple);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.fs-tech-card h3 {
-  margin: 0 0 10px;
-  font-size: 20px;
-}
-
-.fs-tech-card p {
   margin: 0;
-  color: var(--fs-light-text);
-  font-size: 13px;
-  line-height: 1.7;
-}
 
-/* =========================================
-   CURRICULUM
-========================================= */
+  color: #210c3b;
 
-.fs-curriculum {
-  padding: 115px 0;
-  background: var(--fs-light-bg);
-}
+  font-size: clamp(40px, 4.5vw, 64px);
 
-.fs-curriculum-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+  line-height: 1;
 
-.fs-curriculum-card {
-  position: relative;
-  min-height: 300px;
-  padding: 35px;
-  border-radius: 16px;
-  background: #fff;
-  border: 1px solid var(--fs-border);
-}
+  font-weight: 800;
 
-.fs-module-number {
-  margin-bottom: 30px;
-  font-size: 42px;
-  font-weight: 700;
-  color: #dedbe5;
-}
-
-.fs-module-label {
-  margin-bottom: 12px;
-  color: var(--fs-orange);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}
-
-.fs-curriculum-card h3 {
-  margin: 0 0 14px;
-  font-size: 23px;
-}
-
-.fs-curriculum-card p {
-  margin: 0;
-  color: var(--fs-light-text);
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-/* =========================================
-   PROJECTS
-========================================= */
-
-.fs-projects {
-  padding: 115px 0;
-  background: #fff;
-}
-
-.fs-project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.fs-project-card {
-  position: relative;
-  min-height: 245px;
-  padding: 35px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--fs-purple);
-  color: #fff;
-}
-
-.fs-project-number {
-  margin-bottom: 70px;
-  color: rgba(255, 255, 255, 0.35);
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.fs-project-card h3 {
-  margin: 0 0 12px;
-  font-size: 25px;
-}
-
-.fs-project-card p {
-  max-width: 470px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-/* =========================================
-   CAREERS
-========================================= */
-
-.fs-careers {
-  padding: 115px 0;
-  background: var(--fs-light-bg);
-}
-
-.fs-career-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.fs-career-card {
-  padding: 30px 25px;
-  border: 1px solid var(--fs-border);
-  border-radius: 15px;
-  background: #fff;
-}
-
-.fs-career-icon {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 22px;
-  border-radius: 12px;
-  background: #fff0e9;
-  color: var(--fs-orange);
-}
-
-.fs-career-card h3 {
-  margin: 0 0 12px;
-  font-size: 18px;
-}
-
-.fs-career-card p {
-  margin: 0;
-  color: var(--fs-light-text);
-  font-size: 12px;
-  line-height: 1.7;
-}
-
-/* =========================================
-   SUCCESS STORIES
-========================================= */
-
-.fs-success {
-  padding: 115px 0;
-}
-
-.fs-testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.fs-testimonial-card {
-  overflow: hidden;
-  border: 1px solid var(--fs-border);
-  border-radius: 15px;
-  background: #fff;
-}
-
-.fs-testimonial-image {
-  position: relative;
-  height: 340px;
-  overflow: hidden;
-}
-
-.fs-testimonial-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.fs-testimonial-play {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: #fff;
-  color: var(--fs-purple);
-  font-size: 17px;
-}
-
-.fs-testimonial-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 20px;
-}
-
-.fs-testimonial-info strong {
-  font-size: 15px;
-}
-
-.fs-testimonial-info span {
-  color: var(--fs-light-text);
-  font-size: 12px;
-}
-
-/* =========================================
-   PRICING
-========================================= */
-
-.fs-pricing {
-  padding: 110px 0;
-  background: var(--fs-light-bg);
-}
-
-.fs-pricing-container {
-  width: min(1100px, calc(100% - 80px));
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 70px;
-  align-items: center;
-  margin: auto;
-}
-
-.fs-pricing-content .fs-label {
-  margin-bottom: 20px;
-}
-
-.fs-pricing-content h2 {
-  margin: 0;
-  font-size: clamp(38px, 5vw, 58px);
-  line-height: 1.1;
   letter-spacing: -2px;
 }
 
-.fs-pricing-content h2 span {
-  color: var(--fs-orange);
+.fs-hero h1 span {
+  color: #c25a9b;
 }
 
-.fs-pricing-description {
-  max-width: 530px;
-  margin: 22px 0;
-  color: var(--fs-light-text);
-  font-size: 14px;
-  line-height: 1.8;
+
+/* Hero description */
+
+.fs-hero > .fs-hero-container > p {
+  max-width: 720px;
+
+  margin: 22px auto 47px;
+
+  color: #3f3944;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  font-weight: 500;
 }
+
+
+/* =========================================================
+   TECHNOLOGIES CARD
+========================================================= */
+
+
+.fs-technologies-card {
+  width: 100%;
+
+  padding: 25px 48px 30px;
+
+  border: 1px solid #dedbe0;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  box-shadow: 0 14px 30px rgba(29, 20, 42, 0.10);
+
+  text-align: left;
+}
+
+.fs-tech-heading span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #817b84;
+
+  font-size: 9px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.fs-tech-heading h2 {
+  margin: 0;
+
+  color: #210c3b;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.fs-tech-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 18px 0 16px;
+
+  background: #ddd9df;
+}
+
+/* Tech grid */
+
+.fs-tech-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+
+/* Individual tech */
+
+.fs-tech-card {
+  height: 58px;
+
+  border: 1px solid #e6e3e7;
+
+  border-radius: 9px;
+
+  background: #fafafa;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  flex-direction: column;
+
+  color: #1f1930;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.fs-tech-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   TECHNOLOGY CARDS
+========================================================= */
+
+.fs-tech-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.fs-tech-card {
+  width: 100%;
+  height: 74px;
+
+  border: 1px solid #e1dee3;
+
+  border-radius: 10px;
+
+  background: #fafafa;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #171126;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+/* Actual PNG image */
+
+.fs-tech-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.fs-tech-icon img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.fs-tech-card strong {
+  font-size: 9px;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   CURRICULUM
+========================================================= */
+
+.fs-curriculum {
+  width: 100%;
+
+  padding: 68px 0 72px;
+
+  background-color: #fafafa;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(48, 36, 65, 0.14) 1.2px,
+      transparent 1.2px
+    );
+
+  background-size: 20px 20px;
+}
+
+
+/* Heading */
+
+.fs-curriculum .fs-section-heading {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 75px;
+}
+
+.fs-curriculum .fs-section-heading .fs-label {
+  margin-bottom: 25px;
+}
+
+.fs-curriculum .fs-section-heading h2 {
+  margin: 0;
+
+  color: #210c3b;
+
+  font-size: 46px;
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.fs-curriculum .fs-section-heading h2 span {
+  display: block;
+
+  color: #ef3d43;
+}
+
+
+/* =========================================================
+   CURRICULUM GRID
+========================================================= */
+
+.fs-curriculum-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 68px;
+}
+
+
+/* =========================================================
+   CURRICULUM CARDS
+========================================================= */
+
+.fs-curriculum-card {
+  width: 100%;
+
+  /*
+     FIXED HEIGHT
+     All three cards are identical.
+  */
+
+  height: 418px;
+  min-height: 418px;
+
+  padding: 30px 54px;
+
+  border: 1px solid #d9d7dc;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 32px rgba(31, 24, 42, 0.12);
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+
+/* Module */
+
+.fs-module-label {
+  width: fit-content;
+
+  height: 42px;
+
+  padding: 0 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 30px;
+
+  background: #f3eeee;
+
+  color: #ef3d43;
+
+  font-size: 15px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+/* Curriculum title */
+
+.fs-curriculum-card h3 {
+  margin: 31px 0 26px;
+
+  color: #210c3b;
+
+  font-size: 29px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+/* Divider */
+
+.fs-card-divider {
+  width: 100%;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  margin-bottom: 27px;
+
+  background: #d7d4d9;
+}
+
+
+/* Description */
+
+.fs-curriculum-card p {
+  margin: 0;
+
+  color: #5e5a61;
+
+  font-size: 17px;
+
+  line-height: 1.65;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.fs-projects {
+  width: 100%;
+
+  padding: 72px 0 92px;
+
+  background: #ffffff;
+}
+
+
+/* Heading */
+
+.fs-project-heading {
+  width: 100%;
+
+  margin-bottom: 72px;
+
+  text-align: center;
+}
+
+.fs-project-heading .fs-label {
+  margin-bottom: 27px;
+}
+
+.fs-project-heading h2 {
+  margin: 0;
+
+  color: #210c3b;
+
+  font-size: 38px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.fs-project-heading h2 span {
+  color: #ef3d43;
+}
+
+.fs-project-heading p {
+  margin: 20px auto 0;
+
+  color: #454148;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   PROJECT GRID
+========================================================= */
+
+.fs-project-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    1.25fr 0.75fr;
+
+  column-gap: 28px;
+
+  row-gap: 30px;
+}
+
+
+/* Project card */
+
+.fs-project-card {
+  width: 100%;
+
+  height: 280px;
+
+  padding: 28px 20px 14px;
+
+  overflow: hidden;
+
+  border: 1px solid #ddd9df;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 26px rgba(31, 24, 42, 0.08);
+}
+
+.fs-project-card h3 {
+  margin: 0 12px 18px;
+
+  color: #210c3b;
+
+  font-size: 18px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+
+/* Project image */
+
+.fs-project-image {
+  width: 100%;
+
+  height: calc(100% - 52px);
+
+  overflow: hidden;
+
+  border-radius: 16px;
+}
+
+.fs-project-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =========================================================
+   CAREER PATHWAYS
+========================================================= */
+
+/* =========================================================
+   CAREER PATHWAYS
+========================================================= */
+
+.fs-careers {
+  width: 100%;
+  padding: 90px 0 120px;
+  background: #ffffff;
+}
+
+.fs-careers .fs-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Heading */
+
+.fs-careers .fs-section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.fs-careers .fs-section-heading .fs-label {
+  margin-bottom: 38px;
+}
+
+.fs-careers .fs-section-heading h2 {
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #18082f;
+  letter-spacing: -1.5px;
+}
+
+.fs-careers .fs-section-heading h2 span {
+  color: #ed3d3d;
+}
+
+.fs-careers .fs-section-heading p {
+  margin: 32px auto 0;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #383838;
+}
+
+/* Career cards */
+
+.fs-career-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.fs-career-card {
+  width: 100%;
+  min-width: 0;
+
+  /* SQUARE SHAPE */
+  aspect-ratio: 1 / 1;
+
+  padding: 28px 28px 25px;
+
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: none;
+}
+
+/* Icon */
+
+.fs-career-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  border-radius: 8px;
+  background: #f4f0f5;
+
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Title */
+
+.fs-career-card h3 {
+  margin: 0 0 18px;
+
+  color: #18082f;
+
+  font-size: 21px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+/* Description */
+
+.fs-career-card p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 14px;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* Bottom salary */
+
+.fs-career-card span {
+  display: block;
+
+  margin-top: auto;
+  padding-top: 18px;
+
+  border-top: 1px solid #d8d8d8;
+
+  color: #888888;
+
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .fs-careers .fs-container {
+    padding: 0 40px;
+  }
+
+  .fs-career-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .fs-career-card {
+    aspect-ratio: 1 / 1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .fs-careers {
+    padding: 70px 0 80px;
+  }
+
+  .fs-careers .fs-container {
+    padding: 0 20px;
+  }
+
+  .fs-careers .fs-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .fs-careers .fs-section-heading .fs-label {
+    margin-bottom: 25px;
+  }
+
+  .fs-careers .fs-section-heading h2 {
+    font-size: 34px;
+  }
+
+  .fs-careers .fs-section-heading p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .fs-career-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .fs-career-card {
+    aspect-ratio: auto;
+    min-height: 300px;
+    padding: 25px;
+    border-radius: 24px;
+  }
+
+}
+
+
+/* =========================================================
+   SUCCESS STORIES
+========================================================= */
+
+.fs-success {
+  width: 100%;
+
+  padding: 8px 0 105px;
+
+  background: #ffffff;
+}
+
+
+/* Heading */
+
+.fs-success .fs-section-heading {
+  width: 100%;
+
+  margin-bottom: 48px;
+
+  text-align: center;
+}
+
+.fs-success .fs-section-heading .fs-label {
+  margin-bottom: 29px;
+}
+
+.fs-success .fs-section-heading h2 {
+  margin: 0;
+
+  color: #210c3b;
+
+  font-size: 38px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.fs-success .fs-section-heading h2 span {
+  color: #ef3d43;
+}
+
+.fs-success .fs-section-heading p {
+  margin: 22px auto 0;
+
+  color: #454148;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   TESTIMONIAL GRID
+========================================================= */
+
+.fs-testimonial-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 31px;
+}
+
+
+/* =========================================================
+   TESTIMONIAL CARD
+========================================================= */
+
+.fs-testimonial-card {
+  width: 100%;
+
+  height: 254px;
+  min-height: 254px;
+
+  padding: 22px 27px;
+
+  border: 1px solid #d8d6db;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* Stars */
+
+.fs-stars {
+  margin: 0 0 19px;
+
+  color: #ffc817;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+}
+
+
+/* Quote */
+
+.fs-testimonial-quote {
+  margin: 0;
+
+  min-height: 76px;
+
+  color: #555159;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+
+/* Divider */
+
+.fs-testimonial-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 14px 0 19px;
+
+  background: #d9d6db;
+}
+
+
+/* User */
+
+.fs-testimonial-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-top: auto;
+}
+
+.fs-user-avatar {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #a72f37;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.fs-testimonial-user strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #171222;
+
+  font-size: 13px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.fs-testimonial-user span {
+  display: block;
+
+  color: #77727b;
+
+  font-size: 10px;
+
+  line-height: 1;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   PRICING SECTION
+========================================================= */
+
+.fs-pricing-section {
+  width: 100%;
+
+  padding: 0 0 72px;
+
+  background: #ffffff;
+}
+
+.fs-pricing-container {
+  width: 86%;
+  max-width: 1440px;
+
+  min-height: 245px;
+
+  margin: 0 auto;
+
+  padding: 30px 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 60% 50%,
+      rgba(72, 67, 183, 0.25),
+      transparent 35%
+    ),
+    #10172d;
+
+  overflow: hidden;
+}
+
+
+/* Left */
+
+.fs-pricing-left {
+  flex: 1;
+}
+
+.fs-pricing-badge {
+  width: fit-content;
+
+  margin-bottom: 15px;
+
+  padding: 5px 15px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  color: #ffd329;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+.fs-pricing-left h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+
+  line-height: 0.98;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.fs-pricing-left h2 span {
+  background: linear-gradient(
+    90deg,
+    #ffb000,
+    #ed4b83,
+    #7454e8
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* Features */
 
 .fs-features {
+  width: 420px;
+
+  margin-top: 23px;
+
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 30px;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 11px 30px;
 }
 
 .fs-features div {
   display: flex;
+
   align-items: center;
-  gap: 9px;
-  color: var(--fs-text);
-  font-size: 13px;
+
+  gap: 8px;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  font-weight: 500;
 }
 
-.fs-features svg {
-  color: var(--fs-orange);
+.fs-features div span {
+  width: 12px;
+  height: 12px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #f2d642;
+
+  border-radius: 50%;
+
+  color: #f2d642;
+
+  font-size: 7px;
 }
+
+
+/* Price card */
 
 .fs-price-card {
-  padding: 40px;
-  border-radius: 18px;
-  background: var(--fs-purple);
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 20px 50px rgba(31, 13, 59, 0.2);
+  width: 315px;
+
+  min-height: 205px;
+
+  padding: 20px 27px;
+
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
 }
 
-.fs-old-price {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  text-decoration: line-through;
+.fs-price-card h3 {
+  margin: 0 0 8px;
+
+  color: #ef3d70;
+
+  font-size: 10px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
 }
 
-.fs-current-price {
-  margin: 5px 0 20px;
-  font-size: 56px;
-  font-weight: 700;
+.fs-price {
+  margin-bottom: 8px;
+
+  color: #222222;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  font-weight: 800;
 }
 
-.fs-payment-highlight {
-  margin-bottom: 13px;
-  font-size: 14px;
-  font-weight: 600;
+.fs-price-card ul {
+  margin: 0 0 14px;
+
+  padding: 0;
+
+  list-style: none;
 }
 
-.fs-saving,
-.fs-emi {
-  margin-top: 9px;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 12px;
+.fs-price-card li {
+  margin-bottom: 5px;
+
+  color: #555159;
+
+  font-size: 8px;
+
+  line-height: 1.3;
 }
 
-.fs-enroll-btn {
-  display: block;
-  margin-top: 30px;
-  padding: 15px;
-  border-radius: 7px;
-  background: var(--fs-orange);
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
+.fs-price-card button {
+  width: 100%;
+
+  height: 27px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #ff5d88,
+    #6b43df
+  );
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  cursor: pointer;
 }
 
-/* =========================================
+
+/* =========================================================
    VISION CTA
-========================================= */
+========================================================= */
 
 .fs-vision {
-  padding: 80px 0;
-  background:
-    linear-gradient(
-      110deg,
-      #ff6718 0%,
-      #ef3d51 48%,
-      #5148e8 100%
-    );
+  width: 100%;
+
+  padding: 0 0 72px;
+
+  background: #ffffff;
 }
 
 .fs-vision-container {
-  width: min(1100px, calc(100% - 80px));
+  width: 86%;
+  max-width: 1440px;
+
+  min-height: 138px;
+
+  margin: 0 auto;
+
+  padding: 27px 37px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    105deg,
+    #c53655,
+    #a23d8d 42%,
+    #5d55df
+  );
+
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  margin: auto;
-  color: #fff;
+
+  overflow: hidden;
 }
 
-.fs-vision-label {
-  margin-bottom: 15px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.6px;
+.fs-vision-content {
+  max-width: 700px;
 }
 
-.fs-vision h2 {
-  margin: 0;
-  font-size: clamp(35px, 5vw, 55px);
+.fs-vision-content h2 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
   line-height: 1.1;
-  letter-spacing: -1.5px;
+
+  font-weight: 800;
 }
 
-.fs-vision-button {
+.fs-vision-content p {
+  max-width: 650px;
+
+  margin: 0 0 15px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+.fs-vision-content button {
+  height: 22px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: #ffd000;
+
+  color: #15100d;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* Image */
+
+.fs-vision-image {
+  width: 102px;
+  height: 102px;
+
   flex-shrink: 0;
-  padding: 15px 28px;
-  border-radius: 6px;
-  background: #fff;
-  color: var(--fs-purple);
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
+
+  padding: 6px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.20);
 }
 
-/* =========================================
+.fs-vision-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
    FAQ
-========================================= */
+========================================================= */
 
 .fs-faq {
-  padding: 110px 0;
-  background: #fff;
+  width: 100%;
+
+  padding: 58px 0 95px;
+
+  background: #ffffff;
+}
+
+.fs-faq-container {
+  width: 86%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+}
+
+.fs-faq-container > h2 {
+  margin: 0 0 39px;
+
+  text-align: center;
+
+  color: #171126;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
 }
 
 .fs-faq-list {
-  max-width: 900px;
-  margin: auto;
+  width: 550px;
+
+  max-width: 100%;
+
+  margin: 0 auto;
 }
 
 .fs-faq-item {
-  border-bottom: 1px solid var(--fs-border);
+  width: 100%;
+
+  margin-bottom: 8px;
+
+  border: 1px solid #dce0eb;
+
+  border-radius: 6px;
+
+  background: #f7f8fd;
+
+  overflow: hidden;
 }
 
-.fs-faq-question {
+.fs-faq-item button {
   width: 100%;
+
+  min-height: 37px;
+
+  padding: 0 15px;
+
+  border: none;
+
+  background: transparent;
+
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 24px 0;
-  border: 0;
-  background: transparent;
-  color: var(--fs-purple);
-  cursor: pointer;
+
   text-align: left;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 600;
+
+  color: #171126;
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  cursor: pointer;
 }
 
-.fs-faq-icon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.fs-faq-item button svg {
+  width: 13px;
+  height: 13px;
+
   flex-shrink: 0;
-  border: 1px solid var(--fs-border);
+
+  padding: 2px;
+
+  border: 1px solid #d7d7dc;
+
   border-radius: 50%;
 }
 
 .fs-faq-answer {
-  padding: 0 50px 25px 0;
+  padding: 0 15px 14px;
+
+  color: #68636c;
+
+  font-size: 9px;
+
+  line-height: 1.5;
 }
 
-.fs-faq-answer p {
-  margin: 0;
-  color: var(--fs-light-text);
-  font-size: 13px;
-  line-height: 1.8;
-}
 
-/* =========================================
+/* =========================================================
    FOOTER
-========================================= */
+========================================================= */
 
 .fs-footer {
-  padding: 75px 0 30px;
-  background: var(--fs-dark);
-  color: #fff;
+  width: 100%;
+
+  padding: 35px 0 0;
+
+  background: #10172d;
+
+  color: #ffffff;
 }
 
-.fs-footer-top {
+.fs-footer-container {
+  width: 86%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 2fr 1fr 1.4fr 1.2fr auto;
-  gap: 40px;
+
+  grid-template-columns:
+    2fr 0.8fr 1fr 0.9fr;
+
+  gap: 55px;
 }
 
 .fs-footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
+}
+
+.fs-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 .fs-footer-logo-mark {
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  background: var(--fs-orange);
-}
+  font-size: 22px;
 
-.fs-footer-logo strong,
-.fs-footer-logo span {
-  display: block;
+  color: #e73565;
 }
 
 .fs-footer-logo strong {
-  font-size: 16px;
+  display: block;
+
+  font-size: 12px;
+
+  line-height: 1;
 }
 
 .fs-footer-logo span {
-  margin-top: 2px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 10px;
+  display: block;
+
+  margin-top: 3px;
+
+  color: #ef3d70;
+
+  font-size: 7px;
+
+  line-height: 1;
 }
 
-.fs-footer-brand h3,
-.fs-footer-column h3 {
-  margin: 0 0 18px;
-  font-size: 10px;
-  letter-spacing: 1.5px;
+.fs-footer h4 {
+  margin: 0 0 15px;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.fs-footer-brand h4 {
+  margin-top: 0;
 }
 
 .fs-footer-brand p {
-  max-width: 260px;
-  margin: 0 0 9px;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 11px;
-  line-height: 1.7;
+  margin: 0 0 12px;
+
+  color: #d0cfda;
+
+  font-size: 7px;
+
+  line-height: 1.5;
 }
 
 .fs-footer-column {
   display: flex;
+
   flex-direction: column;
-  gap: 11px;
+
+  align-items: flex-start;
 }
 
 .fs-footer-column a {
-  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 11px;
+
+  color: #d0cfda;
+
+  font-size: 7px;
+
+  line-height: 1.2;
+
   text-decoration: none;
-  font-size: 11px;
 }
 
 .fs-footer-column a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
-.fs-footer-enroll {
-  align-self: start;
-  padding: 13px 20px;
-  border-radius: 5px;
-  background: var(--fs-orange);
-  color: #fff;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 700;
+
+/* Enroll */
+
+.footer-enroll {
+  margin-bottom: 27px;
+
+  padding: 6px 15px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  color: #20203a;
+
+  font-size: 7px;
+
+  font-weight: 800;
 }
 
-.fs-footer-divider {
-  height: 1px;
-  margin: 50px 0 22px;
-  background: rgba(255, 255, 255, 0.12);
-}
+
+/* Bottom */
 
 .fs-footer-bottom {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 10px;
+  width: 86%;
+  max-width: 1440px;
+
+  margin: 25px auto 0;
+
+  padding: 14px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+  text-align: center;
+
+  color: #d0cfda;
+
+  font-size: 7px;
 }
 
-/* =========================================
-   TABLET
-========================================= */
 
-@media (max-width: 900px) {
-  .fs-container {
-    width: min(100% - 40px, 700px);
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .fs-container,
+  .fs-hero-container,
+  .fs-pricing-container,
+  .fs-vision-container,
+  .fs-faq-container,
+  .fs-footer-container {
+    width: 88%;
   }
 
-  .fs-tech-grid,
+
+  /* Curriculum */
+
   .fs-curriculum-grid {
+    gap: 30px;
+  }
+
+  .fs-curriculum-card {
+    padding: 28px 32px;
+  }
+
+  .fs-curriculum-card h3 {
+    font-size: 24px;
+  }
+
+  .fs-curriculum-card p {
+    font-size: 14px;
+  }
+
+
+  /* Projects */
+
+  .fs-project-grid {
+    gap: 20px;
+  }
+
+
+  /* Career */
+
+  .fs-career-card {
+    padding: 13px 16px;
+  }
+
+
+  /* Pricing */
+
+  .fs-price-card {
+    width: 290px;
+  }
+
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .fs-container,
+  .fs-hero-container,
+  .fs-pricing-container,
+  .fs-vision-container,
+  .fs-faq-container,
+  .fs-footer-container {
+    width: calc(100% - 50px);
+  }
+
+
+  /* Hero */
+
+  .fs-hero {
+    padding-top: 55px;
+  }
+
+  .fs-hero h1 {
+    font-size: 46px;
+  }
+
+
+  /* Technologies */
+
+  .fs-tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* Curriculum */
+
+  .fs-curriculum-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+  }
+
+  .fs-curriculum-card {
+    height: 350px;
+    min-height: 350px;
+
+    padding: 22px;
+  }
+
+  .fs-curriculum-card h3 {
+    font-size: 20px;
+  }
+
+  .fs-curriculum-card p {
+    font-size: 11px;
+  }
+
+
+  /* Projects */
+
+  .fs-project-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Careers */
+
+  .fs-career-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Testimonials */
+
+  .fs-testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+  }
+
+  .fs-testimonial-card {
+    height: 210px;
+    min-height: 210px;
+
+    padding: 17px;
+  }
+
+
+  /* Pricing */
+
+  .fs-pricing-container {
+    padding: 25px;
+
+    gap: 25px;
+  }
+
+  .fs-pricing-left h2 {
+    font-size: 24px;
+  }
+
+  .fs-features {
+    width: 100%;
+  }
+
+  .fs-price-card {
+    width: 270px;
+  }
+
+
+  /* Footer */
+
+  .fs-footer-container {
+    gap: 30px;
+  }
+
+}
+
+
+/* =========================================================
+   700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .fs-container,
+  .fs-hero-container,
+  .fs-pricing-container,
+  .fs-vision-container,
+  .fs-faq-container,
+  .fs-footer-container {
+    width: calc(100% - 30px);
+  }
+
+
+  /* Hero */
+
+  .fs-hero {
+    padding: 45px 0 50px;
+  }
+
+  .fs-hero h1 {
+    font-size: 38px;
+
+    letter-spacing: -1px;
+  }
+
+  .fs-hero > .fs-hero-container > p {
+    font-size: 12px;
+
+    margin-bottom: 35px;
+  }
+
+
+  /* Technologies */
+
+  .fs-technologies-card {
+    padding: 20px;
+  }
+
+  .fs-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Curriculum */
+
+  .fs-curriculum {
+    padding: 50px 0 60px;
+  }
+
+  .fs-curriculum .fs-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .fs-curriculum .fs-section-heading h2 {
+    font-size: 32px;
+  }
+
+  .fs-curriculum-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .fs-curriculum-card {
+    height: 300px;
+    min-height: 300px;
+  }
+
+
+  /* Projects */
+
+  .fs-projects {
+    padding: 55px 0 65px;
+  }
+
+  .fs-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fs-project-card {
+    height: 280px;
+  }
+
+
+  /* Careers */
+
+  .fs-careers {
+    padding: 50px 0 70px;
   }
 
   .fs-career-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .fs-pricing-container {
-    width: min(100% - 40px, 700px);
-    grid-template-columns: 1fr;
-    gap: 45px;
-  }
 
-  .fs-footer-top {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  /* Testimonials */
 
-  .fs-footer-brand {
-    grid-column: span 2;
-  }
-}
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 700px) {
-  .fs-hero {
-    min-height: 600px;
-    padding: 80px 20px;
-  }
-
-  .fs-hero h1 {
-    font-size: 55px;
-    letter-spacing: -2.5px;
-  }
-
-  .fs-hero p {
-    font-size: 14px;
-  }
-
-  .fs-hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .fs-primary-btn,
-  .fs-secondary-btn {
-    width: 200px;
-  }
-
-  .fs-technologies,
-  .fs-curriculum,
-  .fs-projects,
-  .fs-careers,
-  .fs-success,
-  .fs-pricing,
-  .fs-faq {
-    padding: 80px 0;
-  }
-
-  .fs-tech-grid,
-  .fs-curriculum-grid,
-  .fs-project-grid,
-  .fs-career-grid,
   .fs-testimonial-grid {
     grid-template-columns: 1fr;
   }
 
-  .fs-section-heading {
-    margin-bottom: 40px;
+  .fs-testimonial-card {
+    height: 220px;
+    min-height: 220px;
   }
 
-  .fs-section-heading h2 {
-    font-size: 35px;
+
+  /* Pricing */
+
+  .fs-pricing-container {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 28px;
   }
+
+  .fs-price-card {
+    width: 100%;
+  }
+
+
+  /* CTA */
+
+  .fs-vision-container {
+    padding: 25px;
+
+    gap: 20px;
+  }
+
+  .fs-vision-content h2 {
+    font-size: 18px;
+  }
+
+  .fs-vision-image {
+    width: 85px;
+    height: 85px;
+  }
+
+
+  /* Footer */
+
+  .fs-footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   450px
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .fs-hero h1 {
+    font-size: 32px;
+  }
+
+  .fs-tech-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .fs-curriculum .fs-section-heading h2,
+  .fs-project-heading h2,
+  .fs-careers .fs-section-heading h2,
+  .fs-success .fs-section-heading h2 {
+    font-size: 28px;
+  }
+
+
+  .fs-curriculum-card {
+    height: auto;
+
+    min-height: 300px;
+  }
+
+
+  .fs-career-grid {
+    grid-template-columns: 1fr;
+  }
+
 
   .fs-features {
     grid-template-columns: 1fr;
   }
 
-  .fs-vision {
-    padding: 65px 0;
-  }
 
   .fs-vision-container {
-    width: calc(100% - 40px);
     flex-direction: column;
+
     align-items: flex-start;
   }
 
-  .fs-vision-button {
-    width: 100%;
-    text-align: center;
-  }
 
-  .fs-footer-top {
+  .fs-footer-container {
     grid-template-columns: 1fr;
-    gap: 35px;
   }
 
-  .fs-footer-brand {
-    grid-column: auto;
+}
+@media (max-width: 900px) {
+  .fs-tech-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 420px) {
-  .fs-container,
-  .fs-pricing-container {
-    width: calc(100% - 30px);
+@media (max-width: 600px) {
+  .fs-technologies-card {
+    padding: 20px;
   }
 
-  .fs-hero h1 {
-    font-size: 45px;
-  }
+  .fs-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
 
-  .fs-tech-card,
-  .fs-curriculum-card,
-  .fs-project-card {
-    padding: 25px;
+    gap: 12px;
   }
+}
 
-  .fs-price-card {
-    padding: 30px 20px;
-  }
-
-  .fs-current-price {
-    font-size: 45px;
+@media (max-width: 400px) {
+  .fs-tech-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "./Blog.css";
+import footerlogo from "../assets/footerlogo.png";
 
 function Blog() {
   const articles = [
@@ -239,25 +240,12 @@ function Blog() {
 
             <div className="blog-footer-brand">
 
-              <div className="blog-footer-logo">
-
-                <div className="blog-footer-logo-mark">
-                  ✦
-                </div>
-
-                <div className="blog-footer-logo-text">
-
-                  <strong>
-                    De mentee
-                  </strong>
-
-                  <span>
-                    Technologies
-                  </span>
-
-                </div>
-
-              </div>
+          <div className="blog-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
 
 
               <h3>

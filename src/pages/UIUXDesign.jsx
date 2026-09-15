@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import Navbar from "../components/Navbar";
 import "./UIUXDesign.css";
-import "../App.css";
+import footerlogo from "../assets/footerlogo.png";
+
 
 /* =====================================================
    COMPANY LOGOS
@@ -1302,23 +1303,14 @@ const toggleFaq = (index) => {
     {/* LEFT */}
     <div className="uiux-footer-brand">
 
-      <div className="uiux-footer-logo">
-        <div className="uiux-footer-logo-mark">
-          ✦
-        </div>
-
-        <div>
-          <strong>
-            De mentee
-          </strong>
-
-          <span>
-            Technologies
-          </span>
-        </div>
-      </div>
-
-
+<div className="uiux-footer-logo">
+ <div className="uiux-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
+</div>
       <div className="uiux-footer-address">
         <h3>
           ADDRESS

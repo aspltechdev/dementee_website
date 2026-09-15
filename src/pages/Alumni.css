@@ -44,11 +44,11 @@
 /* =========================================================
    HERO
 ========================================================= */
-
 .alumni-hero {
   min-height: 350px;
 
-  padding: 150px 25px 55px;
+  /* Reduced the space below the navbar */
+  padding: 70px 25px 55px;
 
   background-color: #fff;
 
@@ -60,13 +60,11 @@
   background-size: 18px 18px;
 }
 
-
 .alumni-hero-content {
   width: min(860px, calc(100% - 80px));
 
   margin: 0 auto;
 }
-
 
 .alumni-pill {
   display: inline-flex;
@@ -670,14 +668,16 @@
 
 .alumni-footer-logo {
   display: flex;
-
   align-items: center;
-
-  gap: 8px;
-
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
+.alumni-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
 
 .alumni-footer-logo-mark {
   width: 38px;

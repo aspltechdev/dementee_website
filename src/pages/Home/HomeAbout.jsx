@@ -1,7 +1,6 @@
 import { Play } from "lucide-react";
-import "./About.css";
+import "./HomeAbout.css";
 import Navbar from "../components/Navbar";
-import footerlogo from "../assets/footerlogo.png";
 
 function About() {
   return (
@@ -520,12 +519,14 @@ function About() {
   <div className="footer-container">
     <div className="footer-top">
       <div className="footer-brand">
-     <div className="footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
+        <div className="footer-logo">
+          <div className="footer-logo-mark">✦</div>
+
+          <div>
+            <strong>De mentee</strong>
+            <span>Technologies</span>
+          </div>
+        </div>
 
         <h3>ADDRESS</h3>
 

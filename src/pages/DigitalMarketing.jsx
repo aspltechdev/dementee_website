@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import "./DigitalMarketing.css";
 import { useState } from "react";
+import footerlogo from "../assets/footerlogo.png";
 
 function DigitalMarketing() {
   const tools = [
@@ -698,14 +699,12 @@ const [openDmFaq, setOpenDmFaq] = useState(null);
 
     {/* BRAND / ADDRESS */}
     <div className="dm-footer-brand">
-      <div className="dm-footer-logo">
-        <div className="dm-footer-logo-mark">✦</div>
-
-        <div>
-          <strong>De mentee</strong>
-          <span>Technologies</span>
-        </div>
-      </div>
+     <div className="dm-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
 
       <h3>ADDRESS</h3>
 

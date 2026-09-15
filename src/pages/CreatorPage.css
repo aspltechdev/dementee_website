@@ -53,7 +53,7 @@
 .creator-hero {
   min-height: 900px;
 
-  padding-top: 70px;
+  padding-top: 55px;
   padding-bottom: 80px;
 
   background-color: #fafafa;
@@ -71,7 +71,7 @@
 .creator-hero-content {
   width: min(1000px, 90%);
 
-  margin: 60px auto 0;
+  margin: 0 auto;
 
   text-align: center;
 }
@@ -604,6 +604,7 @@
 
 .instagram-icon {
   position: absolute;
+
   right: -15px;
   top: -25px;
 
@@ -613,6 +614,7 @@
   border-radius: 15px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -626,12 +628,14 @@
   );
 
   font-size: 38px;
+
   font-weight: 700;
 }
 
 
 .youtube-icon {
   position: absolute;
+
   left: -5px;
   bottom: -18px;
 
@@ -641,10 +645,12 @@
   border-radius: 12px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   color: white;
+
   background: red;
 
   font-size: 22px;
@@ -653,6 +659,7 @@
 
 .linkedin-icon {
   position: absolute;
+
   right: 30px;
   bottom: 15px;
 
@@ -662,15 +669,19 @@
   border-radius: 8px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   color: white;
+
   background: #0784c4;
 
   font-size: 18px;
+
   font-weight: 700;
 }
+
 
 .creator-stat-side {
   display: flex;
@@ -1381,6 +1392,7 @@
 
 .meetup-image img {
   width: 100%;
+
   height: 160px;
 
   object-fit: cover;
@@ -1524,33 +1536,18 @@
 
 .creator-footer-logo {
   display: flex;
-
   align-items: center;
+  margin-bottom: 32px;
+}
 
-  gap: 8px;
-
-  margin-bottom: 35px;
+.creator-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 
-.creator-logo-mark {
-  width: 38px;
-  height: 38px;
-
-  border-radius: 50%;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  background: linear-gradient(
-    135deg,
-    #f52c65,
-    #5c46e7,
-    #ffc800
-  );
-}
 
 
 .creator-footer-logo strong {
@@ -1742,12 +1739,12 @@
 @media (max-width: 700px) {
 
   .creator-hero {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
 
   .creator-hero-content {
-    margin-top: 35px;
+    margin-top: 0;
   }
 
 

@@ -57,9 +57,9 @@
 ========================================================= */
 
 .blog-hero {
-  min-height: 425px;
+  min-height: 330px;
 
-  padding: 150px 25px 65px;
+  padding: 65px 25px 55px;
 
   display: flex;
   flex-direction: column;
@@ -571,17 +571,18 @@
 /* =========================================================
    FOOTER BRAND
 ========================================================= */
-
 .blog-footer-logo {
   display: flex;
-
   align-items: center;
-
-  gap: 9px;
-
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
+.blog-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
 
 .blog-footer-logo-mark {
   width: 39px;
@@ -783,9 +784,9 @@
 @media (max-width: 700px) {
 
   .blog-hero {
-    min-height: 390px;
+    min-height: 330px;
 
-    padding: 125px 20px 60px;
+    padding: 65px 20px 50px;
   }
 
 
@@ -926,7 +927,7 @@
 @media (max-width: 450px) {
 
   .blog-hero {
-    padding-top: 115px;
+    padding-top: 60px;
   }
 
 

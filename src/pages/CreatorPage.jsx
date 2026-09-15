@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Plus, Minus, Play } from "lucide-react";
-
+import footerlogo from "../assets/footerlogo.png";
 
 import "./CreatorPage.css";
 
@@ -623,18 +623,12 @@ function CreatorPage() {
 
             <div className="creator-footer-brand">
 
-              <div className="creator-footer-logo">
-
-                <div className="creator-logo-mark">
-                  ✦
-                </div>
-
-                <div>
-                  <strong>De mentee</strong>
-                  <span>Technologies</span>
-                </div>
-
-              </div>
+           <div className="creator-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
 
               <h3>ADDRESS</h3>
 

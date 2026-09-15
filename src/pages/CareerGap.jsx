@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Plus, Minus, Play } from "lucide-react";
-
+import footerlogo from "../assets/footerlogo.png";
 import Navbar from "../components/Navbar";
 
 import "./CareerGap.css";
@@ -539,26 +539,12 @@ function CareerGap() {
 
             <div className="cg-footer-brand">
 
-              <div className="cg-footer-logo">
-
-                <div className="cg-footer-logo-mark">
-                  ✦
-                </div>
-
-                <div>
-
-                  <strong>
-                    De mentee
-                  </strong>
-
-                  <span>
-                    Technologies
-                  </span>
-
-                </div>
-
-              </div>
-
+            <div className="cg-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
 
               <h3>
                 ADDRESS

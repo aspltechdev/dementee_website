@@ -1,0 +1,2870 @@
+/* =====================================================
+   GLOBAL PAGE
+===================================================== */
+
+.site {
+  width: 100%;
+  min-height: 100vh;
+
+  /* navbar closer to top */
+  padding-top: 8px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* =====================================================
+   COMMON WIDTH
+===================================================== */
+
+.navbar,
+.hero,
+.stats-bar,
+.service-grid {
+  width: 86%;
+  max-width: 1280px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  height: 65px;
+
+  padding: 0 17px 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(255, 255, 255, 0.98);
+
+  border: 1px solid #e4dfe7;
+  border-radius: 34px;
+
+  box-shadow: 0 8px 24px rgba(27, 14, 39, 0.06);
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  min-width: 150px;
+}
+
+.logo-mark {
+  width: 29px;
+  height: 29px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ed3d95;
+
+  font-size: 27px;
+  line-height: 1;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text strong {
+  color: #1b1020;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 15px;
+  line-height: 15px;
+
+  font-weight: 700;
+}
+
+.logo-text span {
+  margin-top: 3px;
+
+  color: #ec3e95;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 7px;
+  line-height: 8px;
+
+  font-weight: 500;
+}
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 39px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #221827;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #e13f96;
+}
+
+/* =====================================================
+   GET IN TOUCH
+===================================================== */
+
+.get-in-touch {
+  width: 136px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    #705adc 0%,
+    #8962dc 55%,
+    #cb5e79 100%
+  );
+
+  border-radius: 25px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+  margin-top: 70px;
+  margin-bottom: 72px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.88fr)
+    minmax(0, 1.12fr);
+
+  align-items: center;
+
+  gap: 75px;
+}
+
+/* =====================================================
+   HERO LEFT
+===================================================== */
+
+.hero-content {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =====================================================
+   COMPANY TAG
+===================================================== */
+
+.company-tag {
+  width: fit-content;
+  height: 30px;
+
+  margin-bottom: 25px;
+
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #e94091;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e0e5;
+  border-radius: 20px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+.company-tag span {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  background: #ec3f93;
+
+  border-radius: 50%;
+}
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #19082e;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(50px, 4.25vw, 63px);
+
+  line-height: 0.94;
+
+  letter-spacing: -2.7px;
+
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  color: transparent;
+
+  background: linear-gradient(
+    90deg,
+    #df4f9a 0%,
+    #d95aa3 45%,
+    #6750d8 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* =====================================================
+   HERO DESCRIPTION
+===================================================== */
+
+.hero-description {
+  width: 100%;
+  max-width: 440px;
+
+  margin-top: 27px;
+
+  color: #554e58;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 12px;
+  line-height: 1.65;
+
+  font-weight: 400;
+}
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.hero-actions {
+  margin-top: 23px;
+  padding-bottom: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  border-bottom: 1px solid rgba(35, 24, 45, 0.15);
+}
+
+.explore-btn {
+  height: 40px;
+
+  padding: 0 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: linear-gradient(
+    90deg,
+    #ef398e,
+    #da3baa
+  );
+
+  border-radius: 22px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+.enroll-btn {
+  width: 110px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #17101c;
+
+  background: #ffffff;
+
+  border: 1px solid #ded9e0;
+  border-radius: 22px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+/* =====================================================
+   STUDENTS
+===================================================== */
+
+.students {
+  margin-top: 27px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #211628;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.student-icons {
+  display: flex;
+}
+
+.student-icons span {
+  width: 23px;
+  height: 23px;
+
+  margin-left: -5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  font-size: 13px;
+}
+
+.student-icons span:first-child {
+  margin-left: 0;
+}
+
+/* =====================================================
+   HERO RIGHT
+===================================================== */
+
+.hero-visual {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =====================================================
+   TRAINING IMAGE
+===================================================== */
+
+.training-card {
+  width: 100%;
+  height: 255px;
+
+  overflow: hidden;
+
+  border: 9px solid #ffffff;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(15, 7, 22, 0.9) 0%,
+      rgba(15, 7, 22, 0.18) 55%,
+      rgba(15, 7, 22, 0.02) 100%
+    ),
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=90");
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow:
+    0 12px 28px rgba(29, 15, 42, 0.14),
+    0 2px 5px rgba(29, 15, 42, 0.06);
+}
+
+.training-content {
+  width: 100%;
+  height: 100%;
+
+  padding: 13px 15px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: #ffffff;
+}
+
+.live-badge {
+  width: fit-content;
+
+  padding: 5px 10px;
+
+  color: #1d1230;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border-radius: 14px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.training-card h2 {
+  margin: 0 0 4px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 18px;
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.training-card p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.94);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  line-height: 1.35;
+}
+
+/* =====================================================
+   SMALL HERO CARDS
+===================================================== */
+
+.mini-cards {
+  width: 100%;
+
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 22px;
+}
+
+.career-card,
+.placement-card {
+  height: 145px;
+
+  padding: 17px;
+
+  border-radius: 14px;
+}
+
+/* Career */
+
+.career-card {
+  background: #ffffff;
+
+  border: 1px solid #e9e5eb;
+
+  box-shadow: 0 8px 22px rgba(24, 12, 37, 0.06);
+}
+
+/* Placement */
+
+.placement-card {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #eb4daf,
+    #ce38a8
+  );
+}
+
+.card-label {
+  font-family: "Outfit", sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.career-card h3 {
+  margin-top: 17px;
+
+  color: #16082b;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 35px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.career-card h3 span {
+  margin-left: 2px;
+
+  font-size: 13px;
+}
+
+.career-card p {
+  margin-top: 8px;
+
+  color: #524c55;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.placement-card h3 {
+  margin-top: 27px;
+  margin-bottom: 6px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.placement-card p {
+  color: rgba(255, 255, 255, 0.94);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats-section {
+  width: 100%;
+
+  padding-top: 0;
+
+  background: #ffffff;
+}
+
+.stats-bar {
+  min-height: 112px;
+
+  padding: 18px 35px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  background: #0d061b;
+
+  border-radius: 58px;
+}
+
+.stat-item {
+  text-align: center;
+
+  color: white;
+}
+
+.stat-item h3 {
+  margin: 0 0 4px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 29px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.stat-item h3.yellow {
+  color: #ffda18;
+}
+
+.stat-item h3.pink {
+  color: #ff3a7f;
+}
+
+.stat-item p {
+  color: #ddd9e1;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* =====================================================
+   SPECIALIZATIONS
+===================================================== */
+
+.specializations {
+  width: 100%;
+
+  padding: 75px 0 100px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.section-badge {
+  width: fit-content;
+
+  margin: 0 auto 20px;
+
+  padding: 7px 18px;
+
+  color: #604ae1;
+
+  background: #ededee;
+
+  border-radius: 20px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.specializations > h2 {
+  margin: 0;
+
+  color: #130724;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 27px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.specializations > h2 span {
+  color: #d45b63;
+}
+
+.section-subtitle {
+  margin-top: 14px;
+
+  color: #686169;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+}
+
+/* =====================================================
+   SERVICE GRID
+===================================================== */
+
+.service-grid {
+  margin-top: 55px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px 34px;
+}
+
+.service-card {
+  min-height: 190px;
+
+  padding: 20px;
+
+  text-align: left;
+
+  background: #ffffff;
+
+  border: 1px solid #ded9e0;
+  border-radius: 18px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(25, 10, 40, 0.06);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1f1f1;
+  border-radius: 11px;
+
+  font-size: 25px;
+  line-height: 1;
+}
+
+.service-card h3 {
+  margin: 0 0 10px;
+
+  color: #34103e;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.service-card p {
+  margin: 0;
+
+  color: #565057;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   MEDIUM DESKTOP / LAPTOP
+===================================================== */
+
+@media (max-width: 1200px) {
+  .navbar,
+  .hero,
+  .stats-bar,
+  .service-grid {
+    width: 90%;
+  }
+
+  .nav-links {
+    gap: 27px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero {
+    gap: 55px;
+  }
+
+  .hero-content h1 {
+    font-size: 52px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+  .navbar,
+  .hero,
+  .stats-bar,
+  .service-grid {
+    width: calc(100% - 40px);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 50px;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-description {
+    max-width: 500px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 560px) {
+  .site {
+    padding-top: 10px;
+  }
+
+  .navbar,
+  .hero,
+  .stats-bar,
+  .service-grid {
+    width: calc(100% - 24px);
+  }
+
+  .navbar {
+    height: 58px;
+
+    padding: 0 9px 0 14px;
+  }
+
+  .logo {
+    min-width: 0;
+  }
+
+  .get-in-touch {
+    width: 105px;
+    height: 38px;
+
+    font-size: 11px;
+  }
+
+  .hero {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .training-card {
+    height: 235px;
+  }
+
+  .mini-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    grid-template-columns: 1fr;
+
+    gap: 23px;
+
+    padding: 30px 20px;
+
+    border-radius: 30px;
+  }
+
+  .stat-divider {
+    width: 80%;
+    height: 1px;
+
+    margin: auto;
+  }
+
+  .specializations {
+    padding-top: 65px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+
+    margin-top: 42px;
+  }
+}
+
+/* LEARNING FRAMEWORK */
+.framework-section {
+  width: 100%;
+  padding: 10px 0 35px;
+  background: #ffffff;
+}
+.framework-container {
+  width: 86%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+/* HEADING */
+
+.framework-heading {
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+.framework-heading h2 {
+  margin: 0;
+
+  color: #32103a;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 30px;
+  line-height: 1.1;
+
+  font-weight: 800;
+}
+
+.framework-heading h2 span {
+  color: #5749ec;
+}
+
+.framework-heading p {
+  max-width: 580px;
+
+  margin: 12px auto 0;
+
+  color: #68616a;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   TOP TWO CARDS
+===================================================== */
+
+.framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 28px;
+
+  margin-bottom: 28px;
+}
+
+.framework-card {
+  min-height: 210px;
+
+  padding: 34px;
+
+  border-radius: 16px;
+}
+
+.learn-card {
+  background: #ffffff;
+
+  border: 3px solid #209cff;
+}
+
+.practical-card {
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #6555ee,
+    #4d41e6
+  );
+}
+
+/* NUMBERS */
+
+.framework-number {
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 800;
+}
+
+.yellow-number {
+  color: #14100a;
+
+  background: #ffd30a;
+}
+
+.purple-number {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.framework-card h3 {
+  margin: 0 0 12px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.learn-card h3 {
+  color: #150a1e;
+}
+
+.framework-card p {
+  max-width: 440px;
+
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.learn-card p {
+  color: #5d565f;
+}
+
+.practical-card p {
+  color: rgba(255, 255, 255, 0.93);
+}
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.benefit-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.85fr
+    0.85fr
+    1.8fr;
+
+  gap: 28px;
+
+  margin-bottom: 95px;
+}
+
+.benefit-card {
+  min-height: 150px;
+
+  padding: 24px;
+
+  border-radius: 14px;
+}
+
+.mentor-card {
+  color: white;
+
+  background: #2d1c33;
+
+  box-shadow: 0 8px 20px rgba(29, 15, 37, 0.12);
+}
+
+.job-card,
+.placement-support-card {
+  background: white;
+
+  border: 1px solid #ded9e0;
+
+  box-shadow: 0 8px 20px rgba(28, 16, 37, 0.06);
+}
+
+.benefit-icon {
+  width: 34px;
+  height: 34px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  font-size: 17px;
+}
+
+.light-icon {
+  background: #f4f1f5;
+}
+
+.benefit-card h3 {
+  margin: 0 0 10px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.job-card h3,
+.placement-support-card h3 {
+  color: #160923;
+}
+
+.benefit-card p {
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.mentor-card p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.job-card p,
+.placement-support-card p {
+  color: #625b64;
+}
+
+/* =====================================================
+   WHY DE MENTEE
+===================================================== */
+
+.why-section {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+
+  align-items: center;
+
+  gap: 85px;
+}
+
+.why-content h2 {
+  margin: 0 0 30px;
+
+  color: #2e2630;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+.why-content h2 span {
+  color: #d9535d;
+}
+
+/* WHY LIST */
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 23px;
+}
+
+.why-item {
+  display: flex;
+
+  gap: 14px;
+
+  align-items: flex-start;
+}
+
+.why-number {
+  width: 24px;
+  height: 24px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #df5962;
+
+  background: white;
+
+  border: 1px solid #f0c9cc;
+  border-radius: 50%;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.why-item h3 {
+  margin: 0 0 5px;
+
+  color: #211727;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.why-item p {
+  max-width: 330px;
+
+  margin: 0;
+
+  color: #655e66;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   CAREER GAP CARD
+===================================================== */
+
+.career-gap-card {
+  min-height: 315px;
+
+  padding: 38px;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(57, 68, 162, 0.5),
+      transparent 37%
+    ),
+    linear-gradient(
+      135deg,
+      #10192c,
+      #0f172b
+    );
+
+  border-radius: 18px;
+
+  box-shadow: 0 18px 35px rgba(15, 20, 40, 0.12);
+}
+
+.career-gap-label {
+  width: fit-content;
+
+  margin-bottom: 28px;
+
+  padding: 5px 18px;
+
+  color: #ffd827;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.career-gap-card h2 {
+  margin: 0 0 22px;
+
+  color: white;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 26px;
+  line-height: 1.05;
+
+  font-weight: 700;
+}
+
+.career-gap-card p {
+  max-width: 440px;
+
+  margin: 0 0 28px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+
+.counsellor-btn {
+  width: fit-content;
+  height: 40px;
+
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  color: #18130a;
+
+  background: #ffd017;
+
+  border-radius: 22px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.counsellor-btn span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+  .framework-container {
+    width: 90%;
+  }
+
+  .why-section {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .framework-grid,
+  .why-section {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .placement-support-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 550px) {
+  .framework-section {
+    padding: 20px 0 50px;
+  }
+
+  .framework-container {
+    width: calc(100% - 24px);
+  }
+
+  .framework-heading h2 {
+    font-size: 25px;
+  }
+
+  .framework-grid,
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .placement-support-card {
+    grid-column: auto;
+  }
+
+  .framework-card {
+    padding: 25px;
+  }
+
+  .career-gap-card {
+    padding: 28px;
+  }
+
+  .career-gap-card h2 {
+    font-size: 23px;
+  }
+}
+
+/* =====================================================
+   STUDENT TESTIMONIALS
+===================================================== */
+
+/* TESTIMONIALS */
+.testimonials-section {
+  width: 100%;
+  padding: 45px 0 105px;
+  background: #ffffff;
+}
+
+.testimonials-container {
+  width: 86%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.testimonials-heading {
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.testimonials-badge {
+  width: fit-content;
+
+  margin: 0 auto 22px;
+
+  padding: 7px 18px;
+
+  color: #e84e62;
+
+  background: #f1f1f2;
+
+  border-radius: 3px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 8px;
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.testimonials-heading h2 {
+  margin: 0;
+
+  color: #3a123e;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 30px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.testimonials-heading h2 span {
+  color: #d95155;
+}
+
+/* =====================================================
+   TESTIMONIAL GRID
+===================================================== */
+
+.testimonials-grid {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 38px;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.testimonial-card {
+  overflow: hidden;
+
+  background: #fbf7f7;
+
+  border: 1px solid #ddd7db;
+  border-radius: 19px;
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.testimonial-image {
+  position: relative;
+
+  height: 330px;
+
+  margin: 15px 15px 0;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =====================================================
+   PLAY BUTTON
+===================================================== */
+
+.testimonial-play {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 54px;
+  height: 54px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  color: #ffffff;
+
+  background: #df6a55;
+
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.testimonial-play svg {
+  margin-left: 3px;
+}
+
+.testimonial-play:hover {
+  background: #d85e4c;
+
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.testimonial-info {
+  padding: 18px 20px 21px;
+}
+
+.testimonial-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.testimonial-name-row h3 {
+  margin: 0;
+
+  color: #161018;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.testimonial-name-row span {
+  color: #db5c59;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+}
+
+.testimonial-info p {
+  margin: 8px 0 0;
+
+  color: #615b61;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+  .testimonials-container {
+    width: 90%;
+  }
+
+  .testimonials-grid {
+    gap: 24px;
+  }
+
+  .testimonial-image {
+    height: 280px;
+  }
+}
+
+@media (max-width: 750px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 420px;
+  }
+
+  .testimonial-image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonials-section {
+    padding: 65px 0 80px;
+  }
+
+  .testimonials-container {
+    width: calc(100% - 24px);
+  }
+
+  .testimonials-heading h2 {
+    font-size: 25px;
+  }
+
+  .testimonial-image {
+    height: 320px;
+  }
+}
+
+/* =====================================================
+   SUCCESS STORIES
+===================================================== */
+
+.success-section {
+  width: 100%;
+  padding: 75px 0 85px;
+
+  background-color: #fafafa;
+  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.success-container {
+  width: 86%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   SUCCESS HEADER
+===================================================== */
+
+.success-header {
+  margin-bottom: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.success-header h2 {
+  margin: 0;
+
+  color: #36103f;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.success-header h2 span {
+  color: #d85155;
+}
+
+.alumni-btn {
+  min-width: 130px;
+  height: 38px;
+
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #171019;
+  background: #ffffff;
+
+  border: 1px solid #ddd8df;
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.alumni-btn:hover {
+  transform: translateY(-2px);
+  background: #f6f4f7;
+}
+
+
+/* =====================================================
+   SUCCESS CARDS
+===================================================== */
+
+.success-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 38px;
+}
+
+.success-card {
+  min-height: 285px;
+
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 1px solid #ded9df;
+  border-radius: 17px;
+
+  box-shadow: 0 12px 28px rgba(22, 12, 30, 0.07);
+}
+
+.success-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.success-avatar {
+  width: 68px;
+  height: 68px;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.success-avatar img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+}
+
+.quote-mark {
+  color: #d6ced3;
+
+  font-family: Georgia, serif;
+
+  font-size: 37px;
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.success-message {
+  margin: 0;
+
+  color: #2c252e;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  line-height: 1.55;
+
+  font-weight: 400;
+}
+
+.success-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 20px 0;
+
+  background: #ded9df;
+}
+
+.success-card h3 {
+  margin: 0 0 7px;
+
+  color: #1c1420;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.placement-text {
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.red-placement {
+  color: #ee454e;
+}
+
+.yellow-placement {
+  color: #ffd900;
+}
+
+.purple-placement {
+  color: #5d4ce0;
+}
+
+
+/* =====================================================
+   FEATURED SUCCESS CARD
+===================================================== */
+
+.featured-success {
+  color: #ffffff;
+
+  background: #10192d;
+
+  border-color: #10192d;
+
+  transform: translateY(-14px);
+
+  box-shadow: 0 18px 35px rgba(13, 21, 40, 0.18);
+}
+
+.featured-success .success-message {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.featured-success .success-divider {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.featured-success h3 {
+  color: #ffffff;
+}
+
+.featured-success .quote-mark {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+
+/* =====================================================
+   LEARN FROM THE BEST
+===================================================== */
+
+.mentors-section {
+  width: 100%;
+
+  padding: 75px 0 90px;
+
+  background: #10192d;
+}
+
+.mentors-container {
+  width: 86%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   MENTOR HEADING
+===================================================== */
+
+.mentors-heading {
+  margin-bottom: 55px;
+
+  text-align: center;
+}
+
+.mentors-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 29px;
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.mentors-heading h2 span {
+  color: #ffd61b;
+}
+
+
+/* =====================================================
+   MENTORS GRID
+===================================================== */
+
+.mentors-grid {
+  width: 100%;
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 55px;
+}
+
+
+/* =====================================================
+   MENTOR CARD
+===================================================== */
+
+.mentor-profile-card {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 20px 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #3e475a;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+
+  text-align: center;
+}
+
+.mentor-photo {
+  width: 78px;
+  height: 78px;
+
+  margin-bottom: 16px;
+
+  padding: 3px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+.mentor-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.purple-ring {
+  background: linear-gradient(
+    135deg,
+    #5d4cf0,
+    #7965ff
+  );
+}
+
+.pink-ring {
+  background: linear-gradient(
+    135deg,
+    #ff5757,
+    #ff668f
+  );
+}
+
+.mentor-profile-card h3 {
+  margin: 0 0 5px;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.mentor-profile-card p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-family: "Outfit", sans-serif;
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   LINKEDIN
+===================================================== */
+
+.linkedin-icon {
+  position: absolute;
+
+  right: 14px;
+  bottom: 12px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  border-radius: 50%;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .success-container,
+  .mentors-container {
+    width: 90%;
+  }
+
+  .success-grid {
+    gap: 20px;
+  }
+
+  .mentors-grid {
+    gap: 25px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .success-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-success {
+    transform: none;
+  }
+
+  .success-card {
+    min-height: auto;
+  }
+
+  .mentors-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 280px;
+  }
+
+  .mentor-profile-card {
+    min-height: 210px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .success-section {
+    padding: 60px 0;
+  }
+
+  .success-container,
+  .mentors-container {
+    width: calc(100% - 30px);
+  }
+
+  .success-header {
+    margin-bottom: 40px;
+  }
+
+  .success-header h2 {
+    font-size: 25px;
+  }
+
+  .alumni-btn {
+    min-width: 105px;
+
+    font-size: 9px;
+  }
+
+  .mentors-section {
+    padding: 60px 0 70px;
+  }
+
+  .mentors-heading h2 {
+    font-size: 25px;
+  }
+}
+
+/* =====================================================
+   REVIEWS + CTA + FAQ
+===================================================== */
+
+.reviews-faq-section {
+  width: 100%;
+  padding: 75px 0 100px;
+  background: #ffffff;
+}
+
+.reviews-faq-container {
+  width: 86%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* TESTIMONIAL HEADING */
+
+.reviews-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.reviews-badge {
+  width: fit-content;
+
+  margin: 0 auto 20px;
+  padding: 7px 19px;
+
+  color: #211423;
+  background: #e9e9eb;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.reviews-heading h2 {
+  margin: 0;
+
+  color: #3a1040;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.reviews-heading h2 span {
+  color: #5a4deb;
+}
+
+/* REVIEW CARDS */
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  margin-bottom: 90px;
+}
+
+.review-card {
+  min-height: 180px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd8df;
+  border-radius: 16px;
+}
+
+.stars {
+  margin-bottom: 12px;
+
+  color: #ffc900;
+
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  margin: 0;
+
+  color: #504950;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.review-divider {
+  height: 1px;
+
+  margin: 18px 0;
+
+  background: #e1dde2;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background: #a52e36;
+
+  border-radius: 50%;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.review-author h3 {
+  margin: 0 0 3px;
+
+  color: #1d151f;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.review-author p {
+  margin: 0;
+
+  color: #6d666e;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 8px;
+}
+
+/* =====================================================
+   FREELANCE BANNER
+===================================================== */
+
+.freelance-banner {
+  position: relative;
+
+  min-height: 270px;
+
+  margin-bottom: 90px;
+  padding: 47px 55px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 88% 25%,
+      rgba(255, 255, 255, 0.18),
+      transparent 28%
+    ),
+    linear-gradient(
+      100deg,
+      #ca5a8c 0%,
+      #7958d9 52%,
+      #5143df 100%
+    );
+
+  border-radius: 22px;
+}
+
+.freelance-content {
+  position: relative;
+  z-index: 2;
+
+  width: 62%;
+}
+
+.freelance-content h2 {
+  margin: 0 0 9px;
+
+  color: white;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.freelance-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.freelance-line {
+  width: 72%;
+  height: 1px;
+
+  margin: 30px 0 23px;
+
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.enquire-btn {
+  width: fit-content;
+  height: 40px;
+
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #171106;
+  background: #ffd51a;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* TEMPORARY PERSON ART */
+
+.freelance-person {
+  position: absolute;
+
+  right: 75px;
+  bottom: -5px;
+
+  width: 280px;
+  height: 250px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.person-placeholder {
+  font-size: 165px;
+  line-height: 1;
+}
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.faq-section {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+.faq-section > h2 {
+  margin: 0 0 45px;
+
+  text-align: center;
+
+  color: #271633;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.faq-item {
+  overflow: hidden;
+
+  background: #f3f5fc;
+
+  border: 1px solid #d9dfea;
+  border-radius: 11px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.faq-question {
+  width: 100%;
+  min-height: 59px;
+
+  padding: 0 18px 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #271c31;
+  background: transparent;
+
+  border: 0;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.faq-icon {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #d7dce5;
+  border-radius: 50%;
+}
+
+.faq-answer {
+  padding: 0 65px 20px 28px;
+}
+
+.faq-answer p {
+  margin: 0;
+
+  color: #625a65;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.faq-open {
+  background: #ffffff;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+  .reviews-faq-container {
+    width: 90%;
+  }
+
+  .review-grid {
+    gap: 20px;
+  }
+
+  .freelance-person {
+    right: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .freelance-banner {
+    padding: 35px 30px;
+  }
+
+  .freelance-content {
+    width: 100%;
+  }
+
+  .freelance-person {
+    display: none;
+  }
+
+  .freelance-line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .reviews-faq-section {
+    padding: 60px 0 75px;
+  }
+
+  .reviews-faq-container {
+    width: calc(100% - 24px);
+  }
+
+  .reviews-heading h2,
+  .faq-section > h2 {
+    font-size: 25px;
+  }
+
+  .review-grid {
+    margin-bottom: 60px;
+  }
+
+  .freelance-banner {
+    min-height: 230px;
+
+    margin-bottom: 65px;
+  }
+
+  .freelance-content h2 {
+    font-size: 25px;
+  }
+
+  .faq-question {
+    padding-left: 18px;
+
+    font-size: 10px;
+  }
+
+  .faq-answer {
+    padding-left: 18px;
+  }
+}
+
+/* =====================================================
+   FINAL FOOTER
+===================================================== */
+
+.site-footer {
+  width: 100%;
+  padding: 55px 0 28px;
+
+  background: #10182b;
+
+  color: #ffffff;
+}
+
+.footer-container {
+  width: 86%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+/* =====================================================
+   FOOTER TOP
+===================================================== */
+
+.footer-top {
+  display: grid;
+
+  grid-template-columns:
+    1.7fr
+    0.8fr
+    0.9fr
+    1fr;
+
+  gap: 60px;
+
+  align-items: start;
+}
+
+/* =====================================================
+   FOOTER LOGO
+===================================================== */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.footer-logo-image {
+  width: 165px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.footer-column a {
+  width: fit-content;
+
+  color: rgba(255, 255, 255, 0.86);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 400;
+
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+/* =====================================================
+   ENROLL BUTTON
+===================================================== */
+
+.footer-action {
+  margin-bottom: 28px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-enroll-btn {
+  min-width: 125px;
+  height: 38px;
+
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #15111a !important;
+
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif !important;
+
+  font-size: 10px !important;
+
+  font-weight: 700 !important;
+}
+
+/* =====================================================
+   FOOTER DIVIDER
+===================================================== */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 55px 0 24px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =====================================================
+   COPYRIGHT
+===================================================== */
+
+.footer-bottom {
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+  .footer-container {
+    width: 90%;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px;
+  }
+
+  .footer-action {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding-top: 45px;
+  }
+
+  .footer-container {
+    width: calc(100% - 30px);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+  .footer-logo {
+    margin-bottom: 25px;
+  }
+
+  .footer-divider {
+    margin-top: 40px;
+  }
+}

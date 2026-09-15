@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "./Contact.css";
+import footerlogo from "../assets/footerlogo.png";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -279,27 +280,13 @@ function Contact() {
 
             <div className="contact-footer-brand">
 
-              <div className="contact-footer-logo">
-
-                <div className="contact-footer-logo-mark">
-                  ✦
-                </div>
-
-                <div className="contact-footer-logo-text">
-
-                  <strong>
-                    De mentee
-                  </strong>
-
-                  <span>
-                    Technologies
-                  </span>
-
-                </div>
-
-              </div>
-
-
+              
+<div className="contact-footer-logo">
+  <img
+    src={footerlogo}
+    alt="De Mentee Technologies"
+  />
+</div>
               <h3>
                 ADDRESS
               </h3>

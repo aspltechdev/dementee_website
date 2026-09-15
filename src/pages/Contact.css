@@ -54,9 +54,13 @@
 ========================================================= */
 
 .contact-hero {
-  min-height: 475px;
+  min-height: 420px;
 
-  padding: 155px 25px 80px;
+  /*
+    Reduced from 155px.
+    This brings the hero much closer to the navbar.
+  */
+  padding: 75px 25px 70px;
 
   display: flex;
   flex-direction: column;
@@ -65,6 +69,10 @@
   text-align: center;
 }
 
+
+/* =========================================================
+   HERO PILL
+========================================================= */
 
 .contact-hero-pill {
   display: inline-flex;
@@ -101,8 +109,12 @@
 }
 
 
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
 .contact-hero h1 {
-  margin: 30px 0 25px;
+  margin: 24px 0 20px;
 
   color: #1c0d36;
 
@@ -129,6 +141,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
 
 .contact-hero p {
   max-width: 730px;
@@ -489,37 +505,18 @@
 
 .contact-footer-logo {
   display: flex;
-
   align-items: center;
+  margin-bottom: 32px;
+}
 
-  gap: 9px;
-
-  margin-bottom: 34px;
+.contact-footer-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 
-.contact-footer-logo-mark {
-  width: 39px;
-  height: 39px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: linear-gradient(
-    135deg,
-    #ef3b3f,
-    #f3c13a,
-    #6a4bd9
-  );
-
-  color: #fff;
-
-  font-size: 17px;
-}
 
 
 .contact-footer-logo-text strong,
@@ -706,9 +703,13 @@
 @media (max-width: 700px) {
 
   .contact-hero {
-    min-height: 440px;
+    min-height: 390px;
 
-    padding: 130px 20px 65px;
+    /*
+      Reduced from 130px so mobile also
+      doesn't have a large gap below navbar.
+    */
+    padding: 75px 20px 55px;
   }
 
 
@@ -811,7 +812,9 @@
 @media (max-width: 450px) {
 
   .contact-hero {
-    padding-top: 120px;
+    min-height: 370px;
+
+    padding-top: 65px;
   }
 
 
