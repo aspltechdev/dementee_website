@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Plus, Minus, Play } from "lucide-react";
 import footerlogo from "../assets/footerlogo.png";
+import Footer from "./Footer";
 
 import "./CreatorPage.css";
+
+import meetup1 from "../assets/meetup1.jpg";
+import meetup2 from "../assets/meetup2.jpg";
+import meetup3 from "../assets/meetup3.jpg";
+import meetup4 from "../assets/meetup4.jpg";
+import meetup5 from "../assets/meetup5.jpg";
 
 import Navbar from "../components/Navbar";
 import "./CreatorPage.css";
@@ -86,14 +93,14 @@ function CreatorPage() {
     },
   ];
 
-  const meetups = [
-    "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85",
-    "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=85",
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=85",
-    "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=700&q=85",
-    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=85",
-    "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=85",
-  ];
+ const meetups = [
+  meetup1,
+  meetup2,
+  meetup3,
+  meetup4,
+  meetup5,
+  meetup3,
+];
 
   const faqs = [
     "Is there an age limit for the programs?",
@@ -130,9 +137,9 @@ function CreatorPage() {
             impact.
           </p>
 
-          <a href="#apply" className="creator-primary-btn">
-            Request an Invite
-          </a>
+         <Link to="/contact" className="creator-primary-btn">
+  Request an Invite
+</Link>
         </div>
 
         {/* =================================================
@@ -374,9 +381,9 @@ function CreatorPage() {
 
         </div>
 
-        <a href="#apply" className="creator-primary-btn">
-          Request an Invite
-        </a>
+        <Link to="/contact" className="creator-primary-btn">
+  Request an Invite
+</Link>
 
       </section>
 
@@ -532,30 +539,48 @@ function CreatorPage() {
       {/* =====================================================
           MEETUPS GALLERY
       ===================================================== */}
-      <section className="creator-gallery">
+      {/* =====================================================
+    MEETUPS GALLERY
+===================================================== */}
+<section className="creator-gallery">
+  <h2>
+    Meetups <span>Gallery</span>
+  </h2>
 
-        <h2>
-          Meetups <span>Gallery</span>
-        </h2>
+  <div className="meetup-gallery">
 
-        <div className="meetup-grid">
+    {/* ROW 1 */}
+    <div className="meetup-row meetup-row-1">
+      <div className="meetup-image meetup-large">
+        <img src={meetups[0]} alt="FAC meetup 1" />
+      </div>
 
-          {meetups.map((image, index) => (
-            <div
-              key={index}
-              className={`meetup-image meetup-${index}`}
-            >
-              <img
-                src={image}
-                alt={`FAC meetup ${index + 1}`}
-              />
-            </div>
-          ))}
+      <div className="meetup-image meetup-small">
+        <img src={meetups[1]} alt="FAC meetup 2" />
+      </div>
 
-        </div>
+      <div className="meetup-image meetup-small">
+        <img src={meetups[2]} alt="FAC meetup 3" />
+      </div>
+    </div>
 
-      </section>
+    {/* ROW 2 */}
+    <div className="meetup-row meetup-row-2">
+      <div className="meetup-image meetup-small">
+        <img src={meetups[3]} alt="FAC meetup 4" />
+      </div>
 
+      <div className="meetup-image meetup-small">
+        <img src={meetups[4]} alt="FAC meetup 5" />
+      </div>
+
+      <div className="meetup-image meetup-large">
+        <img src={meetups[5]} alt="FAC meetup 6" />
+      </div>
+    </div>
+
+  </div>
+</section>
       {/* =====================================================
           FAQ
       ===================================================== */}
@@ -611,104 +636,7 @@ function CreatorPage() {
         </div>
 
       </section>
-
-      {/* =====================================================
-          FOOTER
-      ===================================================== */}
-      <footer className="creator-footer">
-
-        <div className="creator-footer-container">
-
-          <div className="creator-footer-top">
-
-            <div className="creator-footer-brand">
-
-           <div className="creator-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
-
-              <h3>ADDRESS</h3>
-
-              <p>
-                Address : 142, 2nd Floor, Kamaraj Salai,
-                Puducherry, 605013
-              </p>
-
-              <p>
-                Phone: +91 88703 97432
-              </p>
-
-              <p>
-                info@dementee.in
-              </p>
-
-            </div>
-
-            <div className="creator-footer-column">
-
-              <h3>EXPLORE</h3>
-
-              <Link to="/">Home</Link>
-              <Link to="/gallery">Success story</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/about">About us</Link>
-              <Link to="/pages/contact">Contact us</Link>
-
-            </div>
-
-            <div className="creator-footer-column">
-
-              <h3>OUR COURSES</h3>
-
-              <Link to="/courses/ui-ux-design">
-                UI / UX Designer
-              </Link>
-
-              <Link to="/courses/digital-marketing">
-                Digital marketing
-              </Link>
-
-              <Link to="/courses/full-stack-development">
-                Web Development
-              </Link>
-
-            </div>
-
-            <div className="creator-footer-column">
-
-              <h3>INFORMATION</h3>
-
-              <a href="#privacy">
-                Privacy policy
-              </a>
-
-              <a href="#terms">
-                Terms & Conditions
-              </a>
-
-            </div>
-
-            <a
-              href="#apply"
-              className="creator-footer-enroll"
-            >
-              Enroll Today
-            </a>
-
-          </div>
-
-          <div className="creator-footer-divider"></div>
-
-          <div className="creator-footer-bottom">
-            © 2024 De Mentee Academy. All Rights Reserved
-          </div>
-
-        </div>
-
-      </footer>
+<Footer />
 
     </div>
   );

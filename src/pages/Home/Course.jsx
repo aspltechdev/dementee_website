@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./Course.css";
 
+
 function Course() {
   return (
     <section className="courses-section">

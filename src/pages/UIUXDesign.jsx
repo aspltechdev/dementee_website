@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
+import Footer from "./Footer";
 import Navbar from "../components/Navbar";
 import "./UIUXDesign.css";
 import footerlogo from "../assets/footerlogo.png";
@@ -867,12 +868,12 @@ const toggleFaq = (index) => {
               </div>
 
 
-              <a
-                href="#contact"
-                className="uiux-enroll-btn"
-              >
-                Enroll now
-              </a>
+            <Link
+  to="/contact"
+  className="uiux-enroll-btn"
+>
+  Enroll now
+</Link>
 
             </div>
 
@@ -1292,126 +1293,9 @@ const toggleFaq = (index) => {
 
 </section>
 
-
-{/* =====================================================
-    FOOTER
-===================================================== */}
-<footer className="uiux-footer">
-
-  <div className="uiux-footer-inner">
-
-    {/* LEFT */}
-    <div className="uiux-footer-brand">
-
-<div className="uiux-footer-logo">
- <div className="uiux-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
-</div>
-      <div className="uiux-footer-address">
-        <h3>
-          ADDRESS
-        </h3>
-
-        <p>
-          Address : 142, 2nd Floor, Kamaraj Salai,
-          Puducherry, 605013
-        </p>
-
-        <p>
-          Phone: +91 88703 97432
-        </p>
-
-        <p>
-          info@dementee.in
-        </p>
-      </div>
-
-    </div>
-
-
-    {/* EXPLORE */}
-    <div className="uiux-footer-column">
-      <h3>
-        EXPLORE
-      </h3>
-
-      <a href="/">
-        Home
-      </a>
-
-      <a href="#success">
-        Success story
-      </a>
-
-      <a href="#blog">
-        Blog
-      </a>
-
-      <a href="/about">
-        About us
-      </a>
-
-      <a href="#contact">
-        Contact us
-      </a>
-    </div>
-
-
-    {/* COURSES */}
-    <div className="uiux-footer-column">
-      <h3>
-        OUR COURSES
-      </h3>
-
-      <a href="/courses/ui-ux-design">
-        UI / UX Designer
-      </a>
-
-      <a href="#digital-marketing">
-        Digital marketing
-      </a>
-
-      <a href="#web-development">
-        Web Development
-      </a>
-    </div>
-
-
-    {/* INFORMATION */}
-    <div className="uiux-footer-column uiux-footer-info">
- <a
-  href="/contact"
-  className="uiux-enroll-btn"
->
-  Enroll now
-</a>
-      <h3>
-        INFORMATION
-      </h3>
-
-      <a href="#privacy">
-        Privacy policy
-      </a>
-
-      <a href="#terms">
-        Terms & Conditions
-      </a>
-    </div>
-
-  </div>
-
-
-  <div className="uiux-footer-bottom">
-    © 2024 De Mentee Academy. All Rights Reserved
-  </div>
-
-</footer>
-
       </main>
+
+      <Footer />
 
     </div>
   );

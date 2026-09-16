@@ -461,15 +461,15 @@ body {
 ========================================================= */
 
 .fs-curriculum-card {
-  width: 100%;
+  width: 400px;
 
   /*
      FIXED HEIGHT
      All three cards are identical.
   */
 
-  height: 418px;
-  min-height: 418px;
+  height: 360px;
+  min-height: 360px;
 
   padding: 30px 54px;
 
@@ -675,15 +675,21 @@ body {
 
 
 /* Project image */
+/* =====================================================
+   PROJECT IMAGE
+===================================================== */
 
 .fs-project-image {
   width: 100%;
+  height: 245px;
 
-  height: calc(100% - 52px);
+  margin-top: 20px;
 
   overflow: hidden;
 
-  border-radius: 16px;
+  border-radius: 0 0 18px 18px;
+
+  background: #f5f5f5;
 }
 
 .fs-project-image img {
@@ -695,6 +701,13 @@ body {
   object-fit: cover;
 
   object-position: center;
+
+  transition: transform 0.4s ease;
+  border-radius:30px;
+}
+
+.fs-project-card:hover .fs-project-image img {
+  transform: scale(1.03);
 }
 
 

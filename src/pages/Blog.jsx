@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "./Blog.css";
 import footerlogo from "../assets/footerlogo.png";
+import Footer from "./Footer";
 
 function Blog() {
   const articles = [
@@ -226,144 +227,7 @@ function Blog() {
 
       </main>
 
-
-      {/* ================= FOOTER ================= */}
-
-      <footer className="blog-footer">
-
-        <div className="blog-footer-container">
-
-          <div className="blog-footer-top">
-
-
-            {/* BRAND / ADDRESS */}
-
-            <div className="blog-footer-brand">
-
-          <div className="blog-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
-
-
-              <h3>
-                ADDRESS
-              </h3>
-
-              <p>
-                Address : 142, 2nd Floor,
-                Kamaraj Salai, Puducherry,
-                <br />
-                605013
-              </p>
-
-              <p>
-                Phone: +91 88703 97432
-              </p>
-
-              <p>
-                info@dementee.in
-              </p>
-
-            </div>
-
-
-            {/* EXPLORE */}
-
-            <div className="blog-footer-column">
-
-              <h3>
-                EXPLORE
-              </h3>
-
-              <Link to="/">
-                Home
-              </Link>
-
-              <a href="/#success">
-                Success story
-              </a>
-
-              <Link to="/blog">
-                Blog
-              </Link>
-
-              <Link to="/about">
-                About us
-              </Link>
-
-              <Link to="/contact">
-                Contact us
-              </Link>
-
-            </div>
-
-
-            {/* COURSES */}
-
-            <div className="blog-footer-column">
-
-              <h3>
-                OUR COURSES
-              </h3>
-
-              <Link to="/courses/ui-ux-design">
-                UI / UX Designer
-              </Link>
-
-              <Link to="/courses/digital-marketing">
-                Digital marketing
-              </Link>
-
-              <Link to="/courses/full-stack-development">
-                Web Development
-              </Link>
-
-            </div>
-
-
-            {/* INFORMATION */}
-
-            <div className="blog-footer-column blog-information">
-
-              <Link
-                to="/contact"
-                className="blog-footer-enroll"
-              >
-                Enroll Today
-              </Link>
-
-              <h3>
-                INFORMATION
-              </h3>
-
-              <a href="#privacy">
-                Privacy policy
-              </a>
-
-              <a href="#terms">
-                Terms & Conditions
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div className="blog-footer-divider"></div>
-
-
-          <div className="blog-footer-bottom">
-
-            © 2024 De Mentee Academy. All Rights Reserved
-
-          </div>
-
-        </div>
-
-      </footer>
+<Footer />
 
     </div>
   );

@@ -1,0 +1,500 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 35px 0 25px;
+
+  color: #ffffff;
+
+  background: #10182b;
+}
+
+
+/* =========================================================
+   FOOTER CONTAINER
+========================================================= */
+
+.footer-container {
+  width: 88%;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   FOOTER TOP
+========================================================= */
+
+.footer-top {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    1.7fr
+    0.8fr
+    0.9fr
+    0.9fr;
+
+  column-gap: 50px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   BRAND / ADDRESS
+========================================================= */
+
+.footer-brand {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 48px;
+}
+
+.footer-logo img {
+  display: block;
+
+  width: 150px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   FOOTER HEADINGS
+========================================================= */
+
+.footer-brand h3,
+.footer-column h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* ADDRESS HEADING */
+
+.footer-brand > h3 {
+  margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   ADDRESS TEXT
+========================================================= */
+
+.footer-brand p {
+  margin: 0 0 18px;
+
+  color: #e1e0e8;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* =========================================================
+   EXPLORE
+   OUR COURSES
+   INFORMATION
+========================================================= */
+
+.footer-explore,
+.footer-courses,
+.footer-info {
+  padding-top: 68px;
+}
+
+
+/* =========================================================
+   COLUMN HEADINGS
+========================================================= */
+
+.footer-column h3 {
+  margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   COLUMN LINKS
+========================================================= */
+
+.footer-column a {
+  width: fit-content;
+
+  margin-bottom: 14px;
+
+  color: #e1e0e8;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.footer-column a:hover {
+  color: #ffffff;
+
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   ENROLL BUTTON
+========================================================= */
+
+.footer-action {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-bottom: 25px;
+
+  /*
+    Pull the button back up because
+    Information heading must align with
+    Explore and Our Courses.
+  */
+  margin-top: -68px;
+}
+
+
+.footer-enroll-btn {
+  min-width: 125px;
+
+  height: 38px;
+
+  margin: 0 !important;
+
+  padding: 0 23px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #171028 !important;
+
+  background: #ffffff;
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-family: "Outfit", sans-serif !important;
+
+  font-size: 10px !important;
+
+  font-weight: 800 !important;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.footer-enroll-btn:hover {
+  color: #171028 !important;
+
+  background: #f5f3f7;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER DIVIDER
+========================================================= */
+
+.footer-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 40px 0 20px;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-bottom {
+  width: 100%;
+
+  text-align: center;
+
+  color: #d7d5df;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .footer-container {
+    width: 90%;
+  }
+
+  .footer-top {
+    grid-template-columns:
+      1.5fr
+      1fr
+      1fr
+      1fr;
+
+    column-gap: 30px;
+  }
+
+  .footer-explore,
+  .footer-courses,
+  .footer-info {
+    padding-top: 60px;
+  }
+
+  .footer-action {
+    margin-top: -60px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .footer-top {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    row-gap: 40px;
+
+    column-gap: 45px;
+  }
+
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+
+  .footer-explore,
+  .footer-courses,
+  .footer-info {
+    padding-top: 0;
+  }
+
+
+  .footer-action {
+    margin-top: 0;
+
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .site-footer {
+    padding: 45px 0 25px;
+  }
+
+
+  .footer-container {
+    width: calc(100% - 40px);
+
+    max-width: none;
+  }
+
+
+  .footer-top {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+
+  .footer-brand h3 {
+    margin-bottom: 18px;
+  }
+
+
+  .footer-brand p {
+    font-size: 11px;
+
+    margin-bottom: 16px;
+  }
+
+
+  .footer-explore,
+  .footer-courses,
+  .footer-info {
+    padding-top: 0;
+  }
+
+
+  .footer-column h3 {
+    margin-bottom: 18px;
+  }
+
+
+  .footer-column a {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+  }
+
+
+  .footer-action {
+    width: 100%;
+
+    margin-top: 0;
+
+    margin-bottom: 22px;
+
+    justify-content: flex-start;
+  }
+
+
+  .footer-enroll-btn {
+    min-width: 120px;
+
+    height: 36px;
+  }
+
+
+  .footer-divider {
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .footer-bottom {
+    font-size: 9px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .footer-container {
+    width: calc(100% - 30px);
+  }
+
+
+  .footer-logo img {
+    width: 140px;
+  }
+
+
+  .footer-brand p {
+    font-size: 10px;
+  }
+
+
+  .footer-column a {
+    font-size: 10px;
+  }
+
+}

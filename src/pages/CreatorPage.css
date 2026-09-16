@@ -67,7 +67,6 @@
   background-size: 18px 18px;
 }
 
-
 .creator-hero-content {
   width: min(1000px, 90%);
 
@@ -89,6 +88,7 @@
   border-radius: 30px;
 
   font-size: 12px;
+
   font-weight: 800;
 
   letter-spacing: 0.2px;
@@ -139,6 +139,7 @@
   );
 
   -webkit-background-clip: text;
+
   background-clip: text;
 
   color: transparent;
@@ -175,6 +176,7 @@
   background: var(--creator-pink);
 
   font-size: 14px;
+
   font-weight: 700;
 
   transition: 0.2s ease;
@@ -380,6 +382,7 @@
   text-align: center;
 
   font-size: 16px;
+
   font-weight: 600;
 
   line-height: 1.25;
@@ -746,7 +749,7 @@
 
 
 /* =========================================================
-   BRANDS
+   BRANDS — BLACK & WHITE
 ========================================================= */
 
 .creator-brands {
@@ -759,12 +762,16 @@
 .creator-brands h3 {
   margin-bottom: 30px;
 
+  color: #111111;
+
   font-size: 24px;
+
+  font-weight: 700;
 }
 
 
 .creator-brands h3 span {
-  color: #e5b700;
+  color: #111111;
 }
 
 
@@ -791,22 +798,41 @@
 
   flex-direction: column;
 
-  background: white;
+  background: #ffffff;
 
   box-shadow:
     0 4px 10px rgba(0, 0, 0, 0.05);
 
+  color: #111111;
+
   font-size: 13px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.brand-box span {
+  color: #111111;
+}
+
+
+.brand-box strong {
+  color: #111111;
 }
 
 
 .brand-box small {
+  color: #111111;
+
   font-size: 8px;
 }
 
 
 .canva-text {
-  color: #1a9bb0;
+  color: #111111;
 
   font-style: italic;
 
@@ -815,9 +841,21 @@
 
 
 .sony-text {
+  color: #111111;
+
   font-size: 20px;
 
   letter-spacing: 1px;
+}
+
+
+.brand-box:hover {
+  border-color: #111111;
+
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
 }
 
 
@@ -1363,9 +1401,15 @@
 
 
 .creator-gallery h2 {
-  margin-bottom: 35px;
+  margin: 0 0 42px;
 
   font-size: 30px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: var(--creator-purple);
 }
 
 
@@ -1374,46 +1418,227 @@
 }
 
 
-.meetup-grid {
-  display: grid;
+/* =========================================================
+   MEETUPS GALLERY
 
-  grid-template-columns: 1.5fr 0.85fr 0.85fr;
+   DESKTOP LAYOUT
+   Row 1: LARGE + SMALL + SMALL
+   Row 2: SMALL + SMALL + LARGE
+========================================================= */
 
-  gap: 14px;
+.meetup-gallery {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
 }
 
 
+.meetup-row {
+  width: 100%;
+
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   ROW 1
+   CARD 1 = LARGE
+   CARD 2 = SMALL
+   CARD 3 = SMALL
+========================================================= */
+
+.meetup-row-1 .meetup-large {
+  width: 44.6%;
+}
+
+
+.meetup-row-1 .meetup-small {
+  width: 25.7%;
+}
+
+
+/* =========================================================
+   ROW 2
+   CARD 4 = SMALL
+   CARD 5 = SMALL
+   CARD 6 = LARGE
+========================================================= */
+
+.meetup-row-2 .meetup-small {
+  width: 25.5%;
+}
+
+
+.meetup-row-2 .meetup-large {
+  width: 45.3%;
+}
+
+
+/* =========================================================
+   IMAGE CARDS
+========================================================= */
+
 .meetup-image {
+  height: 210px;
+
   overflow: hidden;
 
   border-radius: 25px;
+
+  flex-shrink: 0;
 }
 
 
 .meetup-image img {
   width: 100%;
 
-  height: 160px;
+  height: 100%;
+
+  display: block;
 
   object-fit: cover;
+
+  transition: transform 0.5s ease;
 }
 
 
-.meetup-0 {
-  grid-row: span 1;
+.meetup-image:hover img {
+  transform: scale(1.04);
 }
 
 
-.meetup-5 {
-  grid-column: span 2;
+/* =========================================================
+   GALLERY RESPONSIVE — 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .creator-gallery {
+    width: 90%;
+  }
+
+
+  .meetup-row {
+    gap: 12px;
+  }
+
+
+  .meetup-image {
+    height: 190px;
+
+    border-radius: 22px;
+  }
+
 }
 
 
-.meetup-5 img,
-.meetup-0 img {
-  height: 170px;
+/* =========================================================
+   GALLERY RESPONSIVE — 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .creator-gallery {
+    width: 90%;
+  }
+
+
+  .creator-gallery h2 {
+    font-size: 26px;
+
+    margin-bottom: 30px;
+  }
+
+
+  .meetup-gallery {
+    gap: 12px;
+  }
+
+
+  .meetup-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+  }
+
+
+  .meetup-row-1 .meetup-large,
+  .meetup-row-1 .meetup-small,
+  .meetup-row-2 .meetup-small,
+  .meetup-row-2 .meetup-large {
+    width: 100%;
+  }
+
+
+  .meetup-row-1 .meetup-large {
+    grid-column: span 2;
+  }
+
+
+  .meetup-row-2 .meetup-large {
+    grid-column: span 2;
+  }
+
+
+  .meetup-image {
+    height: 190px;
+
+    border-radius: 20px;
+  }
+
 }
 
+
+/* =========================================================
+   GALLERY RESPONSIVE — 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .creator-gallery {
+    width: 92%;
+
+    margin-bottom: 70px;
+  }
+
+
+  .creator-gallery h2 {
+    font-size: 23px;
+
+    margin-bottom: 24px;
+  }
+
+
+  .meetup-row {
+    grid-template-columns: 1fr;
+  }
+
+
+  .meetup-row-1 .meetup-large,
+  .meetup-row-2 .meetup-large {
+    grid-column: auto;
+  }
+
+
+  .meetup-image {
+    width: 100%;
+
+    height: 220px;
+
+    border-radius: 18px;
+  }
+
+}
 
 /* =========================================================
    FAQ
@@ -1471,6 +1696,7 @@
   display: flex;
 
   align-items: center;
+
   justify-content: space-between;
 
   text-align: left;
@@ -1536,18 +1762,22 @@
 
 .creator-footer-logo {
   display: flex;
+
   align-items: center;
+
   margin-bottom: 32px;
 }
 
+
 .creator-footer-logo img {
   display: block;
+
   width: 150px;
+
   height: auto;
+
   object-fit: contain;
 }
-
-
 
 
 .creator-footer-logo strong {
@@ -1653,7 +1883,7 @@
 
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE — 900px
 ========================================================= */
 
 @media (max-width: 900px) {
@@ -1735,6 +1965,10 @@
   }
 }
 
+
+/* =========================================================
+   RESPONSIVE — 700px
+========================================================= */
 
 @media (max-width: 700px) {
 
@@ -1850,21 +2084,16 @@
   }
 
 
-  .meetup-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-
-  .meetup-5 {
-    grid-column: span 2;
-  }
-
 
   .creator-footer-top {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+
+/* =========================================================
+   RESPONSIVE — 480px
+========================================================= */
 
 @media (max-width: 480px) {
 
@@ -1975,22 +2204,6 @@
     padding: 25px;
   }
 
-
-  .meetup-grid {
-    grid-template-columns: 1fr;
-  }
-
-
-  .meetup-5 {
-    grid-column: auto;
-  }
-
-
-  .meetup-image img,
-  .meetup-0 img,
-  .meetup-5 img {
-    height: 220px;
-  }
 
 
   .creator-footer-top {

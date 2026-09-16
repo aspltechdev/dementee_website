@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Plus, Minus, Play } from "lucide-react";
 import footerlogo from "../assets/footerlogo.png";
 import Navbar from "../components/Navbar";
-
+import Footer from "./Footer";
 import "./CareerGap.css";
 
 function CareerGap() {
@@ -121,14 +121,14 @@ function CareerGap() {
 
       {/* =====================================================
           NAVBAR
-          ===================================================== */}
+      ===================================================== */}
 
       <Navbar />
 
 
       {/* =====================================================
           HERO
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="cg-hero">
 
@@ -156,7 +156,7 @@ function CareerGap() {
 
         {/* =================================================
             THE REALITY
-            ================================================= */}
+        ================================================= */}
 
         <div className="cg-reality">
 
@@ -220,7 +220,7 @@ function CareerGap() {
 
       {/* =====================================================
           4 STEP ROAD MAP
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="cg-roadmap-section">
 
@@ -247,6 +247,7 @@ function CareerGap() {
           <div className="cg-steps-grid">
 
             {journeySteps.map((step) => (
+
               <article
                 className={`cg-step-card ${
                   step.featured ? "cg-step-featured" : ""
@@ -267,6 +268,7 @@ function CareerGap() {
                 </p>
 
               </article>
+
             ))}
 
           </div>
@@ -278,7 +280,7 @@ function CareerGap() {
 
       {/* =====================================================
           TAILORED TRACKS
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="cg-tracks-section">
 
@@ -305,6 +307,7 @@ function CareerGap() {
           <div className="cg-track-grid">
 
             {tracks.map((track) => (
+
               <article
                 className="cg-track-card"
                 key={track.title}
@@ -323,6 +326,7 @@ function CareerGap() {
                 </p>
 
               </article>
+
             ))}
 
           </div>
@@ -334,7 +338,7 @@ function CareerGap() {
 
       {/* =====================================================
           VOICES OF TRANSFORMATION
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="cg-voices-section">
 
@@ -357,6 +361,7 @@ function CareerGap() {
           <div className="cg-testimonial-grid">
 
             {testimonials.map((testimonial, index) => (
+
               <article
                 className="cg-testimonial-card"
                 key={index}
@@ -396,6 +401,7 @@ function CareerGap() {
                 </div>
 
               </article>
+
             ))}
 
           </div>
@@ -407,7 +413,7 @@ function CareerGap() {
 
       {/* =====================================================
           OUR VISION
-          ===================================================== */}
+      ===================================================== */}
 
       <section className="cg-vision-section">
 
@@ -428,12 +434,14 @@ function CareerGap() {
           </div>
 
 
-          <a
-            href="#cg-faq"
+          {/* REDIRECT TO CONTACT PAGE */}
+
+          <Link
+            to="/contact"
             className="cg-vision-button"
           >
             ENQUIRY NOW
-          </a>
+          </Link>
 
         </div>
 
@@ -442,7 +450,7 @@ function CareerGap() {
 
       {/* =====================================================
           FAQ
-          ===================================================== */}
+      ===================================================== */}
 
       <section
         className="cg-faq-section"
@@ -502,6 +510,7 @@ function CareerGap() {
 
 
                   {isOpen && (
+
                     <div className="cg-faq-answer">
 
                       <p>
@@ -510,6 +519,7 @@ function CareerGap() {
                       </p>
 
                     </div>
+
                   )}
 
                 </div>
@@ -523,147 +533,7 @@ function CareerGap() {
 
       </section>
 
-
-      {/* =====================================================
-          FOOTER
-          ===================================================== */}
-
-      <footer className="cg-footer">
-
-        <div className="cg-footer-container">
-
-          <div className="cg-footer-top">
-
-
-            {/* BRAND */}
-
-            <div className="cg-footer-brand">
-
-            <div className="cg-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
-
-              <h3>
-                ADDRESS
-              </h3>
-
-
-              <p>
-                Address : 142, 2nd Floor, Kamaraj Salai,
-                Puducherry, 605013
-              </p>
-
-
-              <p>
-                Phone: +91 88703 97432
-              </p>
-
-
-              <p>
-                info@dementee.in
-              </p>
-
-            </div>
-
-
-            {/* EXPLORE */}
-
-            <div className="cg-footer-column">
-
-              <h3>
-                EXPLORE
-              </h3>
-
-              <Link to="/">
-                Home
-              </Link>
-
-              <a href="#success">
-                Success story
-              </a>
-
-              <a href="#blog">
-                Blog
-              </a>
-
-              <Link to="/about">
-                About us
-              </Link>
-
-              <a href="#contact">
-                Contact us
-              </a>
-
-            </div>
-
-
-            {/* COURSES */}
-
-            <div className="cg-footer-column">
-
-              <h3>
-                OUR COURSES
-              </h3>
-
-              <Link to="/courses/ui-ux-design">
-                UI / UX Designer
-              </Link>
-
-              <Link to="/courses/digital-marketing">
-                Digital marketing
-              </Link>
-
-              <Link to="/courses/full-stack-development">
-                Web Development
-              </Link>
-
-            </div>
-
-
-            {/* INFORMATION */}
-
-            <div className="cg-footer-column">
-
-              <h3>
-                INFORMATION
-              </h3>
-
-              <a href="#privacy">
-                Privacy policy
-              </a>
-
-              <a href="#terms">
-                Terms & Conditions
-              </a>
-
-            </div>
-
-
-            <a
-              href="#cg-faq"
-              className="cg-footer-enroll"
-            >
-              Enroll Today
-            </a>
-
-          </div>
-
-
-          <div className="cg-footer-divider"></div>
-
-
-          <div className="cg-footer-bottom">
-
-            © 2024 De Mentee Academy. All Rights Reserved
-
-          </div>
-
-        </div>
-
-      </footer>
+<Footer />
 
     </div>
   );

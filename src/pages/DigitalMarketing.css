@@ -1343,8 +1343,8 @@
 }
 
 .dm-pricing-card {
-  width: 84%;
-  max-width: 1180px;
+  width: 78%;
+  max-width: 1000px;
   min-height: 300px;
 
   margin: 0 auto;
@@ -1353,9 +1353,9 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
-  gap: 50px;
+  gap: 20px;
 
   background:
     radial-gradient(
@@ -1425,7 +1425,7 @@
 }
 
 .dm-pricing-details p {
-  margin: 0;
+  margin: 2px;
 
   color: rgba(255, 255, 255, 0.92);
 
@@ -1441,7 +1441,7 @@
 ===================================================== */
 
 .dm-pricing-box {
-  width: 330px;
+  width: 320px;
   min-height: 220px;
 
   padding: 28px 38px 24px;
@@ -1685,7 +1685,7 @@
 @media (max-width: 900px) {
 
   .dm-pricing-card {
-    width: 90%;
+    width: 80%;
 
     padding: 40px;
 

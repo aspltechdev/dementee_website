@@ -180,3 +180,64 @@ textarea {
   display: block;
   object-fit: contain;
 }
+/* =========================================================
+   ACTIVE NAVBAR SECTION
+========================================================= */
+
+.nav-links > a.active,
+.courses-dropdown-btn.active,
+.more-dropdown-btn.active {
+  color: #6c5ce7;
+  position: relative;
+}
+
+/* Active underline */
+.nav-links > a.active::after,
+.courses-dropdown-btn.active::after,
+.more-dropdown-btn.active::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+
+  height: 2px;
+
+  background: #6c5ce7;
+  border-radius: 10px;
+}
+/* =========================================================
+   ACTIVE NAVBAR SECTION
+========================================================= */
+
+.nav-links > a.active,
+.courses-dropdown-btn.active,
+.more-dropdown-btn.active {
+  color: #6c5ce7;
+  position: relative;
+}
+
+/* Active underline */
+.nav-links > a.active::after,
+.courses-dropdown-btn.active::after,
+.more-dropdown-btn.active::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+
+  height: 2px;
+
+  background: #6c5ce7;
+  border-radius: 10px;
+}
+
+/* Active dropdown item */
+.courses-dropdown-menu a.dropdown-active,
+.more-dropdown-menu a.dropdown-active {
+  color: #6c5ce7;
+  font-weight: 600;
+}

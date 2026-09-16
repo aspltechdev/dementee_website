@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "./FullStack.css";
 import footerlogo from "../assets/footerlogo.png";
+import Footer from "./Footer";
+
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
+import journey from "../assets/journey.jpg";
 
 import reactimage from "../assets/reactimage.png";
 import nodeimage from "../assets/nodeimage.png";
@@ -229,8 +236,12 @@ const FullStack = () => {
    {/* =====================================================
     PROJECTS
 ===================================================== */}
+{/* =====================================================
+    PROJECTS
+===================================================== */}
 
 <section className="fs-projects">
+
   <div className="fs-container">
 
     <div className="fs-project-heading">
@@ -253,65 +264,81 @@ const FullStack = () => {
 
     <div className="fs-project-grid">
 
-      {/* E-COMMERCE */}
+      {/* ================= PROJECT 1 ================= */}
 
       <article className="fs-project-card fs-project-large">
 
-        <h3>E-Commerce Website</h3>
+        <h3>
+          E-Commerce Website
+        </h3>
 
         <div className="fs-project-image">
+
           <img
-            src={tailwindimage}
+            src={project1}
             alt="E-Commerce Website"
           />
+
         </div>
 
       </article>
 
 
-      {/* ADMIN */}
+      {/* ================= PROJECT 2 ================= */}
 
       <article className="fs-project-card">
 
-        <h3>Admin Dashboard</h3>
+        <h3>
+          Admin Dashboard
+        </h3>
 
         <div className="fs-project-image">
+
           <img
-            src={tailwindimage}
+            src={project2}
             alt="Admin Dashboard"
           />
+
         </div>
 
       </article>
 
 
-      {/* NETFLIX */}
+      {/* ================= PROJECT 3 ================= */}
 
       <article className="fs-project-card">
 
-        <h3>Netflix Clone</h3>
+        <h3>
+          Netflix Clone
+        </h3>
 
         <div className="fs-project-image">
+
           <img
-            src={tailwindimage}
+            src={project3}
             alt="Netflix Clone"
           />
+
         </div>
 
       </article>
 
 
-      {/* CHAT */}
+      {/* ================= PROJECT 4 ================= */}
 
       <article className="fs-project-card">
 
-        <h3>Real Time Chat App</h3>
+        <h3>
+          Real Time Chat App
+        </h3>
 
         <div className="fs-project-image">
+
           <img
-            src={tailwindimage}
+            src={project4}
             alt="Real Time Chat App"
           />
+
         </div>
 
       </article>
@@ -319,8 +346,8 @@ const FullStack = () => {
     </div>
 
   </div>
-</section>
 
+</section>
 
       {/* =====================================================
           CAREER PATHWAYS
@@ -646,9 +673,12 @@ const FullStack = () => {
 
             </ul>
 
-            <button>
-              Enroll now
-            </button>
+             <Link
+  to="/contact"
+  className="uiux-enroll-btn"
+>
+  Enroll now
+</Link>
 
           </div>
 
@@ -687,7 +717,7 @@ const FullStack = () => {
           <div className="fs-vision-image">
 
             <img
-              src="/images/full-stack-learning.jpg"
+              src={journey}
               alt="Full Stack Development"
             />
 
@@ -758,102 +788,7 @@ const FullStack = () => {
 
       </section>
 
-
-      {/* =====================================================
-          FOOTER
-      ===================================================== */}
-
-      <footer className="fs-footer">
-
-        <div className="fs-footer-container">
-
-          <div className="fs-footer-brand">
-
-          <Link to="/" className="fs-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</Link>
-
-            <h4>ADDRESS</h4>
-
-            <p>
-              Address: 142, 2nd Floor, Kamaraj Salai, Puducherry,
-              <br />
-              605013
-            </p>
-
-            <p>
-              Phone: +91 88703 97432
-            </p>
-
-            <p>
-              info@dementee.in
-            </p>
-
-          </div>
-
-
-          <div className="fs-footer-column">
-
-            <h4>EXPLORE</h4>
-
-            <Link to="/">Home</Link>
-            <Link to="/alumni">Success story</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/about">About us</Link>
-            <Link to="/contact">Contact us</Link>
-
-          </div>
-
-
-          <div className="fs-footer-column">
-
-            <h4>OUR COURSES</h4>
-
-            <Link to="/courses/ui-ux-design">
-              UI / UX Designer
-            </Link>
-
-            <Link to="/courses/digital-marketing">
-              Digital marketing
-            </Link>
-
-            <Link to="/courses/full-stack-development">
-              Web Development
-            </Link>
-
-          </div>
-
-
-          <div className="fs-footer-column">
-
-            <button className="footer-enroll">
-              Enroll Today
-            </button>
-
-            <h4>INFORMATION</h4>
-
-            <Link to="#">
-              Privacy policy
-            </Link>
-
-            <Link to="#">
-              Terms &amp; Conditions
-            </Link>
-
-          </div>
-
-        </div>
-
-
-        <div className="fs-footer-bottom">
-          © 2024 De Mentee Academy. All Rights Reserved
-        </div>
-
-      </footer>
-
+<Footer />
     </div>
   );
 };

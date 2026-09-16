@@ -4,9 +4,8 @@ import Course from "./Course";
 import Gallery from "./Gallery";
 import { Play, Plus, Minus, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import dementeelogo from "../../assets/dementeelogo.png";
-import footerlogo from "../../assets/footerlogo.png";
 import "./Home.css";
+import Footer from "../Footer";
 
 function Home() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -66,9 +65,9 @@ function Home() {
                 EXPLORE ALL COURSES
               </a>
 
-              <a href="#enroll" className="enroll-btn">
-                ENROLL NOW
-              </a>
+              <Link to="/contact" className="enroll-btn">
+  ENROLL NOW
+</Link>
             </div>
 
             <div className="students">
@@ -771,81 +770,9 @@ function Home() {
             </div>
           </div>
         </section>
-
-        {/* ================= FINAL FOOTER ================= */}
-        <footer className="site-footer">
-          <div className="footer-container">
-            <div className="footer-top">
-
-              {/* BRAND / ADDRESS */}
-              <div className="footer-brand">
-                <div className="footer-logo">
-                  <img
-                    src={footerlogo}
-                    alt="De mentee Technologies"
-                    className="footer-logo-image"
-                  />
-                </div>
-
-                <h3>ADDRESS</h3>
-
-                <p>
-                  Address : 142, 2nd Floor, Kamaraj Salai, Puducherry,
-                  <br />
-                  605013
-                </p>
-
-                <p>Phone: +91 88703 97432</p>
-
-                <p>info@dementee.in</p>
-              </div>
-
-              {/* EXPLORE */}
-              <div className="footer-column">
-                <h3>EXPLORE</h3>
-
-                <Link to="/">Home</Link>
-                <a href="#/success">Success story</a>
-                <a href="#/blog">Blog</a>
-                <Link to="/about">About us</Link>
-                <a href="#/contact">Contact us</a>
-              </div>
-
-              {/* COURSES */}
-              <div className="footer-column">
-                <h3>OUR COURSES</h3>
-
-                <a href="/#courses">UI / UX Designer</a>
-                <a href="/#courses">Digital marketing</a>
-                <a href="/#courses">Web Development</a>
-              </div>
-
-              {/* INFORMATION */}
-              <div className="footer-column footer-info">
-                <div className="footer-action">
-                  <a
-                    href="#contact"
-                    className="footer-enroll-btn"
-                  >
-                    Enroll Today
-                  </a>
-                </div>
-
-                <h3>INFORMATION</h3>
-
-                <a href="#">Privacy policy</a>
-                <a href="#">Terms & Conditions</a>
-              </div>
-            </div>
-
-            <div className="footer-divider"></div>
-
-            <div className="footer-bottom">
-              © 2024 De Mentee Academy. All Rights Reserved
-            </div>
-          </div>
-        </footer>
       </main>
+
+      <Footer />
     </div>
   );
 }

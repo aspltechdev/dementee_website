@@ -1,3 +1,4 @@
+
 /* =====================================================
    OUR COURSES SECTION
 ===================================================== */
@@ -18,7 +19,10 @@
   margin: 0 auto;
 }
 
-/* TITLE */
+
+/* =====================================================
+   TITLE
+===================================================== */
 
 .courses-title {
   margin: 0 0 55px;
@@ -37,26 +41,21 @@
   color: #5d53df;
 }
 
+
 /* =====================================================
-   STICKY STACK
+   STICKY COURSE STACK
 ===================================================== */
 
 .course-stack {
   position: relative;
-   padding-bottom: 50px;
 
-  /* Gives the final sticky card enough scroll space
-     to reach the same position as the cards above it */
-
+  padding-bottom: 50px;
 }
-/*
-  IMPORTANT:
 
-  All cards use the same sticky top position.
 
-  Card 2 reaches this point and covers Card 1.
-  Card 3 reaches this point and covers Card 2.
-*/
+/* =====================================================
+   COURSE CARD
+===================================================== */
 
 .course-card {
   position: sticky;
@@ -71,6 +70,7 @@
   padding: 40px 45px;
 
   display: grid;
+
   grid-template-columns: 1fr 0.78fr;
 
   align-items: center;
@@ -82,16 +82,20 @@
   background: #fffdfd;
 
   border: 1px solid #ebe6eb;
+
   border-radius: 30px;
 
   box-shadow:
     0 18px 45px rgba(32, 15, 42, 0.08),
     0 4px 12px rgba(32, 15, 42, 0.04);
+
+  box-sizing: border-box;
 }
 
-/*
-  Higher cards appear ABOVE previous cards.
-*/
+
+/* =====================================================
+   STACK ORDER
+===================================================== */
 
 .course-card-1 {
   z-index: 1;
@@ -105,6 +109,7 @@
   z-index: 3;
 }
 
+
 /* =====================================================
    COURSE INFORMATION
 ===================================================== */
@@ -113,6 +118,11 @@
   width: 100%;
 }
 
+
+/* =====================================================
+   BADGE
+===================================================== */
+
 .course-badge {
   width: fit-content;
 
@@ -120,7 +130,7 @@
 
   padding: 7px 18px;
 
-  color: #604ce0;
+  color: #604c5e;
 
   background: #efedef;
 
@@ -131,15 +141,28 @@
   font-size: 9px;
 
   font-weight: 800;
+
+  line-height: 1.2;
 }
+
+
+/* Pink badge */
 
 .pink-badge {
   color: #ef3c8d;
 }
 
+
+/* Blue badge */
+
 .blue-badge {
   color: #4d4bd7;
 }
+
+
+/* =====================================================
+   COURSE TITLE
+===================================================== */
 
 .course-info h3 {
   margin: 0 0 18px;
@@ -149,10 +172,16 @@
   font-family: "Outfit", sans-serif;
 
   font-size: 30px;
+
   line-height: 1.1;
 
   font-weight: 700;
 }
+
+
+/* =====================================================
+   COURSE DESCRIPTION
+===================================================== */
 
 .course-info > p {
   max-width: 560px;
@@ -164,13 +193,20 @@
   font-family: "Outfit", sans-serif;
 
   font-size: 13px;
+
   line-height: 1.65;
 
   font-weight: 400;
 }
 
+
+/* =====================================================
+   DIVIDER LINE
+===================================================== */
+
 .course-line {
   width: 100%;
+
   height: 1px;
 
   margin: 36px 0 22px;
@@ -178,15 +214,25 @@
   background: #ded9df;
 }
 
-/* COURSE BOTTOM */
+
+/* =====================================================
+   COURSE FOOTER
+===================================================== */
 
 .course-footer {
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
   gap: 25px;
+
+  width: 100%;
 }
+
+
+/* Duration */
 
 .course-footer span {
   color: #4e4650;
@@ -198,8 +244,12 @@
   font-weight: 500;
 }
 
+
+/* View details */
+
 .course-footer a {
   display: flex;
+
   align-items: center;
 
   gap: 9px;
@@ -211,18 +261,28 @@
   font-size: 10px;
 
   font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .course-footer a:hover {
   color: #e43e94;
+
+  transform: translateX(3px);
 }
 
+
 /* =====================================================
-   COURSE IMAGES
+   COURSE IMAGE
 ===================================================== */
 
 .course-image {
   width: 100%;
+
   height: 230px;
 
   overflow: hidden;
@@ -232,6 +292,7 @@
 
 .course-image img {
   width: 100%;
+
   height: 100%;
 
   display: block;
@@ -241,26 +302,33 @@
   transition: transform 0.4s ease;
 }
 
+
+/* Image hover */
+
 .course-card:hover .course-image img {
   transform: scale(1.03);
 }
 
+
 /* =====================================================
-   COURSE 2
+   COURSE 2 - REVERSE LAYOUT
 ===================================================== */
 
 .course-card-2 {
   grid-template-columns: 0.78fr 1fr;
 }
 
+
 /* =====================================================
    TABLET
 ===================================================== */
 
 @media (max-width: 1000px) {
+
   .courses-container {
     width: 90%;
   }
+
 
   .course-card,
   .course-card-2 {
@@ -271,38 +339,67 @@
     grid-template-columns: 1fr 1fr;
   }
 
+
   .course-info h3 {
     font-size: 25px;
   }
+
+
+  .course-info > p {
+    font-size: 12px;
+  }
+
+
+  .course-image {
+    height: 210px;
+  }
 }
+
 
 /* =====================================================
    MOBILE
 ===================================================== */
 
 @media (max-width: 750px) {
+
   .courses-section {
     padding-top: 60px;
+
+    padding-bottom: 80px;
   }
+
 
   .courses-container {
     width: calc(100% - 24px);
   }
 
+
   .courses-title {
     font-size: 27px;
+
     margin-bottom: 40px;
   }
+
+
+  /* Course cards */
 
   .course-card,
   .course-card-2 {
     top: 75px;
+
     min-height: auto;
+
     padding: 25px;
+
     grid-template-columns: 1fr;
+
     gap: 28px;
+
     border-radius: 22px;
   }
+
+
+  /* Course 2 mobile order */
 
   .course-card-2 .course-image {
     order: 2;
@@ -312,11 +409,129 @@
     order: 1;
   }
 
+
+  /* Image */
+
   .course-image {
     height: 220px;
+
+    border-radius: 18px;
   }
+
+
+  /* Badge */
 
   .course-badge {
     margin-bottom: 22px;
+
+    font-size: 9px;
+
+    padding: 7px 15px;
+  }
+
+
+  /* Title */
+
+  .course-info h3 {
+    font-size: 24px;
+
+    line-height: 1.15;
+
+    margin-bottom: 14px;
+  }
+
+
+  /* Description */
+
+  .course-info > p {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+
+
+  /* Divider */
+
+  .course-line {
+    margin: 28px 0 18px;
+  }
+
+
+  /* Footer */
+
+  .course-footer {
+    gap: 15px;
+  }
+
+
+  .course-footer span {
+    font-size: 9px;
+  }
+
+
+  .course-footer a {
+    font-size: 9px;
+
+    gap: 6px;
   }
 }
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .courses-container {
+    width: calc(100% - 20px);
+  }
+
+
+  .courses-title {
+    font-size: 25px;
+
+    margin-bottom: 35px;
+  }
+
+
+  .course-card,
+  .course-card-2 {
+    top: 65px;
+
+    padding: 20px;
+
+    gap: 22px;
+
+    border-radius: 20px;
+  }
+
+
+  .course-image {
+    height: 190px;
+
+    border-radius: 16px;
+  }
+
+
+  .course-info h3 {
+    font-size: 22px;
+  }
+
+
+  .course-info > p {
+    font-size: 11px;
+  }
+
+
+  .course-footer {
+    flex-wrap: wrap;
+  }
+
+
+  .course-footer span,
+  .course-footer a {
+    font-size: 9px;
+  }
+}
+

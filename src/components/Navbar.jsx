@@ -1,131 +1,180 @@
+import React from "react";
 import { ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import dementeelogo from "../assets/dementeelogo.png";
 
 function Navbar() {
+  const location = useLocation();
+
+  const isCoursesActive = location.pathname.startsWith("/courses/");
+
+  const isMoreActive =
+    location.pathname.startsWith("/alumni") ||
+    location.pathname.startsWith("/blog") ||
+    location.pathname.startsWith("/creator");
+
   return (
     <header className="navbar">
 
       {/* LOGO */}
-   <Link to="/" className="logo">
-  <img
-    src={dementeelogo}
-    alt="De Mentee Technologies"
-    className="dementee-logo"
-  />
-</Link>
-
+      <Link to="/" className="logo">
+        <img
+          src={dementeelogo}
+          alt="De Mentee Technologies"
+          className="dementee-logo"
+        />
+      </Link>
 
       {/* NAVIGATION */}
       <nav className="nav-links">
 
         {/* HOME */}
-        <Link to="/">
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            `nav-link ${isActive ? "active" : ""}`
+          }
+        >
           Home
-        </Link>
-
+        </NavLink>
 
         {/* ABOUT */}
-        <Link to="/about">
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `nav-link ${isActive ? "active" : ""}`
+          }
+        >
           About Us
-        </Link>
+        </NavLink>
 
-
-        {/* ================= COURSES ================= */}
+        {/* COURSES */}
         <div className="courses-dropdown">
 
           <button
             type="button"
-            className="courses-dropdown-btn"
+            className={`courses-dropdown-btn ${
+              isCoursesActive ? "active" : ""
+            }`}
           >
             <span>Courses</span>
-
             <ChevronDown
               className="courses-chevron"
               size={14}
             />
           </button>
 
-
           <div className="courses-dropdown-menu">
 
-            <Link to="/courses/ui-ux-design">
+            <NavLink
+              to="/courses/ui-ux-design"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               UI / UX Design
-            </Link>
+            </NavLink>
 
-            <Link to="/courses/digital-marketing">
+            <NavLink
+              to="/courses/digital-marketing"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               Digital Marketing
-            </Link>
+            </NavLink>
 
-            <Link to="/courses/full-stack-development">
+            <NavLink
+              to="/courses/full-stack-development"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               Full Stack Development
-            </Link>
+            </NavLink>
 
-            <Link to="/courses/career-gap">
+            <NavLink
+              to="/courses/career-gap"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               Career Gap Opportunity
-            </Link>
+            </NavLink>
 
           </div>
-
         </div>
 
-
-        {/* ================= MORE ================= */}
-          <div className="more-dropdown">
+        {/* MORE */}
+        <div className="more-dropdown">
 
           <button
             type="button"
-            className="more-dropdown-btn"
+            className={`more-dropdown-btn ${
+              isMoreActive ? "active" : ""
+            }`}
           >
             <span>More</span>
-
             <ChevronDown
               className="more-chevron"
               size={14}
             />
           </button>
 
-
-         
-        
-
-
           <div className="more-dropdown-menu">
 
-            <Link to="/alumni">
+            <NavLink
+              to="/alumni"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               Alumni
-            </Link>
+            </NavLink>
 
-            <Link to="/blog">
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               Blog
-            </Link>
+            </NavLink>
 
-            <Link to="/creator">
+            <NavLink
+              to="/creator"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
               Creator
-            </Link>
+            </NavLink>
 
           </div>
-
-</div>
+        </div>
 
         {/* CONTACT */}
-        <Link
+        <NavLink
           to="/contact"
-          className="contact-nav-link"
+          className={({ isActive }) =>
+            `nav-link contact-nav-link ${
+              isActive ? "active" : ""
+            }`
+          }
         >
           Contact Us
-        </Link>
+        </NavLink>
 
       </nav>
 
-
       {/* GET IN TOUCH */}
-      <Link
+      <NavLink
         to="/contact"
         className="get-in-touch"
       >
         Get in touch
-      </Link>
+      </NavLink>
 
     </header>
   );

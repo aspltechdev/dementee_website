@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Gallery.css";
 
+
 import about1 from "../../assets/about1.png";
 import about2 from "../../assets/about2.png";
 import about3 from "../../assets/about3.png";

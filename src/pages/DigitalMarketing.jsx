@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import "./DigitalMarketing.css";
 import { useState } from "react";
+import Footer from "./Footer";
 import footerlogo from "../assets/footerlogo.png";
 
 function DigitalMarketing() {
@@ -643,10 +645,13 @@ const [openDmFaq, setOpenDmFaq] = useState(null);
         experience.
       </p>
     </div>
-
-    <a href="#dm-enroll" className="dm-journey-enroll">
-      ENROLL NOW
-    </a>
+ <Link
+  to="/contact"
+  className="dm-journey-enroll"
+>
+  Enroll now
+</Link>
+    
   </div>
 
 
@@ -691,94 +696,9 @@ const [openDmFaq, setOpenDmFaq] = useState(null);
 
 </section>
 
-{/* =====================================================
-    DIGITAL MARKETING FOOTER
-===================================================== */}
-<footer className="dm-footer">
-  <div className="dm-footer-container">
-
-    {/* BRAND / ADDRESS */}
-    <div className="dm-footer-brand">
-     <div className="dm-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
-
-      <h3>ADDRESS</h3>
-
-      <p>
-        Address : 142, 2nd Floor, Kamaraj Salai, Puducherry,
-        <br />
-        605013
-      </p>
-
-      <p>Phone: +91 88703 97432</p>
-
-      <p>info@dementee.in</p>
-    </div>
-
-
-    {/* EXPLORE */}
-    <div className="dm-footer-column">
-      <h3>EXPLORE</h3>
-
-      <a href="/">Home</a>
-      <a href="#success">Success story</a>
-      <a href="#blog">Blog</a>
-      <a href="/about">About us</a>
-      <a href="#contact">Contact us</a>
-    </div>
-
-
-    {/* COURSES */}
-    <div className="dm-footer-column">
-      <h3>OUR COURSES</h3>
-
-      <a href="/courses/ui-ux-design">
-        UI / UX Designer
-      </a>
-
-      <a href="/courses/digital-marketing">
-        Digital marketing
-      </a>
-
-      <a href="#web-development">
-        Web Development
-      </a>
-    </div>
-
-
-    {/* INFORMATION */}
-    <div className="dm-footer-column dm-footer-info">
-      <a href="#dm-enroll" className="dm-footer-enroll">
-        Enroll Today
-      </a>
-
-      <h3>INFORMATION</h3>
-
-      <a href="#privacy">
-        Privacy policy
-      </a>
-
-      <a href="#terms">
-        Terms &amp; Conditions
-      </a>
-    </div>
-
-  </div>
-
-
-  <div className="dm-footer-divider"></div>
-
-
-  <div className="dm-footer-bottom">
-    © 2024 De Mentee Academy. All Rights Reserved
-  </div>
-</footer>
-
       </main>
+
+      <Footer />
     </div>
   );
 }

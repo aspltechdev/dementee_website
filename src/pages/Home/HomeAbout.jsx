@@ -2,6 +2,7 @@ import { Play } from "lucide-react";
 import "./HomeAbout.css";
 import Navbar from "../components/Navbar";
 
+
 function About() {
   return (
     <div className="about-page">

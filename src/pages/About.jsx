@@ -1,6 +1,8 @@
-import { Play } from "lucide-react";
+import { Play, Pause } from "lucide-react";
+import { useRef, useState } from "react";
 import "./About.css";
 import Navbar from "../components/Navbar";
+import Footer from "./Footer";
 import footerlogo from "../assets/footerlogo.png";
 
 import award1 from "../assets/award1.png";
@@ -29,6 +31,32 @@ import journey from "../assets/journey.jpg";
 
 import Nivetha from "../assets/Nivetha.png";
 function About() {
+  const youtubeIframeRef = useRef(null);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+  const sendYoutubeCommand = (func) => {
+    if (!youtubeIframeRef.current) return;
+
+    youtubeIframeRef.current.contentWindow.postMessage(
+      JSON.stringify({
+        event: "command",
+        func,
+        args: [],
+      }),
+      "*"
+    );
+  };
+
+  const toggleYoutubeVideo = () => {
+    if (isVideoPlaying) {
+      sendYoutubeCommand("pauseVideo");
+      setIsVideoPlaying(false);
+    } else {
+      sendYoutubeCommand("playVideo");
+      setIsVideoPlaying(true);
+    }
+  };
+
   return (
     <div className="about-page">
 
@@ -63,13 +91,36 @@ function About() {
 
         <div className="foundation-card">
 
-       <div className="foundation-media">
-  <iframe
-    src="https://www.youtube.com/embed/pVwu3B-0dX8"
-    title="Empowering Growth Through Mentorship"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  ></iframe>
+      <div className="foundation-media">
+
+  <div className="foundation-iframe-layer">
+    <iframe
+      ref={youtubeIframeRef}
+      src="https://www.youtube.com/embed/g9H1D2d-CAI?enablejsapi=1&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
+      title="Empowering Growth Through Mentorship"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+  </div>
+
+  <div
+    className="foundation-video-click-blocker"
+    aria-hidden="true"
+  ></div>
+
+  <button
+    type="button"
+    className={`foundation-play ${isVideoPlaying ? "playing" : ""}`}
+    onClick={toggleYoutubeVideo}
+    aria-label={isVideoPlaying ? "Pause video" : "Play video"}
+  >
+    {isVideoPlaying ? (
+      <Pause size={22} fill="currentColor" />
+    ) : (
+      <Play size={22} fill="currentColor" />
+    )}
+  </button>
+
 </div>
 
 
@@ -188,175 +239,111 @@ function About() {
       {/* ================= OUR JOURNEY ================= */}
 
       <section className="journey-section">
-
         <div className="journey-container">
 
-          <div className="journey-grid">
+          {/* ================= JOURNEY HEADING ================= */}
 
-            {/* LEFT TIMELINE CARDS */}
-
-            <div className="journey-cards">
-
-              {/* 2022 */}
-
-              <article className="journey-card">
-
-                <div className="journey-image">
-<img
-  src={thebegenning}
-  alt="De Mentee beginning"
-/>
-
-                  <div className="journey-year">
-                    2022
-                  </div>
-
-                </div>
-
-                <div className="journey-card-content">
-
-                  <h3>
-                    THE BEGINNING
-                  </h3>
-
-                  <p>
-                    What began as a small dream from home marked the first step
-                    of our journey.
-                  </p>
-
-                </div>
-
-              </article>
-
-
-              {/* 2023 */}
-
-              <article className="journey-card">
-
-                <div className="journey-image">
-
-                  <img
-  src={growingstrong}
-  alt="De Mentee growing strong"
-/>
-
-                  <div className="journey-year">
-                    2023
-                  </div>
-
-                </div>
-
-                <div className="journey-card-content">
-
-                  <h3>
-                    GROWING STRONG
-                  </h3>
-
-                  <p>
-                    As our vision grew, we moved into a new space and began
-                    building something bigger.
-                  </p>
-
-                </div>
-
-              </article>
-
-
-              {/* 2024 */}
-
-              <article className="journey-card">
-
-                <div className="journey-image">
-
-                 <img
-  src={innovation}
-  alt="De Mentee innovation in action"
-/>
-
-                  <div className="journey-year">
-                    2024
-                  </div>
-
-                </div>
-
-                <div className="journey-card-content">
-
-                  <h3>
-                    INNOVATION IN ACTION
-                  </h3>
-
-                  <p>
-                    With more people joining us, our small team grew into a
-                    community driven by shared goals.
-                  </p>
-
-                </div>
-
-              </article>
-
-
-              {/* 2026 */}
-
-              <article className="journey-card">
-
-                <div className="journey-image">
-
-               <img
-  src={scalingnewweights}
-  alt="De Mentee scaling new heights"
-/>
-
-                  <div className="journey-year">
-                    2026
-                  </div>
-
-                </div>
-
-                <div className="journey-card-content">
-
-                  <h3>
-                    SCALING NEW HEIGHTS
-                  </h3>
-
-                  <p>
-                    From a small beginning at home to our own company — a
-                    milestone worth celebrating.
-                  </p>
-
-                </div>
-
-              </article>
-
+          <div className="journey-content">
+            <div className="journey-label">
+              OUR LEGACY
             </div>
 
+            <h2>
+              Our Journey
+              <br />
+              Over
+              <br />
+              <span>The years.</span>
+            </h2>
 
-            {/* RIGHT TEXT */}
-
-            <div className="journey-content">
-
-              <div className="journey-label">
-                OUR LEGACY
-              </div>
-
-              <h2>
-                Our Journey
-                <br />
-                Over
-                <br />
-                <span>The years.</span>
-              </h2>
-
-              <p>
-                What began as a modest initiative has evolved into a growing
-                organization with a dedicated team and a space of our own.
-              </p>
-
-            </div>
-
+            <p>
+              What began as a modest initiative has evolved into a growing
+              organization with a dedicated team and a space of our own.
+            </p>
           </div>
 
-        </div>
+          {/* ================= JOURNEY CARDS ================= */}
 
+          <div className="journey-cards">
+
+            {/* 2022 */}
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={thebegenning}
+                  alt="De Mentee beginning"
+                />
+                <div className="journey-year">2022</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>THE BEGINNING</h3>
+                <p>
+                  What began as a small dream from home marked the first step
+                  of our journey.
+                </p>
+              </div>
+            </article>
+
+            {/* 2023 */}
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={growingstrong}
+                  alt="De Mentee growing strong"
+                />
+                <div className="journey-year">2023</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>GROWING STRONG</h3>
+                <p>
+                  As our vision grew, we moved into a new space and began
+                  building something bigger.
+                </p>
+              </div>
+            </article>
+
+            {/* 2024 */}
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={innovation}
+                  alt="De Mentee innovation in action"
+                />
+                <div className="journey-year">2024</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>INNOVATION IN ACTION</h3>
+                <p>
+                  With more people joining us, our small team grew into a
+                  community driven by shared goals.
+                </p>
+              </div>
+            </article>
+
+            {/* 2026 */}
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={scalingnewweights}
+                  alt="De Mentee scaling new heights"
+                />
+                <div className="journey-year">2026</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>SCALING NEW HEIGHTS</h3>
+                <p>
+                  From a small beginning at home to our own company — a
+                  milestone worth celebrating.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
       </section>
 
 
@@ -808,143 +795,7 @@ function About() {
 
 
       {/* ================= FOOTER ================= */}
-
-      <footer className="site-footer">
-
-        <div className="footer-container">
-
-          <div className="footer-top">
-
-            {/* BRAND */}
-
-            <div className="footer-brand">
-
-              <div className="footer-logo">
-
-                <img
-                  src={footerlogo}
-                  alt="De Mentee Technologies"
-                />
-
-              </div>
-
-              <h3>
-                ADDRESS
-              </h3>
-
-              <p>
-                Address : 142, 2nd Floor, Kamaraj Salai, Puducherry,
-                <br />
-                605013
-              </p>
-
-              <p>
-                Phone: +91 88703 97432
-              </p>
-
-              <p>
-                info@dementee.in
-              </p>
-
-            </div>
-
-
-            {/* EXPLORE */}
-
-            <div className="footer-column">
-
-              <h3>
-                EXPLORE
-              </h3>
-
-              <a href="/">
-                Home
-              </a>
-
-              <a href="#success">
-                Success story
-              </a>
-
-              <a href="#blog">
-                Blog
-              </a>
-
-              <a href="/about">
-                About us
-              </a>
-
-              <a href="#contact">
-                Contact us
-              </a>
-
-            </div>
-
-
-            {/* COURSES */}
-
-            <div className="footer-column">
-
-              <h3>
-                OUR COURSES
-              </h3>
-
-              <a href="/#courses">
-                UI / UX Designer
-              </a>
-
-              <a href="/#courses">
-                Digital marketing
-              </a>
-
-              <a href="/#courses">
-                Web Development
-              </a>
-
-            </div>
-
-
-            {/* INFORMATION */}
-
-            <div className="footer-column footer-info">
-
-              <div className="footer-action">
-
-                <a
-                  href="#contact"
-                  className="footer-enroll-btn"
-                >
-                  Enroll Today
-                </a>
-
-              </div>
-
-              <h3>
-                INFORMATION
-              </h3>
-
-              <a href="#">
-                Privacy policy
-              </a>
-
-              <a href="#">
-                Terms & Conditions
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div className="footer-divider"></div>
-
-          <div className="footer-bottom">
-            © 2024 De Mentee Academy. All Rights Reserved
-          </div>
-
-        </div>
-
-      </footer>
-
+      <Footer />
     </div>
   );
 }

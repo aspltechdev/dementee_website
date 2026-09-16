@@ -3,6 +3,7 @@ import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "./Gallery.css";
+import Footer from "./Footer";
 
 import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
@@ -243,133 +244,7 @@ function Gallery() {
 
       </main>
 
-      {/* ================= FOOTER ================= */}
-
-      <footer className="gallery-footer">
-
-        <div className="gallery-footer-inner">
-
-          <div className="gallery-footer-content">
-
-            {/* BRAND */}
-
-            <div className="gallery-brand">
-
-              <div className="gallery-logo">
-
-                <div className="gallery-logo-symbol">
-                  ✦
-                </div>
-
-                <div className="gallery-logo-name">
-                  <strong>De mentee</strong>
-                  <span>Technologies</span>
-                </div>
-
-              </div>
-
-              <h3>ADDRESS</h3>
-
-              <p>
-                Address : 142, 2nd Floor, Kamaraj Salai,
-                Puducherry,
-                <br />
-                605013
-              </p>
-
-              <p>
-                Phone: +91 88703 97432
-              </p>
-
-              <p>
-                info@dementee.in
-              </p>
-
-            </div>
-
-            {/* EXPLORE */}
-
-            <div className="gallery-footer-column">
-
-              <h3>EXPLORE</h3>
-
-              <Link to="/">
-                Home
-              </Link>
-
-              <a href="/#success">
-                Success story
-              </a>
-
-              <Link to="/blog">
-                Blog
-              </Link>
-
-              <Link to="/about">
-                About us
-              </Link>
-
-              <Link to="/contact">
-                Contact us
-              </Link>
-
-            </div>
-
-            {/* COURSES */}
-
-            <div className="gallery-footer-column">
-
-              <h3>OUR COURSES</h3>
-
-              <Link to="/courses/ui-ux-design">
-                UI / UX Designer
-              </Link>
-
-              <Link to="/courses/digital-marketing">
-                Digital marketing
-              </Link>
-
-              <Link to="/courses/full-stack-development">
-                Web Development
-              </Link>
-
-            </div>
-
-            {/* INFORMATION */}
-
-            <div className="gallery-footer-column">
-
-              <Link
-                to="/contact"
-                className="gallery-enroll"
-              >
-                Enroll Today
-              </Link>
-
-              <h3>INFORMATION</h3>
-
-              <a href="#privacy">
-                Privacy policy
-              </a>
-
-              <a href="#terms">
-                Terms & Conditions
-              </a>
-
-            </div>
-
-          </div>
-
-          <div className="gallery-footer-line"></div>
-
-          <div className="gallery-copyright">
-            © 2024 De Mentee Academy. All Rights Reserved
-          </div>
-
-        </div>
-
-      </footer>
-
+      <Footer />
     </div>
   );
 }
