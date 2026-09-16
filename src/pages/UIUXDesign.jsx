@@ -1383,13 +1383,12 @@ const toggleFaq = (index) => {
 
     {/* INFORMATION */}
     <div className="uiux-footer-column uiux-footer-info">
-      <a
-        href="#contact"
-        className="uiux-footer-enroll"
-      >
-        Enroll Today
-      </a>
-
+ <a
+  href="/contact"
+  className="uiux-enroll-btn"
+>
+  Enroll now
+</a>
       <h3>
         INFORMATION
       </h3>

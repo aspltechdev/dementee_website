@@ -3,12 +3,36 @@ import "./About.css";
 import Navbar from "../components/Navbar";
 import footerlogo from "../assets/footerlogo.png";
 
+import award1 from "../assets/award1.png";
+import award2 from "../assets/award2.png";
+import award3 from "../assets/award3.png";
+import award4 from "../assets/award4.png";
+
+import clientbrand1 from "../assets/clientbrand1.jpg";
+import clientbrand2 from "../assets/clientbrand2.png";
+import clientbrand3 from "../assets/clentbrand3.png";
+import clientbrand4 from "../assets/clientbrand4.png";
+import clientbrand5 from "../assets/clientbrand5.png";
+import clientbrand6 from "../assets/cleintbrand6.png";
+import clientbrand7 from "../assets/clientbrand7.png";
+import growingstrong from "../assets/growingstrong.png";
+import thebegenning from "../assets/thebegenning.png";
+import scalingnewweights from "../assets/scalingnewheights.png";
+import innovation from "../assets/innovation.png";
+
+
+import buildfuture from "../assets/buildfuture.jpg";
+import journey from "../assets/journey.jpg";
 function About() {
   return (
     <div className="about-page">
+
       <Navbar />
+
       {/* ================= ABOUT HERO ================= */}
+
       <section className="about-hero">
+
         <div className="about-badge">
           <span></span>
           ABOUT ORGANISATION
@@ -24,12 +48,18 @@ function About() {
           Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
           in laying out print, graphic or web designs.
         </p>
+
       </section>
 
+
       {/* ================= FOUNDATION CARD ================= */}
+
       <section className="foundation-section">
+
         <div className="foundation-card">
+
           <div className="foundation-media">
+
             <img
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85"
               alt="De mentee founder"
@@ -42,10 +72,15 @@ function About() {
             >
               <Play size={24} fill="currentColor" />
             </button>
+
           </div>
 
+
           <div className="foundation-content">
-            <div className="foundation-label">OUR FOUNDATION</div>
+
+            <div className="foundation-label">
+              OUR FOUNDATION
+            </div>
 
             <h2>
               Empowering Growth Through
@@ -64,14 +99,22 @@ function About() {
               “Success isn't about being the smartest or the most talented.
               It's about taking action when everyone else is making excuses.”
             </blockquote>
+
           </div>
+
         </div>
+
       </section>
 
+
       {/* ================= DRIVEN BY PURPOSE ================= */}
+
       <section className="purpose-section">
+
         <div className="purpose-container">
+
           <div className="purpose-heading">
+
             <h2>
               Driven By <span>Purpose</span>
             </h2>
@@ -79,12 +122,19 @@ function About() {
             <p>
               Clear objectives fueling our daily commitment to global learners.
             </p>
+
           </div>
 
+
           <div className="purpose-grid">
+
             {/* VISION */}
+
             <article className="purpose-card vision-card">
-              <div className="purpose-icon">🚀</div>
+
+              <div className="purpose-icon">
+                🚀
+              </div>
 
               <div className="purpose-label vision-label">
                 OUR VISION
@@ -101,11 +151,17 @@ function About() {
                 through practical learning, expert mentorship, and real-world
                 experiences.
               </p>
+
             </article>
 
+
             {/* MISSION */}
+
             <article className="purpose-card mission-card">
-              <div className="purpose-icon light-purpose-icon">🎯</div>
+
+              <div className="purpose-icon light-purpose-icon">
+                🎯
+              </div>
 
               <div className="purpose-label mission-label">
                 OUR MISSION
@@ -122,105 +178,168 @@ function About() {
                 individual has access to industry-relevant education,
                 innovative thinking, and mentorship.
               </p>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
 
-      {/* ================= OUR JOURNEY ================= */}
-      <section className="journey-section">
-        <div className="journey-container">
-          <div className="journey-grid">
-            {/* LEFT TIMELINE CARDS */}
-            <div className="journey-cards">
-              {/* 2022 */}
-              <article className="journey-card">
-                <div className="journey-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
-                    alt="De mentee beginning"
-                  />
 
-                  <div className="journey-year">2022</div>
+      {/* ================= OUR JOURNEY ================= */}
+
+      <section className="journey-section">
+
+        <div className="journey-container">
+
+          <div className="journey-grid">
+
+            {/* LEFT TIMELINE CARDS */}
+
+            <div className="journey-cards">
+
+              {/* 2022 */}
+
+              <article className="journey-card">
+
+                <div className="journey-image">
+<img
+  src={thebegenning}
+  alt="De Mentee beginning"
+/>
+
+                  <div className="journey-year">
+                    2022
+                  </div>
+
                 </div>
 
                 <div className="journey-card-content">
-                  <h3>THE BEGINNING</h3>
+
+                  <h3>
+                    THE BEGINNING
+                  </h3>
 
                   <p>
                     What began as a small dream from home marked the first step
                     of our journey.
                   </p>
+
                 </div>
+
               </article>
 
-              {/* 2023 */}
-              <article className="journey-card">
-                <div className="journey-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
-                    alt="De mentee growing strong"
-                  />
 
-                  <div className="journey-year">2023</div>
+              {/* 2023 */}
+
+              <article className="journey-card">
+
+                <div className="journey-image">
+
+                  <img
+  src={growingstrong}
+  alt="De Mentee growing strong"
+/>
+
+                  <div className="journey-year">
+                    2023
+                  </div>
+
                 </div>
 
                 <div className="journey-card-content">
-                  <h3>GROWING STRONG</h3>
+
+                  <h3>
+                    GROWING STRONG
+                  </h3>
 
                   <p>
                     As our vision grew, we moved into a new space and began
                     building something bigger.
                   </p>
+
                 </div>
+
               </article>
 
-              {/* 2024 */}
-              <article className="journey-card">
-                <div className="journey-image">
-                  <img
-                    src="/images/journey-2024.jpg"
-                    alt="De Mentee team working together"
-                  />
 
-                  <div className="journey-year">2024</div>
+              {/* 2024 */}
+
+              <article className="journey-card">
+
+                <div className="journey-image">
+
+                 <img
+  src={innovation}
+  alt="De Mentee innovation in action"
+/>
+
+                  <div className="journey-year">
+                    2024
+                  </div>
+
                 </div>
 
                 <div className="journey-card-content">
-                  <h3>INNOVATION IN ACTION</h3>
+
+                  <h3>
+                    INNOVATION IN ACTION
+                  </h3>
 
                   <p>
                     With more people joining us, our small team grew into a
                     community driven by shared goals.
                   </p>
+
                 </div>
+
               </article>
 
-              {/* 2026 */}
-              <article className="journey-card">
-                <div className="journey-image">
-                  <img
-                    src="/images/journey-2026.jpg"
-                    alt="De Mentee company building"
-                  />
 
-                  <div className="journey-year">2026</div>
+              {/* 2026 */}
+
+              <article className="journey-card">
+
+                <div className="journey-image">
+
+               <img
+  src={scalingnewweights}
+  alt="De Mentee scaling new heights"
+/>
+
+                  <div className="journey-year">
+                    2026
+                  </div>
+
                 </div>
 
                 <div className="journey-card-content">
-                  <h3>SCALING NEW HEIGHTS</h3>
+
+                  <h3>
+                    SCALING NEW HEIGHTS
+                  </h3>
 
                   <p>
                     From a small beginning at home to our own company — a
                     milestone worth celebrating.
                   </p>
+
                 </div>
+
               </article>
+
             </div>
 
+
             {/* RIGHT TEXT */}
+
             <div className="journey-content">
-              <div className="journey-label">OUR LEGACY</div>
+
+              <div className="journey-label">
+                OUR LEGACY
+              </div>
 
               <h2>
                 Our Journey
@@ -234,350 +353,600 @@ function About() {
                 What began as a modest initiative has evolved into a growing
                 organization with a dedicated team and a space of our own.
               </p>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
 
-{/* ================= AWARDS & BRANDS ================= */}
-<section className="recognition-section">
-  <div className="recognition-container">
 
-    {/* ================= AWARDS ================= */}
-    <div className="recognition-heading">
-      <div className="recognition-badge">RECOGNITION</div>
+      {/* ================= AWARDS & BRANDS ================= */}
 
-      <h2>
-        Awards & <span>Meetups</span>
-      </h2>
-    </div>
+      <section className="recognition-section">
 
-    <div className="awards-grid">
+        <div className="recognition-container">
 
-      {/* AWARD 1 */}
-      <article className="award-card">
-        <div className="award-image">
-          <img
-            src="/images/award-1.jpg"
-            alt="Network Kalam Logo Design Award"
-          />
+          {/* ================= AWARDS ================= */}
+
+          <div className="recognition-heading">
+
+            <div className="recognition-badge">
+              RECOGNITION
+            </div>
+
+            <h2>
+              Awards & <span>Meetups</span>
+            </h2>
+
+          </div>
+
+
+          <div className="awards-grid">
+
+            {/* AWARD 1 */}
+
+            <article className="award-card">
+
+              <div className="award-image">
+
+                <img
+                  src={award1}
+                  alt="De Mentee award"
+                />
+
+              </div>
+
+              <div className="award-content">
+
+                <span className="award-year pink">
+                  YEAR
+                </span>
+
+                <h3>
+                  Network Kalam Logo Design
+                  <br />
+                  awarded by Seyal
+                </h3>
+
+              </div>
+
+            </article>
+
+
+            {/* AWARD 2 */}
+
+            <article className="award-card">
+
+              <div className="award-image">
+
+                <img
+                  src={award2}
+                  alt="De Mentee award"
+                />
+
+              </div>
+
+              <div className="award-content">
+
+                <span className="award-year purple">
+                  YEAR
+                </span>
+
+                <h3>
+                  Award name
+                </h3>
+
+              </div>
+
+            </article>
+
+
+            {/* AWARD 3 */}
+
+            <article className="award-card">
+
+              <div className="award-image">
+
+                <img
+                  src={award3}
+                  alt="De Mentee recognition"
+                />
+
+              </div>
+
+              <div className="award-content">
+
+                <span className="award-year yellow">
+                  YEAR
+                </span>
+
+                <h3>
+                  Award name
+                </h3>
+
+              </div>
+
+            </article>
+
+
+            {/* AWARD 4 */}
+
+            <article className="award-card">
+
+              <div className="award-image">
+
+                <img
+                  src={award4}
+                  alt="De Mentee meetup"
+                />
+
+              </div>
+
+              <div className="award-content">
+
+                <span className="award-year pink">
+                  YEAR
+                </span>
+
+                <h3>
+                  Award name
+                </h3>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          {/* ================= BRANDS ================= */}
+
+          <div className="brands-heading">
+
+            <div className="brands-badge">
+              BRANDS
+            </div>
+
+            <h2>
+              <span>Brands</span> We Working With
+            </h2>
+
+            <p>
+              Proudly delivering creative solutions for businesses across
+              diverse industries.
+            </p>
+
+          </div>
+
+
+          <div className="brands-grid">
+
+            {/* CLIENT BRAND 1 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand1}
+                alt="Client brand 1"
+              />
+            </div>
+
+
+            {/* CLIENT BRAND 2 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand2}
+                alt="Client brand 2"
+              />
+            </div>
+
+
+            {/* CLIENT BRAND 3 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand3}
+                alt="Client brand 3"
+              />
+            </div>
+
+
+            {/* CLIENT BRAND 4 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand4}
+                alt="Client brand 4"
+              />
+            </div>
+
+
+            {/* CLIENT BRAND 5 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand5}
+                alt="Client brand 5"
+              />
+            </div>
+
+
+            {/* CLIENT BRAND 6 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand6}
+                alt="Client brand 6"
+              />
+            </div>
+
+
+            {/* CLIENT BRAND 7 */}
+
+            <div className="brand-card">
+              <img
+                src={clientbrand7}
+                alt="Client brand 7"
+              />
+            </div>
+
+          </div>
+
         </div>
 
-        <div className="award-content">
-          <span className="award-year pink">YEAR</span>
+      </section>
 
-          <h3>
-            Network Kalam Logo Design
-            <br />
-            awarded by Seyal
-          </h3>
-        </div>
-      </article>
 
-      {/* AWARD 2 */}
-      <article className="award-card">
-        <div className="award-image">
-          <img
-            src="/images/award-2.jpg"
-            alt="De Mentee award"
-          />
-        </div>
+      {/* ================= MEET OUR TEAM ================= */}
 
-        <div className="award-content">
-          <span className="award-year purple">YEAR</span>
+      <section className="team-section">
 
-          <h3>Award name</h3>
-        </div>
-      </article>
+        <div className="team-container">
 
-      {/* AWARD 3 */}
-      <article className="award-card">
-        <div className="award-image">
-          <img
-            src="/images/award-3.jpg"
-            alt="De Mentee recognition"
-          />
-        </div>
+          <div className="team-heading">
 
-        <div className="award-content">
-          <span className="award-year yellow">YEAR</span>
+            <h2>
+              Meet Our <span>Team</span>
+            </h2>
 
-          <h3>Award name</h3>
-        </div>
-      </article>
+          </div>
 
-      {/* AWARD 4 */}
-      <article className="award-card">
-        <div className="award-image">
-          <img
-            src="/images/award-4.jpg"
-            alt="De Mentee meetup"
-          />
-        </div>
 
-        <div className="award-content">
-          <span className="award-year pink">YEAR</span>
+          <div className="team-grid">
 
-          <h3>Award name</h3>
-        </div>
-      </article>
-    </div>
+            {/* MEMBER 1 */}
 
-    {/* ================= BRANDS ================= */}
-    <div className="brands-heading">
-      <div className="brands-badge">BRANDS</div>
+            <article className="team-card">
 
-      <h2>
-        <span>Brands</span> We Working With
-      </h2>
+              <div className="team-image">
 
-      <p>
-        Proudly delivering creative solutions for businesses across diverse
-        industries.
-      </p>
-    </div>
+                <img
+                  src="/images/team-1.jpg"
+                  alt="Team member"
+                />
 
-    <div className="brands-grid">
+              </div>
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-1.png"
-          alt="Akshayaa"
-        />
-      </div>
+              <h3>
+                Name
+              </h3>
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-2.png"
-          alt="Uvagai Foundation"
-        />
-      </div>
+              <p>
+                Role
+              </p>
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-3.png"
-          alt="Anbarasan"
-        />
-      </div>
+            </article>
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-4.png"
-          alt="Safety Glass Toughened"
-        />
-      </div>
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-5.png"
-          alt="Big Gift"
-        />
-      </div>
+            {/* MEMBER 2 */}
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-6.png"
-          alt="Meta Sruthi Entertainers"
-        />
-      </div>
+            <article className="team-card">
 
-      <div className="brand-card">
-        <img
-          src="/images/brand-7.png"
-          alt="IUVGG"
-        />
-      </div>
+              <div className="team-image">
 
-    </div>
-  </div>
-</section>
+                <img
+                  src="/images/team-2.jpg"
+                  alt="Team member"
+                />
 
-{/* ================= MEET OUR TEAM ================= */}
-<section className="team-section">
-  <div className="team-container">
-    <div className="team-heading">
-      <h2>
-        Meet Our <span>Team</span>
-      </h2>
-    </div>
+              </div>
 
-    <div className="team-grid">
-      {/* MEMBER 1 */}
-      <article className="team-card">
-        <div className="team-image">
-          <img
-            src="/images/team-1.jpg"
-            alt="Team member"
-          />
-        </div>
+              <h3>
+                Name
+              </h3>
 
-        <h3>Name</h3>
-        <p>Role</p>
-      </article>
+              <p>
+                Role
+              </p>
 
-      {/* MEMBER 2 */}
-      <article className="team-card">
-        <div className="team-image">
-          <img
-            src="/images/team-2.jpg"
-            alt="Team member"
-          />
-        </div>
+            </article>
 
-        <h3>Name</h3>
-        <p>Role</p>
-      </article>
 
-      {/* MEMBER 3 */}
-      <article className="team-card">
-        <div className="team-image">
-          <img
-            src="/images/team-3.jpg"
-            alt="Team member"
-          />
-        </div>
+            {/* MEMBER 3 */}
 
-        <h3>Name</h3>
-        <p>Role</p>
-      </article>
+            <article className="team-card">
 
-      {/* MEMBER 4 */}
-      <article className="team-card">
-        <div className="team-image">
-          <img
-            src="/images/team-4.jpg"
-            alt="Team member"
-          />
-        </div>
+              <div className="team-image">
 
-        <h3>Name</h3>
-        <p>Role</p>
-      </article>
-    </div>
+                <img
+                  src="/images/team-3.jpg"
+                  alt="Team member"
+                />
 
-    {/* ================= FOUNDER MESSAGE ================= */}
-    <div className="founder-message-card">
-      <div className="founder-photo">
-        <img
-          src="/images/founder.jpg"
-          alt="Auro Lakshmanan"
-        />
-      </div>
+              </div>
 
-      <div className="founder-message-content">
-        <h2>Building Futures, Creating Impact.</h2>
+              <h3>
+                Name
+              </h3>
 
-        <p className="founder-description">
-          De Mentee was founded with a simple yet powerful vision—to make
-          practical, industry-focused learning accessible to everyone.
-        </p>
+              <p>
+                Role
+              </p>
 
-        <div className="founder-details">
-          <h3>AURO LAKSHMANAN</h3>
-          <p>Founder & Chief Mentor</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            </article>
 
-{/* ================= ABOUT CTA ================= */}
-<section className="about-cta-section">
-  <div className="about-cta-container">
-    <div className="about-cta-card">
-      <div className="about-cta-content">
-        <div className="about-cta-badge">
-          START YOUR JOURNEY
-        </div>
 
-        <h2>
-          Ready to transform your career
-          <br />
-          as a UI / UX Designer or Digital
-          <br />
-          Marketer ?
-        </h2>
+            {/* MEMBER 4 */}
 
-        <div className="about-cta-line"></div>
+            <article className="team-card">
 
-        <a href="#courses" className="about-cta-button">
-          Explore Programs Now
-        </a>
-      </div>
+              <div className="team-image">
 
-      <div className="about-cta-image">
-        <img
-          src="/images/about-cta.jpg"
-          alt="Student working at a computer"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+                <img
+                  src="/images/team-4.jpg"
+                  alt="Team member"
+                />
 
-{/* ================= FOOTER ================= */}
-<footer className="site-footer">
-  <div className="footer-container">
-    <div className="footer-top">
-      <div className="footer-brand">
-     <div className="footer-logo">
+              </div>
+
+              <h3>
+                Name
+              </h3>
+
+              <p>
+                Role
+              </p>
+
+            </article>
+
+          </div>
+
+
+          {/* ================= FOUNDER MESSAGE ================= */}
+
+          <div className="founder-message-card">
+
+          <div className="founder-photo">
+
   <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
+    src={buildfuture}
+    alt="Building Futures, Creating Impact"
   />
+
 </div>
 
-        <h3>ADDRESS</h3>
+            <div className="founder-message-content">
 
-        <p>
-          Address : 142, 2nd Floor, Kamaraj Salai, Puducherry,
-          <br />
-          605013
-        </p>
+              <h2>
+                Building Futures, Creating Impact.
+              </h2>
 
-        <p>Phone: +91 88703 97432</p>
-        <p>info@dementee.in</p>
-      </div>
+              <p className="founder-description">
+                De Mentee was founded with a simple yet powerful vision—to make
+                practical, industry-focused learning accessible to everyone.
+              </p>
 
-      <div className="footer-column">
-        <h3>EXPLORE</h3>
+              <div className="founder-details">
 
-        <a href="/">Home</a>
-        <a href="#success">Success story</a>
-        <a href="#blog">Blog</a>
-        <a href="/about">About us</a>
-        <a href="#contact">Contact us</a>
-      </div>
+                <h3>
+                  AURO LAKSHMANAN
+                </h3>
 
-      <div className="footer-column">
-        <h3>OUR COURSES</h3>
+                <p>
+                  Founder & Chief Mentor
+                </p>
 
-        <a href="/#courses">UI / UX Designer</a>
-        <a href="/#courses">Digital marketing</a>
-        <a href="/#courses">Web Development</a>
-      </div>
+              </div>
 
-      <div className="footer-column footer-info">
-        <div className="footer-action">
-          <a href="#contact" className="footer-enroll-btn">
-            Enroll Today
-          </a>
+            </div>
+
+          </div>
+
         </div>
 
-        <h3>INFORMATION</h3>
+      </section>
 
-        <a href="#">Privacy policy</a>
-        <a href="#">Terms & Conditions</a>
-      </div>
-    </div>
 
-    <div className="footer-divider"></div>
+      {/* ================= ABOUT CTA ================= */}
 
-    <div className="footer-bottom">
-      © 2024 De Mentee Academy. All Rights Reserved
-    </div>
-  </div>
-</footer>
+      <section className="about-cta-section">
+
+        <div className="about-cta-container">
+
+          <div className="about-cta-card">
+
+            <div className="about-cta-content">
+
+              <div className="about-cta-badge">
+                START YOUR JOURNEY
+              </div>
+
+              <h2>
+                Ready to transform your career
+                <br />
+                as a UI / UX Designer or Digital
+                <br />
+                Marketer ?
+              </h2>
+
+              <div className="about-cta-line"></div>
+
+              <a
+                href="#courses"
+                className="about-cta-button"
+              >
+                Explore Programs Now
+              </a>
+
+            </div>
+
+
+          <div className="about-cta-image">
+
+  <img
+    src={journey}
+    alt="De Mentee journey"
+  />
+
+</div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= FOOTER ================= */}
+
+      <footer className="site-footer">
+
+        <div className="footer-container">
+
+          <div className="footer-top">
+
+            {/* BRAND */}
+
+            <div className="footer-brand">
+
+              <div className="footer-logo">
+
+                <img
+                  src={footerlogo}
+                  alt="De Mentee Technologies"
+                />
+
+              </div>
+
+              <h3>
+                ADDRESS
+              </h3>
+
+              <p>
+                Address : 142, 2nd Floor, Kamaraj Salai, Puducherry,
+                <br />
+                605013
+              </p>
+
+              <p>
+                Phone: +91 88703 97432
+              </p>
+
+              <p>
+                info@dementee.in
+              </p>
+
+            </div>
+
+
+            {/* EXPLORE */}
+
+            <div className="footer-column">
+
+              <h3>
+                EXPLORE
+              </h3>
+
+              <a href="/">
+                Home
+              </a>
+
+              <a href="#success">
+                Success story
+              </a>
+
+              <a href="#blog">
+                Blog
+              </a>
+
+              <a href="/about">
+                About us
+              </a>
+
+              <a href="#contact">
+                Contact us
+              </a>
+
+            </div>
+
+
+            {/* COURSES */}
+
+            <div className="footer-column">
+
+              <h3>
+                OUR COURSES
+              </h3>
+
+              <a href="/#courses">
+                UI / UX Designer
+              </a>
+
+              <a href="/#courses">
+                Digital marketing
+              </a>
+
+              <a href="/#courses">
+                Web Development
+              </a>
+
+            </div>
+
+
+            {/* INFORMATION */}
+
+            <div className="footer-column footer-info">
+
+              <div className="footer-action">
+
+                <a
+                  href="#contact"
+                  className="footer-enroll-btn"
+                >
+                  Enroll Today
+                </a>
+
+              </div>
+
+              <h3>
+                INFORMATION
+              </h3>
+
+              <a href="#">
+                Privacy policy
+              </a>
+
+              <a href="#">
+                Terms & Conditions
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div className="footer-divider"></div>
+
+          <div className="footer-bottom">
+            © 2024 De Mentee Academy. All Rights Reserved
+          </div>
+
+        </div>
+
+      </footer>
 
     </div>
   );
