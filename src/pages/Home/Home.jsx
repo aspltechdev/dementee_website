@@ -805,19 +805,19 @@ function Home() {
                 <h3>EXPLORE</h3>
 
                 <Link to="/">Home</Link>
-                <a href="#success">Success story</a>
-                <a href="#blog">Blog</a>
+                <a href="#/success">Success story</a>
+                <a href="#/blog">Blog</a>
                 <Link to="/about">About us</Link>
-                <a href="#contact">Contact us</a>
+                <a href="#/contact">Contact us</a>
               </div>
 
               {/* COURSES */}
               <div className="footer-column">
                 <h3>OUR COURSES</h3>
 
-                <a href="#courses">UI / UX Designer</a>
-                <a href="#courses">Digital marketing</a>
-                <a href="#courses">Web Development</a>
+                <a href="/#courses">UI / UX Designer</a>
+                <a href="/#courses">Digital marketing</a>
+                <a href="/#courses">Web Development</a>
               </div>
 
               {/* INFORMATION */}

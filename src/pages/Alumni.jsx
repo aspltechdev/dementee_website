@@ -4,9 +4,13 @@ import { ChevronDown, ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "./Alumni.css";
 import footerlogo from "../assets/footerlogo.png";
+import Nivetha from "../assets/Nivetha.png";
+import Karthikumar from "../assets/Karthikumar.png";
 
 function Alumni() {
   const [visibleAlumni, setVisibleAlumni] = useState(8);
+
+  /* ================= FEATURED ALUMNI ================= */
 
   const featuredAlumni = [
     {
@@ -29,22 +33,26 @@ function Alumni() {
     },
   ];
 
+  /* ================= ALL ALUMNI ================= */
+
   const alumni = [
     {
-      name: "Full name",
+      name: "Suganya",
       role: "UI / UX DESIGNER",
     },
     {
-      name: "Full name",
+      name: "R Sowmiya",
       role: "UI / UX DESIGNER",
     },
     {
-      name: "Full name",
+      name: "Nivetha",
       role: "UI / UX DESIGNER",
+      image: Nivetha,
     },
     {
-      name: "Full name",
+      name: "Karthikuma",
       role: "UI / UX DESIGNER",
+      image: Karthikumar,
     },
     {
       name: "Full name",
@@ -80,6 +88,8 @@ function Alumni() {
     },
   ];
 
+  /* ================= LOAD MORE ================= */
+
   const handleLoadMore = () => {
     setVisibleAlumni((prev) =>
       Math.min(prev + 4, alumni.length)
@@ -92,7 +102,6 @@ function Alumni() {
       {/* ================= NAVBAR ================= */}
 
       <Navbar />
-
 
       {/* ================= MAIN ================= */}
 
@@ -123,7 +132,6 @@ function Alumni() {
 
         </section>
 
-
         {/* ================= FEATURED ================= */}
 
         <section className="featured-alumni-section">
@@ -134,23 +142,17 @@ function Alumni() {
               Top Industry Achievers
             </h2>
 
-
             <div className="featured-label">
               <span></span>
               FEATURED
             </div>
-
 
             <div className="featured-alumni-grid">
 
               {featuredAlumni.map((person) => (
 
                 <article
-                  className={
-                    person.featured
-                      ? "featured-alumni-card"
-                      : "featured-alumni-card"
-                  }
+                  className="featured-alumni-card"
                   key={person.name}
                 >
 
@@ -162,7 +164,6 @@ function Alumni() {
                     />
 
                   </div>
-
 
                   <div className="featured-person-content">
 
@@ -184,7 +185,6 @@ function Alumni() {
                       print, graphic or web designs.
                     </p>
 
-
                     {person.company && (
                       <div className="featured-company">
                         {person.company}
@@ -192,7 +192,6 @@ function Alumni() {
                     )}
 
                   </div>
-
 
                   <button
                     className="featured-connect"
@@ -212,7 +211,6 @@ function Alumni() {
 
         </section>
 
-
         {/* ================= ALL ALUMNI ================= */}
 
         <section className="all-alumni-section">
@@ -222,7 +220,6 @@ function Alumni() {
             <h2 className="alumni-section-title">
               All Graduates & Designers
             </h2>
-
 
             <div className="alumni-grid">
 
@@ -235,10 +232,20 @@ function Alumni() {
                     key={index}
                   >
 
+                    {/* ================= ALUMNI IMAGE ================= */}
+
                     <div className="alumni-card-image">
-                      {/* Placeholder matching the Figma design */}
+
+                      {person.image ? (
+                        <img
+                          src={person.image}
+                          alt={person.name}
+                        />
+                      ) : null}
+
                     </div>
 
+                    {/* ================= ALUMNI CONTENT ================= */}
 
                     <div className="alumni-card-content">
 
@@ -249,7 +256,6 @@ function Alumni() {
                       <h3>
                         {person.name}
                       </h3>
-
 
                       <button
                         type="button"
@@ -266,7 +272,6 @@ function Alumni() {
                 ))}
 
             </div>
-
 
             {/* ================= LOAD MORE ================= */}
 
@@ -289,7 +294,6 @@ function Alumni() {
 
       </main>
 
-
       {/* ================= FOOTER ================= */}
 
       <footer className="alumni-footer">
@@ -298,18 +302,18 @@ function Alumni() {
 
           <div className="alumni-footer-top">
 
-
-            {/* BRAND / ADDRESS */}
+            {/* ================= BRAND / ADDRESS ================= */}
 
             <div className="alumni-footer-brand">
 
-            <div className="alumni-footer-logo">
-  <img
-    src={footerlogo}
-    alt="De Mentee Technologies"
-  />
-</div>
+              <div className="alumni-footer-logo">
 
+                <img
+                  src={footerlogo}
+                  alt="De Mentee Technologies"
+                />
+
+              </div>
 
               <h3>
                 ADDRESS
@@ -332,8 +336,7 @@ function Alumni() {
 
             </div>
 
-
-            {/* EXPLORE */}
+            {/* ================= EXPLORE ================= */}
 
             <div className="alumni-footer-column">
 
@@ -363,8 +366,7 @@ function Alumni() {
 
             </div>
 
-
-            {/* COURSES */}
+            {/* ================= COURSES ================= */}
 
             <div className="alumni-footer-column">
 
@@ -386,8 +388,7 @@ function Alumni() {
 
             </div>
 
-
-            {/* INFORMATION */}
+            {/* ================= INFORMATION ================= */}
 
             <div className="alumni-footer-column alumni-information">
 
@@ -414,14 +415,10 @@ function Alumni() {
 
           </div>
 
-
           <div className="alumni-footer-divider"></div>
 
-
           <div className="alumni-footer-bottom">
-
             © 2024 De Mentee Academy. All Rights Reserved
-
           </div>
 
         </div>

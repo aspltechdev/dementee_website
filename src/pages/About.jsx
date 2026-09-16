@@ -23,6 +23,11 @@ import innovation from "../assets/innovation.png";
 
 import buildfuture from "../assets/buildfuture.jpg";
 import journey from "../assets/journey.jpg";
+
+
+//out team
+
+import Nivetha from "../assets/Nivetha.png";
 function About() {
   return (
     <div className="about-page">
@@ -58,22 +63,14 @@ function About() {
 
         <div className="foundation-card">
 
-          <div className="foundation-media">
-
-            <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85"
-              alt="De mentee founder"
-            />
-
-            <button
-              className="foundation-play"
-              type="button"
-              aria-label="Play foundation video"
-            >
-              <Play size={24} fill="currentColor" />
-            </button>
-
-          </div>
+       <div className="foundation-media">
+  <iframe
+    src="https://www.youtube.com/embed/pVwu3B-0dX8"
+    title="Empowering Growth Through Mentorship"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  ></iframe>
+</div>
 
 
           <div className="foundation-content">
@@ -671,19 +668,19 @@ function About() {
 
               <div className="team-image">
 
-                <img
-                  src="/images/team-3.jpg"
-                  alt="Team member"
-                />
+                 <img
+      src={Nivetha}
+      alt="Nivetha"
+    />
 
               </div>
 
               <h3>
-                Name
+                Nivetha
               </h3>
 
               <p>
-                Role
+                 UI UX Designer
               </p>
 
             </article>
@@ -784,12 +781,12 @@ function About() {
 
               <div className="about-cta-line"></div>
 
-              <a
-                href="#courses"
-                className="about-cta-button"
-              >
-                Explore Programs Now
-              </a>
+           <a
+  href="/#courses"
+  className="about-cta-button"
+>
+  Explore Programs Now
+</a>
 
             </div>
 

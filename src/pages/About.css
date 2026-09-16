@@ -462,7 +462,15 @@ body {
   object-fit: cover;
 }
 
+.foundation-media iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  border-radius: 14px;
+}
 .foundation-play {
+  text-decoration: none;
   position: absolute;
 
   left: 50%;
