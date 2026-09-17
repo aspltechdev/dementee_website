@@ -92,7 +92,7 @@ body {
 .fs-hero {
   width: 100%;
 
-  padding: 70px 0 70px;
+  padding:  145px 0 70px;
 
   background-color: #fafafa;
 
@@ -468,8 +468,6 @@ body {
      All three cards are identical.
   */
 
-  height: 360px;
-  min-height: 360px;
 
   padding: 30px 54px;
 
@@ -493,11 +491,11 @@ body {
 /* Module */
 
 .fs-module-label {
-  width: fit-content;
+  width:177px;
 
-  height: 42px;
+  height: 28px;
 
-  padding: 0 34px;
+  padding: 0;
 
   display: flex;
 
@@ -510,7 +508,7 @@ body {
 
   color: #ef3d43;
 
-  font-size: 15px;
+  font-size: 11px;
 
   line-height: 1;
 
@@ -525,13 +523,13 @@ body {
 
   color: #210c3b;
 
-  font-size: 29px;
+  font-size: 22px;
 
   line-height: 1.35;
 
   font-weight: 800;
 
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 
@@ -556,7 +554,7 @@ body {
 
   color: #5e5a61;
 
-  font-size: 17px;
+  font-size: 13px;
 
   line-height: 1.65;
 
@@ -582,7 +580,7 @@ body {
 .fs-project-heading {
   width: 100%;
 
-  margin-bottom: 72px;
+  margin-bottom: 55px;
 
   text-align: center;
 }
@@ -631,12 +629,13 @@ body {
 
   display: grid;
 
-  grid-template-columns:
-    1.25fr 0.75fr;
+  grid-template-columns:repeat(10, minmax(0, 1fr));
 
   column-gap: 28px;
 
   row-gap: 30px;
+
+  align-items: stretch;
 }
 
 
@@ -645,22 +644,44 @@ body {
 .fs-project-card {
   width: 100%;
 
-  height: 280px;
+  height: 320px;
 
-  padding: 28px 20px 14px;
+  padding: 28px 22px 18px;
 
   overflow: hidden;
 
   border: 1px solid #ddd9df;
 
-  border-radius: 22px;
+  border-radius: 30px;
 
   background: #ffffff;
 
   box-shadow:
     0 12px 26px rgba(31, 24, 42, 0.08);
+    display: flex;
+  flex-direction: column;
+}
+.fs-project-card.fs-project-large {
+  grid-column: span 6;
 }
 
+
+/* Admin Dashboard - smaller */
+.fs-project-card:nth-child(2) {
+  grid-column: span 4;
+}
+
+
+/* Netflix - half width */
+.fs-project-card:nth-child(3) {
+  grid-column: span 5;
+}
+
+
+/* Real Time Chat - half width */
+.fs-project-card:nth-child(4) {
+  grid-column: span 5;
+}
 .fs-project-card h3 {
   margin: 0 12px 18px;
 
@@ -671,6 +692,8 @@ body {
   line-height: 1.2;
 
   font-weight: 800;
+
+  flex-shrink: 0;
 }
 
 
@@ -681,15 +704,16 @@ body {
 
 .fs-project-image {
   width: 100%;
-  height: 245px;
+  height: 235px;
 
-  margin-top: 20px;
+  margin-top: 0;
 
   overflow: hidden;
 
-  border-radius: 0 0 18px 18px;
+
 
   background: #f5f5f5;
+  flex: 1;
 }
 
 .fs-project-image img {
@@ -703,7 +727,7 @@ body {
   object-position: center;
 
   transition: transform 0.4s ease;
-  border-radius:30px;
+
 }
 
 .fs-project-card:hover .fs-project-image img {
@@ -876,7 +900,55 @@ body {
   }
 
 }
+@media (max-width: 600px) {
 
+  .fs-projects {
+    padding: 55px 0 65px;
+  }
+
+  .fs-project-heading {
+    margin-bottom: 40px;
+  }
+
+  .fs-project-heading h2 {
+    font-size: 30px;
+  }
+
+  .fs-project-heading p {
+    font-size: 12px;
+  }
+
+  .fs-project-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .fs-project-card.fs-project-large,
+  .fs-project-card:nth-child(2),
+  .fs-project-card:nth-child(3),
+  .fs-project-card:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .fs-project-card {
+    height: 290px;
+
+    padding: 22px 18px 15px;
+
+    border-radius: 24px;
+  }
+
+  .fs-project-card h3 {
+    font-size: 16px;
+    margin: 0 8px 14px;
+  }
+
+  .fs-project-image {
+    height: 220px;
+    border-radius: 16px;
+  }
+}
 
 /* =========================================================
    MOBILE
@@ -1817,8 +1889,8 @@ body {
 
   /* Hero */
 
-  .fs-hero {
-    padding-top: 55px;
+ .fs-hero {
+    padding: 125px 0 60px;
   }
 
   .fs-hero h1 {
@@ -1936,7 +2008,7 @@ body {
   /* Hero */
 
   .fs-hero {
-    padding: 45px 0 50px;
+    padding: 110px 0 50px;
   }
 
   .fs-hero h1 {
@@ -2076,6 +2148,9 @@ body {
 ========================================================= */
 
 @media (max-width: 450px) {
+.fs-hero {
+    padding: 105px 0 45px;
+  }
 
   .fs-hero h1 {
     font-size: 32px;
@@ -2123,6 +2198,39 @@ body {
   }
 
 }
+
+@media (max-width: 900px) {
+
+  .fs-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 20px;
+    row-gap: 25px;
+  }
+
+  .fs-project-card.fs-project-large,
+  .fs-project-card:nth-child(2),
+  .fs-project-card:nth-child(3),
+  .fs-project-card:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .fs-project-card {
+    height: 300px;
+    padding: 24px 18px 16px;
+  }
+
+  .fs-project-card h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .fs-project-image {
+    height: 220px;
+    border-radius: 18px;
+  }
+}
+
 @media (max-width: 900px) {
   .fs-tech-grid {
     grid-template-columns: repeat(3, 1fr);

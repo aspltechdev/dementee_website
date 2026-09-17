@@ -180,6 +180,7 @@ textarea {
   display: block;
   object-fit: contain;
 }
+
 /* =========================================================
    ACTIVE NAVBAR SECTION
 ========================================================= */
@@ -204,40 +205,113 @@ textarea {
 
   height: 2px;
 
-  background: #6c5ce7;
-  border-radius: 10px;
-}
-/* =========================================================
-   ACTIVE NAVBAR SECTION
-========================================================= */
-
-.nav-links > a.active,
-.courses-dropdown-btn.active,
-.more-dropdown-btn.active {
-  color: #6c5ce7;
-  position: relative;
-}
-
-/* Active underline */
-.nav-links > a.active::after,
-.courses-dropdown-btn.active::after,
-.more-dropdown-btn.active::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8px;
-
-  height: 2px;
-
-  background: #6c5ce7;
+ 
   border-radius: 10px;
 }
 
 /* Active dropdown item */
 .courses-dropdown-menu a.dropdown-active,
 .more-dropdown-menu a.dropdown-active {
-  color: #6c5ce7;
+ 
   font-weight: 600;
+}
+/* =========================================================
+   FIXED NAVBAR
+========================================================= */
+
+.navbar {
+  position: fixed;
+
+  top: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: calc(100% - 200px);
+  max-width: 1280px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #e5e1e9;
+  border-radius: 40px;
+
+  box-shadow:
+    0 8px 25px rgba(25, 15, 45, 0.08);
+
+  z-index: 9999;
+}
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+
+  height: 100%;
+}
+
+.nav-link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  color: #171028;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #6c5ce7;
+}
+/* =========================================================
+   GET IN TOUCH
+========================================================= */
+
+.get-in-touch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 160px;
+  height: 46px;
+
+  padding: 0 25px;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    90deg,
+    #6c5ce7,
+    #d65c7e
+  );
+
+  color: #ffffff;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: transform 0.2s ease;
+}
+
+.get-in-touch:hover {
+  transform: translateY(-2px);
 }

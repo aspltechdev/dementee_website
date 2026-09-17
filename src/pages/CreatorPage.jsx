@@ -222,7 +222,74 @@ function CreatorPage() {
 
         </div>
 
+            </section>
+
+      {/* =====================================================
+          WHO CAN BE A CREATOR
+      ===================================================== */}
+      <section className="creator-who-section">
+
+        <div className="creator-who-content">
+
+          <div className="creator-who-pill">
+            WHO CAN BE A CREATOR?
+          </div>
+
+          <h2>
+            Who is this <span>FAC</span> for?
+          </h2>
+
+          <div className="creator-who-cards">
+
+            {/* ASPIRING CREATOR */}
+            <div className="creator-who-card creator-who-aspiring">
+
+              <div className="creator-who-title aspiring-title">
+                Aspiring Creator
+              </div>
+
+              <p>
+                You are an aspiring creator just starting out and
+                want to experience and discover if this is for you.
+              </p>
+
+            </div>
+
+            {/* STRUGGLING CREATOR */}
+            <div className="creator-who-card creator-who-struggling">
+
+              <div className="creator-who-title struggling-title">
+                Struggling Creator
+              </div>
+
+              <p>
+                You have already been creating content, but are
+                struggling to find your space and grow.
+              </p>
+
+            </div>
+
+            {/* FOUNDER */}
+            <div className="creator-who-card creator-who-founder">
+
+              <div className="creator-who-title founder-title">
+                Founder
+              </div>
+
+              <p>
+                You are a professional, entrepreneur looking to
+                build your personal brand for your business.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
+
+
 
       {/* =====================================================
           ANYONE CAN BE A CREATOR

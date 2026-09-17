@@ -180,11 +180,12 @@ function Alumni() {
                       {person.name}
                     </h3>
 
-                    <p>
-                      Lorem ipsum, or lipsum as it is sometimes
-                      known, is dummy text used in laying out
-                      print, graphic or web designs.
-                    </p>
+                    {person.name === "Suganya" && (
+  <p>
+    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+    print, graphic or web designs.
+  </p>
+)}
 
                     {person.company && (
                       <div className="featured-company">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar";
 import Course from "./Course";
 import Gallery from "./Gallery";
@@ -6,7 +6,76 @@ import { Play, Plus, Minus, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Footer from "../Footer";
+import homehuman from "../../assets/homehuman.png";
 
+function Counter({ end, duration = 2000, suffix = "" }) {
+  const [count, setCount] = useState(0);
+  const [start, setStart] = useState(false);
+  const counterRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStart(true);
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!start) return;
+
+    let startTime = null;
+    let animationFrame;
+
+    const animate = (currentTime) => {
+      if (!startTime) {
+        startTime = currentTime;
+      }
+
+      const progress = Math.min(
+        (currentTime - startTime) / duration,
+        1
+      );
+
+      const currentCount = Math.floor(
+        progress * end
+      );
+
+      setCount(currentCount);
+
+      if (progress < 1) {
+        animationFrame =
+          requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrame =
+      requestAnimationFrame(animate);
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+    };
+  }, [start, end, duration]);
+
+  return (
+    <span ref={counterRef}>
+      {count.toLocaleString()}
+      {suffix}
+    </span>
+  );
+}
 function Home() {
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -126,29 +195,52 @@ function Home() {
           </div>
         </section>
 
-        {/* STATS */}
-        <section className="stats-section">
-          <div className="stats-bar">
-            <div className="stat-item">
-              <h3 className="yellow">50+</h3>
-              <p>INDUSTRY MENTORS</p>
-            </div>
+{/* STATS */}
+<section className="stats-section">
+  <div className="stats-bar">
 
-            <div className="stat-divider"></div>
+    <div className="stat-item">
+      <h3 className="yellow">
+        <Counter
+          end={50}
+          duration={2000}
+          suffix="+"
+        />
+      </h3>
 
-            <div className="stat-item">
-              <h3 className="pink">500+</h3>
-              <p>CERTIFIED STUDENTS</p>
-            </div>
+      <p>INDUSTRY MENTORS</p>
+    </div>
 
-            <div className="stat-divider"></div>
+    <div className="stat-divider"></div>
 
-            <div className="stat-item">
-              <h3>100,000 +</h3>
-              <p>HOURS OF LIVE CLASS</p>
-            </div>
-          </div>
-        </section>
+    <div className="stat-item">
+      <h3 className="pink">
+        <Counter
+          end={1500}
+          duration={2500}
+          suffix="+"
+        />
+      </h3>
+
+      <p>CERTIFIED STUDENTS</p>
+    </div>
+
+    <div className="stat-divider"></div>
+
+    <div className="stat-item">
+      <h3>
+        <Counter
+          end={100000}
+          duration={3000}
+          suffix=" +"
+        />
+      </h3>
+
+      <p>HOURS OF LIVE CLASS</p>
+    </div>
+
+  </div>
+</section>
 
         {/* SPECIALIZATIONS */}
         <section className="specializations" id="courses">
@@ -705,25 +797,28 @@ function Home() {
             </div>
 
             {/* FREELANCING CTA */}
-            <div className="freelance-banner">
-              <div className="freelance-content">
-                <h2>Ready to Start Freelancing?</h2>
+        <div className="freelance-banner">
+  <div className="freelance-content">
+    <h2>Ready to Start Freelancing?</h2>
 
-                <p>
-                  Turn your skills into a reliable source of income.
-                </p>
+    <p>
+      Turn your skills into a reliable source of income.
+    </p>
 
-                <div className="freelance-line"></div>
+    <div className="freelance-line"></div>
 
-                <Link to="/contact" className="enquire-btn">
-                  Enquire Now
-                </Link>
-              </div>
-
-              <div className="freelance-person">
-                <div className="person-placeholder">👨‍💻</div>
-              </div>
-            </div>
+    <Link to="/contact" className="enquire-btn">
+      Enquire Now
+    </Link>
+  </div>
+<div className="freelance-person">
+  <img
+    src={homehuman}
+    alt="Freelancing professional"
+    className="freelance-human"
+  />
+</div>
+</div>
 
             {/* FAQ */}
             <div className="faq-section">
