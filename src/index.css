@@ -11,6 +11,7 @@ html {
   scroll-behavior: smooth;
   font-size: 17px;
 }
+
 body {
   min-width: 320px;
   min-height: 100vh;
@@ -33,43 +34,13 @@ input,
 textarea {
   font: inherit;
 }
+
 /* =========================================================
    MORE DROPDOWN
 ========================================================= */
 
 .more-dropdown {
   position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.more-dropdown-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 4px;
-
-  height: 100%;
-  padding: 0;
-
-  border: none;
-  outline: none;
-
-  background: transparent;
-
-  color: #171028;
-
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 600;
-
-  cursor: pointer;
-}
-
-.more-dropdown-btn:hover {
-  color: #6c5ce7;
 }
 
 .more-chevron {
@@ -80,28 +51,48 @@ textarea {
   transform: rotate(180deg);
 }
 
+/* =========================================================
+   MORE DROPDOWN BOX
+   SAME STYLE AS COURSES DROPDOWN
+========================================================= */
+/* =========================================================
+   MORE DROPDOWN
+========================================================= */
 
-/* DROPDOWN BOX */
+.more-dropdown {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   MORE DROPDOWN MENU
+========================================================= */
 
 .more-dropdown-menu {
   position: absolute;
 
-  top: calc(100% + 8px);
+  /* Keep the dropdown visually below More */
+  top: calc(100% + 12px);
   left: 50%;
 
-  width: 150px;
+  width: 265px;
 
   display: flex;
   flex-direction: column;
 
-  padding: 7px;
+  padding: 12px;
 
-  transform: translateX(-50%) translateY(-5px);
-
-  border: 1px solid #e5e1e9;
-  border-radius: 12px;
+  transform: translateX(-50%);
 
   background: #ffffff;
+
+  border: 1px solid #e5e1e9;
+  border-radius: 18px;
 
   box-shadow: 0 10px 25px rgba(25, 15, 45, 0.12);
 
@@ -109,42 +100,63 @@ textarea {
   visibility: hidden;
   pointer-events: none;
 
-  z-index: 9999;
+  z-index: 99999;
 
   transition:
     opacity 0.2s ease,
-    visibility 0.2s ease,
-    transform 0.2s ease;
+    visibility 0.2s ease;
 }
 
 
-/* Small invisible bridge */
+/* =========================================================
+   INVISIBLE HOVER BRIDGE
+   This fills the 12px gap between More and dropdown.
+========================================================= */
 
 .more-dropdown-menu::before {
   content: "";
 
   position: absolute;
 
-  top: -8px;
+  top: -14px;
   left: 0;
 
   width: 100%;
-  height: 8px;
+  height: 14px;
+
+  background: transparent;
+
+  pointer-events: auto;
 }
 
 
-/* SHOW DROPDOWN */
+/* =========================================================
+   SHOW DROPDOWN
+========================================================= */
 
 .more-dropdown:hover .more-dropdown-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-
-  transform: translateX(-50%) translateY(0);
 }
 
 
-/* DROPDOWN LINKS */
+/* =========================================================
+   CHEVRON
+========================================================= */
+
+.more-chevron {
+  transition: transform 0.2s ease;
+}
+
+.more-dropdown:hover .more-chevron {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   MORE DROPDOWN LINKS
+========================================================= */
 
 .more-dropdown-menu a {
   display: flex;
@@ -152,15 +164,16 @@ textarea {
 
   width: 100%;
 
-  padding: 9px 12px;
+  padding: 14px 16px;
 
-  border-radius: 8px;
+  border-radius: 10px;
 
   color: #171028;
 
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+
+  font-size: 18px;
+  font-weight: 600;
 
   text-decoration: none;
 
@@ -171,10 +184,16 @@ textarea {
     color 0.2s ease;
 }
 
+
 .more-dropdown-menu a:hover {
   background: #f3f0ff;
   color: #6c5ce7;
 }
+
+/* =========================================================
+   LOGO
+========================================================= */
+
 .dementee-logo {
   width: 100px;
   height: auto;
@@ -194,28 +213,30 @@ textarea {
 }
 
 /* Active underline */
+
 .nav-links > a.active::after,
 .courses-dropdown-btn.active::after,
 .more-dropdown-btn.active::after {
   content: "";
 
   position: absolute;
+
   left: 0;
   right: 0;
   bottom: -8px;
 
   height: 2px;
 
- 
   border-radius: 10px;
 }
 
 /* Active dropdown item */
+
 .courses-dropdown-menu a.dropdown-active,
 .more-dropdown-menu a.dropdown-active {
- 
   font-weight: 600;
 }
+
 /* =========================================================
    FIXED NAVBAR
 ========================================================= */
@@ -228,8 +249,9 @@ textarea {
 
   transform: translateX(-50%);
 
-  width: calc(100% - 200px);
-  max-width: 1280px;
+  width: calc(100% - 120px);
+  max-width: 1450px;
+
   height: 65px;
 
   display: flex;
@@ -248,6 +270,7 @@ textarea {
 
   z-index: 9999;
 }
+
 /* =========================================================
    NAVIGATION
 ========================================================= */
@@ -255,6 +278,7 @@ textarea {
 .nav-links {
   display: flex;
   align-items: center;
+
   gap: 34px;
 
   height: 100%;
@@ -271,13 +295,262 @@ textarea {
   color: #171028;
 
   font-family: "Outfit", sans-serif;
-  font-size: 13px;
+
+  font-size: 16px;
   font-weight: 600;
 
   white-space: nowrap;
 }
 
 .nav-link:hover {
+  color: #6c5ce7;
+}
+
+/* =========================================================
+   MORE BUTTON
+   SAME SIZE AS OTHER NAV ITEMS
+========================================================= */
+
+.more-dropdown-btn {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  height: 100%;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #171028;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+.more-dropdown-btn:hover {
+  color: #6c5ce7;
+}
+
+/* =========================================================
+   COURSES DROPDOWN
+========================================================= */
+
+.courses-dropdown {
+  position: relative;
+}
+
+.courses-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  height: 100%;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #171028;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.courses-dropdown-btn:hover {
+  color: #6c5ce7;
+}
+
+/* =========================================================
+   COURSES DROPDOWN MENU
+========================================================= */
+/* =========================================================
+   COURSES DROPDOWN
+========================================================= */
+
+.courses-dropdown {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   COURSES DROPDOWN BUTTON
+========================================================= */
+
+.courses-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  height: 100%;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #171028;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.courses-dropdown-btn:hover {
+  color: #6c5ce7;
+}
+
+
+/* =========================================================
+   COURSES DROPDOWN MENU
+========================================================= */
+
+.courses-dropdown-menu {
+  position: absolute;
+
+  /* Visual gap below Courses */
+  top: calc(100% + 12px);
+
+  left: 50%;
+
+  width: 265px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+
+  transform: translateX(-50%);
+
+  background: #ffffff;
+
+  border: 1px solid #e5e1e9;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 25px rgba(25, 15, 45, 0.12);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  z-index: 99999;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+}
+
+
+/* =========================================================
+   INVISIBLE HOVER BRIDGE
+   Fills the gap between Courses and dropdown
+========================================================= */
+
+.courses-dropdown-menu::before {
+  content: "";
+
+  position: absolute;
+
+  top: -14px;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 14px;
+
+  background: transparent;
+
+  pointer-events: auto;
+}
+
+
+/* =========================================================
+   SHOW DROPDOWN
+========================================================= */
+
+.courses-dropdown:hover .courses-dropdown-menu {
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+}
+
+
+/* =========================================================
+   COURSES DROPDOWN LINKS
+========================================================= */
+
+.courses-dropdown-menu a {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border-radius: 10px;
+
+  color: #171028;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.courses-dropdown-menu a:hover {
+  background: #f3f0ff;
+
   color: #6c5ce7;
 }
 /* =========================================================
@@ -305,7 +578,8 @@ textarea {
   color: #ffffff;
 
   font-family: "Outfit", sans-serif;
-  font-size: 14px;
+
+  font-size: 16px;
   font-weight: 700;
 
   white-space: nowrap;

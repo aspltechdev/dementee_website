@@ -63,7 +63,7 @@ body {
 
   border-radius: 30px;
 
-  font-size: 11px;
+  font-size: 15px;
 
   line-height: 1;
 
@@ -139,7 +139,7 @@ body {
 
   color: #ef3d43;
 
-  font-size: 10px;
+  font-size: 14px;
 
   line-height: 1;
 
@@ -163,7 +163,7 @@ body {
 
   color: #210c3b;
 
-  font-size: clamp(40px, 4.5vw, 64px);
+  font-size: clamp(44px, 4.5vw, 68px);
 
   line-height: 1;
 
@@ -186,7 +186,7 @@ body {
 
   color: #3f3944;
 
-  font-size: 13px;
+  font-size: 17px;
 
   line-height: 1.65;
 
@@ -222,7 +222,7 @@ body {
 
   color: #817b84;
 
-  font-size: 9px;
+  font-size: 13px;
 
   line-height: 1;
 
@@ -234,7 +234,7 @@ body {
 
   color: #210c3b;
 
-  font-size: 18px;
+  font-size: 22px;
 
   line-height: 1.2;
 
@@ -287,7 +287,7 @@ body {
 
   color: #1f1930;
 
-  font-size: 8px;
+  font-size: 12px;
 
   font-weight: 700;
 }
@@ -303,7 +303,7 @@ body {
 
   border-radius: 6px;
 
-  font-size: 12px;
+  font-size: 16px;
 
   font-weight: 800;
 }
@@ -343,7 +343,7 @@ body {
 
   color: #171126;
 
-  font-size: 9px;
+  font-size: 13px;
 
   font-weight: 700;
 }
@@ -373,7 +373,7 @@ body {
 }
 
 .fs-tech-card strong {
-  font-size: 9px;
+  font-size: 13px;
 
   line-height: 1;
 
@@ -424,7 +424,7 @@ body {
 
   color: #210c3b;
 
-  font-size: 46px;
+  font-size: 45px;
 
   line-height: 1.05;
 
@@ -508,7 +508,7 @@ body {
 
   color: #ef3d43;
 
-  font-size: 11px;
+  font-size: 15px;
 
   line-height: 1;
 
@@ -523,7 +523,7 @@ body {
 
   color: #210c3b;
 
-  font-size: 22px;
+  font-size: 26px;
 
   line-height: 1.35;
 
@@ -554,7 +554,7 @@ body {
 
   color: #5e5a61;
 
-  font-size: 13px;
+  font-size: 17px;
 
   line-height: 1.65;
 
@@ -594,7 +594,7 @@ body {
 
   color: #210c3b;
 
-  font-size: 38px;
+  font-size: 45px;
 
   line-height: 1.1;
 
@@ -612,7 +612,7 @@ body {
 
   color: #454148;
 
-  font-size: 14px;
+  font-size: 18px;
 
   line-height: 1.6;
 
@@ -687,7 +687,7 @@ body {
 
   color: #210c3b;
 
-  font-size: 18px;
+  font-size: 22px;
 
   line-height: 1.2;
 
@@ -769,7 +769,7 @@ body {
 
 .fs-careers .fs-section-heading h2 {
   margin: 0;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 1.1;
   font-weight: 800;
   color: #18082f;
@@ -782,7 +782,7 @@ body {
 
 .fs-careers .fs-section-heading p {
   margin: 32px auto 0;
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.5;
   font-weight: 500;
   color: #383838;
@@ -832,7 +832,7 @@ body {
   border-radius: 8px;
   background: #f4f0f5;
 
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
 }
 
@@ -843,7 +843,7 @@ body {
 
   color: #18082f;
 
-  font-size: 21px;
+  font-size: 25px;
   line-height: 1.15;
   font-weight: 800;
 
@@ -857,7 +857,7 @@ body {
 
   color: #666666;
 
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.65;
   font-weight: 500;
 }
@@ -874,7 +874,7 @@ body {
 
   color: #888888;
 
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.3;
   font-weight: 700;
 }
@@ -911,11 +911,11 @@ body {
   }
 
   .fs-project-heading h2 {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .fs-project-heading p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .fs-project-grid {
@@ -940,7 +940,7 @@ body {
   }
 
   .fs-project-card h3 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0 8px 14px;
   }
 
@@ -973,12 +973,12 @@ body {
   }
 
   .fs-careers .fs-section-heading h2 {
-    font-size: 34px;
+    font-size: 38px;
   }
 
   .fs-careers .fs-section-heading p {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .fs-career-grid {
@@ -1028,7 +1028,7 @@ body {
 
   color: #210c3b;
 
-  font-size: 38px;
+  font-size: 42px;
 
   line-height: 1.1;
 
@@ -1046,7 +1046,7 @@ body {
 
   color: #454148;
 
-  font-size: 14px;
+  font-size: 18px;
 
   line-height: 1.6;
 
@@ -1101,7 +1101,7 @@ body {
 
   color: #ffc817;
 
-  font-size: 18px;
+  font-size: 22px;
 
   line-height: 1;
 
@@ -1118,7 +1118,7 @@ body {
 
   color: #555159;
 
-  font-size: 12px;
+  font-size: 16px;
 
   line-height: 1.55;
 
@@ -1169,7 +1169,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 20px;
+  font-size: 24px;
 
   font-weight: 700;
 }
@@ -1181,7 +1181,7 @@ body {
 
   color: #171222;
 
-  font-size: 13px;
+  font-size: 17px;
 
   line-height: 1;
 
@@ -1193,7 +1193,7 @@ body {
 
   color: #77727b;
 
-  font-size: 10px;
+  font-size: 14px;
 
   line-height: 1;
 
@@ -1263,7 +1263,7 @@ body {
 
   color: #ffd329;
 
-  font-size: 8px;
+  font-size: 12px;
 
   font-weight: 800;
 }
@@ -1273,7 +1273,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 28px;
+  font-size: 32px;
 
   line-height: 0.98;
 
@@ -1320,7 +1320,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 8px;
+  font-size: 12px;
 
   font-weight: 500;
 }
@@ -1340,7 +1340,7 @@ body {
 
   color: #f2d642;
 
-  font-size: 7px;
+  font-size: 11px;
 }
 
 
@@ -1369,7 +1369,7 @@ body {
 
   color: #ef3d70;
 
-  font-size: 10px;
+  font-size: 14px;
 
   line-height: 1.2;
 
@@ -1381,7 +1381,7 @@ body {
 
   color: #222222;
 
-  font-size: 28px;
+  font-size: 32px;
 
   line-height: 1;
 
@@ -1401,7 +1401,7 @@ body {
 
   color: #555159;
 
-  font-size: 8px;
+  font-size: 12px;
 
   line-height: 1.3;
 }
@@ -1423,7 +1423,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 8px;
+  font-size: 12px;
 
   font-weight: 800;
 
@@ -1479,7 +1479,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 20px;
+  font-size: 24px;
 
   line-height: 1.1;
 
@@ -1493,7 +1493,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 9px;
+  font-size: 13px;
 
   line-height: 1.5;
 
@@ -1513,7 +1513,7 @@ body {
 
   color: #15100d;
 
-  font-size: 7px;
+  font-size: 11px;
 
   font-weight: 800;
 
@@ -1574,7 +1574,7 @@ body {
 
   color: #171126;
 
-  font-size: 20px;
+  font-size: 24px;
 
   line-height: 1.2;
 
@@ -1623,7 +1623,7 @@ body {
 
   color: #171126;
 
-  font-size: 9px;
+  font-size: 13px;
 
   font-weight: 500;
 
@@ -1648,7 +1648,7 @@ body {
 
   color: #68636c;
 
-  font-size: 9px;
+  font-size: 13px;
 
   line-height: 1.5;
 }
@@ -1696,7 +1696,7 @@ body {
 }
 
 .fs-footer-logo-mark {
-  font-size: 22px;
+  font-size: 26px;
 
   color: #e73565;
 }
@@ -1704,7 +1704,7 @@ body {
 .fs-footer-logo strong {
   display: block;
 
-  font-size: 12px;
+  font-size: 16px;
 
   line-height: 1;
 }
@@ -1716,7 +1716,7 @@ body {
 
   color: #ef3d70;
 
-  font-size: 7px;
+  font-size: 11px;
 
   line-height: 1;
 }
@@ -1726,7 +1726,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 8px;
+  font-size: 12px;
 
   line-height: 1;
 
@@ -1742,7 +1742,7 @@ body {
 
   color: #d0cfda;
 
-  font-size: 7px;
+  font-size: 11px;
 
   line-height: 1.5;
 }
@@ -1760,7 +1760,7 @@ body {
 
   color: #d0cfda;
 
-  font-size: 7px;
+  font-size: 11px;
 
   line-height: 1.2;
 
@@ -1787,7 +1787,7 @@ body {
 
   color: #20203a;
 
-  font-size: 7px;
+  font-size: 11px;
 
   font-weight: 800;
 }
@@ -1809,7 +1809,7 @@ body {
 
   color: #d0cfda;
 
-  font-size: 7px;
+  font-size: 11px;
 }
 
 
@@ -1840,11 +1840,11 @@ body {
   }
 
   .fs-curriculum-card h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .fs-curriculum-card p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
 
@@ -1894,7 +1894,7 @@ body {
   }
 
   .fs-hero h1 {
-    font-size: 46px;
+    font-size: 50px;
   }
 
 
@@ -1921,11 +1921,11 @@ body {
   }
 
   .fs-curriculum-card h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .fs-curriculum-card p {
-    font-size: 11px;
+    font-size: 15px;
   }
 
 
@@ -1968,7 +1968,7 @@ body {
   }
 
   .fs-pricing-left h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .fs-features {
@@ -2012,13 +2012,13 @@ body {
   }
 
   .fs-hero h1 {
-    font-size: 38px;
+    font-size: 42px;
 
     letter-spacing: -1px;
   }
 
   .fs-hero > .fs-hero-container > p {
-    font-size: 12px;
+    font-size: 16px;
 
     margin-bottom: 35px;
   }
@@ -2046,7 +2046,7 @@ body {
   }
 
   .fs-curriculum .fs-section-heading h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .fs-curriculum-grid {
@@ -2123,7 +2123,7 @@ body {
   }
 
   .fs-vision-content h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .fs-vision-image {
@@ -2153,7 +2153,7 @@ body {
   }
 
   .fs-hero h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .fs-tech-grid {
@@ -2165,7 +2165,7 @@ body {
   .fs-project-heading h2,
   .fs-careers .fs-section-heading h2,
   .fs-success .fs-section-heading h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
 
@@ -2221,7 +2221,7 @@ body {
   }
 
   .fs-project-card h3 {
-    font-size: 17px;
+    font-size: 21px;
     margin-bottom: 15px;
   }
 
@@ -2252,5 +2252,424 @@ body {
 @media (max-width: 400px) {
   .fs-tech-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================================================
+   PRICING / ENROLLMENT — REFERENCE SIZE
+   Matches the supplied large desktop reference:
+   approx. 1540px wide × 586px high
+========================================================= */
+
+.fs-pricing-section {
+  width: 100%;
+  padding: 0 0 72px;
+  background: #ffffff;
+}
+
+.fs-pricing-container {
+  width: 86%;
+  max-width: 1540px;
+  min-height: 586px;
+
+  margin: 0 auto;
+  padding: 68px 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(
+      circle at 60% 50%,
+      rgba(72, 67, 183, 0.25),
+      transparent 35%
+    ),
+    #10172d;
+
+  overflow: hidden;
+}
+
+.fs-pricing-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.fs-pricing-badge {
+  width: fit-content;
+  margin-bottom: 38px;
+  padding: 9px 25px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.13);
+  color: #ffd329;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.fs-pricing-left h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 64px;
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -2.5px;
+}
+
+.fs-features {
+  width: 620px;
+  max-width: 100%;
+
+  margin-top: 42px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 45px;
+}
+
+.fs-features div {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.fs-features div span {
+  width: 22px;
+  height: 22px;
+
+  flex: 0 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #f2d642;
+  border-radius: 50%;
+
+  color: #f2d642;
+
+  font-size: 15px;
+}
+
+.fs-price-card {
+  width: 475px;
+  min-height: 453px;
+
+  flex: 0 0 475px;
+
+  padding: 40px 56px;
+
+  border-radius: 28px;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fs-price-card h3 {
+  margin: 0 0 18px;
+
+  color: #ef3d70;
+
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.fs-price {
+  margin-bottom: 24px;
+
+  color: #222222;
+
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.fs-price-card ul {
+  margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.fs-price-card li {
+  margin-bottom: 14px;
+
+  color: #555159;
+
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.fs-price-card .uiux-enroll-btn,
+.fs-price-card button {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #ff5d88,
+    #6b43df
+  );
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.fs-price-card .uiux-enroll-btn:hover,
+.fs-price-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(104, 73, 225, 0.25);
+}
+
+
+/* =========================================================
+   FULL STACK PRICING — TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .fs-pricing-container {
+    width: 90%;
+    min-height: 500px;
+
+    padding: 55px 55px;
+
+    gap: 45px;
+  }
+
+  .fs-pricing-left h2 {
+    font-size: 52px;
+  }
+
+  .fs-features {
+    width: 100%;
+    gap: 18px 28px;
+  }
+
+  .fs-features div {
+    font-size: 17px;
+  }
+
+  .fs-price-card {
+    width: 420px;
+    flex-basis: 420px;
+    min-height: 410px;
+
+    padding: 36px 45px;
+  }
+
+  .fs-price-card h3 {
+    font-size: 29px;
+  }
+
+  .fs-price {
+    font-size: 60px;
+  }
+
+  .fs-price-card li {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   FULL STACK PRICING — SMALL TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .fs-pricing-container {
+    width: calc(100% - 50px);
+
+    min-height: 470px;
+
+    padding: 45px 40px;
+
+    gap: 30px;
+  }
+
+  .fs-pricing-left h2 {
+    font-size: 43px;
+  }
+
+  .fs-pricing-badge {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+
+  .fs-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .fs-features div {
+    font-size: 16px;
+  }
+
+  .fs-price-card {
+    width: 360px;
+    flex-basis: 360px;
+    min-height: 390px;
+
+    padding: 32px;
+  }
+
+  .fs-price-card h3 {
+    font-size: 25px;
+  }
+
+  .fs-price {
+    font-size: 52px;
+  }
+
+  .fs-price-card li {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   FULL STACK PRICING — MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .fs-pricing-container {
+    width: calc(100% - 30px);
+
+    min-height: auto;
+
+    padding: 40px 28px;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 40px;
+
+    border-radius: 24px;
+  }
+
+  .fs-pricing-badge {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+
+  .fs-pricing-left h2 {
+    font-size: 38px;
+    letter-spacing: -1.3px;
+  }
+
+  .fs-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .fs-features div {
+    font-size: 16px;
+  }
+
+  .fs-features div span {
+    width: 20px;
+    height: 20px;
+    flex-basis: 20px;
+    font-size: 13px;
+  }
+
+  .fs-price-card {
+    width: 100%;
+    flex-basis: auto;
+    min-height: 390px;
+
+    padding: 30px 25px;
+
+    border-radius: 22px;
+  }
+
+  .fs-price-card h3 {
+    font-size: 25px;
+  }
+
+  .fs-price {
+    font-size: 52px;
+  }
+
+  .fs-price-card li {
+    font-size: 16px;
+  }
+
+  .fs-price-card .uiux-enroll-btn,
+  .fs-price-card button {
+    height: 48px;
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   FULL STACK PRICING — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .fs-pricing-container {
+    width: calc(100% - 24px);
+    padding: 32px 20px;
+  }
+
+  .fs-pricing-left h2 {
+    font-size: 34px;
+  }
+
+  .fs-price-card {
+    padding: 27px 20px;
+  }
+
+  .fs-price-card h3 {
+    font-size: 22px;
+  }
+
+  .fs-price {
+    font-size: 46px;
+  }
+
+  .fs-price-card li {
+    font-size: 15px;
   }
 }

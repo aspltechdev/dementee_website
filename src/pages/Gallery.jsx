@@ -11,6 +11,14 @@ import about3 from "../assets/about3.png";
 import about4 from "../assets/about4.png";
 import about5 from "../assets/about5.png";
 
+/* ================= WORKSHOP IMAGES ================= */
+import workshop2 from "../assets/workshop2.jpg";
+import workshop3 from "../assets/workshop3.jpg";
+
+/* ================= CONVOCATION IMAGES ================= */
+import convocation2 from "../assets/convocation2.jpg";
+import convocation3 from "../assets/convocation3.jpg";
+
 function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All");
   const galleryRefs = useRef({});
@@ -35,60 +43,70 @@ function Gallery() {
   ];
 
   const sections = [
-    {
-      number: "01",
-      title: "Workshops & Presentations",
-      category: "Workshops",
-      images: [
-        {
-          src: about1,
-          arrow: true,
-        },
-      ],
-    },
+  {
+    number: "01",
+    title: "Workshops & Presentations",
+    category: "Workshops",
+    images: [
+      {
+        src: about1,
+      },
+      {
+        src: workshop2,
+      },
+      {
+        src: workshop3,
+      },
+    ],
+    showArrow: true,
+  },
 
-    {
-      number: "02",
-      title: "Podcast Videos",
-      category: "Podcast Videos",
-      images: [
-        {
-          src: about2,
-          video: true,
-        },
-      ],
-    },
+  {
+    number: "02",
+    title: "Podcast Videos",
+    category: "Podcast Videos",
+    images: [
+      {
+        src: about2,
+        video: true,
+      },
+    ],
+  },
 
-    {
-      number: "03",
-      title: "Convocation Day",
-      category: "Convocation",
-      images: [
-        {
-          src: about3,
-          arrow: true,
-        },
-      ],
-    },
+  {
+    number: "03",
+    title: "Convocation Day",
+    category: "Convocation",
+    images: [
+      {
+        src: about3,
+      },
+      {
+        src: convocation2,
+      },
+      {
+        src: convocation3,
+      },
+    ],
+    showArrow: true,
+  },
 
-    {
-      number: "04",
-      title: "Session Demo Videos",
-      category: "Session Videos",
-      images: [
-        {
-          src: about4,
-          video: true,
-        },
-        {
-          src: about5,
-          video: true,
-          arrow: true,
-        },
-      ],
-    },
-  ];
-
+  {
+    number: "04",
+    title: "Session Demo Videos",
+    category: "Session Videos",
+    images: [
+      {
+        src: about4,
+        video: true,
+      },
+      {
+        src: about5,
+        video: true,
+      },
+    ],
+  },
+];
   const visibleSections =
     activeFilter === "All"
       ? sections
@@ -163,7 +181,7 @@ function Gallery() {
                 key={section.number}
               >
 
-                {/* SECTION TITLE */}
+                {/* ================= SECTION TITLE ================= */}
 
                 <div className="gallery-block-title">
 
@@ -177,62 +195,58 @@ function Gallery() {
 
                 </div>
 
-                {/* IMAGE STRIP */}
+                {/* ================= IMAGE STRIP ================= */}
 
-                <div
-                  className="gallery-strip"
-                  ref={(element) => {
-                    galleryRefs.current[section.number] = element;
-                  }}
-                >
+  <div className="gallery-strip-wrapper">
 
-                  {section.images.map((image, index) => (
+  <div
+    className="gallery-strip"
+    ref={(element) => {
+      galleryRefs.current[section.number] = element;
+    }}
+  >
+    {section.images.map((image, index) => (
+      <div
+        className="gallery-card"
+        key={index}
+      >
 
-                    <div
-                      className="gallery-card"
-                      key={index}
-                    >
+        <img
+          src={image.src}
+          alt={`${section.title} ${index + 1}`}
+        />
 
-                      <img
-                        src={image.src}
-                        alt={section.title}
-                      />
+        {image.video && (
+          <button
+            className="gallery-play"
+            type="button"
+            aria-label="Play video"
+          >
+            <Play
+              size={17}
+              fill="currentColor"
+            />
+          </button>
+        )}
 
-                      {/* VIDEO PLAY BUTTON */}
+      </div>
+    ))}
+  </div>
 
-                      {image.video && (
-                        <button
-                          className="gallery-play"
-                          type="button"
-                          aria-label="Play video"
-                        >
-                          <Play
-                            size={17}
-                            fill="currentColor"
-                          />
-                        </button>
-                      )}
+  {section.showArrow && (
+    <button
+      className="gallery-arrow"
+      type="button"
+      aria-label={`Next ${section.title}`}
+      onClick={() =>
+        scrollGallery(section.number, "right")
+      }
+    >
+      <ArrowRight size={19} />
+    </button>
+  )}
 
-                      {/* NEXT BUTTON */}
-
-                      {image.arrow && (
-                        <button
-                          className="gallery-arrow"
-                          type="button"
-                          aria-label="Next image"
-                          onClick={() =>
-                            scrollGallery(section.number, "right")
-                          }
-                        >
-                          <ArrowRight size={19} />
-                        </button>
-                      )}
-
-                    </div>
-
-                  ))}
-
-                </div>
+</div>
 
               </section>
 
@@ -245,6 +259,7 @@ function Gallery() {
       </main>
 
       <Footer />
+
     </div>
   );
 }

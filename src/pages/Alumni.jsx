@@ -7,6 +7,8 @@ import footerlogo from "../assets/footerlogo.png";
 import Nivetha from "../assets/Nivetha.png";
 import Karthikumar from "../assets/Karthikumar.png";
 import Footer from "./Footer";
+import suganya from "../assets/suganya.png";
+import sowmiya from "../assets/sowmiya.png";
 
 function Alumni() {
   const [visibleAlumni, setVisibleAlumni] = useState(8);
@@ -19,8 +21,7 @@ function Alumni() {
       role: "UI / UX DESIGNER",
       batch: "2024",
       company: "Placed at Largstone Pvt Ltd",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=85",
+    image: suganya,
       featured: true,
     },
     {
@@ -28,8 +29,7 @@ function Alumni() {
       role: "UI / UX DESIGNER",
       batch: "2024",
       company: "",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=85",
+     image: sowmiya,
       featured: true,
     },
   ];
@@ -40,10 +40,12 @@ function Alumni() {
     {
       name: "Suganya",
       role: "UI / UX DESIGNER",
+       image: suganya,
     },
     {
       name: "R Sowmiya",
       role: "UI / UX DESIGNER",
+      image: sowmiya,
     },
     {
       name: "Nivetha",

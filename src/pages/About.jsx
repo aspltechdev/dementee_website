@@ -237,117 +237,128 @@ function About() {
 
 
       {/* ================= OUR JOURNEY ================= */}
+{/* ================= OUR JOURNEY ================= */}
 
-      <section className="journey-section">
-        <div className="journey-container">
+<section className="journey-section">
+  <div className="journey-container">
 
-          {/* ================= JOURNEY HEADING ================= */}
+    {/* ================= JOURNEY CARDS ================= */}
 
-          <div className="journey-content">
-            <div className="journey-label">
-              OUR LEGACY
-            </div>
+    <div className="journey-cards">
 
-            <h2>
-              Our Journey
-              <br />
-              Over
-              <br />
-              <span>The years.</span>
-            </h2>
-
-            <p>
-              What began as a modest initiative has evolved into a growing
-              organization with a dedicated team and a space of our own.
-            </p>
-          </div>
-
-          {/* ================= JOURNEY CARDS ================= */}
-
-          <div className="journey-cards">
-
-            {/* 2022 */}
-            <article className="journey-card">
-              <div className="journey-image">
-                <img
-                  src={thebegenning}
-                  alt="De Mentee beginning"
-                />
-                <div className="journey-year">2022</div>
-              </div>
-
-              <div className="journey-card-content">
-                <h3>THE BEGINNING</h3>
-                <p>
-                  What began as a small dream from home marked the first step
-                  of our journey.
-                </p>
-              </div>
-            </article>
-
-            {/* 2023 */}
-            <article className="journey-card">
-              <div className="journey-image">
-                <img
-                  src={growingstrong}
-                  alt="De Mentee growing strong"
-                />
-                <div className="journey-year">2023</div>
-              </div>
-
-              <div className="journey-card-content">
-                <h3>GROWING STRONG</h3>
-                <p>
-                  As our vision grew, we moved into a new space and began
-                  building something bigger.
-                </p>
-              </div>
-            </article>
-
-            {/* 2024 */}
-            <article className="journey-card">
-              <div className="journey-image">
-                <img
-                  src={innovation}
-                  alt="De Mentee innovation in action"
-                />
-                <div className="journey-year">2024</div>
-              </div>
-
-              <div className="journey-card-content">
-                <h3>INNOVATION IN ACTION</h3>
-                <p>
-                  With more people joining us, our small team grew into a
-                  community driven by shared goals.
-                </p>
-              </div>
-            </article>
-
-            {/* 2026 */}
-            <article className="journey-card">
-              <div className="journey-image">
-                <img
-                  src={scalingnewweights}
-                  alt="De Mentee scaling new heights"
-                />
-                <div className="journey-year">2026</div>
-              </div>
-
-              <div className="journey-card-content">
-                <h3>SCALING NEW HEIGHTS</h3>
-                <p>
-                  From a small beginning at home to our own company — a
-                  milestone worth celebrating.
-                </p>
-              </div>
-            </article>
-
-          </div>
+      {/* 2022 */}
+      <article className="journey-card">
+        <div className="journey-image">
+          <img
+            src={thebegenning}
+            alt="De Mentee beginning"
+          />
+          <div className="journey-year">2022</div>
         </div>
-      </section>
+
+        <div className="journey-card-content">
+          <h3>THE BEGINNING</h3>
+          <p>
+            What began as a small dream from home marked the first step
+            of our journey.
+          </p>
+        </div>
+      </article>
 
 
-      {/* ================= AWARDS & BRANDS ================= */}
+      {/* 2023 */}
+      <article className="journey-card">
+        <div className="journey-image">
+          <img
+            src={growingstrong}
+            alt="De Mentee growing strong"
+          />
+          <div className="journey-year">2023</div>
+        </div>
+
+        <div className="journey-card-content">
+          <h3>GROWING STRONG</h3>
+          <p>
+            As our vision grew, we moved into a new space and began
+            building something bigger.
+          </p>
+        </div>
+      </article>
+
+
+      {/* 2024 */}
+      <article className="journey-card">
+        <div className="journey-image">
+          <img
+            src={innovation}
+            alt="De Mentee innovation in action"
+          />
+          <div className="journey-year">2024</div>
+        </div>
+
+        <div className="journey-card-content">
+          <h3>INNOVATION IN ACTION</h3>
+          <p>
+            With more people joining us, our small team grew into a
+            community driven by shared goals.
+          </p>
+        </div>
+      </article>
+
+
+      {/* 2026 */}
+      <article className="journey-card">
+        <div className="journey-image">
+          <img
+            src={scalingnewweights}
+            alt="De Mentee scaling new heights"
+          />
+          <div className="journey-year">2026</div>
+        </div>
+
+        <div className="journey-card-content">
+          <h3>SCALING NEW HEIGHTS</h3>
+          <p>
+            From a small beginning at home to our own company — a
+            milestone worth celebrating.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+
+    {/* ================= STICKY JOURNEY HEADING ================= */}
+
+    <div className="journey-sticky-area">
+
+      <div className="journey-sticky">
+
+        <div className="journey-label">
+          OUR LEGACY
+        </div>
+
+        <h2>
+          Our Journey
+          <br />
+          Over
+          <br />
+          <span>The years.</span>
+        </h2>
+
+        <p>
+          What began as a modest initiative has evolved into a growing
+          organization with a dedicated team and a space of our own.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+          {/* ================= AWARDS & BRANDS ================= */}
 
       <section className="recognition-section">
 
@@ -792,8 +803,6 @@ function About() {
         </div>
 
       </section>
-
-
       {/* ================= FOOTER ================= */}
       <Footer />
     </div>

@@ -2,10 +2,9 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./Course.css";
 
-
 function Course() {
   return (
-    <section className="courses-section">
+    <section className="courses-section" id="courses-section">
       <div className="courses-container">
 
         <h2 className="courses-title">
@@ -14,7 +13,10 @@ function Course() {
 
         <div className="course-stack">
 
-          {/* ================= COURSE 1 - UI/UX ================= */}
+          {/* ================================
+              COURSE 1 — UI / UX
+          ================================= */}
+
           <article className="course-card course-card-1">
 
             <div className="course-info">
@@ -28,8 +30,8 @@ function Course() {
               </h3>
 
               <p>
-                Master wireframing, Figma prototyping, design systems, and
-                user research to build sleek interfaces.
+                Master wireframing, Figma prototyping, design systems,
+                and user research to build sleek interfaces.
               </p>
 
               <div className="course-line"></div>
@@ -45,7 +47,7 @@ function Course() {
                   className="course-view-details"
                 >
                   VIEW DETAILS
-                  <ArrowRight size={14} />
+                  <ArrowRight size={16} />
                 </Link>
 
               </div>
@@ -53,27 +55,26 @@ function Course() {
             </div>
 
             <div className="course-image">
-
               <img
                 src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1000&q=85"
                 alt="UI UX design"
               />
-
             </div>
 
           </article>
 
 
-          {/* ================= COURSE 2 - DIGITAL MARKETING ================= */}
+          {/* ================================
+              COURSE 2 — DIGITAL MARKETING
+          ================================= */}
+
           <article className="course-card course-card-2">
 
             <div className="course-image">
-
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85"
                 alt="Digital marketing"
               />
-
             </div>
 
             <div className="course-info">
@@ -87,8 +88,8 @@ function Course() {
               </h3>
 
               <p>
-                Performance marketing, SEO, Google Ads, Meta campaigns, and
-                growth analytics for brand scaling.
+                Performance marketing, SEO, Google Ads, Meta campaigns,
+                and growth analytics for brand scaling.
               </p>
 
               <div className="course-line"></div>
@@ -104,7 +105,7 @@ function Course() {
                   className="course-view-details"
                 >
                   VIEW DETAILS
-                  <ArrowRight size={14} />
+                  <ArrowRight size={16} />
                 </Link>
 
               </div>
@@ -114,7 +115,10 @@ function Course() {
           </article>
 
 
-          {/* ================= COURSE 3 - FULL STACK ================= */}
+          {/* ================================
+              COURSE 3 — FULL STACK
+          ================================= */}
+
           <article className="course-card course-card-3">
 
             <div className="course-info">
@@ -128,9 +132,9 @@ function Course() {
               </h3>
 
               <p>
-                Master React, Next.js, Node.js, and MongoDB. Build real-world
-                SaaS applications with authentication, databases, and
-                deployment pipelines.
+                Master React, Next.js, Node.js, and MongoDB.
+                Build real-world SaaS applications with authentication,
+                databases, and deployment pipelines.
               </p>
 
               <div className="course-line"></div>
@@ -146,7 +150,7 @@ function Course() {
                   className="course-view-details"
                 >
                   VIEW DETAILS
-                  <ArrowRight size={14} />
+                  <ArrowRight size={16} />
                 </Link>
 
               </div>
@@ -154,17 +158,16 @@ function Course() {
             </div>
 
             <div className="course-image">
-
               <img
                 src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=85"
                 alt="Full stack web development"
               />
-
             </div>
 
           </article>
 
         </div>
+
       </div>
     </section>
   );
