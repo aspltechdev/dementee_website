@@ -1496,7 +1496,7 @@
 
 
 /* =====================================================
-   COMPANY LOGOS
+   COMPANY LOGOS — sized per Figma
 ===================================================== */
 
 .uiux-company-logos {
@@ -1508,48 +1508,45 @@
   grid-template-columns: repeat(6, 1fr);
 
   align-items: center;
+  justify-items: center;
 
   column-gap: 30px;
-  row-gap: 55px;
+  row-gap: 70px;
 }
 
 .uiux-company-logos img {
-  width: 100%;
-  max-width: 115px;
-  max-height: 48px;
-  margin: 0 auto;
-  object-fit: contain;
   display: block;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  margin: 0 auto;
 
   filter: grayscale(100%) contrast(120%);
 }
-.company-logo img {
-  width: 115px;
-  height: 48px;
-  object-fit: contain;
-  filter: grayscale(100%);
-}
+
+/* Row 1 */
+.uiux-company-logos img:nth-child(1)  { width: 159px; height: 64px; }   /* TCS */
+.uiux-company-logos img:nth-child(2)  { width: 85px;  height: 73px; }   /* Wipro */
+.uiux-company-logos img:nth-child(3)  { width: 107px; height: 60px; }   /* Cognizant */
+.uiux-company-logos img:nth-child(4)  { width: 138px; height: 61px; }   /* Amazon */
+.uiux-company-logos img:nth-child(5)  { width: 226px; height: 128px; }  /* Microsoft */
+.uiux-company-logos img:nth-child(6)  { width: 99px;  height: 72px; }   /* HCL */
+
+/* Row 2 */
+.uiux-company-logos img:nth-child(7)  { width: 119px; height: 52px; }   /* Zoho */
+.uiux-company-logos img:nth-child(8)  { width: 135px; height: 76px; }   /* Accenture */
+.uiux-company-logos img:nth-child(9)  { width: 121px; height: 68px; }   /* Flipkart */
+.uiux-company-logos img:nth-child(10) { width: 83px;  height: 31px; }   /* Infosys */
+.uiux-company-logos img:nth-child(11) { width: 128px; height: 41px; }   /* Samsung */
+.uiux-company-logos img:nth-child(12) { width: 130px; height: 130px; }  /* Capgemini */
 
 
 /* =====================================================
    RESPONSIVE
 ===================================================== */
-
-.microsoft-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-}
-
-.microsoft-logo img {
-  width: 115px;
-  height: 48px;
-  object-fit: contain;
-  filter: grayscale(100%) contrast(120%);
-  transform: scale(2.7);
-  transform-origin: center center;
-}
 
 @media (max-width: 1050px) {
 
@@ -1591,7 +1588,7 @@
   .uiux-company-logos {
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 35px 20px;
+    gap: 45px 20px;
   }
 }
 
@@ -1623,7 +1620,7 @@
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 30px 22px;
+    gap: 40px 22px;
   }
 
   .uiux-company-logos img {
@@ -1634,6 +1631,8 @@
 
 /* =====================================================
    STUDENT OUTCOMES / PORTFOLIO
+   Sized per Figma: frame 1172 × 346, image 320 × 260,
+   arrow 47 × 47, arrow offset ~53px
 ===================================================== */
 
 .uiux-outcomes-section {
@@ -1698,11 +1697,12 @@
 
 /* =====================================================
    SLIDER WRAPPER
+   Padding leaves room for the arrows sitting outside
 ===================================================== */
 
 .uiux-outcomes-slider {
   width: 90%;
-  max-width: 1350px;
+  max-width: 1172px;
 
   margin: 0 auto;
 
@@ -1711,21 +1711,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* room for the 47px arrows sitting outside the grid */
+  padding: 0 80px;
 }
 
 
 /* =====================================================
-   PROJECT GRID
+   PROJECT GRID — 3 cols, min-height = Figma frame
 ===================================================== */
 
 .uiux-outcomes-grid {
-  width: 82%;
-  max-width: 1050px;
+  width: 100%;
+  max-width: 1172px;
+
+  min-height: 346px;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 48px;
+  gap: 32px;
+
+  padding: 14px 18px;
 }
 
 
@@ -1734,9 +1741,9 @@
 ===================================================== */
 
 .uiux-project-card {
-  min-height: 300px;
+  min-height: 318px;
 
-  padding: 12px 12px 22px;
+  padding: 14px 14px 22px;
 
   background: #ffffff;
 
@@ -1744,15 +1751,25 @@
   border-radius: 16px;
 
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
+
+
+/* =====================================================
+   PROJECT IMAGE — Figma 320 × 260, radius 18
+===================================================== */
 
 .uiux-project-image {
   width: 100%;
-  height: 205px;
+  height: 260px;
 
   overflow: hidden;
 
-  border-radius: 13px;
+  border-radius: 18px;
+
+  flex-shrink: 0;
 }
 
 .uiux-project-image img {
@@ -1775,16 +1792,18 @@
   font-weight: 800;
 
   line-height: 1.2;
+
+  flex-grow: 1;
 }
 
 
 /* =====================================================
-   SLIDER ARROWS
+   SLIDER ARROWS — 47 × 47, pushed outside the grid
 ===================================================== */
 
 .uiux-slider-arrow {
-  width: 38px;
-  height: 38px;
+  width: 47px;
+  height: 47px;
 
   position: absolute;
 
@@ -1804,7 +1823,7 @@
 
   cursor: pointer;
 
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
 
   line-height: 1;
@@ -1813,11 +1832,11 @@
 }
 
 .uiux-slider-arrow-left {
-  left: 0;
+  left: -70px;
 }
 
 .uiux-slider-arrow-right {
-  right: 0;
+  right: -70px;
 }
 
 .uiux-slider-arrow:hover {
@@ -1875,34 +1894,51 @@
 
 @media (max-width: 1100px) {
   .uiux-outcomes-grid {
-    width: 84%;
+    width: 100%;
 
     gap: 24px;
+
+    padding: 12px 14px;
+  }
+
+  .uiux-project-card {
+    min-height: 280px;
   }
 
   .uiux-project-image {
-    height: 180px;
+    height: 200px;
+    border-radius: 16px;
   }
 }
 
 
 @media (max-width: 800px) {
   .uiux-outcomes-grid {
-    width: 82%;
+    width: 100%;
+
+    min-height: auto;
 
     grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    padding: 12px 14px;
   }
 
   .uiux-project-card:nth-child(3) {
     display: none;
   }
 
+  .uiux-project-image {
+    height: 200px;
+  }
+
   .uiux-slider-arrow-left {
-    left: 5px;
+    left: -30px;
   }
 
   .uiux-slider-arrow-right {
-    right: 5px;
+    right: -30px;
   }
 }
 
@@ -1922,10 +1958,20 @@
     font-size: 36px;
   }
 
+  .uiux-outcomes-slider {
+    padding: 0 50px;
+  }
+
   .uiux-outcomes-grid {
-    width: calc(100% - 80px);
+    width: 100%;
+
+    min-height: auto;
 
     grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    padding: 12px 14px;
   }
 
   .uiux-project-card:nth-child(2),
@@ -1938,22 +1984,23 @@
   }
 
   .uiux-project-image {
-    height: 190px;
+    height: 220px;
+    border-radius: 18px;
   }
 
   .uiux-slider-arrow {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
 
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .uiux-slider-arrow-left {
-    left: 0;
+    left: -20px;
   }
 
   .uiux-slider-arrow-right {
-    right: 0;
+    right: -20px;
   }
 
   .uiux-slider-dots {

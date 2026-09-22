@@ -1213,60 +1213,6 @@ body {
   background: #ffffff;
 }
 
-.fs-pricing-container {
-  width: 86%;
-  max-width: 1440px;
-
-  min-height: 245px;
-
-  margin: 0 auto;
-
-  padding: 30px 38px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 40px;
-
-  border-radius: 18px;
-
-  background:
-    radial-gradient(
-      circle at 60% 50%,
-      rgba(72, 67, 183, 0.25),
-      transparent 35%
-    ),
-    #10172d;
-
-  overflow: hidden;
-}
-
-
-/* Left */
-
-.fs-pricing-left {
-  flex: 1;
-}
-
-.fs-pricing-badge {
-  width: fit-content;
-
-  margin-bottom: 15px;
-
-  padding: 5px 15px;
-
-  border-radius: 30px;
-
-  background: rgba(255, 255, 255, 0.13);
-
-  color: #ffd329;
-
-  font-size: 12px;
-
-  font-weight: 800;
-}
 
 .fs-pricing-left h2 {
   margin: 0;
@@ -2270,7 +2216,7 @@ body {
 .fs-pricing-container {
   width: 86%;
   max-width: 1540px;
-  min-height: 586px;
+height: 450px;
 
   margin: 0 auto;
   padding: 68px 80px;
@@ -2299,7 +2245,7 @@ body {
 }
 
 .fs-pricing-badge {
-  width: fit-content;
+  width: 175px;
   margin-bottom: 38px;
   padding: 9px 25px;
 
@@ -2308,7 +2254,7 @@ body {
   background: rgba(255, 255, 255, 0.13);
   color: #ffd329;
 
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 800;
 }
 
@@ -2317,7 +2263,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 64px;
+  font-size: 55px;
   line-height: 0.98;
   font-weight: 800;
   letter-spacing: -2.5px;
@@ -2342,7 +2288,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -2365,12 +2311,10 @@ body {
 }
 
 .fs-price-card {
-  width: 475px;
-  min-height: 453px;
-
-  flex: 0 0 475px;
-
-  padding: 40px 56px;
+  width: 360px;          /* Reduced from 475px */
+  min-height: 350px;     /* Reduced from 453px */
+  flex: 0 0 360px;       /* Reduced from 475px */
+  padding: 30px 35px;    /* Reduced from 40px 56px */
 
   border-radius: 28px;
 
@@ -2382,45 +2326,45 @@ body {
 }
 
 .fs-price-card h3 {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
 
   color: #ef3d70;
 
-  font-size: 34px;
+  font-size: 24px;       /* Reduced from 34px */
   line-height: 1.2;
   font-weight: 800;
 }
 
 .fs-price {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 
   color: #222222;
 
-  font-size: 70px;
+  font-size: 48px;       /* Reduced from 70px */
   line-height: 1;
   font-weight: 800;
   letter-spacing: -2px;
 }
 
 .fs-price-card ul {
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .fs-price-card li {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 
   color: #555159;
 
-  font-size: 21px;
+  font-size: 16px;       /* Reduced from 21px */
   line-height: 1.35;
 }
 
 .fs-price-card .uiux-enroll-btn,
 .fs-price-card button {
   width: 100%;
-  height: 50px;
+  height: 42px;          /* Reduced from 50px */
 
   display: flex;
   align-items: center;
@@ -2438,7 +2382,7 @@ body {
   color: #ffffff;
 
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;       /* Reduced from 20px */
   font-weight: 800;
 
   text-decoration: none;
@@ -2486,23 +2430,22 @@ body {
   }
 
   .fs-price-card {
-    width: 420px;
-    flex-basis: 420px;
-    min-height: 410px;
-
-    padding: 36px 45px;
+    width: 320px;         /* Reduced from 420px */
+    flex-basis: 320px;    /* Reduced from 420px */
+    min-height: 330px;    /* Reduced from 410px */
+    padding: 28px 30px;   /* Reduced from 36px 45px */
   }
 
   .fs-price-card h3 {
-    font-size: 29px;
+    font-size: 22px;      /* Reduced from 29px */
   }
 
   .fs-price {
-    font-size: 60px;
+    font-size: 42px;      /* Reduced from 60px */
   }
 
   .fs-price-card li {
-    font-size: 18px;
+    font-size: 15px;      /* Reduced from 18px */
   }
 }
 
@@ -2543,23 +2486,22 @@ body {
   }
 
   .fs-price-card {
-    width: 360px;
-    flex-basis: 360px;
-    min-height: 390px;
-
-    padding: 32px;
+    width: 300px;         /* Reduced from 360px */
+    flex-basis: 300px;    /* Reduced from 360px */
+    min-height: 310px;    /* Reduced from 390px */
+    padding: 25px;        /* Reduced from 32px */
   }
 
   .fs-price-card h3 {
-    font-size: 25px;
+    font-size: 20px;      /* Reduced from 25px */
   }
 
   .fs-price {
-    font-size: 52px;
+    font-size: 38px;      /* Reduced from 52px */
   }
 
   .fs-price-card li {
-    font-size: 16px;
+    font-size: 14px;      /* Reduced from 16px */
   }
 }
 
@@ -2615,29 +2557,29 @@ body {
   .fs-price-card {
     width: 100%;
     flex-basis: auto;
-    min-height: 390px;
+    min-height: 340px;    /* Reduced from 390px */
 
-    padding: 30px 25px;
+    padding: 25px 20px;   /* Reduced from 30px 25px */
 
     border-radius: 22px;
   }
 
   .fs-price-card h3 {
-    font-size: 25px;
+    font-size: 20px;      /* Reduced from 25px */
   }
 
   .fs-price {
-    font-size: 52px;
+    font-size: 40px;      /* Reduced from 52px */
   }
 
   .fs-price-card li {
-    font-size: 16px;
+    font-size: 14px;      /* Reduced from 16px */
   }
 
   .fs-price-card .uiux-enroll-btn,
   .fs-price-card button {
-    height: 48px;
-    font-size: 18px;
+    height: 42px;         /* Reduced from 48px */
+    font-size: 16px;      /* Reduced from 18px */
   }
 }
 
@@ -2658,18 +2600,18 @@ body {
   }
 
   .fs-price-card {
-    padding: 27px 20px;
+    padding: 20px 15px;   /* Reduced from 27px 20px */
   }
 
   .fs-price-card h3 {
-    font-size: 22px;
+    font-size: 18px;      /* Reduced from 22px */
   }
 
   .fs-price {
-    font-size: 46px;
+    font-size: 34px;      /* Reduced from 46px */
   }
 
   .fs-price-card li {
-    font-size: 15px;
+    font-size: 13px;      /* Reduced from 15px */
   }
 }
