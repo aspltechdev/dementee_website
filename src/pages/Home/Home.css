@@ -128,7 +128,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
 
   font-weight: 600;
@@ -167,7 +167,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
 
   font-weight: 600;
@@ -180,7 +180,7 @@
 ===================================================== */
 
 .hero {
-  margin-top: 115px;
+  margin-top: 70px;
   margin-bottom: 72px;
 
   display: grid;
@@ -229,7 +229,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 11px;
+  font-size: 9px;
 
   font-weight: 700;
 }
@@ -256,7 +256,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: clamp(55px, 4.5vw, 68px);
+  font-size: clamp(50px, 4.25vw, 63px);
 
   line-height: 0.94;
 
@@ -293,7 +293,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 17px;
+  font-size: 12px;
   line-height: 1.65;
 
   font-weight: 400;
@@ -336,7 +336,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 11px;
+  font-size: 9px;
 
   font-weight: 700;
 }
@@ -358,7 +358,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 11px;
+  font-size: 9px;
 
   font-weight: 700;
 }
@@ -379,7 +379,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 14px;
+  font-size: 10px;
 
   font-weight: 600;
 }
@@ -475,7 +475,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 9px;
+  font-size: 7px;
 
   font-weight: 700;
 }
@@ -500,7 +500,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.35;
 }
 
@@ -553,7 +553,7 @@
 .card-label {
   font-family: "Outfit", sans-serif;
 
-  font-size: 9px;
+  font-size: 7px;
 
   font-weight: 700;
 }
@@ -584,7 +584,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.4;
 }
 
@@ -604,7 +604,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1.4;
 }
 
@@ -671,7 +671,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
 
   font-weight: 600;
 }
@@ -712,7 +712,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
 
   font-weight: 700;
 }
@@ -741,7 +741,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 13px;
+  font-size: 11px;
 }
 
 /* =====================================================
@@ -805,7 +805,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 17px;
+  font-size: 15px;
 
   font-weight: 700;
 }
@@ -817,7 +817,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -846,7 +846,7 @@
   }
 
   .hero-content h1 {
-    font-size: 57px;
+    font-size: 52px;
   }
 }
 
@@ -926,7 +926,7 @@
   }
 
   .hero-content h1 {
-    font-size: 48px;
+    font-size: 43px;
 
     letter-spacing: -2px;
   }
@@ -999,8 +999,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 30px;
-  line-height: 1.1;
+  font-size: 24px;
 
   font-weight: 800;
 }
@@ -1018,7 +1017,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.5;
 }
 
@@ -1097,7 +1096,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 20px;
+  font-size: 18px;
 
   font-weight: 700;
 }
@@ -1113,7 +1112,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -1193,7 +1192,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 700;
 }
@@ -1208,7 +1207,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.55;
 }
 
@@ -1298,7 +1297,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 14px;
+  font-size: 13px;
 
   font-weight: 700;
 }
@@ -1312,7 +1311,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -1360,7 +1359,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 9px;
+  font-size: 7px;
 
   font-weight: 700;
 }
@@ -1387,7 +1386,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.6;
 }
 
@@ -1412,7 +1411,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
 
   font-weight: 700;
 }
@@ -1461,7 +1460,7 @@
   }
 
   .framework-heading h2 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .framework-grid,
@@ -1525,11 +1524,11 @@
 
   background: #f1f1f2;
 
-  border-radius: 3px;
+  border-radius: 30px;
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1;
 
   font-weight: 700;
@@ -1674,7 +1673,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 16px;
+  font-size: 14px;
 
   font-weight: 700;
 }
@@ -1684,7 +1683,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
 
   font-weight: 500;
 }
@@ -1696,7 +1695,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
 
   font-weight: 500;
 }
@@ -1814,7 +1813,7 @@
   border-radius: 999px;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 
   transition:
@@ -1899,7 +1898,7 @@
   color: #2c252e;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.55;
 
   font-weight: 400;
@@ -1920,7 +1919,7 @@
   color: #1c1420;
 
   font-family: "Outfit", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
 
   font-weight: 700;
 }
@@ -1929,7 +1928,7 @@
   margin: 0;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 
   font-weight: 600;
 }
@@ -2115,7 +2114,7 @@
   color: #ffffff;
 
   font-family: "Outfit", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 
   font-weight: 700;
 }
@@ -2126,7 +2125,7 @@
   color: rgba(255, 255, 255, 0.85);
 
   font-family: "Outfit", sans-serif;
-  font-size: 11px;
+  font-size: 9px;
 }
 
 
@@ -2154,7 +2153,7 @@
   border-radius: 50%;
 
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 
   font-weight: 700;
 }
@@ -2276,7 +2275,7 @@
   border-radius: 999px;
 
   font-family: "Outfit", sans-serif;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 700;
 }
 
@@ -2333,7 +2332,7 @@
   color: #504950;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.55;
   font-style: italic;
 }
@@ -2377,7 +2376,7 @@
   color: #1d151f;
 
   font-family: "Outfit", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
 }
 
@@ -2387,15 +2386,18 @@
   color: #6d666e;
 
   font-family: "Outfit", sans-serif;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 /* =====================================================
    FREELANCE BANNER
 ===================================================== */
+
 .freelance-banner {
   position: relative;
+
   min-height: 270px;
+
   margin-bottom: 90px;
   padding: 47px 55px;
 
@@ -2419,6 +2421,7 @@
 
   border-radius: 22px;
 }
+
 .freelance-content {
   position: relative;
   z-index: 2;
@@ -2443,7 +2446,7 @@
   color: rgba(255, 255, 255, 0.92);
 
   font-family: "Outfit", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -2472,113 +2475,35 @@
   border-radius: 999px;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 }
 
 /* TEMPORARY PERSON ART */
-/* =====================================================
-   FREELANCING PERSON
-===================================================== */
 
 .freelance-person {
   position: absolute;
 
-  right: 55px;
-  bottom: 0;
+  right: 75px;
+  bottom: -5px;
 
-  width: 390px;
-  height: 325px;
+  width: 320px;
+  height: 280px;
 
   display: flex;
   align-items: flex-end;
   justify-content: center;
 
   overflow: hidden;
-
-  /* Same overall tone as the banner */
-  background: linear-gradient(
-    100deg,
-    #ca5a8c 0%,
-    #7958d9 52%,
-    #5143df 100%
-  );
-
-  /* Fade the image edges into the banner */
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 12%,
-    black 88%,
-    transparent 100%
-  );
-
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 12%,
-    black 88%,
-    transparent 100%
-  );
 }
-
-
-/* HUMAN IMAGE */
-/* =====================================================
-   FREELANCE HUMAN IMAGE
-===================================================== */
-
-.freelance-person {
-  position: absolute;
-
-  right: 0;
-  bottom: 0;
-
-  width: 430px;
-  height: 330px;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-
-  overflow: hidden;
-
-  background: transparent;
-}
-
-
-/* HUMAN IMAGE */
-
 .freelance-human {
   width: 100%;
   height: 100%;
 
   display: block;
 
-  object-fit: cover;
-  object-position: right bottom;
-
-  /*
-     Fade the purple background on the LEFT
-     into transparency.
-  */
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.15) 15%,
-    rgba(0, 0, 0, 0.55) 28%,
-    black 43%,
-    black 100%
-  );
-
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.15) 15%,
-    rgba(0, 0, 0, 0.55) 28%,
-    black 43%,
-    black 100%
-  );
+  object-fit: contain;
+  object-position: center bottom;
 }
 
 /* =====================================================
@@ -2646,7 +2571,7 @@
   text-align: left;
 
   font-family: "Outfit", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 500;
 }
 
@@ -2676,7 +2601,7 @@
   color: #625a65;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -2836,7 +2761,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
 
   font-weight: 400;
 
@@ -2876,7 +2801,7 @@
 
   font-family: "Outfit", sans-serif !important;
 
-  font-size: 12px !important;
+  font-size: 10px !important;
 
   font-weight: 700 !important;
 }
@@ -2905,7 +2830,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* =====================================================
@@ -2949,5 +2874,788 @@
 
   .footer-divider {
     margin-top: 40px;
+  }
+}
+
+/* =========================================================
+   FINAL FIGMA TYPOGRAPHY OVERRIDES
+   Existing JSX and existing CSS class names are unchanged.
+========================================================= */
+
+@media (min-width: 1201px) {
+  .company-tag{height:42px;padding:0 20px;font-size:13px;border-radius:24px}
+  .company-tag span{width:10px;height:10px}
+
+  .hero-content h1{font-size:63px;line-height:.94;letter-spacing:-3px;font-weight:800}
+  .hero-description{max-width:560px;margin-top:30px;font-size:17px;line-height:1.55}
+
+  .explore-btn,.enroll-btn{height:58px;font-size:14px;border-radius:30px}
+  .explore-btn{padding:0 30px}
+  .enroll-btn{width:195px}
+
+  .students{margin-top:30px;gap:16px;font-size:15px}
+  .student-icons span{width:38px;height:38px;font-size:19px}
+
+  .training-card{height:350px;border-width:10px;border-radius:22px}
+  .training-content{padding:20px 25px 25px}
+  .live-badge{padding:9px 16px;font-size:12px;border-radius:20px}
+  .training-card h2{font-size:28px;line-height:1.12}
+  .training-card p{font-size:14px;line-height:1.45}
+
+  .mini-cards{margin-top:24px;gap:28px}
+  .career-card,.placement-card{height:190px;padding:25px;border-radius:20px}
+  .card-label{font-size:12px}
+  .career-card h3{margin-top:22px;font-size:53px}
+  .career-card h3 span{font-size:21px}
+  .career-card p,.placement-card p{font-size:13px;line-height:1.5}
+  .placement-card h3{margin-top:35px;font-size:24px}
+
+  .stats-bar{min-height:150px;padding:25px 45px;border-radius:75px}
+  .stat-item h3{margin-bottom:8px;font-size:47px}
+  .stat-item p{font-size:15px}
+
+  .specializations{padding:105px 0 130px}
+  .section-badge{margin-bottom:28px;padding:11px 28px;font-size:14px;border-radius:25px}
+  .specializations > h2{font-size:51px;line-height:1}
+  .section-subtitle{margin-top:25px;font-size:20px;line-height:1.5}
+
+  .service-grid{margin-top:75px;gap:38px 45px}
+  .service-card{min-height:300px;padding:32px;border-radius:25px}
+  .service-icon{width:58px;height:58px;margin-bottom:25px;font-size:30px;border-radius:14px}
+  .service-card h3{margin-bottom:18px;font-size:26px;line-height:1.15}
+  .service-card p{font-size:16px;line-height:1.65}
+
+  .framework-section{padding:80px 0 100px}
+  .framework-heading{margin-bottom:70px}
+  .framework-heading h2{font-size:51px;line-height:1.1}
+  .framework-heading p{max-width:850px;margin-top:22px;font-size:17px;line-height:1.55}
+  .framework-grid{gap:40px;margin-bottom:40px}
+  .framework-card{min-height:325px;padding:48px;border-radius:24px}
+  .framework-number{width:75px;height:75px;margin-bottom:38px;font-size:26px;border-radius:18px}
+  .framework-card h3{margin-bottom:18px;font-size:31px;line-height:1.15}
+  .framework-card p{max-width:650px;font-size:17px;line-height:1.6}
+
+  .benefit-grid{gap:40px;margin-bottom:125px}
+  .benefit-card{min-height:235px;padding:34px;border-radius:22px}
+  .benefit-icon{width:50px;height:50px;margin-bottom:25px;font-size:23px}
+  .benefit-card h3{margin-bottom:15px;font-size:24px;line-height:1.2}
+  .benefit-card p{font-size:15px;line-height:1.55}
+
+  .why-section{gap:100px}
+  .why-content h2{margin-bottom:40px;font-size:51px;line-height:1.1}
+  .why-list{gap:32px}
+  .why-item{gap:20px}
+  .why-number{width:42px;height:42px;font-size:16px}
+  .why-item h3{margin-bottom:9px;font-size:23px;line-height:1.2}
+  .why-item p{max-width:520px;font-size:16px;line-height:1.55}
+
+  .career-gap-card{min-height:430px;padding:50px;border-radius:26px}
+  .career-gap-label{margin-bottom:35px;padding:8px 22px;font-size:12px}
+  .career-gap-card h2{margin-bottom:28px;font-size:51px;line-height:1.08}
+  .career-gap-card p{max-width:600px;margin-bottom:35px;font-size:16px;line-height:1.65}
+  .counsellor-btn{height:58px;padding:0 28px;gap:22px;font-size:15px;border-radius:30px}
+  .counsellor-btn span{font-size:24px}
+
+  .testimonials-section{padding:90px 0 130px}
+  .testimonials-heading{margin-bottom:70px}
+  .testimonials-badge{margin-bottom:28px;padding:11px 25px;font-size:13px}
+  .testimonials-heading h2{font-size:51px;line-height:1}
+  .testimonials-grid{max-width:1350px;gap:48px}
+  .testimonial-card{border-radius:24px}
+  .testimonial-image{height:460px;margin:18px 18px 0;border-radius:20px}
+  .testimonial-play{width:75px;height:75px}
+  .testimonial-info{padding:25px 28px 30px}
+  .testimonial-name-row h3{font-size:22px}
+  .testimonial-name-row span{font-size:17px}
+  .testimonial-info p{margin-top:10px;font-size:16px}
+
+  .success-section{padding:110px 0 120px}
+  .success-header{margin-bottom:75px}
+  .success-header h2{font-size:51px;line-height:1}
+  .alumni-btn{min-width:190px;height:55px;padding:0 25px;font-size:14px}
+  .success-grid{gap:48px}
+  .success-card{min-height:410px;padding:38px;border-radius:24px}
+  .success-card-top{margin-bottom:28px}
+  .success-avatar{width:90px;height:90px}
+  .quote-mark{font-size:54px}
+  .success-message{font-size:16px;line-height:1.65}
+  .success-divider{margin:28px 0}
+  .success-card h3{margin-bottom:10px;font-size:22px}
+  .placement-text{font-size:16px}
+
+  .mentors-section{padding:110px 0 125px}
+  .mentors-heading{margin-bottom:75px}
+  .mentors-heading h2{font-size:51px;line-height:1}
+  .mentors-grid{max-width:1000px;gap:70px}
+  .mentor-profile-card{min-height:320px;padding:32px 25px;border-radius:24px}
+  .mentor-photo{width:125px;height:125px;margin-bottom:25px}
+  .mentor-profile-card h3{font-size:21px}
+  .mentor-profile-card p{font-size:16px}
+  .linkedin-icon{width:38px;height:38px;right:18px;bottom:18px;font-size:16px}
+
+  .reviews-faq-section{padding:105px 0 130px}
+  .reviews-heading{margin-bottom:70px}
+  .reviews-badge{margin-bottom:28px;padding:11px 25px;font-size:13px}
+  .reviews-heading h2{font-size:51px;line-height:1}
+  .review-grid{gap:40px;margin-bottom:120px}
+  .review-card{min-height:270px;padding:32px;border-radius:22px}
+  .stars{margin-bottom:20px;font-size:20px}
+  .review-text{font-size:16px;line-height:1.65}
+  .review-divider{margin:25px 0}
+  .review-avatar{width:55px;height:55px;font-size:19px}
+  .review-author{gap:16px}
+  .review-author h3{font-size:16px}
+  .review-author p{font-size:12px}
+
+  .freelance-banner{min-height:390px;margin-bottom:120px;padding:65px 75px;border-radius:30px}
+  .freelance-content{width:65%}
+  .freelance-content h2{margin-bottom:15px;font-size:51px;line-height:1.05}
+  .freelance-content p{font-size:22px;line-height:1.4}
+  .freelance-line{width:78%;margin:38px 0 30px}
+  .enquire-btn{height:58px;padding:0 30px;font-size:16px}
+  .freelance-person{right:55px;width:390px;height:350px}
+
+  .faq-section{max-width:1100px}
+  .faq-section > h2{margin-bottom:55px;font-size:51px;line-height:1}
+  .faq-list{gap:18px}
+  .faq-item{border-radius:16px}
+  .faq-question{min-height:80px;padding:0 25px 0 35px;font-size:16px}
+  .faq-icon{width:38px;height:38px}
+  .faq-answer{padding:0 80px 28px 35px}
+  .faq-answer p{font-size:15px;line-height:1.65}
+}
+
+@media (max-width:1200px) and (min-width:901px) {
+  .hero-content h1{font-size:54px}
+  .hero-description{font-size:15px}
+  .specializations > h2,.framework-heading h2,.testimonials-heading h2,
+  .success-header h2,.mentors-heading h2,.reviews-heading h2,.faq-section > h2,
+  .why-content h2,.career-gap-card h2,.freelance-content h2{font-size:43px}
+  .section-subtitle{font-size:17px}
+  .service-card h3{font-size:22px}
+  .service-card p{font-size:14px}
+  .framework-card h3{font-size:26px}
+  .framework-card p{font-size:15px}
+  .why-item h3{font-size:20px}
+  .why-item p{font-size:14px}
+  .career-gap-card p{font-size:14px}
+}
+
+@media (max-width:900px) {
+  .hero-content h1{font-size:54px}
+  .hero-description{font-size:16px}
+  .specializations > h2,.framework-heading h2,.testimonials-heading h2,
+  .success-header h2,.mentors-heading h2,.reviews-heading h2,.faq-section > h2,
+  .why-content h2,.career-gap-card h2,.freelance-content h2{font-size:43px}
+  .section-subtitle{font-size:16px}
+  .service-card h3{font-size:23px}
+  .service-card p{font-size:15px}
+  .framework-card h3{font-size:26px}
+  .framework-card p{font-size:15px}
+  .why-item h3{font-size:20px}
+  .why-item p{font-size:15px}
+  .career-gap-card p{font-size:15px}
+}
+
+@media (max-width:560px) {
+  .hero-content h1{font-size:42px;letter-spacing:-2px}
+  .hero-description{font-size:15px}
+  .specializations > h2,.framework-heading h2,.testimonials-heading h2,
+  .success-header h2,.mentors-heading h2,.reviews-heading h2,.faq-section > h2,
+  .why-content h2,.career-gap-card h2,.freelance-content h2{font-size:33px}
+  .section-subtitle{font-size:15px}
+  .service-card h3{font-size:21px}
+  .service-card p{font-size:14px}
+  .framework-card h3{font-size:23px}
+  .framework-card p{font-size:14px}
+  .why-item h3{font-size:18px}
+  .why-item p{font-size:14px}
+  .career-gap-card p{font-size:14px}
+  .freelance-content p{font-size:17px}
+  .faq-question{font-size:14px}
+  .faq-answer p{font-size:13px}
+}
+/* =========================================================
+   FIGMA FONT-SIZE ONLY
+   DO NOT CHANGE LAYOUT / SPACING / COLORS
+   BADGES + GALLERY ARE EXCLUDED
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-content h1 {
+  font-size: 63px;
+}
+
+.hero-description {
+  font-size: 17px;
+}
+
+.explore-btn,
+.enroll-btn {
+  font-size: 14px;
+}
+
+.students {
+  font-size: 15px;
+}
+
+.student-icons span {
+  font-size: 19px;
+}
+
+.training-card h2 {
+  font-size: 28px;
+}
+
+.training-card p {
+  font-size: 14px;
+}
+
+.career-card h3 {
+  font-size: 53px;
+}
+
+.career-card h3 span {
+  font-size: 21px;
+}
+
+.career-card p,
+.placement-card p {
+  font-size: 13px;
+}
+
+.placement-card h3 {
+  font-size: 24px;
+}
+
+.card-label {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stat-item h3 {
+  font-size: 47px;
+}
+
+.stat-item p {
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   SPECIALIZATIONS
+   BADGE IS INTENTIONALLY NOT CHANGED
+========================================================= */
+
+.specializations > h2 {
+  font-size: 51px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+}
+
+.service-card h3 {
+  font-size: 26px;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+.service-icon {
+  font-size: 30px;
+}
+
+
+/* =========================================================
+   LEARNING FRAMEWORK
+========================================================= */
+
+.framework-heading h2 {
+  font-size: 51px;
+}
+
+.framework-heading p {
+  font-size: 17px;
+}
+
+.framework-number {
+  font-size: 26px;
+}
+
+.framework-card h3 {
+  font-size: 31px;
+}
+
+.framework-card p {
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.benefit-icon {
+  font-size: 23px;
+}
+
+.benefit-card h3 {
+  font-size: 24px;
+}
+
+.benefit-card p {
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   WHY DE MENTEE
+========================================================= */
+
+.why-content h2 {
+  font-size: 51px;
+}
+
+.why-number {
+  font-size: 16px;
+}
+
+.why-item h3 {
+  font-size: 23px;
+}
+
+.why-item p {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   CAREER GAP
+   BADGE IS NOT CHANGED
+========================================================= */
+
+.career-gap-card h2 {
+  font-size: 51px;
+}
+
+.career-gap-card p {
+  font-size: 16px;
+}
+
+.counsellor-btn {
+  font-size: 15px;
+}
+
+.counsellor-btn span {
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   STUDENT TESTIMONIALS
+   BADGE IS NOT CHANGED
+========================================================= */
+
+.testimonials-heading h2 {
+  font-size: 51px;
+}
+
+.testimonial-name-row h3 {
+  font-size: 22px;
+}
+
+.testimonial-name-row span {
+  font-size: 17px;
+}
+
+.testimonial-info p {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   SUCCESS STORIES
+========================================================= */
+
+.success-header h2 {
+  font-size: 51px;
+}
+
+.alumni-btn {
+  font-size: 14px;
+}
+
+.quote-mark {
+  font-size: 54px;
+}
+
+.success-message {
+  font-size: 16px;
+}
+
+.success-card h3 {
+  font-size: 22px;
+}
+
+.placement-text {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   LEARN FROM THE BEST
+========================================================= */
+
+.mentors-heading h2 {
+  font-size: 51px;
+}
+
+.mentor-profile-card h3 {
+  font-size: 21px;
+}
+
+.mentor-profile-card p {
+  font-size: 16px;
+}
+
+.linkedin-icon {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   REVIEWS / TESTIMONIALS
+   BADGE IS NOT CHANGED
+========================================================= */
+
+.stars {
+  font-size: 20px;
+}
+
+.review-text {
+  font-size: 16px;
+}
+
+.review-avatar {
+  font-size: 19px;
+}
+
+.review-author h3 {
+  font-size: 16px;
+}
+
+.review-author p {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   FREELANCING CTA
+========================================================= */
+
+.freelance-content h2 {
+  font-size: 51px;
+}
+
+.freelance-content p {
+  font-size: 22px;
+}
+
+.enquire-btn {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq-section > h2 {
+  font-size: 51px;
+}
+
+.faq-question {
+  font-size: 16px;
+}
+
+.faq-answer p {
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer-brand h3,
+.footer-column h3 {
+  font-size: 23px;
+}
+
+.footer-brand p {
+  font-size: 16px;
+}
+
+.footer-column a {
+  font-size: 16px;
+}
+
+.footer-enroll-btn {
+  font-size: 16px !important;
+}
+
+.footer-bottom {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   COURSE SECTION
+   BADGES ARE NOT CHANGED HERE
+========================================================= */
+
+.courses-title {
+  font-size: 51px;
+}
+
+.course-info h3 {
+  font-size: 41px;
+}
+
+.course-info > p {
+  font-size: 17px;
+}
+
+.course-footer span {
+  font-size: 13px;
+}
+
+.course-footer a,
+.course-footer .course-view-details {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE FONT SIZES
+   ONLY FONT SIZE CHANGES
+========================================================= */
+
+@media (max-width: 1200px) and (min-width: 901px) {
+
+  .hero-content h1 {
+    font-size: 54px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .specializations > h2,
+  .framework-heading h2,
+  .testimonials-heading h2,
+  .success-header h2,
+  .mentors-heading h2,
+  .reviews-heading h2,
+  .faq-section > h2,
+  .why-content h2,
+  .career-gap-card h2,
+  .freelance-content h2,
+  .courses-title {
+    font-size: 43px;
+  }
+
+  .section-subtitle {
+    font-size: 17px;
+  }
+
+  .service-card h3 {
+    font-size: 22px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .framework-card h3 {
+    font-size: 26px;
+  }
+
+  .framework-card p {
+    font-size: 15px;
+  }
+
+  .why-item h3 {
+    font-size: 20px;
+  }
+
+  .why-item p {
+    font-size: 14px;
+  }
+
+  .career-gap-card p {
+    font-size: 14px;
+  }
+
+  .course-info h3 {
+    font-size: 33px;
+  }
+
+  .course-info > p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .hero-content h1 {
+    font-size: 54px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .specializations > h2,
+  .framework-heading h2,
+  .testimonials-heading h2,
+  .success-header h2,
+  .mentors-heading h2,
+  .reviews-heading h2,
+  .faq-section > h2,
+  .why-content h2,
+  .career-gap-card h2,
+  .freelance-content h2,
+  .courses-title {
+    font-size: 43px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .service-card h3 {
+    font-size: 23px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+  }
+
+  .framework-card h3 {
+    font-size: 26px;
+  }
+
+  .framework-card p {
+    font-size: 15px;
+  }
+
+  .why-item h3 {
+    font-size: 20px;
+  }
+
+  .why-item p {
+    font-size: 15px;
+  }
+
+  .career-gap-card p {
+    font-size: 15px;
+  }
+
+  .course-info h3 {
+    font-size: 29px;
+  }
+
+  .course-info > p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 560px) {
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .specializations > h2,
+  .framework-heading h2,
+  .testimonials-heading h2,
+  .success-header h2,
+  .mentors-heading h2,
+  .reviews-heading h2,
+  .faq-section > h2,
+  .why-content h2,
+  .career-gap-card h2,
+  .freelance-content h2,
+  .courses-title {
+    font-size: 33px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 21px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .framework-card h3 {
+    font-size: 23px;
+  }
+
+  .framework-card p {
+    font-size: 14px;
+  }
+
+  .why-item h3 {
+    font-size: 18px;
+  }
+
+  .why-item p {
+    font-size: 14px;
+  }
+
+  .career-gap-card p {
+    font-size: 14px;
+  }
+
+  .freelance-content p {
+    font-size: 17px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .faq-answer p {
+    font-size: 13px;
+  }
+
+  .course-info h3 {
+    font-size: 26px;
+  }
+
+  .course-info > p {
+    font-size: 14px;
   }
 }

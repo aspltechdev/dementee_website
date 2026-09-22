@@ -1,9 +1,9 @@
 import { Play, Pause } from "lucide-react";
 import { useRef, useState } from "react";
 import "./About.css";
+
 import Navbar from "../components/Navbar";
 import Footer from "./Footer";
-import footerlogo from "../assets/footerlogo.png";
 
 import award1 from "../assets/award1.png";
 import award2 from "../assets/award2.png";
@@ -17,19 +17,17 @@ import clientbrand4 from "../assets/clientbrand4.png";
 import clientbrand5 from "../assets/clientbrand5.png";
 import clientbrand6 from "../assets/cleintbrand6.png";
 import clientbrand7 from "../assets/clientbrand7.png";
+
 import growingstrong from "../assets/growingstrong.png";
 import thebegenning from "../assets/thebegenning.png";
 import scalingnewweights from "../assets/scalingnewheights.png";
 import innovation from "../assets/innovation.png";
 
-
 import buildfuture from "../assets/buildfuture.jpg";
 import journey from "../assets/journey.jpg";
 
-
-//out team
-
 import Nivetha from "../assets/Nivetha.png";
+
 function About() {
   const youtubeIframeRef = useRef(null);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -65,7 +63,6 @@ function About() {
       {/* ================= ABOUT HERO ================= */}
 
       <section className="about-hero">
-
         <div className="about-badge">
           <span></span>
           ABOUT ORGANISATION
@@ -81,48 +78,49 @@ function About() {
           Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
           in laying out print, graphic or web designs.
         </p>
-
       </section>
 
 
-      {/* ================= FOUNDATION CARD ================= */}
+      {/* ================= FOUNDATION ================= */}
 
       <section className="foundation-section">
-
         <div className="foundation-card">
 
-      <div className="foundation-media">
+          <div className="foundation-media">
 
-  <div className="foundation-iframe-layer">
-    <iframe
-      ref={youtubeIframeRef}
-      src="https://www.youtube.com/embed/g9H1D2d-CAI?enablejsapi=1&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
-      title="Empowering Growth Through Mentorship"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-    ></iframe>
-  </div>
+            <div className="foundation-iframe-layer">
+              <iframe
+                ref={youtubeIframeRef}
+                src="https://www.youtube.com/embed/g9H1D2d-CAI?enablejsapi=1&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
+                title="Empowering Growth Through Mentorship"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
 
-  <div
-    className="foundation-video-click-blocker"
-    aria-hidden="true"
-  ></div>
+            <div
+              className="foundation-video-click-blocker"
+              aria-hidden="true"
+            />
 
-  <button
-    type="button"
-    className={`foundation-play ${isVideoPlaying ? "playing" : ""}`}
-    onClick={toggleYoutubeVideo}
-    aria-label={isVideoPlaying ? "Pause video" : "Play video"}
-  >
-    {isVideoPlaying ? (
-      <Pause size={22} fill="currentColor" />
-    ) : (
-      <Play size={22} fill="currentColor" />
-    )}
-  </button>
+            <button
+              type="button"
+              className={`foundation-play ${
+                isVideoPlaying ? "playing" : ""
+              }`}
+              onClick={toggleYoutubeVideo}
+              aria-label={
+                isVideoPlaying ? "Pause video" : "Play video"
+              }
+            >
+              {isVideoPlaying ? (
+                <Pause size={22} fill="currentColor" />
+              ) : (
+                <Play size={22} fill="currentColor" />
+              )}
+            </button>
 
-</div>
-
+          </div>
 
           <div className="foundation-content">
 
@@ -149,20 +147,16 @@ function About() {
             </blockquote>
 
           </div>
-
         </div>
-
       </section>
 
 
       {/* ================= DRIVEN BY PURPOSE ================= */}
 
       <section className="purpose-section">
-
         <div className="purpose-container">
 
           <div className="purpose-heading">
-
             <h2>
               Driven By <span>Purpose</span>
             </h2>
@@ -170,13 +164,9 @@ function About() {
             <p>
               Clear objectives fueling our daily commitment to global learners.
             </p>
-
           </div>
 
-
           <div className="purpose-grid">
-
-            {/* VISION */}
 
             <article className="purpose-card vision-card">
 
@@ -202,8 +192,6 @@ function About() {
 
             </article>
 
-
-            {/* MISSION */}
 
             <article className="purpose-card mission-card">
 
@@ -232,139 +220,129 @@ function About() {
           </div>
 
         </div>
-
       </section>
 
 
       {/* ================= OUR JOURNEY ================= */}
-{/* ================= OUR JOURNEY ================= */}
 
-<section className="journey-section">
-  <div className="journey-container">
+      <section className="journey-section">
 
-    {/* ================= JOURNEY CARDS ================= */}
+        <div className="journey-container">
 
-    <div className="journey-cards">
+          <div className="journey-cards">
 
-      {/* 2022 */}
-      <article className="journey-card">
-        <div className="journey-image">
-          <img
-            src={thebegenning}
-            alt="De Mentee beginning"
-          />
-          <div className="journey-year">2022</div>
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={thebegenning}
+                  alt="De Mentee beginning"
+                />
+                <div className="journey-year">2022</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>THE BEGINNING</h3>
+                <p>
+                  What began as a small dream from home marked the first step
+                  of our journey.
+                </p>
+              </div>
+            </article>
+
+
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={growingstrong}
+                  alt="De Mentee growing strong"
+                />
+                <div className="journey-year">2023</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>GROWING STRONG</h3>
+                <p>
+                  As our vision grew, we moved into a new space and began
+                  building something bigger.
+                </p>
+              </div>
+            </article>
+
+
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={innovation}
+                  alt="De Mentee innovation"
+                />
+                <div className="journey-year">2024</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>INNOVATION IN ACTION</h3>
+                <p>
+                  With more people joining us, our small team grew into a
+                  community driven by shared goals.
+                </p>
+              </div>
+            </article>
+
+
+            <article className="journey-card">
+              <div className="journey-image">
+                <img
+                  src={scalingnewweights}
+                  alt="De Mentee scaling new heights"
+                />
+                <div className="journey-year">2026</div>
+              </div>
+
+              <div className="journey-card-content">
+                <h3>SCALING NEW HEIGHTS</h3>
+                <p>
+                  From a small beginning at home to our own company — a
+                  milestone worth celebrating.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+
+          <div className="journey-sticky-area">
+
+            <div className="journey-sticky">
+
+              <div className="journey-label">
+                OUR LEGACY
+              </div>
+
+              <h2>
+                Our Journey
+                <br />
+                Over
+                <br />
+                <span>The years.</span>
+              </h2>
+
+              <p>
+                What began as a modest initiative has evolved into a growing
+                organization with a dedicated team and a space of our own.
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
-
-        <div className="journey-card-content">
-          <h3>THE BEGINNING</h3>
-          <p>
-            What began as a small dream from home marked the first step
-            of our journey.
-          </p>
-        </div>
-      </article>
+      </section>
 
 
-      {/* 2023 */}
-      <article className="journey-card">
-        <div className="journey-image">
-          <img
-            src={growingstrong}
-            alt="De Mentee growing strong"
-          />
-          <div className="journey-year">2023</div>
-        </div>
-
-        <div className="journey-card-content">
-          <h3>GROWING STRONG</h3>
-          <p>
-            As our vision grew, we moved into a new space and began
-            building something bigger.
-          </p>
-        </div>
-      </article>
-
-
-      {/* 2024 */}
-      <article className="journey-card">
-        <div className="journey-image">
-          <img
-            src={innovation}
-            alt="De Mentee innovation in action"
-          />
-          <div className="journey-year">2024</div>
-        </div>
-
-        <div className="journey-card-content">
-          <h3>INNOVATION IN ACTION</h3>
-          <p>
-            With more people joining us, our small team grew into a
-            community driven by shared goals.
-          </p>
-        </div>
-      </article>
-
-
-      {/* 2026 */}
-      <article className="journey-card">
-        <div className="journey-image">
-          <img
-            src={scalingnewweights}
-            alt="De Mentee scaling new heights"
-          />
-          <div className="journey-year">2026</div>
-        </div>
-
-        <div className="journey-card-content">
-          <h3>SCALING NEW HEIGHTS</h3>
-          <p>
-            From a small beginning at home to our own company — a
-            milestone worth celebrating.
-          </p>
-        </div>
-      </article>
-
-    </div>
-
-
-    {/* ================= STICKY JOURNEY HEADING ================= */}
-
-    <div className="journey-sticky-area">
-
-      <div className="journey-sticky">
-
-        <div className="journey-label">
-          OUR LEGACY
-        </div>
-
-        <h2>
-          Our Journey
-          <br />
-          Over
-          <br />
-          <span>The years.</span>
-        </h2>
-
-        <p>
-          What began as a modest initiative has evolved into a growing
-          organization with a dedicated team and a space of our own.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-          {/* ================= AWARDS & BRANDS ================= */}
+      {/* ================= AWARDS & BRANDS ================= */}
 
       <section className="recognition-section">
 
         <div className="recognition-container">
-
-          {/* ================= AWARDS ================= */}
 
           <div className="recognition-heading">
 
@@ -381,21 +359,12 @@ function About() {
 
           <div className="awards-grid">
 
-            {/* AWARD 1 */}
-
             <article className="award-card">
-
               <div className="award-image">
-
-                <img
-                  src={award1}
-                  alt="De Mentee award"
-                />
-
+                <img src={award1} alt="De Mentee award" />
               </div>
 
               <div className="award-content">
-
                 <span className="award-year pink">
                   YEAR
                 </span>
@@ -405,27 +374,16 @@ function About() {
                   <br />
                   awarded by Seyal
                 </h3>
-
               </div>
-
             </article>
 
 
-            {/* AWARD 2 */}
-
             <article className="award-card">
-
               <div className="award-image">
-
-                <img
-                  src={award2}
-                  alt="De Mentee award"
-                />
-
+                <img src={award2} alt="De Mentee award" />
               </div>
 
               <div className="award-content">
-
                 <span className="award-year purple">
                   YEAR
                 </span>
@@ -433,27 +391,16 @@ function About() {
                 <h3>
                   Award name
                 </h3>
-
               </div>
-
             </article>
 
 
-            {/* AWARD 3 */}
-
             <article className="award-card">
-
               <div className="award-image">
-
-                <img
-                  src={award3}
-                  alt="De Mentee recognition"
-                />
-
+                <img src={award3} alt="De Mentee recognition" />
               </div>
 
               <div className="award-content">
-
                 <span className="award-year yellow">
                   YEAR
                 </span>
@@ -461,27 +408,16 @@ function About() {
                 <h3>
                   Award name
                 </h3>
-
               </div>
-
             </article>
 
 
-            {/* AWARD 4 */}
-
             <article className="award-card">
-
               <div className="award-image">
-
-                <img
-                  src={award4}
-                  alt="De Mentee meetup"
-                />
-
+                <img src={award4} alt="De Mentee meetup" />
               </div>
 
               <div className="award-content">
-
                 <span className="award-year pink">
                   YEAR
                 </span>
@@ -489,9 +425,7 @@ function About() {
                 <h3>
                   Award name
                 </h3>
-
               </div>
-
             </article>
 
           </div>
@@ -519,73 +453,32 @@ function About() {
 
           <div className="brands-grid">
 
-            {/* CLIENT BRAND 1 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand1}
-                alt="Client brand 1"
-              />
+              <img src={clientbrand1} alt="Client brand 1" />
             </div>
 
-
-            {/* CLIENT BRAND 2 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand2}
-                alt="Client brand 2"
-              />
+              <img src={clientbrand2} alt="Client brand 2" />
             </div>
 
-
-            {/* CLIENT BRAND 3 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand3}
-                alt="Client brand 3"
-              />
+              <img src={clientbrand3} alt="Client brand 3" />
             </div>
 
-
-            {/* CLIENT BRAND 4 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand4}
-                alt="Client brand 4"
-              />
+              <img src={clientbrand4} alt="Client brand 4" />
             </div>
 
-
-            {/* CLIENT BRAND 5 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand5}
-                alt="Client brand 5"
-              />
+              <img src={clientbrand5} alt="Client brand 5" />
             </div>
 
-
-            {/* CLIENT BRAND 6 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand6}
-                alt="Client brand 6"
-              />
+              <img src={clientbrand6} alt="Client brand 6" />
             </div>
 
-
-            {/* CLIENT BRAND 7 */}
-
             <div className="brand-card">
-              <img
-                src={clientbrand7}
-                alt="Client brand 7"
-              />
+              <img src={clientbrand7} alt="Client brand 7" />
             </div>
 
           </div>
@@ -595,116 +488,70 @@ function About() {
       </section>
 
 
-      {/* ================= MEET OUR TEAM ================= */}
+      {/* ================= TEAM ================= */}
 
       <section className="team-section">
 
         <div className="team-container">
 
           <div className="team-heading">
-
             <h2>
               Meet Our <span>Team</span>
             </h2>
-
           </div>
 
 
           <div className="team-grid">
 
-            {/* MEMBER 1 */}
-
             <article className="team-card">
-
               <div className="team-image">
-
                 <img
                   src="/images/team-1.jpg"
                   alt="Team member"
                 />
-
               </div>
 
-              <h3>
-                Name
-              </h3>
-
-              <p>
-                Role
-              </p>
-
+              <h3>Name</h3>
+              <p>Role</p>
             </article>
 
 
-            {/* MEMBER 2 */}
-
             <article className="team-card">
-
               <div className="team-image">
-
                 <img
                   src="/images/team-2.jpg"
                   alt="Team member"
                 />
-
               </div>
 
-              <h3>
-                Name
-              </h3>
-
-              <p>
-                Role
-              </p>
-
+              <h3>Name</h3>
+              <p>Role</p>
             </article>
 
 
-            {/* MEMBER 3 */}
-
             <article className="team-card">
-
               <div className="team-image">
-
-                 <img
-      src={Nivetha}
-      alt="Nivetha"
-    />
-
+                <img
+                  src={Nivetha}
+                  alt="Nivetha"
+                />
               </div>
 
-              <h3>
-                Nivetha
-              </h3>
-
-              <p>
-                 UI UX Designer
-              </p>
-
+              <h3>Nivetha</h3>
+              <p>UI UX Designer</p>
             </article>
 
 
-            {/* MEMBER 4 */}
-
             <article className="team-card">
-
               <div className="team-image">
-
                 <img
                   src="/images/team-4.jpg"
                   alt="Team member"
                 />
-
               </div>
 
-              <h3>
-                Name
-              </h3>
-
-              <p>
-                Role
-              </p>
-
+              <h3>Name</h3>
+              <p>Role</p>
             </article>
 
           </div>
@@ -714,14 +561,12 @@ function About() {
 
           <div className="founder-message-card">
 
-          <div className="founder-photo">
-
-  <img
-    src={buildfuture}
-    alt="Building Futures, Creating Impact"
-  />
-
-</div>
+            <div className="founder-photo">
+              <img
+                src={buildfuture}
+                alt="Building Futures, Creating Impact"
+              />
+            </div>
 
             <div className="founder-message-content">
 
@@ -779,32 +624,34 @@ function About() {
 
               <div className="about-cta-line"></div>
 
-           <a
-  href="/#courses"
-  className="about-cta-button"
->
-  Explore Programs Now
-</a>
+              <a
+                href="/#courses"
+                className="about-cta-button"
+              >
+                Explore Programs Now
+              </a>
 
             </div>
 
 
-          <div className="about-cta-image">
+            <div className="about-cta-image">
 
-  <img
-    src={journey}
-    alt="De Mentee journey"
-  />
+              <img
+                src={journey}
+                alt="De Mentee journey"
+              />
 
-</div>
+            </div>
 
           </div>
 
         </div>
 
       </section>
-      {/* ================= FOOTER ================= */}
+
+
       <Footer />
+
     </div>
   );
 }

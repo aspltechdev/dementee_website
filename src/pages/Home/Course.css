@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
+
 
 /* =====================================================
    OUR COURSES SECTION
@@ -5,18 +7,33 @@
 
 .courses-section {
   width: 100%;
-  padding: 70px 0 120px;
+
+  padding: 70px 0 0;
 
   background-color: #fafafa;
-  background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
+
+  background-image:
+    radial-gradient(#ddd9e2 1px, transparent 1px);
+
   background-size: 20px 20px;
+
+  overflow: visible;
 }
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
 
 .courses-container {
   width: 86%;
+
   max-width: 1280px;
 
   margin: 0 auto;
+
+  overflow: visible;
+  
 }
 
 
@@ -32,6 +49,7 @@
   font-family: "Outfit", sans-serif;
 
   font-size: 32px;
+
   line-height: 1;
 
   font-weight: 800;
@@ -43,75 +61,99 @@
 
 
 /* =====================================================
-   STICKY COURSE STACK
+   STACK
+
+   IMPORTANT:
+   Do NOT give this overflow.
 ===================================================== */
 
 .course-stack {
+  width: 100%;
+
   position: relative;
 
-  padding-bottom: 50px;
+  overflow: visible;
 }
+
+
+/* =====================================================
+   EACH COURSE IS A SLIDE
+
+   THIS IS THE IMPORTANT PART FROM THE ARTICLE.
+
+   Every slide gets 100vh of scrolling space.
+===================================================== */
+.course-slide {
+  width: 100%;
+  height: 465px;
+
+  position: sticky;
+  top: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-top: 20px;
+
+  overflow: visible;
+}
+
+/* =====================================================
+   STACK ORDER
+
+   Later slides appear above earlier slides.
+===================================================== */
+
 
 
 /* =====================================================
    COURSE CARD
+
+   The card itself is NOT sticky.
+
+   The SLIDE is sticky.
+
+   This is the key difference from our previous code.
 ===================================================== */
-
 .course-card {
-  position: sticky;
-
-  top: 90px;
-
   width: 100%;
-  min-height: 310px;
+  height: 420px;
+  min-height: 420px;
 
-  margin-bottom: 45px;
-
-  padding: 40px 45px;
+  padding: 40px 60px;
 
   display: grid;
-
-  grid-template-columns: 1fr 0.78fr;
-
+  grid-template-columns: 1fr 0.82fr;
   align-items: center;
-
-  gap: 55px;
-
-  overflow: hidden;
+  gap: 60px;
 
   background: #fffdfd;
 
   border: 1px solid #ebe6eb;
-
-  border-radius: 30px;
+  border-radius: 34px;
 
   box-shadow:
-    0 18px 45px rgba(32, 15, 42, 0.08),
-    0 4px 12px rgba(32, 15, 42, 0.04);
+    0 20px 50px rgba(32, 15, 42, 0.08),
+    0 5px 15px rgba(32, 15, 42, 0.04);
 
+  overflow: hidden;
   box-sizing: border-box;
 }
 
-
 /* =====================================================
-   STACK ORDER
+   COURSE 2
+
+   IMAGE LEFT
 ===================================================== */
 
-.course-card-1 {
-  z-index: 1;
-}
-
 .course-card-2 {
-  z-index: 2;
-}
-
-.course-card-3 {
-  z-index: 3;
+  grid-template-columns: 0.82fr 1fr;
 }
 
 
 /* =====================================================
-   COURSE INFORMATION
+   COURSE INFO
 ===================================================== */
 
 .course-info {
@@ -126,34 +168,28 @@
 .course-badge {
   width: fit-content;
 
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 
-  padding: 7px 18px;
-
-  color: #604c5e;
+  padding: 8px 20px;
 
   background: #efedef;
 
   border-radius: 30px;
 
+  color: #4d4bd7;
+
   font-family: "Outfit", sans-serif;
 
-  font-size: 9px;
+  font-size: 13px;
 
   font-weight: 800;
 
-  line-height: 1.2;
+  white-space: nowrap;
 }
-
-
-/* Pink badge */
 
 .pink-badge {
   color: #ef3c8d;
 }
-
-
-/* Blue badge */
 
 .blue-badge {
   color: #4d4bd7;
@@ -161,17 +197,17 @@
 
 
 /* =====================================================
-   COURSE TITLE
+   TITLE
 ===================================================== */
 
 .course-info h3 {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
 
   color: #35103d;
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 30px;
+  font-size: 41px;
 
   line-height: 1.1;
 
@@ -180,11 +216,11 @@
 
 
 /* =====================================================
-   COURSE DESCRIPTION
+   DESCRIPTION
 ===================================================== */
 
 .course-info > p {
-  max-width: 560px;
+  max-width: 620px;
 
   margin: 0;
 
@@ -192,7 +228,7 @@
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 13px;
+  font-size: 18px;
 
   line-height: 1.65;
 
@@ -201,7 +237,7 @@
 
 
 /* =====================================================
-   DIVIDER LINE
+   DIVIDER
 ===================================================== */
 
 .course-line {
@@ -209,14 +245,14 @@
 
   height: 1px;
 
-  margin: 36px 0 22px;
+  margin: 40px 0 25px;
 
   background: #ded9df;
 }
 
 
 /* =====================================================
-   COURSE FOOTER
+   FOOTER
 ===================================================== */
 
 .course-footer {
@@ -227,67 +263,55 @@
   justify-content: space-between;
 
   gap: 25px;
-
-  width: 100%;
 }
-
-
-/* Duration */
 
 .course-footer span {
   color: #4e4650;
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 16px;
 
   font-weight: 500;
 }
-
-
-/* View details */
 
 .course-footer a {
   display: flex;
 
   align-items: center;
 
-  gap: 9px;
+  gap: 10px;
 
   color: #2a1537;
 
+  text-decoration: none;
+
   font-family: "Outfit", sans-serif;
 
-  font-size: 10px;
+  font-size: 15px;
 
   font-weight: 700;
 
-  text-decoration: none;
-
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .course-footer a:hover {
   color: #e43e94;
-
-  transform: translateX(3px);
 }
 
 
 /* =====================================================
-   COURSE IMAGE
+   IMAGE
 ===================================================== */
 
 .course-image {
   width: 100%;
 
-  height: 230px;
+  height: 340px;
 
   overflow: hidden;
 
-  border-radius: 22px;
+  border-radius: 25px;
 }
 
 .course-image img {
@@ -302,20 +326,8 @@
   transition: transform 0.4s ease;
 }
 
-
-/* Image hover */
-
 .course-card:hover .course-image img {
   transform: scale(1.03);
-}
-
-
-/* =====================================================
-   COURSE 2 - REVERSE LAYOUT
-===================================================== */
-
-.course-card-2 {
-  grid-template-columns: 0.78fr 1fr;
 }
 
 
@@ -323,35 +335,40 @@
    TABLET
 ===================================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
   .courses-container {
     width: 90%;
   }
 
+  .course-slide {
+    padding-top: 20px;
+  }
 
-  .course-card,
-  .course-card-2 {
+  .course-card {
+    height: 440px;
+
     padding: 35px;
 
-    gap: 35px;
+    grid-template-columns: 1fr 0.9fr;
 
-    grid-template-columns: 1fr 1fr;
+    gap: 35px;
   }
 
+  .course-card-2 {
+    grid-template-columns: 0.9fr 1fr;
+  }
 
   .course-info h3 {
-    font-size: 25px;
+    font-size: 31px;
   }
-
 
   .course-info > p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
-
   .course-image {
-    height: 210px;
+    height: 340px;
   }
 }
 
@@ -364,15 +381,11 @@
 
   .courses-section {
     padding-top: 60px;
-
-    padding-bottom: 80px;
   }
-
 
   .courses-container {
     width: calc(100% - 24px);
   }
-
 
   .courses-title {
     font-size: 27px;
@@ -381,98 +394,98 @@
   }
 
 
-  /* Course cards */
+  /*
+     On mobile use normal scrolling.
+  */
 
-  .course-card,
-  .course-card-2 {
-    top: 75px;
+  .course-stack {
+    display: block;
+  }
+
+  .course-slide {
+    position: relative;
+
+    top: auto;
+
+    height: auto;
 
     min-height: auto;
 
+    padding: 0;
+
+    margin-bottom: 30px;
+
+    display: block;
+  }
+
+
+  .course-card,
+  .course-card-2 {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 620px;
+
     padding: 25px;
+
+    display: grid;
 
     grid-template-columns: 1fr;
 
-    gap: 28px;
+    gap: 30px;
 
-    border-radius: 22px;
+    border-radius: 24px;
   }
 
 
-  /* Course 2 mobile order */
-
-  .course-card-2 .course-image {
-    order: 2;
+  .course-card-2 {
+    grid-template-columns: 1fr;
   }
+
 
   .course-card-2 .course-info {
     order: 1;
   }
 
-
-  /* Image */
-
-  .course-image {
-    height: 220px;
-
-    border-radius: 18px;
+  .course-card-2 .course-image {
+    order: 2;
   }
 
 
-  /* Badge */
+  .course-image {
+    height: 250px;
+  }
+
 
   .course-badge {
     margin-bottom: 22px;
 
-    font-size: 9px;
-
-    padding: 7px 15px;
+    font-size: 11px;
   }
 
-
-  /* Title */
 
   .course-info h3 {
-    font-size: 24px;
-
-    line-height: 1.15;
-
-    margin-bottom: 14px;
+    font-size: 27px;
   }
 
-
-  /* Description */
 
   .course-info > p {
-    font-size: 12px;
-
-    line-height: 1.6;
+    font-size: 14px;
   }
 
-
-  /* Divider */
 
   .course-line {
-    margin: 28px 0 18px;
-  }
-
-
-  /* Footer */
-
-  .course-footer {
-    gap: 15px;
+    margin: 28px 0 20px;
   }
 
 
   .course-footer span {
-    font-size: 9px;
+    font-size: 12px;
   }
 
-
   .course-footer a {
-    font-size: 9px;
-
-    gap: 6px;
+    font-size: 12px;
   }
 }
 
@@ -483,55 +496,262 @@
 
 @media (max-width: 480px) {
 
-  .courses-container {
-    width: calc(100% - 20px);
-  }
-
-
-  .courses-title {
-    font-size: 25px;
-
-    margin-bottom: 35px;
-  }
-
-
   .course-card,
   .course-card-2 {
-    top: 65px;
+    min-height: 600px;
 
-    padding: 20px;
-
-    gap: 22px;
-
-    border-radius: 20px;
+    padding: 22px;
   }
-
 
   .course-image {
-    height: 190px;
-
-    border-radius: 16px;
+    height: 220px;
   }
-
 
   .course-info h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
-
 
   .course-info > p {
-    font-size: 11px;
+    font-size: 13px;
+  }
+}
+/* =========================================================
+   FINAL FIGMA CORRECTIONS — COURSES
+========================================================= */
+
+/* =========================================================
+   COURSE STACK — DESKTOP
+   ========================================================= */
+/* =========================================================
+   COURSE STACK — DESKTOP
+   ========================================================= */
+
+@media (min-width: 1201px) {
+
+  .course-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;               /* ← visible gap between cards */
+    padding-bottom: 60px;
   }
 
+  .course-slide {
+    width: 100%;
 
-  .course-footer {
-    flex-wrap: wrap;
+    position: sticky;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    overflow: visible;
+
+    z-index: 1;
+
+    /* height = card height, so no extra empty space */
+    height: 420px;
   }
 
+  /* Staggered top offsets so stacked cards show a peeking gap */
+  .course-slide:nth-child(1) {
+    top: 100px;
+  }
 
-  .course-footer span,
-  .course-footer a {
-    font-size: 9px;
+  .course-slide:nth-child(2) {
+    top: 120px;
+  }
+
+  .course-slide:nth-child(3) {
+    top: 140px;
+  }
+
+  .course-slide:nth-child(4) {
+    top: 160px;
+  }
+
+  .course-slide:nth-child(5) {
+    top: 180px;
+  }
+
+  /* =====================================================
+     COURSE CARD
+     ===================================================== */
+
+  .course-card {
+    width: 100%;
+
+    height: 420px;
+    min-height: 420px;
+
+    padding: 40px 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 0.82fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    background: #fffdfd;
+
+    border: 1px solid #ebe6eb;
+
+    border-radius: 34px;
+
+    box-shadow:
+      0 20px 50px rgba(32, 15, 42, 0.08),
+      0 5px 15px rgba(32, 15, 42, 0.04);
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+  }
+
+  .course-card-2 {
+    grid-template-columns: 0.82fr 1fr;
+  }
+
+  .course-slide-1,
+  .course-slide-2,
+  .course-slide-3 {
+    z-index: 1;
+  }
+}
+/* Extra-large Figma desktop */
+@media (min-width: 1500px) {
+
+  .courses-title {
+    font-size: 48px;
+  }
+
+  .course-badge {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+
+  .course-info h3 {
+    font-size: 43px;
+  }
+
+  .course-footer a,
+  .course-footer .course-view-details {
+    font-size: 15px;
   }
 }
 
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) and (min-width: 901px) {
+
+  .courses-section {
+    padding-bottom: 170px;
+  }
+
+  .courses-title {
+    margin-bottom: 60px;
+    font-size: 42px;
+  }
+
+  .course-card {
+    min-height: 420px;
+    height: 420px;
+    padding: 38px 45px;
+    gap: 40px;
+    border-radius: 30px;
+  }
+
+  .course-badge {
+    padding: 8px 19px;
+    font-size: 12px;
+  }
+
+  .course-info h3 {
+    font-size: 33px;
+  }
+
+  .course-info > p {
+    font-size: 15px;
+  }
+
+  .course-footer a,
+  .course-footer .course-view-details {
+    font-size: 13px;
+  }
+
+  .course-image {
+    height: 290px;
+    border-radius: 24px;
+  }
+
+  .course-stack {
+    padding-bottom: 75px;
+  }
+
+  .courses-section + .framework-section {
+    padding-top: 95px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .courses-section {
+    padding-bottom: 120px;
+  }
+
+  .courses-title {
+    margin-bottom: 45px;
+    font-size: 38px;
+  }
+
+  .course-card {
+    border-radius: 26px;
+  }
+
+  .course-badge {
+    padding: 8px 17px;
+    font-size: 11px;
+  }
+
+  .course-info h3 {
+    font-size: 29px;
+  }
+
+  .course-footer a,
+  .course-footer .course-view-details {
+    font-size: 12px;
+  }
+
+  .course-stack {
+    padding-bottom: 55px;
+  }
+
+  .courses-section + .framework-section {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .courses-title {
+    font-size: 32px;
+  }
+
+  .course-card {
+    border-radius: 22px;
+  }
+
+  .course-badge {
+    font-size: 10px;
+    padding: 7px 15px;
+  }
+
+  .course-info h3 {
+    font-size: 26px;
+  }
+}

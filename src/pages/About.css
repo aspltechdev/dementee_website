@@ -124,7 +124,7 @@ body {
 
   border-radius: 50%;
 
-  font-size: 19px;
+  font-size: 20.5px;
 }
 
 .logo-text {
@@ -137,7 +137,7 @@ body {
 .logo-text strong {
   color: #21172b;
 
-  font-size: 17px;
+  font-size: 17.5px;
   font-weight: 800;
 }
 
@@ -146,7 +146,7 @@ body {
 
   color: #df5274;
 
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 600;
 }
 
@@ -164,8 +164,7 @@ body {
   overflow: visible;
 }
 
-.nav-links a,
-.courses-dropdown-btn {
+.nav-links a {
   display: flex;
   align-items: center;
 
@@ -180,7 +179,7 @@ body {
   border: 0;
 
   font-family: "Outfit", sans-serif;
-  font-size: 17px;
+  font-size: 18.5px;
   font-weight: 600;
 
   line-height: 20px;
@@ -196,8 +195,48 @@ body {
     transform 0.2s ease;
 }
 
-.nav-links a:hover,
-.courses-dropdown-btn:hover {
+.nav-links a:hover {
+  color: #c93655;
+}
+
+
+/* =========================================================
+   NAV DROPDOWN BUTTONS
+   (Courses + More — same size as nav links)
+========================================================= */
+
+.nav-links .courses-dropdown-btn,
+.nav-links .more-dropdown-btn {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0;
+
+  color: #221827;
+
+  background: transparent;
+
+  border: 0;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 18.5px;
+  font-weight: 600;
+
+  line-height: 20px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-links .courses-dropdown-btn:hover,
+.nav-links .more-dropdown-btn:hover {
   color: #c93655;
 }
 
@@ -270,7 +309,7 @@ body {
 
   border-radius: 8px;
 
-  font-size: 16px;
+  font-size: 18.5px;
 
   transition:
     background 0.2s ease,
@@ -278,6 +317,88 @@ body {
 }
 
 .courses-dropdown-menu a:hover {
+  color: #ffffff;
+
+  background: #5a4fe4;
+}
+
+
+/* =========================================================
+   MORE DROPDOWN
+========================================================= */
+
+.more-dropdown {
+  position: relative;
+
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+}
+
+.more-dropdown-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.more-dropdown-menu {
+  position: absolute;
+
+  top: 58px;
+  left: 50%;
+
+  z-index: 2000;
+
+  width: 215px;
+
+  padding: 10px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e0e7;
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 35px rgba(25, 14, 37, 0.12);
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.more-dropdown:hover .more-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.more-dropdown-menu a {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  font-size: 18.5px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.more-dropdown-menu a:hover {
   color: #ffffff;
 
   background: #5a4fe4;
@@ -306,7 +427,7 @@ body {
 
   border-radius: 22px;
 
-  font-size: 15px !important;
+  font-size: 16.5px !important;
   font-weight: 700 !important;
 
   text-decoration: none;
@@ -344,7 +465,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 800;
 
   letter-spacing: 0.2px;
@@ -368,7 +489,7 @@ body {
 
   color: #1a0d2c;
 
-  font-size: clamp(50px, 5vw, 68px);
+  font-size: clamp(50.5px, 5vw, 68.5px);
 
   line-height: 0.98;
 
@@ -398,7 +519,7 @@ body {
 
   color: #514b54;
 
-  font-size: 17px;
+  font-size: 18.5px;
 
   line-height: 1.6;
 
@@ -539,7 +660,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 800;
 }
 
@@ -548,7 +669,7 @@ body {
 
   color: #1b0d2d;
 
-  font-size: 30px;
+  font-size: 30.5px;
 
   line-height: 1.05;
 
@@ -564,7 +685,7 @@ body {
 
   color: #5b555d;
 
-  font-size: 17px;
+  font-size: 18.5px;
 
   line-height: 1.7;
 
@@ -586,7 +707,7 @@ body {
 
   font-family: Georgia, serif;
 
-  font-size: 16px;
+  font-size: 17.5px;
 
   line-height: 1.55;
 
@@ -608,6 +729,7 @@ body {
 .purpose-container {
   text-align: center;
 }
+
 .purpose-heading {
   margin-bottom: 48px;
 }
@@ -617,7 +739,7 @@ body {
 
   color: #171028;
 
-  font-size: 33px;
+  font-size: 33.5px;
 
   line-height: 1;
 
@@ -635,7 +757,7 @@ body {
 
   color: #575159;
 
-  font-size: 17px;
+  font-size: 18.5px;
 
   font-weight: 500;
 }
@@ -691,7 +813,7 @@ body {
 
   border-radius: 10px;
 
-  font-size: 21px;
+  font-size: 22.5px;
 }
 
 .light-purpose-icon {
@@ -707,7 +829,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 12px;
+  font-size: 13.5px;
   font-weight: 800;
 }
 
@@ -728,7 +850,7 @@ body {
 
   color: inherit;
 
-  font-size: 25px;
+  font-size: 25.5px;
 
   line-height: 1.18;
 
@@ -746,7 +868,7 @@ body {
 
   opacity: 0.78;
 
-  font-size: 16px;
+  font-size: 17.5px;
 
   line-height: 1.7;
 
@@ -754,9 +876,6 @@ body {
 }
 
 
-/* =========================================================
-   OUR JOURNEY
-========================================================= */
 /* =========================================================
    OUR JOURNEY
 ========================================================= */
@@ -779,8 +898,6 @@ body {
 
 /* =========================================================
    JOURNEY CONTAINER
-   LEFT = CARDS
-   RIGHT = STICKY CONTENT
 ========================================================= */
 
 .journey-container {
@@ -803,7 +920,6 @@ body {
 
 /* =========================================================
    JOURNEY CONTENT — RIGHT SIDE
-   STAYS FIXED WHILE PAGE SCROLLS
 ========================================================= */
 
 .journey-sticky {
@@ -843,7 +959,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 12px;
+  font-size: 13.5px;
 
   font-weight: 800;
 
@@ -862,7 +978,7 @@ body {
 
   color: #171028;
 
-  font-size: clamp(47px, 5vw, 70px);
+  font-size: clamp(47.5px, 5vw, 70.5px);
 
   line-height: 0.94;
 
@@ -900,7 +1016,7 @@ body {
 
   color: #554f58;
 
-  font-size: 17px;
+  font-size: 18.5px;
 
   line-height: 1.7;
 
@@ -910,7 +1026,6 @@ body {
 
 /* =========================================================
    JOURNEY CARDS — LEFT SIDE
-   NO INTERNAL SCROLL
 ========================================================= */
 
 .journey-cards {
@@ -924,12 +1039,6 @@ body {
   flex-direction: column;
 
   gap: 30px;
-
-  /*
-    IMPORTANT:
-    Do NOT use overflow-y here.
-    The whole page will scroll naturally.
-  */
 }
 
 
@@ -1030,7 +1139,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 16px;
+  font-size: 17.5px;
 
   line-height: 1;
 
@@ -1041,37 +1150,39 @@ body {
 
 
 /* =========================================================
-   CARD CONTENT
+   CARD CONTENT — HUGE
 ========================================================= */
 
 .journey-card-content {
-  padding: 17px 15px 20px;
+  padding: 22px 24px 28px;
 }
 
 
 .journey-card-content h3 {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
 
   color: #171028;
 
-  font-size: 17px;
+  font-size: 30px;
 
   line-height: 1.15;
 
   font-weight: 800;
+
+  letter-spacing: -0.6px;
 }
 
 
 .journey-card-content p {
-  max-width: 450px;
+  max-width: 480px;
 
   margin: 0;
 
   color: #555058;
 
-  font-size: 15px;
+  font-size: 26px;
 
-  line-height: 1.65;
+  line-height: 1.5;
 
   font-weight: 500;
 }
@@ -1098,7 +1209,7 @@ body {
   }
 
   .journey-sticky h2 {
-    font-size: 57px;
+    font-size: 57.5px;
   }
 
   .journey-image {
@@ -1116,11 +1227,6 @@ body {
   .journey-section {
     padding: 70px 0 90px;
   }
-
-  /*
-    On tablet/mobile we remove sticky positioning
-    and return to normal document flow.
-  */
 
   .journey-container {
     width: calc(100% - 40px);
@@ -1158,7 +1264,7 @@ body {
 
     margin: 0 auto;
 
-    font-size: 60px;
+    font-size: 60.5px;
   }
 
 
@@ -1193,17 +1299,17 @@ body {
 
 
   .journey-card-content {
-    padding: 20px 22px 25px;
+    padding: 26px 28px 32px;
   }
 
 
   .journey-card-content h3 {
-    font-size: 20px;
+    font-size: 32px;
   }
 
 
   .journey-card-content p {
-    font-size: 16px;
+    font-size: 28px;
   }
 }
 
@@ -1252,7 +1358,7 @@ body {
 
     padding: 7px 18px;
 
-    font-size: 12px;
+    font-size: 13.5px;
   }
 
 
@@ -1263,7 +1369,7 @@ body {
 
     margin: 0;
 
-    font-size: 47px;
+    font-size: 47.5px;
 
     line-height: 0.97;
 
@@ -1280,15 +1386,11 @@ body {
 
     padding: 0 8px;
 
-    font-size: 16px;
+    font-size: 17.5px;
 
     line-height: 1.7;
   }
 
-
-  /* =====================================================
-     JOURNEY CARDS
-  ===================================================== */
 
   .journey-cards {
     width: 100%;
@@ -1333,26 +1435,26 @@ body {
 
     padding: 0 15px;
 
-    font-size: 12px;
+    font-size: 13.5px;
   }
 
 
   .journey-card-content {
-    padding: 17px 18px 21px;
+    padding: 20px 22px 26px;
   }
 
 
   .journey-card-content h3 {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 
-    font-size: 17px;
+    font-size: 28px;
   }
 
 
   .journey-card-content p {
-    font-size: 15px;
+    font-size: 24px;
 
-    line-height: 1.65;
+    line-height: 1.5;
   }
 }
 
@@ -1364,7 +1466,7 @@ body {
 @media (max-width: 380px) {
 
   .journey-sticky h2 {
-    font-size: 39px;
+    font-size: 39.5px;
 
     letter-spacing: -1.5px;
   }
@@ -1374,7 +1476,18 @@ body {
     height: 190px;
   }
 
+
+  .journey-card-content h3 {
+    font-size: 24px;
+  }
+
+
+  .journey-card-content p {
+    font-size: 21px;
+  }
+
 }
+
 
 /* =========================================================
    RECOGNITION / AWARDS
@@ -1410,7 +1523,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 12px;
+  font-size: 13.5px;
 
   font-weight: 800;
 }
@@ -1420,7 +1533,7 @@ body {
 
   color: #171028;
 
-  font-size: 33px;
+  font-size: 33.5px;
 
   line-height: 1;
 
@@ -1448,6 +1561,7 @@ body {
 
   text-align: left;
 }
+
 .award-card {
   width: 100%;
 
@@ -1458,8 +1572,8 @@ body {
   border: 1px solid #d8d4db;
 
   border-radius: 11px;
-  
 }
+
 .award-image {
   height: 155px;
 
@@ -1490,7 +1604,7 @@ body {
 
   margin-bottom: 7px;
 
-  font-size: 13px;
+  font-size: 14.5px;
 
   font-weight: 800;
 }
@@ -1512,7 +1626,7 @@ body {
 
   color: #171028;
 
-  font-size: 16px;
+  font-size: 16.5px;
 
   line-height: 1.35;
 
@@ -1539,7 +1653,7 @@ body {
 
   color: #171028;
 
-  font-size: 32px;
+  font-size: 32.5px;
 
   line-height: 1;
 
@@ -1555,7 +1669,7 @@ body {
 
   color: #5a545c;
 
-  font-size: 17px;
+  font-size: 18.5px;
 
   font-weight: 500;
 }
@@ -1567,7 +1681,7 @@ body {
 
 .brands-grid {
   width: 92%;
-   margin: 0 auto;
+  margin: 0 auto;
 
   display: grid;
 
@@ -1592,7 +1706,7 @@ body {
   border: 1px solid #d8d4db;
 
   border-radius: 20px;
-   overflow: hidden;
+  overflow: hidden;
 }
 
 .brand-card img {
@@ -1623,6 +1737,7 @@ body {
 .brand-card:nth-child(5) {
   grid-column: 9 / span 2;
 }
+
 .brand-card:nth-child(6) {
   grid-column: 4 / span 2;
 }
@@ -1630,8 +1745,6 @@ body {
 .brand-card:nth-child(7) {
   grid-column: 6 / span 2;
 }
-
-
 
 
 /* =========================================================
@@ -1664,7 +1777,7 @@ body {
 
   color: #ffffff;
 
-  font-size: 33px;
+  font-size: 33.5px;
 
   line-height: 1;
 
@@ -1718,12 +1831,17 @@ body {
   object-fit: cover;
 }
 
+
+/* =========================================================
+   TEAM CARD NAME + ROLE
+========================================================= */
+
 .team-card h3 {
-  margin: 14px 0 5px;
+  margin: 14px 0 6px;
 
   color: #ffffff;
 
-  font-size: 18px;
+  font-size: 22px;
 
   line-height: 1;
 
@@ -1735,7 +1853,7 @@ body {
 
   color: #ffd000;
 
-  font-size: 15px;
+  font-size: 20px;
 
   font-weight: 700;
 }
@@ -1790,7 +1908,7 @@ body {
 
   color: #1a102c;
 
-  font-size: 26px;
+  font-size: 26.5px;
 
   line-height: 1.1;
 
@@ -1804,7 +1922,7 @@ body {
 
   color: #555058;
 
-  font-size: 17px;
+  font-size: 18.5px;
 
   line-height: 1.6;
 
@@ -1820,7 +1938,7 @@ body {
 
   color: #22162f;
 
-  font-size: 17px;
+  font-size: 17.5px;
 
   font-weight: 800;
 }
@@ -1830,7 +1948,7 @@ body {
 
   color: #5a4fe4;
 
-  font-size: 15px;
+  font-size: 16.5px;
 
   font-weight: 700;
 }
@@ -1900,7 +2018,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 13px;
+  font-size: 14.5px;
 
   font-weight: 800;
 }
@@ -1910,7 +2028,7 @@ body {
 
   color: #ffffff;
 
-  font-size: clamp(33px, 3vw, 44px);
+  font-size: clamp(33.5px, 3vw, 44.5px);
 
   line-height: 1.02;
 
@@ -1945,7 +2063,7 @@ body {
 
   border-radius: 999px;
 
-  font-size: 15px;
+  font-size: 16.5px;
 
   font-weight: 800;
 
@@ -1993,10 +2111,6 @@ body {
 
   object-fit: cover;
 }
-
-
-
-
 
 
 /* =========================================================
@@ -2076,7 +2190,7 @@ body {
   }
 
   .about-hero h1 {
-    font-size: 54px;
+    font-size: 54.5px;
   }
 
 
@@ -2130,7 +2244,7 @@ body {
   .journey-sticky h2 {
     max-width: 600px;
 
-    font-size: 60px;
+    font-size: 60.5px;
   }
 
   .journey-sticky > p {
@@ -2251,14 +2365,14 @@ body {
   }
 
   .logo-text strong {
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
   .get-in-touch {
     width: 100px;
     height: 36px;
 
-    font-size: 14px !important;
+    font-size: 15.5px !important;
   }
 
 
@@ -2274,7 +2388,7 @@ body {
   }
 
   .about-hero h1 {
-    font-size: 42px;
+    font-size: 42.5px;
 
     line-height: 0.98;
 
@@ -2286,7 +2400,7 @@ body {
 
     padding: 0 12px;
 
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
 
@@ -2311,11 +2425,11 @@ body {
   }
 
   .foundation-content h2 {
-    font-size: 28px;
+    font-size: 28.5px;
   }
 
   .foundation-content > p {
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
 
@@ -2330,11 +2444,11 @@ body {
   }
 
   .purpose-heading h2 {
-    font-size: 31px;
+    font-size: 31.5px;
   }
 
   .purpose-heading p {
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
   .purpose-card {
@@ -2346,13 +2460,11 @@ body {
   }
 
   .purpose-card h3 {
-    font-size: 25px;
+    font-size: 25.5px;
   }
 
 
-  /* =====================================================
-     JOURNEY MOBILE
-  ===================================================== */
+  /* JOURNEY MOBILE */
 
   .journey-section {
     padding: 60px 0 80px;
@@ -2379,7 +2491,7 @@ body {
 
     padding: 7px 18px;
 
-    font-size: 12px;
+    font-size: 13.5px;
   }
 
   .journey-sticky h2 {
@@ -2387,7 +2499,7 @@ body {
 
     max-width: none;
 
-    font-size: 47px;
+    font-size: 47.5px;
 
     line-height: 0.97;
 
@@ -2401,13 +2513,11 @@ body {
 
     margin-top: 23px;
 
-    font-size: 16px;
+    font-size: 17.5px;
 
     line-height: 1.7;
   }
 
-
-  /* JOURNEY CARDS */
 
   .journey-cards {
     width: 100%;
@@ -2446,23 +2556,23 @@ body {
 
     padding: 0 16px;
 
-    font-size: 17px;
+    font-size: 18.5px;
   }
 
   .journey-card-content {
-    padding: 20px 19px 24px;
+    padding: 20px 22px 26px;
   }
 
   .journey-card-content h3 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .journey-card-content p {
-    font-size: 16px;
+    font-size: 24px;
 
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
 
@@ -2477,7 +2587,7 @@ body {
   }
 
   .recognition-heading h2 {
-    font-size: 31px;
+    font-size: 31.5px;
   }
 
   .awards-grid {
@@ -2500,11 +2610,11 @@ body {
   }
 
   .brands-heading h2 {
-    font-size: 31px;
+    font-size: 31.5px;
   }
 
   .brands-heading p {
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
   .brands-grid {
@@ -2532,7 +2642,7 @@ body {
   }
 
   .team-heading h2 {
-    font-size: 32px;
+    font-size: 32.5px;
   }
 
   .team-grid {
@@ -2548,6 +2658,14 @@ body {
 
   .team-image {
     height: 150px;
+  }
+
+  .team-card h3 {
+    font-size: 20px;
+  }
+
+  .team-card p {
+    font-size: 18px;
   }
 
 
@@ -2575,11 +2693,11 @@ body {
   }
 
   .founder-message-content h2 {
-    font-size: 26px;
+    font-size: 26.5px;
   }
 
   .founder-description {
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
 
@@ -2608,7 +2726,7 @@ body {
   }
 
   .about-cta-content h2 {
-    font-size: 33px;
+    font-size: 33.5px;
 
     line-height: 1.05;
   }
@@ -2632,8 +2750,8 @@ body {
     transform: translateX(-50%);
   }
 
-
 }
+
 
 /* =========================================================
    SMALL PHONES
@@ -2642,11 +2760,11 @@ body {
 @media (max-width: 380px) {
 
   .about-hero h1 {
-    font-size: 37px;
+    font-size: 37.5px;
   }
 
   .journey-sticky h2 {
-    font-size: 39px;
+    font-size: 39.5px;
   }
 
   .foundation-card {
@@ -2674,7 +2792,15 @@ body {
   }
 
   .journey-card-content {
-    padding: 18px;
+    padding: 18px 20px 24px;
+  }
+
+  .journey-card-content h3 {
+    font-size: 24px;
+  }
+
+  .journey-card-content p {
+    font-size: 21px;
   }
 
   .journey-year {
@@ -2685,11 +2811,19 @@ body {
 
     height: 31px;
 
-    font-size: 16px;
+    font-size: 17.5px;
   }
 
   .team-image {
     height: 125px;
+  }
+
+  .team-card h3 {
+    font-size: 18px;
+  }
+
+  .team-card p {
+    font-size: 16px;
   }
 
   .about-cta-card {
@@ -2701,7 +2835,7 @@ body {
   }
 
   .about-cta-content h2 {
-    font-size: 30px;
+    font-size: 30.5px;
   }
 
   .about-cta-image {
@@ -2709,14 +2843,14 @@ body {
     height: 185px;
   }
 }
+
+
 /* =========================================================
    FINAL OUR LEGACY FIX
-   RIGHT TEXT FIXED / LEFT CARDS SCROLL
 ========================================================= */
 
 @media (min-width: 901px) {
 
-  /* Main two-column layout */
   .journey-container {
     width: 86%;
     max-width: 1120px;
@@ -2736,11 +2870,6 @@ body {
     position: relative;
   }
 
-
-  /* =====================================================
-     LEFT — CARDS
-     They scroll naturally with the page
-  ===================================================== */
 
   .journey-cards {
     grid-column: 1 !important;
@@ -2763,11 +2892,6 @@ body {
     position: relative;
   }
 
-
-  /* =====================================================
-     RIGHT — TEXT
-     STAYS IN ONE PLACE WHILE CARDS SCROLL
-  ===================================================== */
 
   .journey-sticky {
     grid-column: 2 !important;
@@ -2793,7 +2917,6 @@ body {
   }
 
 
-  /* Keep text above the background/cards */
   .journey-sticky::before {
     content: "";
 
@@ -2810,7 +2933,6 @@ body {
   }
 
 
-  /* Label */
   .journey-label {
     position: relative;
 
@@ -2818,7 +2940,6 @@ body {
   }
 
 
-  /* Heading */
   .journey-sticky h2 {
     position: relative;
 
@@ -2830,7 +2951,6 @@ body {
   }
 
 
-  /* Paragraph */
   .journey-sticky > p {
     position: relative;
 
@@ -2840,7 +2960,6 @@ body {
   }
 
 
-  /* Cards */
   .journey-card {
     position: relative;
 
@@ -2850,10 +2969,6 @@ body {
   }
 }
 
-
-/* =========================================================
-   LARGE LAPTOP
-========================================================= */
 
 @media (min-width: 901px) and (max-width: 1200px) {
 
@@ -2870,15 +2985,10 @@ body {
   }
 
   .journey-sticky h2 {
-    font-size: 57px;
+    font-size: 57.5px;
   }
 }
 
-
-/* =========================================================
-   TABLET / MOBILE
-   Normal scrolling — NO sticky text
-========================================================= */
 
 @media (max-width: 900px) {
 
@@ -2930,10 +3040,6 @@ body {
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
-
 @media (max-width: 600px) {
 
   .journey-container {
@@ -2959,9 +3065,9 @@ body {
   }
 }
 
+
 /* =========================================================
    JOURNEY STICKY BOUNDARY
-   Matches: .journey-sticky-area > .journey-sticky
 ========================================================= */
 
 @media (min-width: 901px) {
@@ -2996,13 +3102,9 @@ body {
   }
 }
 
+
 /* =========================================================
    FINAL JOURNEY BEHAVIOUR
-   Desktop:
-   - 4 cards scroll naturally on the left
-   - Our Journey stays visible on the right
-   - It remains visible while cards 1 -> 4 pass
-   - It stops when the 4th card / Journey section ends
 ========================================================= */
 
 @media (min-width: 901px) {
@@ -3021,12 +3123,10 @@ body {
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr) !important;
     column-gap: 70px;
 
-    /* IMPORTANT: both grid columns get the full height of the cards */
     align-items: stretch !important;
     position: relative;
   }
 
-  /* LEFT COLUMN — the four cards simply continue down the page */
   .journey-cards {
     grid-column: 1 !important;
     grid-row: 1 !important;
@@ -3044,7 +3144,6 @@ body {
     position: relative;
   }
 
-  /* RIGHT COLUMN — this wrapper is the sticky boundary */
   .journey-sticky-area {
     grid-column: 2 !important;
     grid-row: 1 !important;
@@ -3058,7 +3157,6 @@ body {
     overflow: visible !important;
   }
 
-  /* RIGHT HEADING — stays visible while the entire card column passes */
   .journey-sticky {
     position: sticky !important;
     top: 120px !important;
@@ -3106,9 +3204,6 @@ body {
   }
 }
 
-/* =========================================================
-   DESKTOP WIDTH ADJUSTMENT
-========================================================= */
 
 @media (min-width: 901px) and (max-width: 1200px) {
   .journey-container {
@@ -3122,14 +3217,10 @@ body {
   }
 
   .journey-sticky h2 {
-    font-size: 57px;
+    font-size: 57.5px;
   }
 }
 
-/* =========================================================
-   TABLET / MOBILE
-   Sticky behaviour is disabled here.
-========================================================= */
 
 @media (max-width: 900px) {
   .journey-container {
@@ -3186,5 +3277,47 @@ body {
   .journey-cards {
     gap: 22px;
     overflow: visible !important;
+  }
+}
+
+
+/* =========================================================
+   ABOUT — SECTION HEADINGS MATCHING HOME (+0.5px)
+========================================================= */
+
+@media (min-width: 1201px) {
+  .purpose-heading h2,
+  .recognition-heading h2,
+  .brands-heading h2,
+  .team-heading h2 {
+    font-size: 51.5px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .purpose-heading h2,
+  .recognition-heading h2,
+  .brands-heading h2,
+  .team-heading h2 {
+    font-size: 43.5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .purpose-heading h2,
+  .recognition-heading h2,
+  .brands-heading h2,
+  .team-heading h2 {
+    font-size: 43.5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .purpose-heading h2,
+  .recognition-heading h2,
+  .brands-heading h2,
+  .team-heading h2 {
+    font-size: 33.5px;
   }
 }
