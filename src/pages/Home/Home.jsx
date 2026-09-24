@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar";
 import Course from "./Course";
 import Gallery from "./Gallery";
-import { Play, Plus, Minus, ArrowRight } from "lucide-react";
+import { Play, Pause, Plus, Minus, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Footer from "../Footer";
@@ -76,6 +76,61 @@ function Counter({ end, duration = 2000, suffix = "" }) {
     </span>
   );
 }
+
+function TestimonialVideo({ videoId }) {
+  const iframeRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const sendYoutubeCommand = (command) => {
+    if (!iframeRef.current) return;
+
+    iframeRef.current.contentWindow.postMessage(
+      JSON.stringify({
+        event: "command",
+        func: command,
+        args: [],
+      }),
+      "*"
+    );
+  };
+
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      sendYoutubeCommand("pauseVideo");
+      setIsPlaying(false);
+    } else {
+      sendYoutubeCommand("playVideo");
+      setIsPlaying(true);
+    }
+  };
+
+  return (
+    <div className="testimonial-image">
+      <iframe
+        ref={iframeRef}
+        src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&controls=0&rel=0&playsinline=1`}
+        title="Student testimonial video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+
+      <button
+        type="button"
+        className="testimonial-play"
+        onClick={handlePlayPause}
+        aria-label={isPlaying ? "Pause testimonial video" : "Play testimonial video"}
+      >
+        {isPlaying ? (
+          <Pause size={18} fill="currentColor" />
+        ) : (
+          <Play size={18} fill="currentColor" />
+        )}
+      </button>
+    </div>
+  );
+}  
+
 function Home() {
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -475,104 +530,76 @@ function Home() {
         </section>
 
         <Gallery />
-
+        
         {/* ================= STUDENT TESTIMONIALS ================= */}
-        <section className="testimonials-section">
-          <div className="testimonials-container">
-            <div className="testimonials-heading">
-              <div className="testimonials-badge">
-                REAL STUDENTS EXPERIENCES
-              </div>
+<section className="testimonials-section">
+  <div className="testimonials-container">
 
-              <h2>
-                Hear from <span>our students</span>
-              </h2>
-            </div>
+    <div className="testimonials-heading">
+      <div className="testimonials-badge">
+        REAL STUDENTS EXPERIENCES
+      </div>
 
-            <div className="testimonials-grid">
-              {/* CARD 1 */}
-              <article className="testimonial-card">
-                <div className="testimonial-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85"
-                    alt="Student testimonial"
-                  />
+      <h2>
+        Hear from <span>our students</span>
+      </h2>
+    </div>
 
-                  <button
-                    type="button"
-                    className="testimonial-play"
-                    aria-label="Play testimonial video"
-                  >
-                    <Play size={18} fill="currentColor" />
-                  </button>
-                </div>
+    <div className="testimonials-grid">
 
-                <div className="testimonial-info">
-                  <div className="testimonial-name-row">
-                    <h3>Name</h3>
-                    <span>0:39</span>
-                  </div>
+      {/* ================= CARD 1 ================= */}
+      <article className="testimonial-card">
 
-                  <p>Role</p>
-                </div>
-              </article>
+        <TestimonialVideo videoId="KYiulaGXeFg" />
 
-              {/* CARD 2 */}
-              <article className="testimonial-card">
-                <div className="testimonial-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=85"
-                    alt="Student testimonial"
-                  />
-
-                  <button
-                    type="button"
-                    className="testimonial-play"
-                    aria-label="Play testimonial video"
-                  >
-                    <Play size={18} fill="currentColor" />
-                  </button>
-                </div>
-
-                <div className="testimonial-info">
-                  <div className="testimonial-name-row">
-                    <h3>Name</h3>
-                    <span>1:32</span>
-                  </div>
-
-                  <p>Role</p>
-                </div>
-              </article>
-
-              {/* CARD 3 */}
-              <article className="testimonial-card">
-                <div className="testimonial-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85"
-                    alt="Student testimonial"
-                  />
-
-                  <button
-                    type="button"
-                    className="testimonial-play"
-                    aria-label="Play testimonial video"
-                  >
-                    <Play size={18} fill="currentColor" />
-                  </button>
-                </div>
-
-                <div className="testimonial-info">
-                  <div className="testimonial-name-row">
-                    <h3>Name</h3>
-                    <span>1:43</span>
-                  </div>
-
-                  <p>Role</p>
-                </div>
-              </article>
-            </div>
+        <div className="testimonial-info">
+          <div className="testimonial-name-row">
+            <h3>Name</h3>
+            <span>1:00</span>
           </div>
-        </section>
+
+          <p>Role</p>
+        </div>
+
+      </article>
+
+
+      {/* ================= CARD 2 ================= */}
+      <article className="testimonial-card">
+
+        <TestimonialVideo videoId="MdVDXTgIXGM" />
+
+        <div className="testimonial-info">
+          <div className="testimonial-name-row">
+            <h3>Name</h3>
+            <span>1:00</span>
+          </div>
+
+          <p>Role</p>
+        </div>
+
+      </article>
+
+
+      {/* ================= CARD 3 ================= */}
+      <article className="testimonial-card">
+
+        <TestimonialVideo videoId="z9KSmkDNICg" />
+
+        <div className="testimonial-info">
+          <div className="testimonial-name-row">
+            <h3>Name</h3>
+            <span>1:00</span>
+          </div>
+
+          <p>Role</p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
 
         {/* ================= SUCCESS STORIES ================= */}
         <section className="success-section">

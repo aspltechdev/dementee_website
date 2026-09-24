@@ -1489,7 +1489,6 @@
    STUDENT TESTIMONIALS
 ===================================================== */
 
-/* TESTIMONIALS */
 .testimonials-section {
   width: 100%;
   padding: 45px 0 105px;
@@ -1499,7 +1498,6 @@
 .testimonials-container {
   width: 86%;
   max-width: 1280px;
-
   margin: 0 auto;
 }
 
@@ -1509,28 +1507,22 @@
 
 .testimonials-heading {
   margin-bottom: 50px;
-
   text-align: center;
 }
 
 .testimonials-badge {
   width: fit-content;
-
   margin: 0 auto 22px;
-
   padding: 7px 18px;
 
   color: #e84e62;
-
   background: #f1f1f2;
 
   border-radius: 30px;
 
   font-family: "Outfit", sans-serif;
-
   font-size: 8px;
   line-height: 1;
-
   font-weight: 700;
 }
 
@@ -1540,10 +1532,8 @@
   color: #3a123e;
 
   font-family: "Outfit", sans-serif;
-
   font-size: 30px;
   line-height: 1;
-
   font-weight: 800;
 }
 
@@ -1558,12 +1548,10 @@
 .testimonials-grid {
   width: 100%;
   max-width: 1050px;
-
   margin: 0 auto;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 38px;
 }
 
@@ -1581,7 +1569,7 @@
 }
 
 /* =====================================================
-   IMAGE
+   VIDEO
 ===================================================== */
 
 .testimonial-image {
@@ -1593,20 +1581,24 @@
 
   overflow: hidden;
 
+  background: #000;
+
   border-radius: 14px;
 }
 
-.testimonial-image img {
+.testimonial-image iframe {
   width: 100%;
   height: 100%;
 
   display: block;
 
+  border: 0;
+
   object-fit: cover;
 }
 
 /* =====================================================
-   PLAY BUTTON
+   PLAY / PAUSE BUTTON
 ===================================================== */
 
 .testimonial-play {
@@ -1627,7 +1619,6 @@
   transform: translate(-50%, -50%);
 
   color: #ffffff;
-
   background: #df6a55;
 
   border: 0;
@@ -1672,9 +1663,7 @@
   color: #161018;
 
   font-family: "Outfit", sans-serif;
-
   font-size: 14px;
-
   font-weight: 700;
 }
 
@@ -1682,9 +1671,7 @@
   color: #db5c59;
 
   font-family: "Outfit", sans-serif;
-
   font-size: 10px;
-
   font-weight: 500;
 }
 
@@ -1694,9 +1681,7 @@
   color: #615b61;
 
   font-family: "Outfit", sans-serif;
-
   font-size: 10px;
-
   font-weight: 500;
 }
 
@@ -1705,6 +1690,7 @@
 ===================================================== */
 
 @media (max-width: 1000px) {
+
   .testimonials-container {
     width: 90%;
   }
@@ -1719,9 +1705,9 @@
 }
 
 @media (max-width: 750px) {
+
   .testimonials-grid {
     grid-template-columns: 1fr;
-
     max-width: 420px;
   }
 
@@ -1731,6 +1717,7 @@
 }
 
 @media (max-width: 500px) {
+
   .testimonials-section {
     padding: 65px 0 80px;
   }
@@ -1747,7 +1734,6 @@
     height: 320px;
   }
 }
-
 /* =====================================================
    SUCCESS STORIES
 ===================================================== */

@@ -89,14 +89,14 @@ function About() {
           <div className="foundation-media">
 
             <div className="foundation-iframe-layer">
-              <iframe
-                ref={youtubeIframeRef}
-                src="https://www.youtube.com/embed/g9H1D2d-CAI?enablejsapi=1&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
-                title="Empowering Growth Through Mentorship"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
+  <iframe
+    ref={youtubeIframeRef}
+    src="https://www.youtube.com/embed/9FhX6i8sMCE?enablejsapi=1&controls=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
+    title="Empowering Growth Through Mentorship"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  />
+</div>
 
             <div
               className="foundation-video-click-blocker"

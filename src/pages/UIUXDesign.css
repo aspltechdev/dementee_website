@@ -6,11 +6,9 @@
   width: 100%;
   min-height: 100vh;
   padding-top: 18px;
-
   background-color: #fafafa;
   background-image: radial-gradient(#ddd9e2 1px, transparent 1px);
   background-size: 20px 20px;
-
   overflow-x: hidden;
 }
 
@@ -22,9 +20,7 @@
 .uiux-hero {
   width: 86%;
   max-width: 1280px;
-
   margin: 120px auto 0;
-
   text-align: center;
 }
 
@@ -34,22 +30,16 @@
 .uiux-course-badge {
   width: fit-content;
   height: 30px;
-
   margin: 0 auto 30px;
   padding: 0 16px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 7px;
-
   color: #564be3;
   background: #ffffff;
-
   border: 1px solid #ddd9e2;
   border-radius: 999px;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -58,11 +48,8 @@
 .uiux-course-badge span {
   width: 7px;
   height: 7px;
-
   flex-shrink: 0;
-
   background: #ee5b6d;
-
   border-radius: 50%;
 }
 
@@ -73,28 +60,22 @@
 
 .uiux-hero h1 {
   margin: 0;
-
   color: #261039;
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: clamp(55px, 5vw, 68px);
   font-weight: 800;
-
   line-height: 0.94;
   letter-spacing: -2.5px;
 }
 
 .uiux-hero h1 span {
   color: transparent;
-
   background: linear-gradient(
     90deg,
     #8154d9 0%,
     #a75bc8 45%,
     #d7668c 100%
   );
-
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -104,16 +85,11 @@
 
 .uiux-hero-description {
   max-width: 750px;
-
   margin: 30px auto 0;
-
   color: #57505a;
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 22px;
   font-weight: 500;
-
   line-height: 1.6;
 }
 
@@ -128,14 +104,10 @@
 
 .uiux-tools h3 {
   margin: 0 0 28px;
-
   color: #716b72;
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 20px;
   font-weight: 700;
-
   letter-spacing: 1px;
 }
 
@@ -146,9 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-wrap: wrap;
-
   gap: 20px;
 }
 
@@ -158,25 +128,17 @@
 .uiux-tool {
   min-width: 115px;
   height: 38px;
-
   padding: 0 16px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 8px;
-
   color: #2c2830;
   background: #ffffff;
-
   border: 1px solid #ddd9df;
   border-radius: 999px;
-
   box-shadow: 0 3px 8px rgba(26, 16, 40, 0.03);
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 19px;
   font-weight: 600;
 }
@@ -189,9 +151,7 @@
 .tool-dot {
   width: 10px;
   height: 10px;
-
   flex-shrink: 0;
-
   border-radius: 50%;
 }
 
@@ -218,17 +178,12 @@
 .tool-box {
   width: 17px;
   height: 17px;
-
   flex-shrink: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 3px;
-
   font-family: Arial, sans-serif;
-
   font-size: 12px;
   font-weight: 800;
 }
@@ -255,7 +210,6 @@
 
 .uiux-journey-section {
   width: 100%;
-
   margin-top: 115px;
   padding: 0 0 90px;
 }
@@ -266,9 +220,7 @@
 .uiux-journey-heading {
   width: 86%;
   max-width: 1280px;
-
   margin: 0 auto 55px;
-
   text-align: center;
 }
 
@@ -277,17 +229,12 @@
 
 .uiux-step-badge {
   width: fit-content;
-
   margin: 0 auto 24px;
   padding: 8px 20px;
-
   color: #5b4be4;
   background: #eeeeef;
-
   border-radius: 999px;
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 13px;
   font-weight: 800;
 }
@@ -297,14 +244,10 @@
 
 .uiux-journey-heading h2 {
   margin: 0;
-
   color: #271435;
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 46px;
   font-weight: 800;
-
   line-height: 1.15;
 }
 
@@ -317,174 +260,144 @@
 
 .uiux-journey-heading p {
   max-width: 610px;
-
   margin: 15px auto 0;
-
   color: #575159;
-
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 20px;
   font-weight: 500;
-
   line-height: 1.6;
 }
 
 
 /* =====================================================
-   WEEK CARDS
+   UX CURRICULUM GRID
+   5 CARDS TOP + 5 CARDS BOTTOM
 ===================================================== */
 
-.uiux-week-grid {
+.uiux-curriculum-grid {
   width: 92%;
   max-width: 1400px;
-
   margin: 0 auto;
 
   display: grid;
 
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
 
   gap: 24px;
 }
 
 
-/* NORMAL WEEK CARD */
+/* =====================================================
+   CURRICULUM CARD
+===================================================== */
 
-.uiux-week-card {
+.uiux-curriculum-card {
+  position: relative;
+
   min-height: 205px;
 
   padding: 20px 19px;
 
-  background: #ffffff;
-
   border: 1px solid #ddd9df;
   border-radius: 15px;
 
-  box-shadow: 0 7px 20px rgba(24, 15, 35, 0.04);
+  box-shadow:
+    0 7px 20px rgba(24, 15, 35, 0.04);
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
 
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-.uiux-week-card:hover {
+.uiux-curriculum-card:hover {
   transform: translateY(-4px);
 
-  box-shadow: 0 12px 28px rgba(24, 15, 35, 0.08);
+  box-shadow:
+    0 12px 28px rgba(24, 15, 35, 0.08);
 }
 
 
 /* =====================================================
-   WEEK LABELS
+   CURRICULUM TITLE
 ===================================================== */
 
-.week-label {
-  width: fit-content;
-
-  margin-bottom: 18px;
-  padding: 6px 15px;
-
-  border-radius: 999px;
-
-  font-family: "Outfit", "Inter", sans-serif;
-
-  font-size: 12px;
-  font-weight: 800;
-
-  white-space: nowrap;
-}
-
-
-/* WEEK 01 */
-
-.week-blue {
-  color: #5a4ee4;
-  background: #e9e9f5;
-}
-
-
-/* WEEK 03 */
-
-.week-pink {
-  color: #e65c6a;
-  background: #f6e8ea;
-}
-
-
-/* WEEK 06 */
-
-.week-yellow {
-  color: #342b10;
-  background: #fff1bd;
-}
-
-
-/* WEEK 09 */
-
-.week-purple {
-  color: #5849e0;
-  background: #e9e7f5;
-}
-
-
-/* WEEK 12 */
-
-.week-final {
-  color: #17120a;
-  background: #ffd513;
-}
-
-
-/* =====================================================
-   WEEK CARD CONTENT
-===================================================== */
-
-.uiux-week-card h3 {
-  margin: 0 0 18px;
+.uiux-curriculum-card h3 {
+  margin: 0;
 
   color: #15101d;
 
-  font-family: "Outfit", "Inter", sans-serif;
+  font-family:
+    "Outfit",
+    "Inter",
+    sans-serif;
 
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 21px;
+  font-weight: 700;
 
-  line-height: 1.15;
-}
-
-.uiux-week-card p {
-  margin: 0;
-
-  color: #5e575f;
-
-  font-family: "Outfit", "Inter", sans-serif;
-
-  font-size: 17px;
-  font-weight: 500;
-
-  line-height: 1.65;
+  line-height: 1.35;
 }
 
 
 /* =====================================================
-   FEATURED WEEK 12 CARD
+   CURRICULUM AUTHOR
 ===================================================== */
 
-.uiux-week-featured {
-  color: #ffffff;
+.uiux-curriculum-author {
+  margin-top: auto;
+  padding-top: 25px;
 
-  background: #11192c;
+  color: rgba(21, 16, 29, 0.62);
 
-  border-color: #11192c;
+  font-family:
+    "Outfit",
+    "Inter",
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
 }
 
-.uiux-week-featured h3 {
-  color: #ffffff;
+
+/* =====================================================
+   CURRICULUM COLORS
+===================================================== */
+
+/* FIRST GREEN CARD */
+
+.ux-green {
+  background: #7dd99c;
+  border-color: #7dd99c;
 }
 
-.uiux-week-featured p {
-  color: rgba(255, 255, 255, 0.83);
+
+/* YELLOW CARDS */
+
+.ux-yellow {
+  background: #ffd966;
+  border-color: #ffd966;
+}
+
+
+/* PINK CARDS */
+
+.ux-pink {
+  background: #f9aaa0;
+  border-color: #f9aaa0;
+}
+
+
+/* FIRST UX CARD */
+
+.ux-green:first-child h3 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 
@@ -499,11 +412,11 @@
     width: 90%;
   }
 
-  .uiux-week-grid {
+  .uiux-curriculum-grid {
     width: 90%;
-
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
 }
 
 
@@ -515,19 +428,16 @@
 
   .uiux-hero {
     width: calc(100% - 40px);
-
     margin-top: 55px;
   }
 
   .uiux-hero h1 {
     font-size: 50px;
-
     line-height: 1;
   }
 
   .uiux-hero-description {
     max-width: 550px;
-
     font-size: 18px;
   }
 
@@ -539,13 +449,18 @@
     margin-top: 85px;
   }
 
-  .uiux-week-grid {
+
+  /* CURRICULUM */
+
+  .uiux-curriculum-grid {
     width: calc(100% - 40px);
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
 
     gap: 16px;
   }
+
 }
 
 
@@ -559,37 +474,30 @@
     padding-top: 10px;
   }
 
+
   /* HERO */
 
   .uiux-hero {
     width: calc(100% - 28px);
-
     margin-top: 45px;
   }
 
   .uiux-course-badge {
     height: 28px;
-
     margin-bottom: 24px;
-
     padding: 0 13px;
-
     font-size: 12px;
   }
 
   .uiux-hero h1 {
     font-size: 42px;
-
     line-height: 1;
-
     letter-spacing: -1.5px;
   }
 
   .uiux-hero-description {
     margin-top: 22px;
-
     font-size: 17px;
-
     line-height: 1.65;
   }
 
@@ -602,7 +510,6 @@
 
   .uiux-tools h3 {
     margin-bottom: 20px;
-
     font-size: 16px;
   }
 
@@ -613,9 +520,7 @@
   .uiux-tool {
     min-width: 100px;
     height: 34px;
-
     padding: 0 12px;
-
     font-size: 16px;
   }
 
@@ -624,19 +529,16 @@
 
   .uiux-journey-section {
     margin-top: 75px;
-
     padding-bottom: 55px;
   }
 
   .uiux-journey-heading {
     width: calc(100% - 28px);
-
     margin-bottom: 35px;
   }
 
   .uiux-step-badge {
     margin-bottom: 18px;
-
     padding: 7px 15px;
   }
 
@@ -649,9 +551,9 @@
   }
 
 
-  /* WEEK CARDS */
+  /* CURRICULUM */
 
-  .uiux-week-grid {
+  .uiux-curriculum-grid {
     width: calc(100% - 28px);
 
     grid-template-columns: 1fr;
@@ -659,22 +561,22 @@
     gap: 14px;
   }
 
-  .uiux-week-card {
-    min-height: auto;
-
+  .uiux-curriculum-card {
+    min-height: 180px;
     padding: 20px;
-
     border-radius: 14px;
   }
 
-  .uiux-week-card h3 {
-    font-size: 22px;
+  .uiux-curriculum-card h3 {
+    font-size: 21px;
   }
 
-  .uiux-week-card p {
-    font-size: 17px;
+  .ux-green:first-child h3 {
+    font-size: 38px;
   }
+
 }
+
 
 /* =====================================================
    CAREER POTENTIAL
@@ -697,12 +599,9 @@
   width: fit-content;
   margin: 0 auto 23px;
   padding: 7px 23px;
-
   color: #6554e8;
   background: #e9e9eb;
-
   border-radius: 999px;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -710,9 +609,7 @@
 
 .uiux-career-heading h2 {
   margin: 0;
-
   color: #19102f;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 46px;
   font-weight: 800;
@@ -725,9 +622,7 @@
 
 .uiux-career-heading p {
   margin: 14px 0 0;
-
   color: #39343d;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -741,22 +636,21 @@
 .uiux-career-grid {
   width: 86%;
   max-width: 1280px;
-
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-columns:
+    repeat(3, 1fr);
 
   gap: 22px 24px;
 }
 
 .uiux-career-card {
   min-height: 145px;
-
   padding: 23px 22px;
 
   background: #ffffff;
-
   border: 1px solid #d7d4d8;
   border-radius: 12px;
 }
@@ -765,15 +659,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   gap: 15px;
 }
 
 .uiux-career-card h3 {
   margin: 25px 0 0;
-
   color: #1c1235;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 26px;
   font-weight: 800;
@@ -782,45 +673,33 @@
 
 .uiux-salary {
   flex-shrink: 0;
-
   text-align: right;
-
   font-family: "Outfit", "Inter", sans-serif;
 }
 
 .uiux-salary span {
   display: block;
-
   margin-bottom: 8px;
-
   color: #716d73;
-
   font-size: 19px;
   font-weight: 500;
 }
 
 .uiux-salary strong {
   display: block;
-
   color: #e54e59;
-
   font-size: 23px;
   font-weight: 800;
-
   line-height: 1.05;
 }
 
 .uiux-career-card > p {
   max-width: 260px;
-
   margin: 14px 0 0;
-
   color: #5d575f;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 18px;
   font-weight: 500;
-
   line-height: 1.65;
 }
 
@@ -832,21 +711,16 @@
 .uiux-reasons {
   width: 86%;
   max-width: 1250px;
-
   margin: 90px auto 0;
 }
 
 .uiux-reasons > h2 {
   margin: 0 0 50px;
-
   color: #16102b;
-
   text-align: center;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 46px;
   font-weight: 800;
-
   letter-spacing: -0.8px;
 }
 
@@ -854,28 +728,21 @@
   color: #d84e71;
 }
 
-
-/* REASON CARDS */
-
 .uiux-reasons-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 27px 36px;
 }
 
 .uiux-reason-card {
   min-height: 94px;
-
   padding: 17px 20px;
 
   display: flex;
   align-items: center;
-
   gap: 17px;
 
   background: #ffffff;
-
   border: 1px solid #d7d4d8;
   border-radius: 22px;
 }
@@ -883,7 +750,6 @@
 .uiux-reason-icon {
   width: 50px;
   height: 50px;
-
   flex-shrink: 0;
 
   display: flex;
@@ -891,7 +757,6 @@
   justify-content: center;
 
   background: #f1eff2;
-
   border-radius: 9px;
 
   font-size: 28px;
@@ -899,13 +764,10 @@
 
 .uiux-reason-card p {
   margin: 0;
-
   color: #332d38;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
-
   line-height: 1.6;
 }
 
@@ -916,31 +778,29 @@
 
 .uiux-invest-card {
   width: 86%;
-  max-width: 1250px;
-  min-height: 405px;
+  max-width: 1540px;
+  min-height: 586px;
 
   margin: 95px auto 0;
-  padding: 55px 65px;
+  padding: 68px 80px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  gap: 60px;
+  gap: 70px;
 
   position: relative;
-
   overflow: hidden;
 
   background:
     radial-gradient(
-      circle at 50% 50%,
+      circle at 60% 50%,
       rgba(85, 74, 231, 0.16),
       transparent 38%
     ),
     #11192d;
 
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 
@@ -948,40 +808,35 @@
 
 .uiux-invest-content {
   flex: 1;
-  max-width: 560px;
-
+  max-width: 700px;
   position: relative;
   z-index: 2;
 }
 
 .uiux-invest-badge {
-  width: fit-content;
+  margin-bottom: 38px;
+  padding: 9px 25px;
 
-  margin-bottom: 32px;
-  padding: 7px 22px;
+  width: fit-content;
 
   color: #ffd60a;
   background: rgba(255, 255, 255, 0.08);
-
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
 
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
 }
 
 .uiux-invest-content h2 {
   margin: 0;
-
   color: #ffffff;
-
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 54px;
+  font-size: 64px;
   font-weight: 800;
-
-  line-height: 0.95;
-  letter-spacing: -1.2px;
+  line-height: 0.98;
+  letter-spacing: -2.5px;
 }
 
 .uiux-invest-content h2 span {
@@ -992,37 +847,32 @@
 /* BENEFITS */
 
 .uiux-invest-benefits {
-  margin-top: 35px;
-
+  margin-top: 42px;
   display: flex;
   flex-direction: column;
-
-  gap: 17px;
+  gap: 22px;
 }
 
 .uiux-invest-benefits div {
   display: flex;
   align-items: center;
-
-  gap: 10px;
+  gap: 12px;
 
   color: #ffffff;
-
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .uiux-invest-benefits span {
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   color: #ffd500;
-
   border: 2px solid #ffd500;
   border-radius: 50%;
 
@@ -1036,16 +886,14 @@
 ===================================================== */
 
 .uiux-price-card {
-  width: 385px;
-  min-height: 330px;
+  width: 475px;
+  min-height: 453px;
+  flex: 0 0 475px;
 
-  padding: 32px 45px 27px;
-
-  flex-shrink: 0;
+  padding: 40px 56px;
 
   background: #ffffff;
-
-  border-radius: 23px;
+  border-radius: 28px;
 
   text-align: center;
 
@@ -1054,12 +902,12 @@
 }
 
 .uiux-price-card h3 {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 
   color: #ff4569;
 
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 29px;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -1071,17 +919,15 @@
   color: #232226;
 
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 62px;
+  font-size: 70px;
   font-weight: 800;
-
   line-height: 1;
   letter-spacing: -2px;
 }
 
 .uiux-course-price small {
-  margin: 7px 4px 0 0;
-
-  font-size: 32px;
+  margin: 9px 4px 0 0;
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -1090,19 +936,17 @@
 
 .uiux-price-details {
   width: fit-content;
-
-  margin: 23px auto 24px;
-
+  margin: 24px auto 25px;
   text-align: left;
 }
 
 .uiux-price-details p {
-  margin: 0 0 13px;
+  margin: 0 0 14px;
 
   color: #504b51;
 
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -1111,7 +955,7 @@
 
 .uiux-enroll-btn {
   width: 100%;
-  height: 40px;
+  height: 50px;
 
   display: flex;
   align-items: center;
@@ -1129,7 +973,7 @@
   border-radius: 999px;
 
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
 
   transition:
@@ -1140,12 +984,13 @@
 .uiux-enroll-btn:hover {
   transform: translateY(-2px);
 
-  box-shadow: 0 8px 18px rgba(104, 73, 225, 0.25);
+  box-shadow:
+    0 8px 18px rgba(104, 73, 225, 0.25);
 }
 
 
 /* =====================================================
-   RESPONSIVE
+   CAREER RESPONSIVE
 ===================================================== */
 
 @media (max-width: 1050px) {
@@ -1165,14 +1010,40 @@
 
   .uiux-invest-card {
     width: 90%;
+    min-height: 500px;
+    padding: 55px;
+    gap: 45px;
+  }
 
-    padding: 50px 45px;
+  .uiux-invest-content h2 {
+    font-size: 52px;
+  }
 
-    gap: 35px;
+  .uiux-invest-benefits div {
+    font-size: 17px;
   }
 
   .uiux-price-card {
-    width: 350px;
+    width: 420px;
+    flex-basis: 420px;
+    min-height: 410px;
+    padding: 36px 45px;
+  }
+
+  .uiux-price-card h3 {
+    font-size: 29px;
+  }
+
+  .uiux-course-price {
+    font-size: 60px;
+  }
+
+  .uiux-course-price small {
+    font-size: 32px;
+  }
+
+  .uiux-price-details p {
+    font-size: 18px;
   }
 }
 
@@ -1196,19 +1067,67 @@
   }
 
   .uiux-invest-card {
-    flex-direction: column;
+    width: calc(100% - 30px);
+    min-height: auto;
+    padding: 40px 28px;
 
+    flex-direction: column;
     align-items: stretch;
 
-    padding: 45px 35px;
+    gap: 40px;
+    border-radius: 24px;
   }
 
   .uiux-invest-content {
     max-width: none;
   }
 
+  .uiux-invest-badge {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+
+  .uiux-invest-content h2 {
+    font-size: 38px;
+    letter-spacing: -1.3px;
+  }
+
+  .uiux-invest-benefits {
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  .uiux-invest-benefits div {
+    font-size: 16px;
+  }
+
   .uiux-price-card {
     width: 100%;
+    flex-basis: auto;
+    min-height: 390px;
+    padding: 30px 25px;
+    border-radius: 22px;
+  }
+
+  .uiux-price-card h3 {
+    font-size: 25px;
+  }
+
+  .uiux-course-price {
+    font-size: 52px;
+  }
+
+  .uiux-course-price small {
+    font-size: 28px;
+  }
+
+  .uiux-price-details p {
+    font-size: 16px;
+  }
+
+  .uiux-enroll-btn {
+    height: 48px;
+    font-size: 18px;
   }
 }
 
@@ -1241,28 +1160,23 @@
 
   .uiux-reasons > h2 {
     margin-bottom: 35px;
-
     font-size: 33px;
   }
 
   .uiux-reason-card {
     min-height: 82px;
-
     border-radius: 18px;
   }
 
   .uiux-reason-icon {
     width: 44px;
     height: 44px;
-
     font-size: 27px;
   }
 
   .uiux-invest-card {
     margin-top: 70px;
-
     padding: 35px 22px;
-
     border-radius: 20px;
   }
 
@@ -1272,9 +1186,7 @@
 
   .uiux-price-card {
     min-height: auto;
-
     padding: 28px 22px;
-
     border-radius: 18px;
   }
 
@@ -1282,6 +1194,7 @@
     font-size: 48px;
   }
 }
+
 
 /* =====================================================
    EXPERT GUIDANCE
@@ -1304,12 +1217,9 @@
   width: fit-content;
   margin: 0 auto 24px;
   padding: 7px 22px;
-
   color: #5b4ce8;
   background: #e9e9ea;
-
   border-radius: 999px;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -1317,13 +1227,10 @@
 
 .uiux-experts-heading h2 {
   margin: 0;
-
   color: #17102f;
-
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 46px;
   font-weight: 800;
-
   letter-spacing: -0.7px;
 }
 
@@ -1343,13 +1250,11 @@
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   gap: 46px;
 }
 
 .uiux-mentor-card {
   min-height: 250px;
-
   padding: 22px 22px 18px;
 
   position: relative;
@@ -1357,16 +1262,15 @@
   text-align: center;
 
   background: #ffffff;
-
   border: 1px solid #d3d0d5;
   border-radius: 18px;
-   box-sizing: border-box;
+
+  box-sizing: border-box;
 
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
-
 
 .uiux-mentor-image {
   width: 92px;
@@ -1377,7 +1281,6 @@
   overflow: hidden;
 
   border-radius: 50%;
-
   padding: 3px;
 }
 
@@ -1386,7 +1289,6 @@
   height: 100%;
 
   object-fit: cover;
-
   border-radius: 50%;
 }
 
@@ -1443,7 +1345,6 @@
   justify-content: center;
 
   color: #271438;
-
   background: #ffffff;
 
   border: 1px solid #4a285e;
@@ -1476,7 +1377,6 @@
   font-family: "Outfit", "Inter", sans-serif;
   font-size: 46px;
   font-weight: 800;
-
   letter-spacing: -0.8px;
 }
 
@@ -1495,17 +1395,16 @@
 }
 
 
-/* =====================================================
-   COMPANY LOGOS — sized per Figma
-===================================================== */
+/* COMPANY LOGOS */
 
 .uiux-company-logos {
   width: 100%;
-
   margin-top: 60px;
 
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+
+  grid-template-columns:
+    repeat(6, 1fr);
 
   align-items: center;
   justify-items: center;
@@ -1524,29 +1423,79 @@
 
   margin: 0 auto;
 
-  filter: grayscale(100%) contrast(120%);
+  filter:
+    grayscale(100%)
+    contrast(120%);
 }
 
-/* Row 1 */
-.uiux-company-logos img:nth-child(1)  { width: 159px; height: 64px; }   /* TCS */
-.uiux-company-logos img:nth-child(2)  { width: 85px;  height: 73px; }   /* Wipro */
-.uiux-company-logos img:nth-child(3)  { width: 107px; height: 60px; }   /* Cognizant */
-.uiux-company-logos img:nth-child(4)  { width: 138px; height: 61px; }   /* Amazon */
-.uiux-company-logos img:nth-child(5)  { width: 226px; height: 128px; }  /* Microsoft */
-.uiux-company-logos img:nth-child(6)  { width: 99px;  height: 72px; }   /* HCL */
 
-/* Row 2 */
-.uiux-company-logos img:nth-child(7)  { width: 119px; height: 52px; }   /* Zoho */
-.uiux-company-logos img:nth-child(8)  { width: 135px; height: 76px; }   /* Accenture */
-.uiux-company-logos img:nth-child(9)  { width: 121px; height: 68px; }   /* Flipkart */
-.uiux-company-logos img:nth-child(10) { width: 83px;  height: 31px; }   /* Infosys */
-.uiux-company-logos img:nth-child(11) { width: 128px; height: 41px; }   /* Samsung */
-.uiux-company-logos img:nth-child(12) { width: 130px; height: 130px; }  /* Capgemini */
+/* ROW 1 */
+
+.uiux-company-logos img:nth-child(1) {
+  width: 159px;
+  height: 64px;
+}
+
+.uiux-company-logos img:nth-child(2) {
+  width: 85px;
+  height: 73px;
+}
+
+.uiux-company-logos img:nth-child(3) {
+  width: 107px;
+  height: 60px;
+}
+
+.uiux-company-logos img:nth-child(4) {
+  width: 138px;
+  height: 61px;
+}
+
+.uiux-company-logos img:nth-child(5) {
+  width: 226px;
+  height: 128px;
+}
+
+.uiux-company-logos img:nth-child(6) {
+  width: 99px;
+  height: 72px;
+}
 
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+/* ROW 2 */
+
+.uiux-company-logos img:nth-child(7) {
+  width: 119px;
+  height: 52px;
+}
+
+.uiux-company-logos img:nth-child(8) {
+  width: 135px;
+  height: 76px;
+}
+
+.uiux-company-logos img:nth-child(9) {
+  width: 121px;
+  height: 68px;
+}
+
+.uiux-company-logos img:nth-child(10) {
+  width: 83px;
+  height: 31px;
+}
+
+.uiux-company-logos img:nth-child(11) {
+  width: 128px;
+  height: 41px;
+}
+
+.uiux-company-logos img:nth-child(12) {
+  width: 130px;
+  height: 130px;
+}
+
+
+/* EXPERT RESPONSIVE */
 
 @media (max-width: 1050px) {
 
@@ -1568,11 +1517,8 @@
 
   .uiux-mentor-grid {
     width: 90%;
-
     grid-template-columns: 1fr;
-
     border: none;
-
     gap: 18px;
   }
 
@@ -1587,7 +1533,6 @@
 
   .uiux-company-logos {
     grid-template-columns: repeat(3, 1fr);
-
     gap: 45px 20px;
   }
 }
@@ -1617,9 +1562,7 @@
 
   .uiux-company-logos {
     margin-top: 45px;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 40px 22px;
   }
 
@@ -1629,26 +1572,28 @@
   }
 }
 
+
 /* =====================================================
    STUDENT OUTCOMES / PORTFOLIO
-   Sized per Figma: frame 1172 × 346, image 320 × 260,
-   arrow 47 × 47, arrow offset ~53px
 ===================================================== */
 
 .uiux-outcomes-section {
   width: 100%;
-
   padding: 70px 0 85px;
 
   background-color: #ffffff;
-  background-image: radial-gradient(#ece9ef 1px, transparent 1px);
+
+  background-image:
+    radial-gradient(
+      #ece9ef 1px,
+      transparent 1px
+    );
+
   background-size: 18px 18px;
 }
 
 
-/* =====================================================
-   OUTCOMES HEADING
-===================================================== */
+/* OUTCOMES HEADING */
 
 .uiux-outcomes-heading {
   width: 90%;
@@ -1663,7 +1608,6 @@
   width: fit-content;
 
   margin: 0 auto 27px;
-
   padding: 8px 24px;
 
   color: #1c1722;
@@ -1682,7 +1626,6 @@
   color: #17102e;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 46px;
   font-weight: 800;
 
@@ -1695,10 +1638,7 @@
 }
 
 
-/* =====================================================
-   SLIDER WRAPPER
-   Padding leaves room for the arrows sitting outside
-===================================================== */
+/* SLIDER */
 
 .uiux-outcomes-slider {
   width: 90%;
@@ -1712,14 +1652,11 @@
   align-items: center;
   justify-content: center;
 
-  /* room for the 47px arrows sitting outside the grid */
   padding: 0 80px;
 }
 
 
-/* =====================================================
-   PROJECT GRID — 3 cols, min-height = Figma frame
-===================================================== */
+/* PROJECT GRID */
 
 .uiux-outcomes-grid {
   width: 100%;
@@ -1728,7 +1665,9 @@
   min-height: 346px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-columns:
+    repeat(3, 1fr);
 
   gap: 32px;
 
@@ -1736,9 +1675,7 @@
 }
 
 
-/* =====================================================
-   PROJECT CARD
-===================================================== */
+/* PROJECT CARD */
 
 .uiux-project-card {
   min-height: 318px;
@@ -1757,9 +1694,7 @@
 }
 
 
-/* =====================================================
-   PROJECT IMAGE — Figma 320 × 260, radius 18
-===================================================== */
+/* PROJECT IMAGE */
 
 .uiux-project-image {
   width: 100%;
@@ -1787,7 +1722,6 @@
   color: #17102f;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 23px;
   font-weight: 800;
 
@@ -1797,16 +1731,13 @@
 }
 
 
-/* =====================================================
-   SLIDER ARROWS — 47 × 47, pushed outside the grid
-===================================================== */
+/* SLIDER ARROWS */
 
 .uiux-slider-arrow {
   width: 47px;
   height: 47px;
 
   position: absolute;
-
   top: 50%;
 
   transform: translateY(-50%);
@@ -1845,9 +1776,7 @@
 }
 
 
-/* =====================================================
-   DYNAMIC SLIDER DOTS
-===================================================== */
+/* SLIDER DOTS */
 
 .uiux-slider-dots {
   margin-top: 45px;
@@ -1888,16 +1817,13 @@
 }
 
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+/* OUTCOMES RESPONSIVE */
 
 @media (max-width: 1100px) {
+
   .uiux-outcomes-grid {
     width: 100%;
-
     gap: 24px;
-
     padding: 12px 14px;
   }
 
@@ -1913,12 +1839,13 @@
 
 
 @media (max-width: 800px) {
+
   .uiux-outcomes-grid {
     width: 100%;
-
     min-height: auto;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
 
     gap: 20px;
 
@@ -1944,13 +1871,13 @@
 
 
 @media (max-width: 560px) {
+
   .uiux-outcomes-section {
     padding: 55px 0 65px;
   }
 
   .uiux-outcomes-heading {
     width: calc(100% - 28px);
-
     margin-bottom: 40px;
   }
 
@@ -1964,7 +1891,6 @@
 
   .uiux-outcomes-grid {
     width: 100%;
-
     min-height: auto;
 
     grid-template-columns: 1fr;
@@ -1991,7 +1917,6 @@
   .uiux-slider-arrow {
     width: 40px;
     height: 40px;
-
     font-size: 20px;
   }
 
@@ -2008,6 +1933,7 @@
   }
 }
 
+
 /* =====================================================
    FAQ SECTION
 ===================================================== */
@@ -2015,7 +1941,6 @@
 .uiux-faq-section {
   width: 100%;
   padding: 70px 0 120px;
-
   background: #ffffff;
 }
 
@@ -2050,7 +1975,6 @@
   color: #17102e;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 46px;
   font-weight: 800;
 
@@ -2058,9 +1982,7 @@
 }
 
 
-/* =====================================================
-   FAQ LIST
-===================================================== */
+/* FAQ LIST */
 
 .uiux-faq-list {
   width: 60%;
@@ -2105,7 +2027,6 @@
   text-align: left;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 21px;
   font-weight: 600;
 }
@@ -2151,7 +2072,6 @@
   color: #66606d;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 18px;
   font-weight: 500;
 
@@ -2160,7 +2080,6 @@
 
 .uiux-faq-item.active .uiux-faq-answer {
   max-height: 180px;
-
   opacity: 1;
 }
 
@@ -2175,7 +2094,6 @@
   padding: 48px 0 20px;
 
   color: #ffffff;
-
   background: #11192d;
 }
 
@@ -2196,24 +2114,23 @@
   gap: 55px;
 }
 
-
-/* =====================================================
-   FOOTER BRAND
-===================================================== */
-
 .uiux-footer-brand {
   max-width: 390px;
 }
+
 .uiux-footer-logo {
   display: flex;
   align-items: center;
+
   margin-bottom: 32px;
 }
 
 .uiux-footer-logo img {
   display: block;
+
   width: 150px;
   height: auto;
+
   object-fit: contain;
 }
 
@@ -2227,12 +2144,13 @@
 
   color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #ee4e75,
-    #734df0,
-    #ffcc00
-  );
+  background:
+    linear-gradient(
+      135deg,
+      #ee4e75,
+      #734df0,
+      #ffcc00
+    );
 
   border-radius: 50%;
 
@@ -2243,7 +2161,6 @@
   display: block;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 24px;
   font-weight: 700;
 }
@@ -2256,7 +2173,6 @@
   color: #f33574;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 14px;
   font-weight: 600;
 
@@ -2264,9 +2180,7 @@
 }
 
 
-/* =====================================================
-   ADDRESS
-===================================================== */
+/* ADDRESS */
 
 .uiux-footer-address {
   margin-top: 48px;
@@ -2279,7 +2193,6 @@
   color: #ffffff;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 19px;
   font-weight: 700;
 }
@@ -2292,7 +2205,6 @@
   color: #f1f0f5;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 17px;
   font-weight: 400;
 
@@ -2300,16 +2212,13 @@
 }
 
 
-/* =====================================================
-   FOOTER COLUMNS
-===================================================== */
+/* FOOTER COLUMNS */
 
 .uiux-footer-column {
   padding-top: 52px;
 
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
 }
 
@@ -2319,7 +2228,6 @@
   color: #f4f2f7;
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 17px;
   font-weight: 400;
 
@@ -2331,9 +2239,7 @@
 }
 
 
-/* =====================================================
-   ENROLL BUTTON
-===================================================== */
+/* ENROLL BUTTON */
 
 .uiux-footer-info {
   padding-top: 0;
@@ -2358,15 +2264,14 @@
 }
 
 
-/* =====================================================
-   FOOTER BOTTOM
-===================================================== */
+/* FOOTER BOTTOM */
 
 .uiux-footer-bottom {
   width: 84%;
   max-width: 1280px;
 
   margin: 38px auto 0;
+
   padding-top: 22px;
 
   text-align: center;
@@ -2376,15 +2281,12 @@
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 
   font-family: "Outfit", "Inter", sans-serif;
-
   font-size: 15px;
   font-weight: 400;
 }
 
 
-/* =====================================================
-   TABLET
-===================================================== */
+/* FOOTER TABLET */
 
 @media (max-width: 1000px) {
 
@@ -2395,7 +2297,10 @@
   .uiux-footer-inner {
     width: 90%;
 
-    grid-template-columns: 1.6fr 1fr 1fr;
+    grid-template-columns:
+      1.6fr
+      1fr
+      1fr;
   }
 
   .uiux-footer-info {
@@ -2404,9 +2309,7 @@
 }
 
 
-/* =====================================================
-   MOBILE
-===================================================== */
+/* FOOTER MOBILE */
 
 @media (max-width: 700px) {
 
@@ -2416,7 +2319,6 @@
 
   .uiux-faq-heading {
     width: calc(100% - 28px);
-
     margin-bottom: 38px;
   }
 
@@ -2474,273 +2376,6 @@
 
   .uiux-footer-bottom {
     width: calc(100% - 36px);
-
     margin-top: 25px;
-  }
-}
-
-/* =====================================================
-   UI / UX INVEST + PRICE CTA — REFERENCE SIZE
-===================================================== */
-
-.uiux-invest-card {
-  width: 86%;
-  max-width: 1540px;
-  min-height: 586px;
-
-  margin: 95px auto 0;
-  padding: 68px 80px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 70px;
-
-  position: relative;
-  overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at 60% 50%,
-      rgba(85, 74, 231, 0.16),
-      transparent 38%
-    ),
-    #11192d;
-
-  border-radius: 30px;
-}
-
-.uiux-invest-content {
-  flex: 1;
-  max-width: 700px;
-  position: relative;
-  z-index: 2;
-}
-
-.uiux-invest-badge {
-  margin-bottom: 38px;
-  padding: 9px 25px;
-  font-size: 16px;
-}
-
-.uiux-invest-content h2 {
-  font-size: 64px;
-  line-height: 0.98;
-  letter-spacing: -2.5px;
-}
-
-.uiux-invest-benefits {
-  margin-top: 42px;
-  gap: 22px;
-}
-
-.uiux-invest-benefits div {
-  gap: 12px;
-  font-size: 20px;
-}
-
-.uiux-invest-benefits span {
-  width: 22px;
-  height: 22px;
-  font-size: 15px;
-}
-
-.uiux-price-card {
-  width: 475px;
-  min-height: 453px;
-
-  flex: 0 0 475px;
-
-  padding: 40px 56px;
-
-  border-radius: 28px;
-}
-
-.uiux-price-card h3 {
-  margin-bottom: 18px;
-  font-size: 34px;
-}
-
-.uiux-course-price {
-  font-size: 70px;
-  letter-spacing: -2px;
-}
-
-.uiux-course-price small {
-  margin-top: 9px;
-  font-size: 36px;
-}
-
-.uiux-price-details {
-  margin: 24px auto 25px;
-}
-
-.uiux-price-details p {
-  margin-bottom: 14px;
-  font-size: 20px;
-}
-
-.uiux-enroll-btn {
-  height: 50px;
-  font-size: 20px;
-}
-
-
-/* =====================================================
-   UI / UX — TABLET
-===================================================== */
-
-@media (max-width: 1050px) {
-
-  .uiux-invest-card {
-    width: 90%;
-    min-height: 500px;
-    padding: 55px;
-    gap: 45px;
-  }
-
-  .uiux-invest-content h2 {
-    font-size: 52px;
-  }
-
-  .uiux-invest-benefits div {
-    font-size: 17px;
-  }
-
-  .uiux-price-card {
-    width: 420px;
-    flex-basis: 420px;
-    min-height: 410px;
-    padding: 36px 45px;
-  }
-
-  .uiux-price-card h3 {
-    font-size: 29px;
-  }
-
-  .uiux-course-price {
-    font-size: 60px;
-  }
-
-  .uiux-course-price small {
-    font-size: 32px;
-  }
-
-  .uiux-price-details p {
-    font-size: 18px;
-  }
-}
-
-
-/* =====================================================
-   UI / UX — MOBILE
-===================================================== */
-
-@media (max-width: 750px) {
-
-  .uiux-invest-card {
-    width: calc(100% - 30px);
-    min-height: auto;
-
-    padding: 40px 28px;
-
-    flex-direction: column;
-    align-items: stretch;
-
-    gap: 40px;
-
-    border-radius: 24px;
-  }
-
-  .uiux-invest-content {
-    max-width: none;
-  }
-
-  .uiux-invest-badge {
-    margin-bottom: 25px;
-    font-size: 13px;
-  }
-
-  .uiux-invest-content h2 {
-    font-size: 38px;
-    letter-spacing: -1.3px;
-  }
-
-  .uiux-invest-benefits {
-    margin-top: 30px;
-    gap: 15px;
-  }
-
-  .uiux-invest-benefits div {
-    font-size: 16px;
-  }
-
-  .uiux-price-card {
-    width: 100%;
-    flex-basis: auto;
-    min-height: 390px;
-
-    padding: 30px 25px;
-
-    border-radius: 22px;
-  }
-
-  .uiux-price-card h3 {
-    font-size: 25px;
-  }
-
-  .uiux-course-price {
-    font-size: 52px;
-  }
-
-  .uiux-course-price small {
-    font-size: 28px;
-  }
-
-  .uiux-price-details p {
-    font-size: 16px;
-  }
-
-  .uiux-enroll-btn {
-    height: 48px;
-    font-size: 18px;
-  }
-}
-
-
-/* =====================================================
-   UI / UX — SMALL MOBILE
-===================================================== */
-
-@media (max-width: 520px) {
-
-  .uiux-invest-card {
-    width: calc(100% - 24px);
-    padding: 32px 20px;
-  }
-
-  .uiux-invest-content h2 {
-    font-size: 34px;
-  }
-
-  .uiux-price-card {
-    padding: 27px 20px;
-  }
-
-  .uiux-price-card h3 {
-    font-size: 22px;
-  }
-
-  .uiux-course-price {
-    font-size: 46px;
-  }
-
-  .uiux-course-price small {
-    font-size: 24px;
-  }
-
-  .uiux-price-details p {
-    font-size: 15px;
   }
 }

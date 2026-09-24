@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "../components/Navbar";
 import "./UIUXDesign.css";
-import footerlogo from "../assets/footerlogo.png";
-
 
 /* =====================================================
    COMPANY LOGOS
@@ -25,6 +23,83 @@ import capgemini from "../assets/capgemini.png";
 
 
 function UIUXDesign() {
+
+  /* =====================================================
+     UX CURRICULUM
+  ===================================================== */
+
+  const uxCurriculum = [
+    {
+      id: 1,
+      title: "UX",
+      description: "",
+      type: "ux-green",
+    },
+
+    {
+      id: 2,
+      title: "UX beginner\nSession\n1 week",
+      description: "",
+      type: "ux-yellow",
+    },
+
+    {
+      id: 3,
+      title: "Product Thinking\nand\nProduct Designing",
+      description: "",
+      type: "ux-yellow",
+    },
+
+    {
+      id: 4,
+      title: "Problem Solving\nTechniques\n3 Types",
+      description: "",
+      type: "ux-yellow",
+    },
+
+    {
+      id: 5,
+      title: "Design Thinking\nProcess\nIndustry",
+      description: "",
+      type: "ux-pink",
+    },
+
+    {
+      id: 6,
+      title: "Research\nDiscovery\nAnalysis",
+      description: "",
+      type: "ux-pink",
+    },
+
+    {
+      id: 7,
+      title: "Define\nProblem\nstatement",
+      description: "",
+      type: "ux-pink",
+    },
+
+    {
+      id: 8,
+      title: "Ideate\nIdea Generation\nGroup Activity",
+      description: "",
+      type: "ux-pink",
+    },
+
+    {
+      id: 9,
+      title: "UX Laws\nRules Visual\nDesign",
+      description: "",
+      type: "ux-green",
+    },
+
+    {
+      id: 10,
+      title: "Heuristic\nEvolution\n-----------\nMethod",
+      description: "",
+      type: "ux-green",
+    },
+  ];
+
 
   /* =====================================================
      STUDENT PROJECTS
@@ -135,39 +210,49 @@ function UIUXDesign() {
     projectIndex + projectsPerView
   );
 
+
+  /* =====================================================
+     FAQ
+  ===================================================== */
+
   const faqItems = [
-  {
-    question:
-      "Can I enroll if I have no prior experience in UI/UX or Digital Marketing?",
-    answer:
-      "Yes. The course is designed for beginners as well as learners with some prior design or marketing experience.",
-  },
-  {
-    question:
-      "How are the courses structured, and what is the duration?",
-    answer:
-      "The UI/UX program follows a structured 12-week learning path with practical sessions, mentor guidance, projects, and portfolio development.",
-  },
-  {
-    question:
-      "Is there any support for job placement after course completion?",
-    answer:
-      "Yes. Students receive portfolio guidance, interview preparation, career support, and job-assistance support after completing the course.",
-  },
-];
+    {
+      question:
+        "Can I enroll if I have no prior experience in UI/UX or Digital Marketing?",
+      answer:
+        "Yes. The course is designed for beginners as well as learners with some prior design or marketing experience.",
+    },
 
-const [openFaq, setOpenFaq] = useState(null);
+    {
+      question:
+        "How are the courses structured, and what is the duration?",
+      answer:
+        "The UI/UX program follows a structured 12-week learning path with practical sessions, mentor guidance, projects, and portfolio development.",
+    },
 
-const toggleFaq = (index) => {
-  setOpenFaq((current) => (current === index ? null : index));
-};
+    {
+      question:
+        "Is there any support for job placement after course completion?",
+      answer:
+        "Yes. Students receive portfolio guidance, interview preparation, career support, and job-assistance support after completing the course.",
+    },
+  ];
+
+
+  const [openFaq, setOpenFaq] = useState(null);
+
+
+  const toggleFaq = (index) => {
+    setOpenFaq((current) =>
+      current === index ? null : index
+    );
+  };
 
 
   return (
     <div className="uiux-page">
 
       <Navbar />
-
 
       <main>
 
@@ -179,16 +264,13 @@ const toggleFaq = (index) => {
 
           <div className="uiux-course-badge">
             <span></span>
-
             UI UX DESIGN COURSE
           </div>
 
 
           <h1>
             Become a UI UX Designer
-
             <br />
-
             <span>
               in 12 weeks.
             </span>
@@ -216,21 +298,18 @@ const toggleFaq = (index) => {
 
               <div className="uiux-tool">
                 <span className="tool-dot figma-dot"></span>
-
                 Figma
               </div>
 
 
               <div className="uiux-tool">
                 <span className="tool-dot canva-dot"></span>
-
                 Canva
               </div>
 
 
               <div className="uiux-tool">
                 <span className="tool-dot balsamiq-dot"></span>
-
                 Balsamiq
               </div>
 
@@ -239,7 +318,6 @@ const toggleFaq = (index) => {
                 <span className="tool-box ps-tool">
                   Ps
                 </span>
-
                 Photoshop
               </div>
 
@@ -248,7 +326,6 @@ const toggleFaq = (index) => {
                 <span className="tool-box ai-tool">
                   Ai
                 </span>
-
                 Illustrator
               </div>
 
@@ -257,7 +334,6 @@ const toggleFaq = (index) => {
                 <span className="tool-box miro-tool">
                   M
                 </span>
-
                 Miro
               </div>
 
@@ -265,7 +341,6 @@ const toggleFaq = (index) => {
           </div>
 
         </section>
-
 
 
         {/* =====================================================
@@ -294,124 +369,44 @@ const toggleFaq = (index) => {
           </div>
 
 
-          <div className="uiux-week-grid">
+          {/* =====================================================
+              UX CURRICULUM - 10 CARDS
+              5 TOP + 5 BOTTOM
+          ===================================================== */}
 
-            {/* WEEK 01 */}
+          <div className="uiux-curriculum-grid">
 
-            <article className="uiux-week-card">
+            {uxCurriculum.map((item) => (
+              <article
+                className={`uiux-curriculum-card ${item.type}`}
+                key={item.id}
+              >
 
-              <div className="week-label week-blue">
-                WEEK 01
-              </div>
-
-
-              <h3>
-                Design Foundations
-              </h3>
-
-
-              <p>
-                Learn color theory, typography, spacing, visual hierarchy,
-                and wireframing fundamentals.
-              </p>
-
-            </article>
-
-
-
-            {/* WEEK 03 */}
-
-            <article className="uiux-week-card">
-
-              <div className="week-label week-pink">
-                WEEK 03
-              </div>
+                <h3>
+                  {item.title.split("\n").map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      {index <
+                        item.title.split("\n").length - 1 && (
+                        <br />
+                      )}
+                    </span>
+                  ))}
+                </h3>
 
 
-              <h3>
-                UX Research & Persona
-              </h3>
+                {item.id !== 1 && (
+                  <div className="uiux-curriculum-author">
+                    Auro lakshmanan
+                  </div>
+                )}
 
-
-              <p>
-                User research methods, creating user personas,
-                journey mapping, and information architecture.
-              </p>
-
-            </article>
-
-
-
-            {/* WEEK 06 */}
-
-            <article className="uiux-week-card">
-
-              <div className="week-label week-yellow">
-                WEEK 06
-              </div>
-
-
-              <h3>
-                Figma & Prototyping
-              </h3>
-
-
-              <p>
-                Master Figma components, auto-layout,
-                interactive prototyping, and design systems.
-              </p>
-
-            </article>
-
-
-
-            {/* WEEK 09 */}
-
-            <article className="uiux-week-card">
-
-              <div className="week-label week-purple">
-                WEEK 09
-              </div>
-
-
-              <h3>
-                Real-World Capstone
-              </h3>
-
-
-              <p>
-                Build a complete web & mobile design project following
-                end-to-end industry standards.
-              </p>
-
-            </article>
-
-
-
-            {/* WEEK 12 */}
-
-            <article className="uiux-week-card uiux-week-featured">
-
-              <div className="week-label week-final">
-                WEEK 12
-              </div>
-
-
-              <h3>
-                Portfolio & Career
-              </h3>
-
-
-              <p>
-                Publish your Behance/Dribbble portfolio,
-                practice mock interviews, and land job offers.
-              </p>
-
-            </article>
+              </article>
+            ))}
 
           </div>
-        </section>
 
+        </section>
 
 
         {/* =====================================================
@@ -440,7 +435,6 @@ const toggleFaq = (index) => {
           </div>
 
 
-
           {/* =====================================================
               CAREER CARDS
           ===================================================== */}
@@ -448,18 +442,11 @@ const toggleFaq = (index) => {
           <div className="uiux-career-grid">
 
             <article className="uiux-career-card">
-
               <div className="uiux-career-card-top">
-
-                <h3>
-                  UX Designer
-                </h3>
-
+                <h3>UX Designer</h3>
 
                 <div className="uiux-salary">
-                  <span>
-                    Avg Salary
-                  </span>
+                  <span>Avg Salary</span>
 
                   <strong>
                     ₹ 6 - 12
@@ -467,32 +454,22 @@ const toggleFaq = (index) => {
                     LPA
                   </strong>
                 </div>
-
               </div>
 
-
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known,
-                is dummy text used in laying out print.
+                  Design intuitive and user-friendly digital experiences by
+                  understanding user needs, creating wireframes, and improving
+                  product usability.
               </p>
-
             </article>
 
 
-
             <article className="uiux-career-card">
-
               <div className="uiux-career-card-top">
-
-                <h3>
-                  UX Researcher
-                </h3>
-
+                <h3>UX Researcher</h3>
 
                 <div className="uiux-salary">
-                  <span>
-                    Avg Salary
-                  </span>
+                  <span>Avg Salary</span>
 
                   <strong>
                     ₹ 5 - 10
@@ -500,32 +477,21 @@ const toggleFaq = (index) => {
                     LPA
                   </strong>
                 </div>
-
               </div>
 
-
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known,
-                is dummy text used in laying out print.
+                 Study user behavior and needs through interviews, surveys,
+                 and usability testing to help teams build better digital products.
               </p>
-
             </article>
 
 
-
             <article className="uiux-career-card">
-
               <div className="uiux-career-card-top">
-
-                <h3>
-                  UX Architect
-                </h3>
-
+                <h3>UX Architect</h3>
 
                 <div className="uiux-salary">
-                  <span>
-                    Avg Salary
-                  </span>
+                  <span>Avg Salary</span>
 
                   <strong>
                     ₹ 12 - 20
@@ -533,32 +499,22 @@ const toggleFaq = (index) => {
                     LPA
                   </strong>
                 </div>
-
               </div>
 
-
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known,
-                is dummy text used in laying out print.
+                 Plan the structure and user flow of digital products,
+                 organizing information and interactions to create clear and
+                 effective user experiences.
               </p>
-
             </article>
 
 
-
             <article className="uiux-career-card">
-
               <div className="uiux-career-card-top">
-
-                <h3>
-                  Product Designer
-                </h3>
-
+                <h3>Product Designer</h3>
 
                 <div className="uiux-salary">
-                  <span>
-                    Avg Salary
-                  </span>
+                  <span>Avg Salary</span>
 
                   <strong>
                     ₹ 8 - 15
@@ -566,32 +522,22 @@ const toggleFaq = (index) => {
                     LPA
                   </strong>
                 </div>
-
               </div>
 
-
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known,
-                is dummy text used in laying out print.
+                 Combine UX research, visual design, and problem-solving to
+                 design complete digital products that meet both user and
+                 business needs.
               </p>
-
             </article>
 
 
-
             <article className="uiux-career-card">
-
               <div className="uiux-career-card-top">
-
-                <h3>
-                  Product Manager
-                </h3>
-
+                <h3>Product Manager</h3>
 
                 <div className="uiux-salary">
-                  <span>
-                    Avg Salary
-                  </span>
+                  <span>Avg Salary</span>
 
                   <strong>
                     ₹ 14 - 25
@@ -599,32 +545,22 @@ const toggleFaq = (index) => {
                     LPA
                   </strong>
                 </div>
-
               </div>
 
-
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known,
-                is dummy text used in laying out print.
+                Define product goals, coordinate teams, and guide the product
+                from idea to launch while balancing customer needs and business
+                objectives.
               </p>
-
             </article>
 
 
-
             <article className="uiux-career-card">
-
               <div className="uiux-career-card-top">
-
-                <h3>
-                  UX Writer
-                </h3>
-
+                <h3>UX Writer</h3>
 
                 <div className="uiux-salary">
-                  <span>
-                    Avg Salary
-                  </span>
+                  <span>Avg Salary</span>
 
                   <strong>
                     ₹ 4 - 9
@@ -632,19 +568,16 @@ const toggleFaq = (index) => {
                     LPA
                   </strong>
                 </div>
-
               </div>
 
-
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known,
-                is dummy text used in laying out print.
+                 Create clear and helpful content for digital products, including
+                 buttons, messages, instructions, and interface text that guide
+                 users through their experience..
               </p>
-
             </article>
 
           </div>
-
 
 
           {/* =====================================================
@@ -661,104 +594,68 @@ const toggleFaq = (index) => {
             <div className="uiux-reasons-grid">
 
               <div className="uiux-reason-card">
-
-                <div className="uiux-reason-icon">
-                  🗂️
-                </div>
-
+                <div className="uiux-reason-icon">🗂️</div>
 
                 <p>
                   90 Days Continues Connect with
                   <br />
                   your mentors
                 </p>
-
               </div>
 
 
-
               <div className="uiux-reason-card">
-
-                <div className="uiux-reason-icon">
-                  📥
-                </div>
-
+                <div className="uiux-reason-icon">📥</div>
 
                 <p>
                   Internship Opportunities
                   <br />
                   available
                 </p>
-
               </div>
 
 
-
               <div className="uiux-reason-card">
-
-                <div className="uiux-reason-icon">
-                  🧑‍💼
-                </div>
-
+                <div className="uiux-reason-icon">🧑‍💼</div>
 
                 <p>
                   Interview & Portfolio Lifetime
                   <br />
                   job assistance
                 </p>
-
               </div>
 
 
-
               <div className="uiux-reason-card">
-
-                <div className="uiux-reason-icon">
-                  🗓️
-                </div>
-
+                <div className="uiux-reason-icon">🗓️</div>
 
                 <p>
                   Both Online & Classroom
                   <br />
                   Sessions
                 </p>
-
               </div>
 
 
-
               <div className="uiux-reason-card">
-
-                <div className="uiux-reason-icon">
-                  🔤
-                </div>
-
+                <div className="uiux-reason-icon">🔤</div>
 
                 <p>
                   UI UX Design Certification
                 </p>
-
               </div>
 
 
-
               <div className="uiux-reason-card">
-
-                <div className="uiux-reason-icon">
-                  🧑‍💻
-                </div>
-
+                <div className="uiux-reason-icon">🧑‍💻</div>
 
                 <p>
                   Live project work experience
                 </p>
-
               </div>
 
             </div>
           </div>
-
 
 
           {/* =====================================================
@@ -767,18 +664,14 @@ const toggleFaq = (index) => {
 
           <div className="uiux-invest-card">
 
-            {/* LEFT */}
-
             <div className="uiux-invest-content">
 
               <div className="uiux-invest-badge">
                 UI UX COURSE
               </div>
 
-
               <h2>
                 Invest in Your{" "}
-
                 <span>
                   Design
                   <br />
@@ -790,46 +683,29 @@ const toggleFaq = (index) => {
               <div className="uiux-invest-benefits">
 
                 <div>
-                  <span>
-                    ✓
-                  </span>
-
+                  <span>✓</span>
                   Live Interactive Classes
                 </div>
 
-
                 <div>
-                  <span>
-                    ✓
-                  </span>
-
+                  <span>✓</span>
                   Real World Projects
                 </div>
 
-
                 <div>
-                  <span>
-                    ✓
-                  </span>
-
+                  <span>✓</span>
                   Certificate of Completion
                 </div>
 
-
                 <div>
-                  <span>
-                    ✓
-                  </span>
-
+                  <span>✓</span>
                   Portfolio Review
                 </div>
 
               </div>
+
             </div>
 
-
-
-            {/* RIGHT PRICE CARD */}
 
             <div className="uiux-price-card">
 
@@ -839,13 +715,8 @@ const toggleFaq = (index) => {
 
 
               <div className="uiux-course-price">
-
-                <small>
-                  ₹
-                </small>
-
+                <small>₹</small>
                 45,000
-
               </div>
 
 
@@ -855,11 +726,9 @@ const toggleFaq = (index) => {
                   🔥 Single Payment: ₹ 35,000
                 </p>
 
-
                 <p>
                   💰 Save ₹ 10,000 Today
                 </p>
-
 
                 <p>
                   💳 EMI Available – 3 × ₹ 15,000
@@ -868,19 +737,18 @@ const toggleFaq = (index) => {
               </div>
 
 
-            <Link
-  to="/contact"
-  className="uiux-enroll-btn"
->
-  Enroll now
-</Link>
+              <Link
+                to="/contact"
+                className="uiux-enroll-btn"
+              >
+                Enroll now
+              </Link>
 
             </div>
 
           </div>
 
         </section>
-
 
 
         {/* =====================================================
@@ -895,7 +763,6 @@ const toggleFaq = (index) => {
               EXPERT GUIDANCE
             </div>
 
-
             <h2>
               Mentored by <span>Industry Experts</span>
             </h2>
@@ -903,37 +770,25 @@ const toggleFaq = (index) => {
           </div>
 
 
-
-          {/* =====================================================
-              MENTORS
-          ===================================================== */}
+          {/* MENTORS */}
 
           <div className="uiux-mentor-grid">
-
-            {/* MENTOR 1 */}
 
             <article className="uiux-mentor-card">
 
               <div className="uiux-mentor-image mentor-one">
-
                 <img
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
                   alt="UI UX Mentor"
                 />
-
               </div>
 
-
-              <h3>
-                Name
-              </h3>
-
+              <h3>Name</h3>
 
               <p className="mentor-role mentor-role-purple">
                 Job Role
               </p>
 
-
               <a
                 href="#"
                 className="uiux-linkedin"
@@ -945,31 +800,21 @@ const toggleFaq = (index) => {
             </article>
 
 
-
-            {/* MENTOR 2 */}
-
             <article className="uiux-mentor-card">
 
               <div className="uiux-mentor-image mentor-two">
-
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
                   alt="UI UX Mentor"
                 />
-
               </div>
 
-
-              <h3>
-                Name
-              </h3>
-
+              <h3>Name</h3>
 
               <p className="mentor-role mentor-role-pink">
                 Job Role
               </p>
 
-
               <a
                 href="#"
                 className="uiux-linkedin"
@@ -981,30 +826,20 @@ const toggleFaq = (index) => {
             </article>
 
 
-
-            {/* MENTOR 3 */}
-
             <article className="uiux-mentor-card">
 
               <div className="uiux-mentor-image mentor-three">
-
                 <img
                   src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
                   alt="UI UX Mentor"
                 />
-
               </div>
 
-
-              <h3>
-                Name
-              </h3>
-
+              <h3>Name</h3>
 
               <p className="mentor-role">
                 Job Role
               </p>
-
 
               <a
                 href="#"
@@ -1019,10 +854,7 @@ const toggleFaq = (index) => {
           </div>
 
 
-
-          {/* =====================================================
-              DREAM JOB
-          ===================================================== */}
+          {/* DREAM JOB */}
 
           <div className="uiux-dream-job">
 
@@ -1030,77 +862,27 @@ const toggleFaq = (index) => {
               Land Your <span>Dream Job</span>
             </h2>
 
-
             <p>
               Unlock exciting career opportunities with the world's
               leading companies.
             </p>
 
 
-
-            {/* COMPANY LOGOS */}
-
             <div className="uiux-company-logos">
 
-              <img
-                src={tcs}
-                alt="TCS"
-              />
+              <img src={tcs} alt="TCS" />
+              <img src={wipro} alt="Wipro" />
+              <img src={cognizant} alt="Cognizant" />
+              <img src={amazon} alt="Amazon" />
+              <img src={microsoft} alt="Microsoft" />
+              <img src={hcl} alt="HCL" />
 
-              <img
-                src={wipro}
-                alt="Wipro"
-              />
-
-              <img
-                src={cognizant}
-                alt="Cognizant"
-              />
-
-              <img
-                src={amazon}
-                alt="Amazon"
-              />
-
-              <img
-                src={microsoft}
-                alt="Microsoft"
-              />
-
-              <img
-                src={hcl}
-                alt="HCL"
-              />
-
-              <img
-                src={zoho}
-                alt="Zoho"
-              />
-
-              <img
-                src={accenture}
-                alt="Accenture"
-              />
-
-              <img
-                src={flipkart}
-                alt="Flipkart"
-              />
-
-              <img
-                src={infosys}
-                alt="Infosys"
-              />
-
-              <img
-                src={samsung}
-                alt="Samsung"
-              />
-
-              <img
-                src={capgemini}
-                alt="Capgemini"
-              />
+              <img src={zoho} alt="Zoho" />
+              <img src={accenture} alt="Accenture" />
+              <img src={flipkart} alt="Flipkart" />
+              <img src={infosys} alt="Infosys" />
+              <img src={samsung} alt="Samsung" />
+              <img src={capgemini} alt="Capgemini" />
 
             </div>
 
@@ -1109,9 +891,8 @@ const toggleFaq = (index) => {
         </section>
 
 
-
         {/* =====================================================
-            STUDENT OUTCOMES / DYNAMIC PORTFOLIO
+            STUDENT OUTCOMES
         ===================================================== */}
 
         <section className="uiux-outcomes-section">
@@ -1122,32 +903,19 @@ const toggleFaq = (index) => {
               PORTFOLIO BUILD HERE
             </div>
 
-
             <h2>
               Showcasing Our{" "}
-
-              <span>
-                Students
-              </span>
-
+              <span>Students</span>
               <br />
-
-              <span>
-                Outcomes
-              </span>
+              <span>Outcomes</span>
             </h2>
 
           </div>
 
 
-
-          {/* =====================================================
-              PROJECT SLIDER
-          ===================================================== */}
+          {/* PROJECT SLIDER */}
 
           <div className="uiux-outcomes-slider">
-
-            {/* PREVIOUS BUTTON */}
 
             <button
               className="uiux-slider-arrow uiux-slider-arrow-left"
@@ -1158,11 +926,6 @@ const toggleFaq = (index) => {
               ←
             </button>
 
-
-
-            {/* =====================================================
-                DYNAMIC PROJECT CARDS
-            ===================================================== */}
 
             <div className="uiux-outcomes-grid">
 
@@ -1194,9 +957,6 @@ const toggleFaq = (index) => {
             </div>
 
 
-
-            {/* NEXT BUTTON */}
-
             <button
               className="uiux-slider-arrow uiux-slider-arrow-right"
               type="button"
@@ -1209,10 +969,7 @@ const toggleFaq = (index) => {
           </div>
 
 
-
-          {/* =====================================================
-              DYNAMIC SLIDER DOTS
-          ===================================================== */}
+          {/* DYNAMIC SLIDER DOTS */}
 
           <div className="uiux-slider-dots">
 
@@ -1238,67 +995,79 @@ const toggleFaq = (index) => {
 
         </section>
 
+
         {/* =====================================================
-    FAQ
-===================================================== */}
-<section className="uiux-faq-section">
+            FAQ
+        ===================================================== */}
 
-  <div className="uiux-faq-heading">
-    <div className="uiux-faq-badge">
-      EXPERT GUIDANCE
-    </div>
+        <section className="uiux-faq-section">
 
-    <h2>
-      Frequently Asked Questions ?
-    </h2>
-  </div>
+          <div className="uiux-faq-heading">
 
+            <div className="uiux-faq-badge">
+              EXPERT GUIDANCE
+            </div>
 
-  <div className="uiux-faq-list">
+            <h2>
+              Frequently Asked Questions ?
+            </h2>
 
-    {faqItems.map((item, index) => (
-      <div
-        className={`uiux-faq-item ${
-          openFaq === index ? "active" : ""
-        }`}
-        key={item.question}
-      >
-
-        <button
-          className="uiux-faq-question"
-          type="button"
-          onClick={() => toggleFaq(index)}
-          aria-expanded={openFaq === index}
-        >
-          <span>
-            {item.question}
-          </span>
-
-          <span className="uiux-faq-icon">
-            {openFaq === index ? "−" : "+"}
-          </span>
-        </button>
+          </div>
 
 
-        <div className="uiux-faq-answer">
-          <p>
-            {item.answer}
-          </p>
-        </div>
+          <div className="uiux-faq-list">
 
-      </div>
-    ))}
+            {faqItems.map((item, index) => (
 
-  </div>
+              <div
+                className={`uiux-faq-item ${
+                  openFaq === index ? "active" : ""
+                }`}
+                key={item.question}
+              >
 
-</section>
+                <button
+                  className="uiux-faq-question"
+                  type="button"
+                  onClick={() => toggleFaq(index)}
+                  aria-expanded={openFaq === index}
+                >
+
+                  <span>
+                    {item.question}
+                  </span>
+
+                  <span className="uiux-faq-icon">
+                    {openFaq === index ? "−" : "+"}
+                  </span>
+
+                </button>
+
+
+                <div className="uiux-faq-answer">
+
+                  <p>
+                    {item.answer}
+                  </p>
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </section>
 
       </main>
+
 
       <Footer />
 
     </div>
   );
 }
+
 
 export default UIUXDesign;
