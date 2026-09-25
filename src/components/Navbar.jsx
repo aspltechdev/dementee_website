@@ -6,17 +6,31 @@ import dementeelogo from "../assets/dementeelogo.png";
 function Navbar() {
   const location = useLocation();
 
-  const isCoursesActive = location.pathname.startsWith("/courses/");
+  /* =====================================================
+     COURSES ACTIVE
+     ===================================================== */
+
+  const isCoursesActive =
+    location.pathname.startsWith("/courses/") ||
+    location.pathname.startsWith("/creator");
+
+
+  /* =====================================================
+     MORE ACTIVE
+     ===================================================== */
 
   const isMoreActive =
     location.pathname.startsWith("/alumni") ||
-    location.pathname.startsWith("/blog") ||
-    location.pathname.startsWith("/creator");
+    location.pathname.startsWith("/blog");
+
 
   return (
     <header className="navbar">
 
-      {/* LOGO */}
+      {/* =====================================================
+          LOGO
+      ===================================================== */}
+
       <Link to="/" className="logo">
         <img
           src={dementeelogo}
@@ -25,10 +39,18 @@ function Navbar() {
         />
       </Link>
 
-      {/* NAVIGATION */}
+
+      {/* =====================================================
+          NAVIGATION
+      ===================================================== */}
+
       <nav className="nav-links">
 
-        {/* HOME */}
+
+        {/* =====================================================
+            HOME
+        ===================================================== */}
+
         <NavLink
           to="/"
           end
@@ -39,7 +61,11 @@ function Navbar() {
           Home
         </NavLink>
 
-        {/* ABOUT */}
+
+        {/* =====================================================
+            ABOUT
+        ===================================================== */}
+
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -49,7 +75,11 @@ function Navbar() {
           About Us
         </NavLink>
 
-        {/* COURSES */}
+
+        {/* =====================================================
+            COURSES
+        ===================================================== */}
+
         <div className="courses-dropdown">
 
           <button
@@ -59,13 +89,17 @@ function Navbar() {
             }`}
           >
             <span>Courses</span>
+
             <ChevronDown
               className="courses-chevron"
               size={14}
             />
           </button>
 
+
           <div className="courses-dropdown-menu">
+
+            {/* UI / UX DESIGN */}
 
             <NavLink
               to="/courses/ui-ux-design"
@@ -76,6 +110,9 @@ function Navbar() {
               UI / UX Design
             </NavLink>
 
+
+            {/* DIGITAL MARKETING */}
+
             <NavLink
               to="/courses/digital-marketing"
               className={({ isActive }) =>
@@ -84,6 +121,9 @@ function Navbar() {
             >
               Digital Marketing
             </NavLink>
+
+
+            {/* FULL STACK DEVELOPMENT */}
 
             <NavLink
               to="/courses/full-stack-development"
@@ -94,6 +134,9 @@ function Navbar() {
               Full Stack Development
             </NavLink>
 
+
+            {/* CAREER GAP OPPORTUNITY */}
+
             <NavLink
               to="/courses/career-gap"
               className={({ isActive }) =>
@@ -103,44 +146,8 @@ function Navbar() {
               Career Gap Opportunity
             </NavLink>
 
-          </div>
-        </div>
 
-        {/* MORE */}
-        <div className="more-dropdown">
-
-          <button
-            type="button"
-            className={`more-dropdown-btn ${
-              isMoreActive ? "active" : ""
-            }`}
-          >
-            <span>More</span>
-            <ChevronDown
-              className="more-chevron"
-              size={14}
-            />
-          </button>
-
-          <div className="more-dropdown-menu">
-
-            <NavLink
-              to="/alumni"
-              className={({ isActive }) =>
-                isActive ? "dropdown-active" : ""
-              }
-            >
-              Alumni
-            </NavLink>
-
-            <NavLink
-              to="/blog"
-              className={({ isActive }) =>
-                isActive ? "dropdown-active" : ""
-              }
-            >
-              Blog
-            </NavLink>
+            {/* CREATOR */}
 
             <NavLink
               to="/creator"
@@ -154,7 +161,61 @@ function Navbar() {
           </div>
         </div>
 
-        {/* CONTACT */}
+
+        {/* =====================================================
+            MORE
+        ===================================================== */}
+
+        <div className="more-dropdown">
+
+          <button
+            type="button"
+            className={`more-dropdown-btn ${
+              isMoreActive ? "active" : ""
+            }`}
+          >
+            <span>More</span>
+
+            <ChevronDown
+              className="more-chevron"
+              size={14}
+            />
+          </button>
+
+
+          <div className="more-dropdown-menu">
+
+            {/* ALUMNI */}
+
+            <NavLink
+              to="/alumni"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
+              Alumni
+            </NavLink>
+
+
+            {/* BLOG */}
+
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "dropdown-active" : ""
+              }
+            >
+              Blog
+            </NavLink>
+
+          </div>
+        </div>
+
+
+        {/* =====================================================
+            CONTACT
+        ===================================================== */}
+
         <NavLink
           to="/contact"
           className={({ isActive }) =>
@@ -168,7 +229,11 @@ function Navbar() {
 
       </nav>
 
-      {/* GET IN TOUCH */}
+
+      {/* =====================================================
+          GET IN TOUCH
+      ===================================================== */}
+
       <NavLink
         to="/contact"
         className="get-in-touch"
