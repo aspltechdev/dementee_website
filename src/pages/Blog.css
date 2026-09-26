@@ -159,7 +159,7 @@
 
 
 .featured-card {
-  width: min(950px, calc(100% - 100px));
+  width: min(1200px, calc(100% - 100px));
 
   min-height: 380px;
 
@@ -367,7 +367,7 @@
 
 
 .latest-container {
-  width: min(950px, calc(100% - 100px));
+  width: min(1200px, calc(100% - 100px));
 
   margin: 0 auto;
 }
