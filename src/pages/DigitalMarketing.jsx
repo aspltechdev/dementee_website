@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
 import "./DigitalMarketing.css";
 import { useState } from "react";
 import Footer from "./Footer";
+import EnrollmentModal from "./Home/EnrollmentModal";
 import footerlogo from "../assets/footerlogo.png";
 
 /* =====================================================
@@ -20,6 +20,7 @@ import jrdm8 from "../assets/jrdm8.png";
 
 
 function DigitalMarketing() {
+  const [enrollmentOpen, setEnrollmentOpen] = useState(false);
   const tools = [
     {
       name: "Google Ads",
@@ -105,9 +106,13 @@ function DigitalMarketing() {
 
           {/* BUTTONS */}
           <div className="dm-hero-buttons">
-            <a href="#dm-enroll" className="dm-enroll-btn">
+            <button
+              type="button"
+              className="dm-enroll-btn"
+              onClick={() => setEnrollmentOpen(true)}
+            >
               ENROLL NOW - ₹ 40,000
-            </a>
+            </button>
 
             <a href="#dm-syllabus" className="dm-syllabus-btn">
               Explore Syllabus
@@ -563,9 +568,13 @@ function DigitalMarketing() {
 
               <p>Inclusive of all taxes</p>
 
-              <a href="#contact" className="dm-pricing-enroll-btn">
+              <button
+                type="button"
+                className="dm-pricing-enroll-btn"
+                onClick={() => setEnrollmentOpen(true)}
+              >
                 Enroll now
-              </a>
+              </button>
             </div>
 
           </div>
@@ -726,12 +735,13 @@ function DigitalMarketing() {
                 experience.
               </p>
             </div>
-            <Link
-              to="/contact"
+            <button
+              type="button"
               className="dm-journey-enroll"
+              onClick={() => setEnrollmentOpen(true)}
             >
               Enroll now
-            </Link>
+            </button>
           </div>
 
 
@@ -779,6 +789,12 @@ function DigitalMarketing() {
       </main>
 
       <Footer />
+
+      <EnrollmentModal
+        open={enrollmentOpen}
+        onClose={() => setEnrollmentOpen(false)}
+        courseName="Digital Marketing"
+      />
     </div>
   );
 }

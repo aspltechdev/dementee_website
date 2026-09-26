@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { ChevronDown, Plus, Minus } from "lucide-react";
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "./FullStack.css";
 import footerlogo from "../assets/footerlogo.png";
 import Footer from "./Footer";
+import EnrollmentModal from "./Home/EnrollmentModal";
 
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
@@ -20,6 +20,7 @@ import javascriptimage from "../assets/javascriptimage.png";
 import tailwindimage from "../assets/tailwingimage.png";
 
 const FullStack = () => {
+  const [enrollmentOpen, setEnrollmentOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
@@ -666,12 +667,13 @@ const FullStack = () => {
 
             </ul>
 
-             <Link
-  to="/contact"
-  className="uiux-enroll-btn"
->
-  Enroll now
-</Link>
+             <button
+                type="button"
+                className="uiux-enroll-btn"
+                onClick={() => setEnrollmentOpen(true)}
+              >
+                Enroll now
+              </button>
 
           </div>
 
@@ -700,7 +702,10 @@ const FullStack = () => {
               developer.
             </p>
 
-            <button>
+            <button
+              type="button"
+              onClick={() => setEnrollmentOpen(true)}
+            >
               ENROLL NOW
             </button>
 
@@ -782,6 +787,12 @@ const FullStack = () => {
       </section>
 
 <Footer />
+
+      <EnrollmentModal
+        open={enrollmentOpen}
+        onClose={() => setEnrollmentOpen(false)}
+        courseName="Full Stack Development"
+      />
     </div>
   );
 };

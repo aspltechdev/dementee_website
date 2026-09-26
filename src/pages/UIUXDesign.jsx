@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "../components/Navbar";
 import "./UIUXDesign.css";
+import EnrollmentModal from "./Home/EnrollmentModal";
 
 /* =====================================================
    COMPANY LOGOS
@@ -23,6 +23,7 @@ import capgemini from "../assets/capgemini.png";
 
 
 function UIUXDesign() {
+  const [enrollmentOpen, setEnrollmentOpen] = useState(false);
 
   /* =====================================================
      UX CURRICULUM
@@ -737,12 +738,13 @@ function UIUXDesign() {
               </div>
 
 
-              <Link
-                to="/contact"
+              <button
+                type="button"
                 className="uiux-enroll-btn"
+                onClick={() => setEnrollmentOpen(true)}
               >
                 Enroll now
-              </Link>
+              </button>
 
             </div>
 
@@ -1064,6 +1066,12 @@ function UIUXDesign() {
 
 
       <Footer />
+
+      <EnrollmentModal
+        open={enrollmentOpen}
+        onClose={() => setEnrollmentOpen(false)}
+        courseName="UI / UX Design"
+      />
 
     </div>
   );

@@ -1,0 +1,225 @@
+/* =====================================================
+   ENROLLMENT MODAL
+   Shared by UI/UX, Digital Marketing and Full Stack pages
+===================================================== */
+
+body.enrollment-modal-open {
+  overflow: hidden;
+}
+
+.enrollment-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 16, 31, 0.72);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  overflow-y: auto;
+}
+
+.enrollment-modal {
+  position: relative;
+  width: min(100%, 820px);
+  max-height: calc(100vh - 48px);
+  margin: auto;
+  padding: 44px 46px 42px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+  overflow-y: auto;
+  font-family: "Outfit", sans-serif;
+  color: #211a28;
+}
+
+.enrollment-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  background: transparent;
+  color: #b9b9b9;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.enrollment-modal-close:hover {
+  color: #222222;
+}
+
+.enrollment-security-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  color: #66616a;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.enrollment-form h2,
+.enrollment-success h2 {
+  margin: 0;
+  color: #21182b;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.enrollment-form-intro {
+  margin: 7px 0 28px;
+  color: #77717a;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.enrollment-field {
+  margin-bottom: 22px;
+}
+
+.enrollment-field > label {
+  display: block;
+  margin-bottom: 9px;
+  color: #241d29;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.enrollment-field label span {
+  color: #e34a66;
+}
+
+.enrollment-field input,
+.enrollment-field select,
+.enrollment-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c9c6ca;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #25212a;
+  font: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.enrollment-field input,
+.enrollment-field select {
+  height: 52px;
+  padding: 0 14px;
+}
+
+.enrollment-field textarea {
+  min-height: 120px;
+  padding: 13px 14px;
+  resize: vertical;
+}
+
+.enrollment-field input:focus,
+.enrollment-field select:focus,
+.enrollment-field textarea:focus {
+  border-color: #8a55d9;
+  box-shadow: 0 0 0 3px rgba(138, 85, 217, 0.1);
+}
+
+.enrollment-name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.enrollment-name-grid small {
+  display: block;
+  margin-top: 5px;
+  color: #77717a;
+  font-size: 13px;
+}
+
+.enrollment-submit {
+  min-width: 115px;
+  height: 48px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #d82d6b 0%, #7848e3 100%);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.enrollment-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(120, 72, 227, 0.2);
+}
+
+.enrollment-success {
+  padding: 38px 20px 24px;
+  text-align: center;
+}
+
+.enrollment-success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e9f8ef;
+  color: #1c9a55;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.enrollment-success p {
+  max-width: 540px;
+  margin: 12px auto 26px;
+  color: #69636d;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .enrollment-modal-overlay {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .enrollment-modal {
+    max-height: calc(100vh - 24px);
+    padding: 48px 20px 28px;
+    border-radius: 14px;
+  }
+
+  .enrollment-security-note {
+    padding-right: 20px;
+    font-size: 13px;
+  }
+
+  .enrollment-form h2,
+  .enrollment-success h2 {
+    font-size: 25px;
+  }
+
+  .enrollment-name-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .enrollment-field input,
+  .enrollment-field select {
+    height: 48px;
+  }
+}

@@ -2725,3 +2725,14 @@
     font-size: 16px;
   }
 }
+/* =====================================================
+   ENROLL BUTTONS AS MODAL TRIGGERS
+===================================================== */
+
+.dm-enroll-btn,
+.dm-pricing-enroll-btn,
+.dm-journey-enroll {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}

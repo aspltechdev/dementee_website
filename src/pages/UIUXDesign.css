@@ -2379,3 +2379,13 @@
     margin-top: 25px;
   }
 }
+/* =====================================================
+   ENROLL BUTTON AS MODAL TRIGGER
+===================================================== */
+
+.uiux-enroll-btn {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
