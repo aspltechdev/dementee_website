@@ -1714,7 +1714,7 @@
 }
 
 .creator-faq h2 {
-  margin: 100px 100px 100px 68 0px;
+  margin: 100px 100px 100px 680px;
 
   color: #17102e;
 
@@ -1778,8 +1778,8 @@
   text-align: left;
 
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 21px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .creator-faq-item button svg {

@@ -780,7 +780,7 @@ function UIUXDesign() {
 
               <div className="uiux-mentor-image mentor-one">
                 <img
-                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
+                  src="/src/assets/learn2.jpeg"
                   alt="UI UX Mentor"
                 />
               </div>
@@ -806,7 +806,7 @@ function UIUXDesign() {
 
               <div className="uiux-mentor-image mentor-two">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
+                  src="/src/assets/learn3.jpeg"
                   alt="UI UX Mentor"
                 />
               </div>
@@ -832,7 +832,7 @@ function UIUXDesign() {
 
               <div className="uiux-mentor-image mentor-three">
                 <img
-                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
+                  src="/src/assets/learn1.jpeg"
                   alt="UI UX Mentor"
                 />
               </div>

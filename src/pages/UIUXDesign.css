@@ -12,7 +12,6 @@
   overflow-x: hidden;
 }
 
-
 /* =====================================================
    HERO SECTION
 ===================================================== */
@@ -23,7 +22,6 @@
   margin: 120px auto 0;
   text-align: center;
 }
-
 
 /* COURSE BADGE */
 
@@ -53,7 +51,6 @@
   border-radius: 50%;
 }
 
-
 /* =====================================================
    HERO TITLE
 ===================================================== */
@@ -70,16 +67,10 @@
 
 .uiux-hero h1 span {
   color: transparent;
-  background: linear-gradient(
-    90deg,
-    #8154d9 0%,
-    #a75bc8 45%,
-    #d7668c 100%
-  );
+  background: linear-gradient(90deg, #8154d9 0%, #a75bc8 45%, #d7668c 100%);
   background-clip: text;
   -webkit-background-clip: text;
 }
-
 
 /* HERO DESCRIPTION */
 
@@ -92,7 +83,6 @@
   font-weight: 500;
   line-height: 1.6;
 }
-
 
 /* =====================================================
    TOOLS YOU WILL MASTER
@@ -111,7 +101,6 @@
   letter-spacing: 1px;
 }
 
-
 /* TOOL LIST */
 
 .uiux-tools-list {
@@ -121,7 +110,6 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-
 
 /* TOOL PILL */
 
@@ -143,7 +131,6 @@
   font-weight: 600;
 }
 
-
 /* =====================================================
    TOOL ICONS
 ===================================================== */
@@ -156,12 +143,7 @@
 }
 
 .figma-dot {
-  background: linear-gradient(
-    180deg,
-    #ef526b 0%,
-    #8c56d9 50%,
-    #5948e3 100%
-  );
+  background: linear-gradient(180deg, #ef526b 0%, #8c56d9 50%, #5948e3 100%);
 }
 
 .canva-dot {
@@ -171,7 +153,6 @@
 .balsamiq-dot {
   background: #e73561;
 }
-
 
 /* PHOTOSHOP / ILLUSTRATOR / MIRO */
 
@@ -203,7 +184,6 @@
   background: #ffd02f;
 }
 
-
 /* =====================================================
    JOURNEY PLAN SECTION
 ===================================================== */
@@ -214,7 +194,6 @@
   padding: 0 0 90px;
 }
 
-
 /* JOURNEY HEADING */
 
 .uiux-journey-heading {
@@ -223,7 +202,6 @@
   margin: 0 auto 55px;
   text-align: center;
 }
-
 
 /* STEP BADGE */
 
@@ -238,7 +216,6 @@
   font-size: 13px;
   font-weight: 800;
 }
-
 
 /* JOURNEY TITLE */
 
@@ -255,7 +232,6 @@
   color: #5a4fe6;
 }
 
-
 /* JOURNEY DESCRIPTION */
 
 .uiux-journey-heading p {
@@ -267,7 +243,6 @@
   font-weight: 500;
   line-height: 1.6;
 }
-
 
 /* =====================================================
    UX CURRICULUM GRID
@@ -281,12 +256,10 @@
 
   display: grid;
 
-  grid-template-columns:
-    repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 
   gap: 24px;
 }
-
 
 /* =====================================================
    CURRICULUM CARD
@@ -302,8 +275,7 @@
   border: 1px solid #ddd9df;
   border-radius: 15px;
 
-  box-shadow:
-    0 7px 20px rgba(24, 15, 35, 0.04);
+  box-shadow: 0 7px 20px rgba(24, 15, 35, 0.04);
 
   box-sizing: border-box;
 
@@ -318,10 +290,8 @@
 .uiux-curriculum-card:hover {
   transform: translateY(-4px);
 
-  box-shadow:
-    0 12px 28px rgba(24, 15, 35, 0.08);
+  box-shadow: 0 12px 28px rgba(24, 15, 35, 0.08);
 }
-
 
 /* =====================================================
    CURRICULUM TITLE
@@ -332,17 +302,13 @@
 
   color: #15101d;
 
-  font-family:
-    "Outfit",
-    "Inter",
-    sans-serif;
+  font-family: "Outfit", "Inter", sans-serif;
 
   font-size: 21px;
   font-weight: 700;
 
   line-height: 1.35;
 }
-
 
 /* =====================================================
    CURRICULUM AUTHOR
@@ -354,15 +320,11 @@
 
   color: rgba(21, 16, 29, 0.62);
 
-  font-family:
-    "Outfit",
-    "Inter",
-    sans-serif;
+  font-family: "Outfit", "Inter", sans-serif;
 
   font-size: 10px;
   font-weight: 500;
 }
-
 
 /* =====================================================
    CURRICULUM COLORS
@@ -375,7 +337,6 @@
   border-color: #7dd99c;
 }
 
-
 /* YELLOW CARDS */
 
 .ux-yellow {
@@ -383,14 +344,12 @@
   border-color: #ffd966;
 }
 
-
 /* PINK CARDS */
 
 .ux-pink {
   background: #f9aaa0;
   border-color: #f9aaa0;
 }
-
 
 /* FIRST UX CARD */
 
@@ -400,13 +359,11 @@
   line-height: 1;
 }
 
-
 /* =====================================================
    TABLET
 ===================================================== */
 
 @media (max-width: 1100px) {
-
   .uiux-hero,
   .uiux-journey-heading {
     width: 90%;
@@ -416,16 +373,13 @@
     width: 90%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
 }
-
 
 /* =====================================================
    SMALL TABLET
 ===================================================== */
 
 @media (max-width: 750px) {
-
   .uiux-hero {
     width: calc(100% - 40px);
     margin-top: 55px;
@@ -449,31 +403,25 @@
     margin-top: 85px;
   }
 
-
   /* CURRICULUM */
 
   .uiux-curriculum-grid {
     width: calc(100% - 40px);
 
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 16px;
   }
-
 }
-
 
 /* =====================================================
    MOBILE
 ===================================================== */
 
 @media (max-width: 520px) {
-
   .uiux-page {
     padding-top: 10px;
   }
-
 
   /* HERO */
 
@@ -501,7 +449,6 @@
     line-height: 1.65;
   }
 
-
   /* TOOLS */
 
   .uiux-tools {
@@ -523,7 +470,6 @@
     padding: 0 12px;
     font-size: 16px;
   }
-
 
   /* JOURNEY */
 
@@ -550,7 +496,6 @@
     font-size: 17px;
   }
 
-
   /* CURRICULUM */
 
   .uiux-curriculum-grid {
@@ -574,9 +519,7 @@
   .ux-green:first-child h3 {
     font-size: 38px;
   }
-
 }
-
 
 /* =====================================================
    CAREER POTENTIAL
@@ -628,7 +571,6 @@
   font-weight: 500;
 }
 
-
 /* =====================================================
    CAREER CARDS
 ===================================================== */
@@ -640,8 +582,7 @@
 
   display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 22px 24px;
 }
@@ -702,7 +643,6 @@
   font-weight: 500;
   line-height: 1.65;
 }
-
 
 /* =====================================================
    REASONS TO CHOOSE US
@@ -771,7 +711,6 @@
   line-height: 1.6;
 }
 
-
 /* =====================================================
    INVEST / COURSE PRICE CTA
 ===================================================== */
@@ -802,7 +741,6 @@
 
   border-radius: 30px;
 }
-
 
 /* LEFT SIDE */
 
@@ -843,7 +781,6 @@
   color: #ffd400;
 }
 
-
 /* BENEFITS */
 
 .uiux-invest-benefits {
@@ -879,7 +816,6 @@
   font-size: 15px;
   font-weight: 800;
 }
-
 
 /* =====================================================
    PRICE CARD
@@ -931,7 +867,6 @@
   font-weight: 700;
 }
 
-
 /* PRICE DETAILS */
 
 .uiux-price-details {
@@ -950,7 +885,6 @@
   font-weight: 500;
 }
 
-
 /* ENROLL BUTTON */
 
 .uiux-enroll-btn {
@@ -963,12 +897,7 @@
 
   color: #ffffff;
 
-  background: linear-gradient(
-    90deg,
-    #df6c92 0%,
-    #d269ad 45%,
-    #5949e9 100%
-  );
+  background: linear-gradient(90deg, #df6c92 0%, #d269ad 45%, #5949e9 100%);
 
   border-radius: 999px;
 
@@ -984,17 +913,14 @@
 .uiux-enroll-btn:hover {
   transform: translateY(-2px);
 
-  box-shadow:
-    0 8px 18px rgba(104, 73, 225, 0.25);
+  box-shadow: 0 8px 18px rgba(104, 73, 225, 0.25);
 }
-
 
 /* =====================================================
    CAREER RESPONSIVE
 ===================================================== */
 
 @media (max-width: 1050px) {
-
   .uiux-career-grid {
     width: 90%;
     grid-template-columns: repeat(2, 1fr);
@@ -1047,9 +973,7 @@
   }
 }
 
-
 @media (max-width: 750px) {
-
   .uiux-career-section {
     padding-top: 55px;
   }
@@ -1131,9 +1055,7 @@
   }
 }
 
-
 @media (max-width: 520px) {
-
   .uiux-career-heading {
     width: calc(100% - 28px);
     margin-bottom: 38px;
@@ -1195,7 +1117,6 @@
   }
 }
 
-
 /* =====================================================
    EXPERT GUIDANCE
 ===================================================== */
@@ -1238,7 +1159,6 @@
   color: #5749f0;
 }
 
-
 /* =====================================================
    MENTOR CARDS
 ===================================================== */
@@ -1273,24 +1193,28 @@
 }
 
 .uiux-mentor-image {
-  width: 92px;
-  height: 92px;
+   width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
 
-  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   overflow: hidden;
-
   border-radius: 50%;
-  padding: 3px;
+  position: relative;
 }
 
 .uiux-mentor-image img {
   width: 100%;
   height: 100%;
+  display: block;
 
   object-fit: cover;
-  border-radius: 50%;
+  object-position: 10% 0%;
 }
+
 
 .mentor-one {
   border: 3px solid #6653ef;
@@ -1304,16 +1228,14 @@
   border: 3px solid #252533;
 }
 
-.uiux-mentor-card h3 {
-  margin: 0 0 6px;
-
-  color: #17102f;
-
-  font-family: "Outfit", "Inter", sans-serif;
-  font-size: 25px;
-  font-weight: 800;
+.uiux-mentor-card h3,
+.uiux-mentor-card .mentor-role {
+  text-align: center;
 }
 
+.uiux-mentor-card .uiux-linkedin {
+  margin: 0 auto;
+}
 .mentor-role {
   margin: 0;
 
@@ -1355,7 +1277,6 @@
   font-weight: 800;
 }
 
-
 /* =====================================================
    DREAM JOB
 ===================================================== */
@@ -1394,7 +1315,6 @@
   font-weight: 500;
 }
 
-
 /* COMPANY LOGOS */
 
 .uiux-company-logos {
@@ -1403,8 +1323,7 @@
 
   display: grid;
 
-  grid-template-columns:
-    repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 
   align-items: center;
   justify-items: center;
@@ -1423,11 +1342,8 @@
 
   margin: 0 auto;
 
-  filter:
-    grayscale(100%)
-    contrast(120%);
+  filter: grayscale(100%) contrast(120%);
 }
-
 
 /* ROW 1 */
 
@@ -1461,7 +1377,6 @@
   height: 72px;
 }
 
-
 /* ROW 2 */
 
 .uiux-company-logos img:nth-child(7) {
@@ -1494,11 +1409,9 @@
   height: 130px;
 }
 
-
 /* EXPERT RESPONSIVE */
 
 @media (max-width: 1050px) {
-
   .uiux-mentor-grid {
     width: 78%;
   }
@@ -1508,9 +1421,7 @@
   }
 }
 
-
 @media (max-width: 750px) {
-
   .uiux-experts-section {
     padding-top: 60px;
   }
@@ -1537,9 +1448,7 @@
   }
 }
 
-
 @media (max-width: 520px) {
-
   .uiux-experts-heading {
     width: calc(100% - 28px);
   }
@@ -1572,7 +1481,6 @@
   }
 }
 
-
 /* =====================================================
    STUDENT OUTCOMES / PORTFOLIO
 ===================================================== */
@@ -1583,15 +1491,10 @@
 
   background-color: #ffffff;
 
-  background-image:
-    radial-gradient(
-      #ece9ef 1px,
-      transparent 1px
-    );
+  background-image: radial-gradient(#ece9ef 1px, transparent 1px);
 
   background-size: 18px 18px;
 }
-
 
 /* OUTCOMES HEADING */
 
@@ -1637,7 +1540,6 @@
   color: #5547eb;
 }
 
-
 /* SLIDER */
 
 .uiux-outcomes-slider {
@@ -1655,7 +1557,6 @@
   padding: 0 80px;
 }
 
-
 /* PROJECT GRID */
 
 .uiux-outcomes-grid {
@@ -1666,14 +1567,12 @@
 
   display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 32px;
 
   padding: 14px 18px;
 }
-
 
 /* PROJECT CARD */
 
@@ -1692,7 +1591,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 /* PROJECT IMAGE */
 
@@ -1729,7 +1627,6 @@
 
   flex-grow: 1;
 }
-
 
 /* SLIDER ARROWS */
 
@@ -1775,7 +1672,6 @@
   color: #ffffff;
 }
 
-
 /* SLIDER DOTS */
 
 .uiux-slider-dots {
@@ -1816,11 +1712,9 @@
   background: #e06a60;
 }
 
-
 /* OUTCOMES RESPONSIVE */
 
 @media (max-width: 1100px) {
-
   .uiux-outcomes-grid {
     width: 100%;
     gap: 24px;
@@ -1837,15 +1731,12 @@
   }
 }
 
-
 @media (max-width: 800px) {
-
   .uiux-outcomes-grid {
     width: 100%;
     min-height: auto;
 
-    grid-template-columns:
-      repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
 
@@ -1869,9 +1760,7 @@
   }
 }
 
-
 @media (max-width: 560px) {
-
   .uiux-outcomes-section {
     padding: 55px 0 65px;
   }
@@ -1933,7 +1822,6 @@
   }
 }
 
-
 /* =====================================================
    FAQ SECTION
 ===================================================== */
@@ -1981,7 +1869,6 @@
   letter-spacing: -0.8px;
 }
 
-
 /* FAQ LIST */
 
 .uiux-faq-list {
@@ -2026,9 +1913,9 @@
 
   text-align: left;
 
-  font-family: "Outfit", "Inter", sans-serif;
-  font-size: 21px;
-  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .uiux-faq-icon {
@@ -2082,7 +1969,6 @@
   max-height: 180px;
   opacity: 1;
 }
-
 
 /* =====================================================
    FOOTER
@@ -2144,13 +2030,7 @@
 
   color: #ffffff;
 
-  background:
-    linear-gradient(
-      135deg,
-      #ee4e75,
-      #734df0,
-      #ffcc00
-    );
+  background: linear-gradient(135deg, #ee4e75, #734df0, #ffcc00);
 
   border-radius: 50%;
 
@@ -2178,7 +2058,6 @@
 
   text-align: right;
 }
-
 
 /* ADDRESS */
 
@@ -2211,7 +2090,6 @@
   line-height: 1.55;
 }
 
-
 /* FOOTER COLUMNS */
 
 .uiux-footer-column {
@@ -2238,7 +2116,6 @@
   opacity: 0.7;
 }
 
-
 /* ENROLL BUTTON */
 
 .uiux-footer-info {
@@ -2263,7 +2140,6 @@
   font-weight: 700 !important;
 }
 
-
 /* FOOTER BOTTOM */
 
 .uiux-footer-bottom {
@@ -2285,11 +2161,9 @@
   font-weight: 400;
 }
 
-
 /* FOOTER TABLET */
 
 @media (max-width: 1000px) {
-
   .uiux-faq-list {
     width: 78%;
   }
@@ -2308,11 +2182,9 @@
   }
 }
 
-
 /* FOOTER MOBILE */
 
 @media (max-width: 700px) {
-
   .uiux-faq-section {
     padding: 55px 0 75px;
   }
@@ -2341,7 +2213,6 @@
   .uiux-faq-answer p {
     padding: 0 18px 20px;
   }
-
 
   /* FOOTER */
 
