@@ -13,7 +13,6 @@
   background-size: 20px 20px;
 }
 
-
 /* =====================================================
    NAVBAR WIDTH ON THIS PAGE
 ===================================================== */
@@ -25,7 +24,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* =====================================================
    HERO
@@ -39,7 +37,6 @@
 
   text-align: center;
 }
-
 
 /* =====================================================
    COURSE BADGE
@@ -79,7 +76,6 @@
   border-radius: 50%;
 }
 
-
 /* =====================================================
    MAIN HEADING
 ===================================================== */
@@ -102,17 +98,11 @@
 .dm-main-title span {
   color: transparent;
 
-  background: linear-gradient(
-    90deg,
-    #8055d8 0%,
-    #aa5cb8 45%,
-    #e06681 100%
-  );
+  background: linear-gradient(90deg, #8055d8 0%, #aa5cb8 45%, #e06681 100%);
 
   background-clip: text;
   -webkit-background-clip: text;
 }
-
 
 /* =====================================================
    DESCRIPTION
@@ -132,7 +122,6 @@
 
   font-weight: 500;
 }
-
 
 /* =====================================================
    HERO BUTTONS
@@ -196,7 +185,6 @@
   transform: translateY(-2px);
 }
 
-
 /* =====================================================
    TOOLS SECTION
 ===================================================== */
@@ -227,7 +215,6 @@
 
   gap: 22px;
 }
-
 
 /* =====================================================
    TOOL PILLS
@@ -311,7 +298,6 @@
   font-size: 15px;
 }
 
-
 /* =====================================================
    WHY CHOOSE INTRO
 ===================================================== */
@@ -361,13 +347,11 @@
   font-weight: 600;
 }
 
-
 /* =====================================================
    TABLET
 ===================================================== */
 
 @media (max-width: 1000px) {
-
   .digital-marketing-page > .navbar {
     width: 90%;
   }
@@ -390,13 +374,11 @@
   }
 }
 
-
 /* =====================================================
    MOBILE
 ===================================================== */
 
 @media (max-width: 700px) {
-
   .digital-marketing-page {
     padding-top: 10px;
   }
@@ -482,13 +464,11 @@
   }
 }
 
-
 /* =====================================================
    SMALL MOBILE
 ===================================================== */
 
 @media (max-width: 430px) {
-
   .dm-main-title {
     font-size: 38px;
     line-height: 42px;
@@ -503,7 +483,6 @@
     line-height: 32px;
   }
 }
-
 
 /* =====================================================
    DIGITAL MARKETING BENEFIT CARDS
@@ -656,9 +635,7 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-
 @media (max-width: 1100px) {
-
   .dm-benefits-grid {
     grid-template-columns: 1fr;
 
@@ -691,9 +668,7 @@
   }
 }
 
-
 @media (max-width: 600px) {
-
   .dm-benefits-grid {
     width: calc(100% - 28px);
     gap: 14px;
@@ -771,7 +746,6 @@
 .dm-skill-heading h2 span {
   color: #5b4cec;
 }
-
 
 /* =====================================================
    SKILL GRID
@@ -858,7 +832,6 @@
   font-weight: 700;
 }
 
-
 /* =====================================================
    CAREER SCOPE
 ===================================================== */
@@ -918,9 +891,7 @@
   color: #de5d62;
 }
 
-
 @media (max-width: 1000px) {
-
   .dm-skill-grid {
     width: 90%;
 
@@ -938,9 +909,7 @@
   }
 }
 
-
 @media (max-width: 600px) {
-
   .dm-skill-section {
     padding: 55px 0 70px;
   }
@@ -977,7 +946,6 @@
     line-height: 32px;
   }
 }
-
 
 /* =====================================================
    CAREER ROLES — IMAGES
@@ -1066,7 +1034,6 @@
   font-weight: 800;
 }
 
-
 /* =====================================================
    SYLLABUS BREAKDOWN
 ===================================================== */
@@ -1117,7 +1084,6 @@
   font-size: 16px;
   font-weight: 600;
 }
-
 
 /* =====================================================
    WEEK TABS
@@ -1191,7 +1157,6 @@
   color: #ffffff;
 }
 
-
 /* =====================================================
    PHASE CARD
 ===================================================== */
@@ -1244,7 +1209,6 @@
   font-weight: 800;
 }
 
-
 /* =====================================================
    PHASE TOPICS
 ===================================================== */
@@ -1295,13 +1259,11 @@
   font-weight: 500;
 }
 
-
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 
 @media (max-width: 1000px) {
-
   .dm-career-roles-grid {
     width: 90%;
 
@@ -1324,9 +1286,7 @@
   }
 }
 
-
 @media (max-width: 600px) {
-
   .dm-career-roles-section {
     padding-bottom: 70px;
   }
@@ -1444,7 +1404,6 @@
   border-radius: 25px;
 }
 
-
 /* =====================================================
    PRICING LEFT
 ===================================================== */
@@ -1510,7 +1469,6 @@
   font-size: 14px;
   font-weight: 500;
 }
-
 
 /* =====================================================
    PRICING BOX
@@ -1586,12 +1544,7 @@
 
   color: #ffffff;
 
-  background: linear-gradient(
-    90deg,
-    #ff5f83,
-    #e95b9d,
-    #594ce9
-  );
+  background: linear-gradient(90deg, #ff5f83, #e95b9d, #594ce9);
 
   border-radius: 999px;
 
@@ -1600,7 +1553,6 @@
   font-size: 14px;
   font-weight: 700;
 }
-
 
 /* =====================================================
    TARGET AUDIENCE
@@ -1661,7 +1613,6 @@
 .dm-target-heading h2 span {
   color: #d84f55;
 }
-
 
 /* =====================================================
    TARGET CARDS
@@ -1753,13 +1704,11 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 
 @media (max-width: 900px) {
-
   .dm-pricing-card {
     width: 80%;
 
@@ -1782,9 +1731,7 @@
   }
 }
 
-
 @media (max-width: 700px) {
-
   .dm-pricing-card {
     width: calc(100% - 28px);
 
@@ -1814,7 +1761,6 @@
     line-height: 32px;
   }
 }
-
 
 /* =====================================================
    LEARN FROM THE BEST
@@ -1855,7 +1801,6 @@
 .dm-mentors-container > h2 span {
   color: #ffd400;
 }
-
 
 /* =====================================================
    MENTOR GRID
@@ -1969,7 +1914,6 @@
   font-weight: 800;
 }
 
-
 /* =====================================================
    FINAL WHITE SECTION
 ===================================================== */
@@ -1981,7 +1925,6 @@
 
   background: #ffffff;
 }
-
 
 /* =====================================================
    JOURNEY CTA — Exact Figma: 1306 × 259, radius 40
@@ -2002,11 +1945,7 @@
 
   gap: 40px;
 
-  background: linear-gradient(
-    180deg,
-    #d7647d 0%,
-    #534fce 100%
-  );
+  background: linear-gradient(180deg, #d7647d 0%, #534fce 100%);
 
   border-radius: 40px;
 }
@@ -2063,56 +2002,69 @@
   font-weight: 800;
 }
 
-
 /* =====================================================
    FAQ
 ===================================================== */
 
 .dm-faq-wrap {
-  width: 68%;
-  max-width: 850px;
-
-  margin: 70px auto 0;
+width: 100%;
+  padding: 70px 0 120px;
+  background: #ffffff;
 }
 
 .dm-faq-wrap > h2 {
-  margin: 0 0 45px;
+  margin: 100px 100px 100px 450px;
 
-  color: #18102e;
+  color: #17102e;
 
-  text-align: center;
-
-  font-family: "Outfit", sans-serif;
-
-  font-size: 42px;
-  line-height: 100%;
-
-  letter-spacing: -0.02em;
-
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 46px;
   font-weight: 800;
+
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.8px;
 }
 
+/* =========================================================
+   FAQ LIST
+========================================================= */
+
 .dm-faq-list {
+  width: 60%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
 
   gap: 14px;
 }
 
+/* =========================================================
+   FAQ ITEM
+========================================================= */
+
 .dm-faq-item {
   overflow: hidden;
 
   background: #f4f6ff;
 
-  border: 1px solid #d8dce6;
-  border-radius: 11px;
+  border: 1px solid #d9dce7;
+  border-radius: 12px;
 }
+
+/* =========================================================
+   FAQ QUESTION
+========================================================= */
 
 .dm-faq-question {
   width: 100%;
-  min-height: 66px;
+  min-height: 72px;
 
-  padding: 0 17px 0 35px;
+  padding: 0 22px 0 35px;
 
   display: flex;
   align-items: center;
@@ -2120,7 +2072,7 @@
 
   gap: 20px;
 
-  color: #17152d;
+  color: #17152c;
   background: transparent;
 
   border: none;
@@ -2129,15 +2081,18 @@
 
   text-align: left;
 
-  font-family: "Outfit", sans-serif;
-
-  font-size: 16px;
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 21px;
   font-weight: 600;
 }
 
+/* =========================================================
+   FAQ ICON
+========================================================= */
+
 .dm-faq-icon {
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
 
   flex-shrink: 0;
 
@@ -2145,14 +2100,19 @@
   align-items: center;
   justify-content: center;
 
-  color: #18152c;
+  color: #17152c;
   background: #ffffff;
 
-  border: 1px solid #dddde3;
+  border: 1px solid #dddde2;
   border-radius: 50%;
 
-  font-size: 21px;
+  font-size: 22px;
+  font-weight: 400;
 }
+
+/* =========================================================
+   FAQ ANSWER
+========================================================= */
 
 .dm-faq-answer {
   max-height: 0;
@@ -2163,35 +2123,87 @@
 
   transition:
     max-height 0.3s ease,
-    opacity 0.25s ease;
+    opacity 0.25s ease,
+    padding 0.3s ease;
 }
 
 .dm-faq-answer p {
   margin: 0;
 
-  padding: 0 35px 22px;
+  padding: 0 35px 25px;
 
-  color: #625c66;
+  color: #66606d;
 
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 
-  font-size: 15px;
   line-height: 1.7;
 }
 
-.dm-faq-item.active .dm-faq-answer {
-  max-height: 170px;
+/* =========================================================
+   ACTIVE FAQ
+========================================================= */
 
+.dm-faq-item.active .dm-faq-answer {
+  max-height: 180px;
   opacity: 1;
 }
 
-
-/* =====================================================
+/* =========================================================
    RESPONSIVE
-===================================================== */
+========================================================= */
+
+@media (max-width: 768px) {
+  .dm-faq-wrap {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .dm-faq-wrap > h2 {
+    font-size: 36px;
+  }
+
+  .dm-faq-list {
+    width: 100%;
+  }
+
+  .dm-faq-question {
+    min-height: 65px;
+    padding: 0 18px 0 22px;
+    font-size: 18px;
+  }
+
+  .dm-faq-answer p {
+    padding: 0 22px 22px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dm-faq-wrap > h2 {
+    font-size: 30px;
+  }
+
+  .dm-faq-question {
+    min-height: 60px;
+    padding: 0 15px 0 18px;
+    font-size: 16px;
+  }
+
+  .dm-faq-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+  }
+
+  .dm-faq-answer p {
+    padding: 0 18px 20px;
+    font-size: 15px;
+  }
+}
 
 @media (max-width: 850px) {
-
   .dm-mentors-grid {
     max-width: 700px;
 
@@ -2224,9 +2236,7 @@
   }
 }
 
-
 @media (max-width: 650px) {
-
   .dm-mentors-grid {
     width: 90%;
 
@@ -2283,7 +2293,6 @@
   }
 }
 
-
 /* =====================================================
    DIGITAL MARKETING FOOTER
 ===================================================== */
@@ -2338,12 +2347,7 @@
 
   color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #ee4e75,
-    #704fe9,
-    #ffd100
-  );
+  background: linear-gradient(135deg, #ee4e75, #704fe9, #ffd100);
 
   border-radius: 50%;
 
@@ -2469,9 +2473,7 @@
   font-weight: 400;
 }
 
-
 @media (max-width: 950px) {
-
   .dm-footer-container {
     width: 90%;
 
@@ -2488,9 +2490,7 @@
   }
 }
 
-
 @media (max-width: 650px) {
-
   .dm-footer {
     padding-top: 38px;
   }
@@ -2516,7 +2516,6 @@
     width: calc(100% - 36px);
   }
 }
-
 
 /* =====================================================
    DIGITAL MARKETING PRICING — REFERENCE SIZE
@@ -2618,13 +2617,11 @@
   font-size: 17px;
 }
 
-
 /* =====================================================
    DIGITAL MARKETING PRICING — TABLET
 ===================================================== */
 
 @media (max-width: 1200px) {
-
   .dm-pricing-card {
     width: 90%;
     min-height: 242px;
@@ -2660,13 +2657,11 @@
   }
 }
 
-
 /* =====================================================
    DIGITAL MARKETING PRICING — MOBILE
 ===================================================== */
 
 @media (max-width: 700px) {
-
   .dm-pricing-card {
     width: calc(100% - 30px);
     min-height: auto;

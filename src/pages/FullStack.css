@@ -1501,7 +1501,7 @@ body {
 .fs-faq {
   width: 100%;
 
-  padding: 58px 0 95px;
+  padding: 70px 0 120px;
 
   background: #ffffff;
 }
@@ -1514,89 +1514,111 @@ body {
 }
 
 .fs-faq-container > h2 {
-  margin: 0 0 39px;
+  margin: 100px 100px 100px 355px;
 
-  text-align: center;
+  color: #17102e;
 
-  color: #171126;
-
-  font-size: 24px;
-
-  line-height: 1.2;
-
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 46px;
   font-weight: 800;
+
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.8px;
 }
 
 .fs-faq-list {
-  width: 550px;
-
-  max-width: 100%;
+  width: 60%;
+  max-width: 900px;
 
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
 }
 
 .fs-faq-item {
-  width: 100%;
-
-  margin-bottom: 8px;
-
-  border: 1px solid #dce0eb;
-
-  border-radius: 6px;
-
-  background: #f7f8fd;
-
   overflow: hidden;
+
+  background: #f4f6ff;
+
+  border: 1px solid #d9dce7;
+  border-radius: 12px;
 }
 
 .fs-faq-item button {
-  width: 100%;
+   width: 100%;
+  min-height: 72px;
 
-  min-height: 37px;
-
-  padding: 0 15px;
-
-  border: none;
-
-  background: transparent;
+  padding: 0 22px 0 35px;
 
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 
-  text-align: left;
+  gap: 20px;
 
-  color: #171126;
+  color: #17152c;
+  background: transparent;
 
-  font-size: 13px;
-
-  font-weight: 500;
+  border: none;
 
   cursor: pointer;
+
+  text-align: left;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 .fs-faq-item button svg {
-  width: 13px;
-  height: 13px;
+    width: 30px;
+  height: 30px;
 
   flex-shrink: 0;
 
-  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  border: 1px solid #d7d7dc;
+  color: #17152c;
+  background: #ffffff;
 
+  border: 1px solid #dddde2;
   border-radius: 50%;
+
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .fs-faq-answer {
-  padding: 0 15px 14px;
+ max-height: 0;
 
-  color: #68636c;
+  overflow: hidden;
 
-  font-size: 13px;
+  opacity: 0;
 
-  line-height: 1.5;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.25s ease,
+    padding 0.3s ease;
+}
+.fs-faq-answer p{
+    margin: 0;
+
+  padding: 0 35px 25px;
+
+  color: #66606d;
+
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  line-height: 1.7;
 }
 
 

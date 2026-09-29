@@ -720,7 +720,7 @@ function Home() {
               <article className="mentor-profile-card">
                 <div className="mentor-photo purple-ring">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=85"
+                    src="/src/assets/learn2.jpeg"
                     alt="Mentor"
                   />
                 </div>
@@ -741,7 +741,7 @@ function Home() {
               <article className="mentor-profile-card">
                 <div className="mentor-photo pink-ring">
                   <img
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=85"
+                    src="/src/assets/learn3.jpeg"
                     alt="Mentor"
                   />
                 </div>
@@ -762,7 +762,7 @@ function Home() {
               <article className="mentor-profile-card">
                 <div className="mentor-photo">
                   <img
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=85"
+                    src="/src/assets/learn1.jpeg"
                     alt="Mentor"
                   />
                 </div>
