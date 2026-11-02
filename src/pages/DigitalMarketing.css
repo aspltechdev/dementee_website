@@ -345,9 +345,7 @@
 ===================================================== */
 
 @media (max-width: 1000px) {
-  .digital-marketing-page >  {
-    width: 90%;
-  }
+ 
 
   .dm-hero {
     width: 90%;
@@ -376,9 +374,7 @@
     padding-top: 10px;
   }
 
-  .digital-marketing-page >  {
-    width: calc(100% - 24px);
-  }
+ 
 
   .dm-hero {
     width: calc(100% - 28px);
