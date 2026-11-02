@@ -2898,3 +2898,258 @@
     height: 110px;
   }
 }
+
+/* =========================================
+   COMMON FAQ STYLING — FIGMA REFERENCE
+========================================= */
+
+/* FAQ section headings */
+.site .faq-section > h2,
+.uiux-page .uiux-faq-heading h2,
+.digital-marketing-page .dm-faq-wrap > h2,
+.full-stack-page .fs-faq-container > h2,
+.career-gap-page .cg-faq-container h2,
+.creator-page .creator-faq h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* FAQ card dimensions and appearance */
+.site .faq-item,
+.uiux-page .uiux-faq-item,
+.digital-marketing-page .dm-faq-item,
+.full-stack-page .fs-faq-item,
+.career-gap-page .cg-faq-item,
+.creator-page .creator-faq-item {
+  min-height: 88px;
+  border-radius: 14px;
+  background: #F4F7FF;
+  border: 1px solid rgba(59, 59, 59, 0.2);
+}
+
+/* FAQ question text */
+.site .faq-question,
+.uiux-page .uiux-faq-question,
+.digital-marketing-page .dm-faq-question,
+.full-stack-page .fs-faq-item button,
+.career-gap-page .cg-faq-question,
+.creator-page .creator-faq-item button {
+  min-height: 86px;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* FAQ answer text */
+.site .faq-answer p,
+.uiux-page .uiux-faq-answer p,
+.digital-marketing-page .dm-faq-answer p,
+.full-stack-page .fs-faq-answer p,
+.career-gap-page .cg-faq-answer p,
+.creator-page .creator-faq-answer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .site .faq-section > h2,
+  .uiux-page .uiux-faq-heading h2,
+  .digital-marketing-page .dm-faq-wrap > h2,
+  .full-stack-page .fs-faq-container > h2,
+  .career-gap-page .cg-faq-container h2,
+  .creator-page .creator-faq h2 {
+    font-size: 38px;
+  }
+
+  .site .faq-question,
+  .uiux-page .uiux-faq-question,
+  .digital-marketing-page .dm-faq-question,
+  .full-stack-page .fs-faq-item button,
+  .career-gap-page .cg-faq-question,
+  .creator-page .creator-faq-item button {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .site .faq-section > h2,
+  .uiux-page .uiux-faq-heading h2,
+  .digital-marketing-page .dm-faq-wrap > h2,
+  .full-stack-page .fs-faq-container > h2,
+  .career-gap-page .cg-faq-container h2,
+  .creator-page .creator-faq h2 {
+    font-size: 30px;
+  }
+
+  .site .faq-question,
+  .uiux-page .uiux-faq-question,
+  .digital-marketing-page .dm-faq-question,
+  .full-stack-page .fs-faq-item button,
+  .career-gap-page .cg-faq-question,
+  .creator-page .creator-faq-item button {
+    min-height: 66px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .site .faq-answer p,
+  .uiux-page .uiux-faq-answer p,
+  .digital-marketing-page .dm-faq-answer p,
+  .full-stack-page .fs-faq-answer p,
+  .career-gap-page .cg-faq-answer p,
+  .creator-page .creator-faq-answer p {
+    font-size: 14px;
+  }
+}
+
+/* Fix section subheading alignment */
+section .section-subheading,
+section .section-subtitle,
+section .section-description,
+section > p {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Keep subheadings centered on mobile */
+@media (max-width: 600px) {
+  section .section-subheading,
+  section .section-subtitle,
+  section .section-description,
+  section > p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+}
+/* CREATOR PAGE - MOBILE RESPONSIVE */
+@media (max-width: 1000px) {
+.creator-page .creator-intro { width: calc(100% - 56px); column-gap: 32px; margin-top: 70px; }
+.creator-page .creator-who-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.creator-page .journey-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.creator-page .learning-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.creator-page .creator-stats { gap: 20px; }
+}
+@media (max-width: 700px) {
+.creator-page .creator-hero { min-height: 0; padding: 28px 0 48px; }
+.creator-page .creator-hero-content { width: calc(100% - 36px); margin: 32px auto 0; }
+.creator-page .creator-pill, .creator-page .creator-small-pill, .creator-page .creator-gray-pill, .creator-page .creator-section-label { font-size: 10px; }
+.creator-page .creator-hero h1 { margin: 22px 0 15px; font-size: clamp(38px, 10vw, 50px); line-height: 1.04; letter-spacing: -1.7px; }
+.creator-page .creator-hero h1 br { display: none; }
+.creator-page .creator-hero-content > p { margin: 18px auto 25px; font-size: 14px; line-height: 1.65; }
+.creator-page .creator-primary-btn { padding: 11px 23px; font-size: 13px; }
+.creator-page .creator-intro { width: calc(100% - 36px); margin: 48px auto 0; grid-template-columns: 1fr; row-gap: 24px; }
+.creator-page .creator-intro h2 { font-size: clamp(27px, 7vw, 35px); line-height: 1.15; letter-spacing: -1px; }
+.creator-page .creator-intro p { font-size: 14px; line-height: 1.7; }
+.creator-page .creator-intro-video { padding: 6px; border-radius: 20px; }
+.creator-page .creator-intro-video img { height: auto; aspect-ratio: 16 / 10; border-radius: 15px; object-fit: cover; }
+.creator-page .creator-reality, .creator-page .creator-who-section, .creator-page .creator-learning, .creator-page .creator-journey, .creator-page .creator-program, .creator-page .creator-gallery, .creator-page .creator-mentor, .creator-page .creator-brands { padding-top: 45px; padding-bottom: 45px; }
+.creator-page .creator-reality-heading, .creator-page .creator-who-content { width: calc(100% - 36px); margin-left: auto; margin-right: auto; }
+.creator-page .creator-reality-heading h2, .creator-page .creator-who-title, .creator-page .aspiring-title, .creator-page .struggling-title, .creator-page .founder-title { font-size: clamp(25px, 7vw, 34px); line-height: 1.16; letter-spacing: -0.8px; }
+.creator-page .creator-reality-heading h2 br { display: none; }
+.creator-page .creator-reality-heading p { font-size: 14px; line-height: 1.6; }
+.creator-page .reality-wheel { width: calc(100% - 32px); height: auto; min-height: 0; margin: 25px auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.creator-page .reality-card { position: static; width: auto; min-height: 90px; padding: 17px; transform: none; font-size: 14px; }
+.creator-page .reality-card:last-of-type { grid-column: 1 / -1; }
+.creator-page .drag-indicator { display: none; }
+.creator-page .creator-who-cards, .creator-page .journey-grid, .creator-page .learning-grid { grid-template-columns: 1fr; gap: 15px; }
+.creator-page .creator-who-card, .creator-page .journey-card, .creator-page .learning-card { width: 100%; }
+.creator-page .creator-stats { width: calc(100% - 36px); margin-left: auto; margin-right: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.creator-page .creator-stat-main, .creator-page .creator-stat-side { width: 100%; min-width: 0; }
+.creator-page .meetup-gallery { width: calc(100% - 32px); display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.creator-page .meetup-row, .creator-page .meetup-row-1, .creator-page .meetup-row-2 { display: contents; }
+.creator-page .meetup-image { width: 100%; height: 135px; }
+.creator-page .meetup-large, .creator-page .meetup-small { width: 100%; height: 135px; }
+.creator-page .creator-faq, .creator-page .creator-faq-list { width: calc(100% - 36px); margin-left: auto; margin-right: auto; }
+.creator-page .creator-faq-item { padding: 15px 0; }
+.creator-page .creator-faq-item button, .creator-page .creator-faq-question { font-size: 14px; line-height: 1.45; }
+.creator-page .creator-footer-container { width: calc(100% - 36px); }
+.creator-page .creator-footer-top { grid-template-columns: 1fr 1fr; gap: 25px 16px; }
+.creator-page .creator-footer-brand { grid-column: 1 / -1; }
+.creator-page .creator-footer-column { min-width: 0; }
+.creator-page .creator-footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+@media (max-width: 380px) {
+.creator-page .creator-hero-content, .creator-page .creator-intro, .creator-page .creator-reality-heading, .creator-page .creator-who-content { width: calc(100% - 28px); }
+.creator-page .reality-wheel { grid-template-columns: 1fr; }
+.creator-page .reality-card:last-of-type { grid-column: auto; }
+}
+/* MOBILE FIX: CREATOR PROGRAM, GALLERY AND FAQ SPACING */
+@media (max-width: 700px) {
+.creator-page .creator-program {
+  margin-bottom: 35px;
+}
+.creator-page .creator-gallery {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+.creator-page .creator-gallery h2 {
+  margin: 0 0 25px;
+}
+.creator-page .creator-faq {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 35px 18px 65px;
+}
+.creator-page .creator-faq h2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-align: center;
+  font-size: clamp(25px, 7vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+.creator-page .creator-faq-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 12px;
+}
+.creator-page .creator-faq-item {
+  padding: 0;
+}
+.creator-page .creator-faq-item button {
+  min-height: 62px;
+  padding: 12px 16px;
+  font-size: 13px;
+}
+.creator-page .creator-faq-answer p {
+  padding: 0 16px 18px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+}
+@media (max-width: 380px) {
+.creator-page .creator-program {
+  margin-bottom: 25px;
+}
+.creator-page .creator-gallery {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.creator-page .creator-faq {
+  padding: 28px 14px 50px;
+}
+}

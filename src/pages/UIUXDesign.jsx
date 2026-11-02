@@ -32,72 +32,44 @@ function UIUXDesign() {
   const uxCurriculum = [
     {
       id: 1,
-      title: "UX",
-      description: "",
-      type: "ux-green",
+      week: "WEEK 01",
+      title: "Design Foundations",
+      description:
+        "Learn color theory, typography, spacing, visual hierarchy, and wireframing fundamentals.",
+      weekStyle: "week-purple",
     },
-
     {
       id: 2,
-      title: "UX beginner\nSession\n1 week",
-      description: "",
-      type: "ux-yellow",
+      week: "WEEK 03",
+      title: "UX Research & Persona",
+      description:
+        "User research methods, creating user personas, journey mapping, and information architecture.",
+      weekStyle: "week-coral",
     },
-
     {
       id: 3,
-      title: "Product Thinking\nand\nProduct Designing",
-      description: "",
-      type: "ux-yellow",
+      week: "WEEK 06",
+      title: "Figma & Prototyping",
+      description:
+        "Master Figma components, auto-layout, interactive prototyping, and design systems.",
+      weekStyle: "week-yellow",
     },
-
     {
       id: 4,
-      title: "Problem Solving\nTechniques\n3 Types",
-      description: "",
-      type: "ux-yellow",
+      week: "WEEK 09",
+      title: "Real-World Capstone",
+      description:
+        "Build a complete web & mobile design project following end-to-end industry standards.",
+      weekStyle: "week-purple",
     },
-
     {
       id: 5,
-      title: "Design Thinking\nProcess\nIndustry",
-      description: "",
-      type: "ux-pink",
-    },
-
-    {
-      id: 6,
-      title: "Research\nDiscovery\nAnalysis",
-      description: "",
-      type: "ux-pink",
-    },
-
-    {
-      id: 7,
-      title: "Define\nProblem\nstatement",
-      description: "",
-      type: "ux-pink",
-    },
-
-    {
-      id: 8,
-      title: "Ideate\nIdea Generation\nGroup Activity",
-      description: "",
-      type: "ux-pink",
-    },
-
-    {
-      id: 9,
-      title: "UX Laws\nRules Visual\nDesign",
-      description: "",
-      type: "ux-green",
-    },
-
-    {
-      id: 10,
-      title: "Heuristic\nEvolution\n-----------\nMethod",
-      description: "",
-      type: "ux-green",
+      week: "WEEK 12",
+      title: "Portfolio & Career",
+      description:
+        "Publish your Behance/Dribbble portfolio, practice mock interviews, and land job offers.",
+      weekStyle: "week-yellow",
+      featured: true,
     },
   ];
 
@@ -371,40 +343,23 @@ function UIUXDesign() {
 
 
           {/* =====================================================
-              UX CURRICULUM - 10 CARDS
-              5 TOP + 5 BOTTOM
+              UX CURRICULUM - FIVE STEP-BY-STEP CARDS
           ===================================================== */}
 
           <div className="uiux-curriculum-grid">
-
             {uxCurriculum.map((item) => (
               <article
-                className={`uiux-curriculum-card ${item.type}`}
+                className={`uiux-curriculum-card ${item.featured ? "featured" : ""}`}
                 key={item.id}
               >
+                <span className={`uiux-curriculum-week ${item.weekStyle}`}>
+                  {item.week}
+                </span>
 
-                <h3>
-                  {item.title.split("\n").map((line, index) => (
-                    <span key={index}>
-                      {line}
-                      {index <
-                        item.title.split("\n").length - 1 && (
-                        <br />
-                      )}
-                    </span>
-                  ))}
-                </h3>
-
-
-                {item.id !== 1 && (
-                  <div className="uiux-curriculum-author">
-                    Auro lakshmanan
-                  </div>
-                )}
-
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
               </article>
             ))}
-
           </div>
 
         </section>

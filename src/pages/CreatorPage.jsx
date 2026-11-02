@@ -4,8 +4,6 @@ import { Plus, Minus, Play } from "lucide-react";
 import footerlogo from "../assets/footerlogo.png";
 import Footer from "./Footer";
 
-import "./CreatorPage.css";
-
 import meetup1 from "../assets/meetup1.jpg";
 import meetup2 from "../assets/meetup2.jpg";
 import meetup3 from "../assets/meetup3.jpg";

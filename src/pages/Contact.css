@@ -857,3 +857,63 @@ margin:60px;
   }
 
 }
+
+/* Fix section subheading alignment */
+section .section-subheading,
+section .section-subtitle,
+section .section-description,
+section > p {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Keep subheadings centered on mobile */
+@media (max-width: 600px) {
+  section .section-subheading,
+  section .section-subtitle,
+  section .section-description,
+  section > p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+}
+/* CONTACT PAGE - MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+.contact-page .contact-hero { padding: 55px 24px 35px; }
+.contact-page .contact-hero h1 { font-size: clamp(36px, 6vw, 52px); line-height: 1.12; letter-spacing: -1.5px; }
+.contact-page .contact-hero > p { max-width: 650px; font-size: 15px; line-height: 1.7; }
+.contact-page .contact-section { padding: 35px 24px 60px; }
+.contact-page .contact-container { grid-template-columns: 1fr; gap: 24px; width: 100%; max-width: 720px; }
+.contact-page .office-card, .contact-page .contact-form-card { width: 100%; }
+}
+@media (max-width: 600px) {
+.contact-page .contact-hero { padding: 35px 18px 25px; }
+.contact-page .contact-hero-pill { font-size: 9px; padding: 7px 13px; }
+.contact-page .contact-hero h1 { margin: 20px 0 15px; font-size: clamp(32px, 9vw, 43px); line-height: 1.13; letter-spacing: -1.2px; }
+.contact-page .contact-hero h1 br { display: none; }
+.contact-page .contact-hero > p { font-size: 14px; line-height: 1.65; }
+.contact-page .contact-section { padding: 25px 16px 45px; }
+.contact-page .contact-container { gap: 18px; }
+.contact-page .office-card, .contact-page .contact-form-card { padding: 24px 19px; border-radius: 18px; }
+.contact-page .office-card h2, .contact-page .contact-form-card h2 { font-size: 23px; }
+.contact-page .office-address { font-size: 14px; line-height: 1.7; }
+.contact-page .office-contact { gap: 14px; }
+.contact-page .office-contact-item { gap: 10px; font-size: 14px; overflow-wrap: anywhere; }
+.contact-page .form-row { grid-template-columns: 1fr; gap: 15px; }
+.contact-page .form-group { min-width: 0; }
+.contact-page .form-group label { font-size: 13px; }
+.contact-page .form-group input, .contact-page .form-group textarea { width: 100%; min-width: 0; font-size: 14px; }
+.contact-page .form-group textarea { min-height: 125px; }
+.contact-page .contact-submit-btn { width: 100%; min-height: 46px; }
+}

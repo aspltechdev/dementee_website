@@ -1027,3 +1027,169 @@
   }
 
 }
+
+/* Fix section subheading alignment */
+section .section-subheading,
+section .section-subtitle,
+section .section-description,
+section > p {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Keep subheadings centered on mobile */
+@media (max-width: 600px) {
+  section .section-subheading,
+  section .section-subtitle,
+  section .section-description,
+  section > p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+}
+/* ALUMNI PAGE MOBILE RESPONSIVE OVERRIDES
+   Import after Alumni.css. Existing JSX and desktop styles remain unchanged. */
+@media (max-width: 900px) {
+  .alumni-page { width: 100%; overflow-x: clip; }
+  .alumni-page .alumni-hero { min-height: 0; padding: 115px 24px 65px; }
+  .alumni-page .alumni-hero-content { width: min(100%, 720px); }
+  .alumni-page .alumni-container { width: calc(100% - 48px); }
+  .alumni-page .alumni-section-title { font-size: 25px; line-height: 1.2; }
+  .alumni-page .featured-alumni-grid { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 18px; }
+  .alumni-page .featured-alumni-card { min-width: 0; min-height: 245px; padding: 30px 22px 55px; }
+  .alumni-page .featured-person-image { left: 24px; top: 32px; width: 72px; height: 72px; }
+  .alumni-page .featured-person-content { padding-left: 92px; }
+  .alumni-page .featured-person-content h3 { font-size: 25px; overflow-wrap: anywhere; }
+  .alumni-page .featured-person-content p { font-size: 13px; line-height: 1.5; }
+  .alumni-page .featured-company { left: 24px; bottom: 17px; max-width: calc(100% - 48px); font-size: 11px; }
+  .alumni-page .featured-connect { right: 22px; bottom: 16px; }
+  .alumni-page .featured-alumni-card:nth-child(2) { min-height: 245px; padding: 24px 18px 55px; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-person-image { position: relative; left: auto; top: auto; width: 70px; height: 70px; margin: 0 auto 10px; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-person-content { padding: 0; text-align: center; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-connect { left: 24px; right: 24px; bottom: 16px; }
+  .alumni-page .alumni-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 30px; }
+  .alumni-page .alumni-card { min-width: 0; min-height: 0; }
+  .alumni-page .alumni-card-image { height: 145px; }
+  .alumni-page .alumni-card-content { padding: 10px 12px 13px; }
+  .alumni-page .alumni-card-role { font-size: 8px; letter-spacing: .2px; }
+  .alumni-page .alumni-card h3 { font-size: 14px; overflow-wrap: anywhere; }
+  .alumni-page .alumni-connect-btn { min-height: 28px; height: auto; }
+  .alumni-page .load-more-btn { margin-top: 45px; min-height: 40px; padding: 10px 20px; }
+  .alumni-page .alumni-footer-container { width: calc(100% - 48px); }
+  .alumni-page .alumni-footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 22px; }
+  .alumni-page .alumni-footer-brand { grid-column: 1 / -1; }
+}
+@media (max-width: 700px) {
+  .alumni-page .alumni-hero { padding: 48px 20px 50px; background-size: 16px 16px; }
+  .alumni-page .alumni-hero-content { width: 100%; }
+  .alumni-page .alumni-pill { padding: 7px 13px; font-size: 9px; }
+  .alumni-page .alumni-hero h1 { margin: 22px 0 14px; font-size: clamp(36px, 9vw, 46px); line-height: 1.04; letter-spacing: -1.5px; }
+  .alumni-page .alumni-hero p { max-width: 520px; font-size: 14px; line-height: 1.65; }
+  .alumni-page .alumni-container { width: calc(100% - 36px); }
+  .alumni-page .featured-alumni-section { padding: 42px 0 52px; }
+  .alumni-page .alumni-section-title { font-size: 23px; letter-spacing: -.5px; }
+  .alumni-page .featured-label { margin: 28px 0 18px; }
+  .alumni-page .featured-alumni-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .alumni-page .featured-alumni-card { min-height: 250px; padding: 26px 20px 58px; border-radius: 20px; }
+  .alumni-page .featured-person-image { left: 20px; top: 27px; width: 70px; height: 70px; }
+  .alumni-page .featured-person-content { padding-left: 88px; }
+  .alumni-page .featured-batch { top: 17px; right: 18px; font-size: 8px; }
+  .alumni-page .featured-role { font-size: 10px; line-height: 1.4; }
+  .alumni-page .featured-person-content h3 { margin-top: 5px; font-size: 24px; line-height: 1.15; }
+  .alumni-page .featured-person-content p { margin-top: 12px; max-width: none; font-size: 13px; line-height: 1.5; }
+  .alumni-page .featured-company { left: 20px; bottom: 20px; max-width: calc(100% - 125px); font-size: 10px; line-height: 1.35; }
+  .alumni-page .featured-connect { right: 20px; bottom: 17px; min-width: 78px; height: 25px; }
+  .alumni-page .featured-alumni-card:nth-child(2) { min-height: 235px; padding: 24px 20px 58px; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-person-image { left: auto; top: auto; width: 72px; height: 72px; margin: 0 auto 12px; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-person-content { padding: 0; text-align: center; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-role { color: #fff; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-connect { left: 25px; right: 25px; bottom: 17px; width: auto; }
+  .alumni-page .all-alumni-section { padding: 0 0 65px; }
+  .alumni-page .alumni-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 24px; }
+  .alumni-page .alumni-card { min-height: 0; border-radius: 13px; }
+  .alumni-page .alumni-card-image { height: clamp(112px, 34vw, 155px); }
+  .alumni-page .alumni-card-content { padding: 9px 10px 11px; }
+  .alumni-page .alumni-card-role { font-size: 7px; line-height: 1.35; }
+  .alumni-page .alumni-card h3 { margin: 6px 0 10px; font-size: 13px; line-height: 1.2; }
+  .alumni-page .alumni-connect-btn { min-height: 27px; font-size: 8px; }
+  .alumni-page .load-more-btn { margin-top: 35px; min-height: 40px; font-size: 11px; }
+  .alumni-page .alumni-footer { padding: 38px 0 22px; }
+  .alumni-page .alumni-footer-container { width: calc(100% - 36px); }
+  .alumni-page .alumni-footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 18px; }
+  .alumni-page .alumni-footer-brand { grid-column: 1 / -1; }
+  .alumni-page .alumni-footer-logo img { width: 135px; }
+  .alumni-page .alumni-footer-brand p { max-width: none; font-size: 12px; line-height: 1.6; }
+  .alumni-page .alumni-footer-column { min-width: 0; gap: 11px; }
+  .alumni-page .alumni-footer-column h3 { font-size: 12px; }
+  .alumni-page .alumni-footer-column a { font-size: 11px; line-height: 1.4; }
+  .alumni-page .alumni-footer-divider { margin: 30px 0 17px; }
+  .alumni-page .alumni-footer-bottom { font-size: 10px; line-height: 1.5; }
+}
+@media (max-width: 380px) {
+  .alumni-page .alumni-hero { padding: 40px 16px 42px; }
+  .alumni-page .alumni-hero h1 { font-size: 35px; }
+  .alumni-page .alumni-container { width: calc(100% - 28px); }
+  .alumni-page .featured-alumni-card { padding-left: 16px; padding-right: 16px; }
+  .alumni-page .featured-person-image { left: 16px; width: 62px; height: 62px; }
+  .alumni-page .featured-person-content { padding-left: 76px; }
+  .alumni-page .featured-person-content h3 { font-size: 21px; }
+  .alumni-page .featured-person-content p { font-size: 12px; }
+  .alumni-page .featured-company { left: 16px; max-width: calc(100% - 105px); font-size: 9px; }
+  .alumni-page .featured-connect { right: 16px; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-person-image { left: auto; width: 68px; height: 68px; }
+  .alumni-page .featured-alumni-card:nth-child(2) .featured-person-content { padding: 0; }
+  .alumni-page .alumni-grid { gap: 11px; }
+  .alumni-page .alumni-card-image { height: 112px; }
+  .alumni-page .alumni-card-content { padding: 8px; }
+  .alumni-page .alumni-card h3 { font-size: 12px; }
+  .alumni-page .alumni-footer-container { width: calc(100% - 28px); }
+}
+/* Keep the shared Navbar positioned and sized for the Alumni page on phones. */
+@media (max-width: 850px) {
+  .alumni-page > .navbar {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: calc(100% - 24px);
+    max-width: 100%;
+    height: auto;
+    min-height: 98px;
+    margin: 10px auto 0;
+    padding: 9px 12px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px 9px;
+    overflow: visible;
+  }
+  .alumni-page > .navbar > .logo { flex: 0 0 auto; min-width: 0; }
+  .alumni-page > .navbar .dementee-logo { display: block; width: 95px; height: auto; object-fit: contain; }
+  .alumni-page > .navbar > .get-in-touch { flex: 0 0 auto; min-width: 105px; height: 34px; padding: 0 10px; font-size: 11px; }
+  .alumni-page > .navbar > .nav-links { order: 3; flex: 1 0 100%; width: 100%; min-width: 0; height: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2px 11px; overflow: visible; }
+  .alumni-page > .navbar .nav-link,
+  .alumni-page > .navbar .courses-dropdown-btn,
+  .alumni-page > .navbar .more-dropdown-btn { min-height: 30px; height: 30px; padding: 0 2px; display: inline-flex; align-items: center; font-size: 12px; white-space: nowrap; }
+  .alumni-page > .navbar .courses-dropdown,
+  .alumni-page > .navbar .more-dropdown { position: relative; height: 30px; display: inline-flex; align-items: center; }
+  .alumni-page > .navbar .courses-dropdown-menu,
+  .alumni-page > .navbar .more-dropdown-menu { position: absolute; top: calc(100% + 6px); left: 50%; right: auto; width: 205px; max-width: calc(100vw - 30px); padding: 8px; transform: translateX(-50%); display: flex; flex-direction: column; background: #fff; border: 1px solid #e5e0e7; border-radius: 13px; box-shadow: 0 12px 28px rgba(25,14,37,.16); opacity: 0; visibility: hidden; pointer-events: none; z-index: 10050; }
+  .alumni-page > .navbar .courses-dropdown:focus-within .courses-dropdown-menu,
+  .alumni-page > .navbar .more-dropdown:focus-within .more-dropdown-menu,
+  .alumni-page > .navbar .courses-dropdown:hover .courses-dropdown-menu,
+  .alumni-page > .navbar .more-dropdown:hover .more-dropdown-menu { opacity: 1; visibility: visible; pointer-events: auto; }
+  .alumni-page > .navbar .courses-dropdown-menu a,
+  .alumni-page > .navbar .more-dropdown-menu a { width: 100%; min-height: 36px; height: auto; padding: 9px 10px; font-size: 13px; white-space: normal; }
+}

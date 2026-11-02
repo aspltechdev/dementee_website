@@ -180,7 +180,7 @@
 ===================================================== */
 
 .hero {
-  margin-top: 70px;
+  margin-top: 120px;
   margin-bottom: 72px;
 
   display: grid;
@@ -3644,5 +3644,482 @@
 
   .course-info > p {
     font-size: 14px;
+  }
+}
+
+/* =========================================
+   COMMON FAQ STYLING — FIGMA REFERENCE
+========================================= */
+
+/* FAQ section headings */
+.site .faq-section > h2,
+.uiux-page .uiux-faq-heading h2,
+.digital-marketing-page .dm-faq-wrap > h2,
+.full-stack-page .fs-faq-container > h2,
+.career-gap-page .cg-faq-container h2,
+.creator-page .creator-faq h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* FAQ card dimensions and appearance */
+.site .faq-item,
+.uiux-page .uiux-faq-item,
+.digital-marketing-page .dm-faq-item,
+.full-stack-page .fs-faq-item,
+.career-gap-page .cg-faq-item,
+.creator-page .creator-faq-item {
+  min-height: 88px;
+  border-radius: 14px;
+  background: #F4F7FF;
+  border: 1px solid rgba(59, 59, 59, 0.2);
+}
+
+/* FAQ question text */
+.site .faq-question,
+.uiux-page .uiux-faq-question,
+.digital-marketing-page .dm-faq-question,
+.full-stack-page .fs-faq-item button,
+.career-gap-page .cg-faq-question,
+.creator-page .creator-faq-item button {
+  min-height: 86px;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* FAQ answer text */
+.site .faq-answer p,
+.uiux-page .uiux-faq-answer p,
+.digital-marketing-page .dm-faq-answer p,
+.full-stack-page .fs-faq-answer p,
+.career-gap-page .cg-faq-answer p,
+.creator-page .creator-faq-answer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .site .faq-section > h2,
+  .uiux-page .uiux-faq-heading h2,
+  .digital-marketing-page .dm-faq-wrap > h2,
+  .full-stack-page .fs-faq-container > h2,
+  .career-gap-page .cg-faq-container h2,
+  .creator-page .creator-faq h2 {
+    font-size: 38px;
+  }
+
+  .site .faq-question,
+  .uiux-page .uiux-faq-question,
+  .digital-marketing-page .dm-faq-question,
+  .full-stack-page .fs-faq-item button,
+  .career-gap-page .cg-faq-question,
+  .creator-page .creator-faq-item button {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .site .faq-section > h2,
+  .uiux-page .uiux-faq-heading h2,
+  .digital-marketing-page .dm-faq-wrap > h2,
+  .full-stack-page .fs-faq-container > h2,
+  .career-gap-page .cg-faq-container h2,
+  .creator-page .creator-faq h2 {
+    font-size: 30px;
+  }
+
+  .site .faq-question,
+  .uiux-page .uiux-faq-question,
+  .digital-marketing-page .dm-faq-question,
+  .full-stack-page .fs-faq-item button,
+  .career-gap-page .cg-faq-question,
+  .creator-page .creator-faq-item button {
+    min-height: 66px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .site .faq-answer p,
+  .uiux-page .uiux-faq-answer p,
+  .digital-marketing-page .dm-faq-answer p,
+  .full-stack-page .fs-faq-answer p,
+  .career-gap-page .cg-faq-answer p,
+  .creator-page .creator-faq-answer p {
+    font-size: 14px;
+  }
+}
+
+/* Fix section subheading alignment */
+section .section-subheading,
+section .section-subtitle,
+section .section-description,
+section > p {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Keep subheadings centered on mobile */
+@media (max-width: 600px) {
+  section .section-subheading,
+  section .section-subtitle,
+  section .section-description,
+  section > p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+}
+/* =====================================================
+   HOME PAGE
+===================================================== */
+@media (max-width: 900px) {
+  .hero {
+    width: calc(100% - 40px);
+    margin-top: 58px;
+    margin-bottom: 55px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    max-width: 700px;
+    font-size: clamp(42px, 8vw, 60px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+    overflow-wrap: anywhere;
+  }
+  .hero-description {
+    max-width: 620px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .hero-visual {
+    width: 100%;
+  }
+  .training-card {
+    height: clamp(220px, 48vw, 340px);
+  }
+  .mini-cards {
+    gap: 16px;
+  }
+  .stats-bar {
+    width: calc(100% - 40px);
+  }
+  .service-grid {
+    width: calc(100% - 40px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .framework-container,
+  .testimonials-container,
+  .reviews-faq-container,
+  .why-section,
+  .career-gap-card {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+  .framework-grid,
+  .benefit-grid,
+  .testimonials-grid,
+  .review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .site {
+    padding-top: 0;
+    background-size: 18px 18px;
+  }
+  .hero {
+    width: calc(100% - 32px);
+    margin-top: 34px;
+    margin-bottom: 42px;
+    gap: 28px;
+  }
+  .hero-content h1 {
+    font-size: clamp(38px, 10vw, 48px);
+    line-height: 0.99;
+    letter-spacing: -1.8px;
+  }
+  .company-tag {
+    max-width: 100%;
+    height: 28px;
+    margin-bottom: 18px;
+    padding: 0 12px;
+    font-size: 8px;
+  }
+  .hero-description {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  .hero-actions {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 22px;
+  }
+  .explore-btn,
+  .enroll-btn {
+    min-height: 42px;
+    height: auto;
+    padding: 0 16px;
+    font-size: 10px;
+  }
+  .students {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 10px;
+  }
+  .training-card {
+    height: 225px;
+    border-width: 6px;
+  }
+  .training-card h2 {
+    font-size: 18px;
+  }
+  .training-card p {
+    font-size: 11px;
+  }
+  .mini-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .career-card,
+  .placement-card {
+    height: auto;
+    min-height: 135px;
+    padding: 13px;
+  }
+  .career-card h3,
+  .placement-card h3 {
+    font-size: 19px;
+  }
+  .career-card p,
+  .placement-card p {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+  .stats-bar {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 25px 18px;
+  }
+  .stat-divider {
+    width: 75%;
+    height: 1px;
+    margin: 0 auto;
+  }
+  .specializations {
+    padding: 58px 0;
+  }
+  .service-grid {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 28px;
+  }
+  .service-card {
+    padding: 22px;
+  }
+  .framework-section,
+  .testimonials-section,
+  .faq-section,
+  .why-section {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .framework-container,
+  .testimonials-container,
+  .reviews-faq-container,
+  .why-section,
+  .career-gap-card {
+    width: calc(100% - 32px);
+  }
+  .framework-heading h2,
+  .testimonials-heading h2,
+  .reviews-heading h2,
+  .why-content h2 {
+    font-size: clamp(25px, 7vw, 32px);
+    line-height: 1.12;
+  }
+  .framework-heading p,
+  .testimonials-heading p,
+  .reviews-heading p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .framework-grid,
+  .benefit-grid,
+  .testimonials-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .framework-card,
+  .benefit-card,
+  .testimonial-card,
+  .review-card {
+    min-width: 0;
+    padding: 20px;
+  }
+  .why-list {
+    gap: 14px;
+  }
+  .why-item {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .career-gap-card {
+    padding: 25px 20px;
+  }
+  .career-gap-card h2 {
+    font-size: 27px;
+    line-height: 1.12;
+  }
+  .review-grid {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .hero {
+    width: calc(100% - 26px);
+  }
+  .hero-content h1 {
+    font-size: 37px;
+  }
+  .mini-cards {
+    grid-template-columns: 1fr;
+  }
+  .hero-actions > * {
+    max-width: 100%;
+  }
+}
+/* Avoid accidental horizontal overflow from wide content. */
+@media (max-width: 850px) {
+  .site > main,
+  .about-page,
+  .gallery-section,
+  .site-footer {
+    max-width: 100%;
+  }
+  .hero *,
+  .about-page *,
+  .gallery-section *,
+  .site-footer * {
+    min-width: 0;
+  }
+}
+/* SUCCESS STORIES HEADER - MOBILE ALIGNMENT FIX */
+@media (max-width: 600px) {
+  .success-section {
+    width: 100%;
+    padding: 58px 0 65px;
+  }
+  .success-container {
+    width: calc(100% - 40px);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .success-header {
+    width: 100%;
+    margin: 0 0 28px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    justify-content: initial;
+    column-gap: 12px;
+  }
+  .success-header h2 {
+    min-width: 0;
+    max-width: 180px;
+    margin: 0;
+    font-size: clamp(27px, 7.2vw, 34px);
+    line-height: 1.04;
+    letter-spacing: -0.8px;
+    text-align: left;
+    overflow-wrap: normal;
+  }
+  .success-header .course-view-details {
+    width: max-content;
+    min-width: max-content;
+    max-width: none;
+    margin: 0;
+    padding: 8px 0;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    justify-self: end;
+    gap: 6px;
+    color: #21132e;
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+    text-align: right;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .success-header .course-view-details svg {
+    display: block;
+    flex: 0 0 17px;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+  }
+  .success-grid {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .success-card {
+    width: 100%;
+    min-width: 0;
+    padding: 24px 22px;
+  }
+}
+@media (max-width: 360px) {
+  .success-container {
+    width: calc(100% - 30px);
+  }
+  .success-header {
+    column-gap: 8px;
+  }
+  .success-header h2 {
+    max-width: 145px;
+    font-size: 27px;
+  }
+  .success-header .course-view-details {
+    gap: 4px;
+    font-size: 11px;
+  }
+  .success-header .course-view-details svg {
+    flex-basis: 15px;
+    width: 15px;
+    height: 15px;
   }
 }

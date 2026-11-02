@@ -1,592 +1,822 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
   font-size: 17px;
 }
-
 body {
   min-width: 320px;
   min-height: 100vh;
   font-family: "Outfit", sans-serif;
   font-size: 17px;
 }
-
 #root {
   width: 100%;
   min-height: 100vh;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 button,
 input,
 textarea {
   font: inherit;
 }
-
 /* =========================================================
    MORE DROPDOWN
-========================================================= */
-
+\========================================================= */
 .more-dropdown {
   position: relative;
 }
-
 .more-chevron {
   transition: transform 0.2s ease;
 }
-
 .more-dropdown:hover .more-chevron {
   transform: rotate(180deg);
 }
-
 /* =========================================================
    MORE DROPDOWN BOX
    SAME STYLE AS COURSES DROPDOWN
-========================================================= */
+\========================================================= */
 /* =========================================================
    MORE DROPDOWN
-========================================================= */
-
+\========================================================= */
 .more-dropdown {
   position: relative;
-
   height: 100%;
-
   display: flex;
   align-items: center;
 }
-
-
 /* =========================================================
    MORE DROPDOWN MENU
-========================================================= */
-
+\========================================================= */
 .more-dropdown-menu {
   position: absolute;
-
   /* Keep the dropdown visually below More */
   top: calc(100% + 12px);
   left: 50%;
-
   width: 265px;
-
   display: flex;
   flex-direction: column;
-
   padding: 12px;
-
   transform: translateX(-50%);
-
   background: #ffffff;
-
   border: 1px solid #e5e1e9;
   border-radius: 18px;
-
   box-shadow: 0 10px 25px rgba(25, 15, 45, 0.12);
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   z-index: 99999;
-
   transition:
     opacity 0.2s ease,
     visibility 0.2s ease;
 }
-
-
 /* =========================================================
    INVISIBLE HOVER BRIDGE
    This fills the 12px gap between More and dropdown.
-========================================================= */
-
+\========================================================= */
 .more-dropdown-menu::before {
   content: "";
-
   position: absolute;
-
   top: -14px;
   left: 0;
-
   width: 100%;
   height: 14px;
-
   background: transparent;
-
   pointer-events: auto;
 }
-
-
 /* =========================================================
    SHOW DROPDOWN
-========================================================= */
-
+\========================================================= */
 .more-dropdown:hover .more-dropdown-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-
-
 /* =========================================================
    CHEVRON
-========================================================= */
-
+\========================================================= */
 .more-chevron {
   transition: transform 0.2s ease;
 }
-
 .more-dropdown:hover .more-chevron {
   transform: rotate(180deg);
 }
-
-
 /* =========================================================
    MORE DROPDOWN LINKS
-========================================================= */
-
+\========================================================= */
 .more-dropdown-menu a {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   padding: 14px 16px;
-
   border-radius: 10px;
-
   color: #171028;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 15px;
   font-weight: 600;
-
   text-decoration: none;
-
   white-space: nowrap;
-
   transition:
     background 0.2s ease,
     color 0.2s ease;
 }
-
-
 .more-dropdown-menu a:hover {
   background: #f3f0ff;
   color: #6c5ce7;
 }
-
 /* =========================================================
    LOGO
-========================================================= */
-
+\========================================================= */
 .dementee-logo {
   width: 130px;
   height: auto;
   display: block;
   object-fit: contain;
 }
-
 /* =========================================================
    ACTIVE NAVBAR SECTION
-========================================================= */
-
+\========================================================= */
 .nav-links > a.active,
 .courses-dropdown-btn.active,
 .more-dropdown-btn.active {
   color: #6c5ce7;
   position: relative;
 }
-
 /* Active underline */
-
 .nav-links > a.active::after,
 .courses-dropdown-btn.active::after,
 .more-dropdown-btn.active::after {
   content: "";
-
   position: absolute;
-
   left: 0;
   right: 0;
   bottom: -8px;
-
   height: 2px;
-
   border-radius: 10px;
 }
-
 /* Active dropdown item */
-
 .courses-dropdown-menu a.dropdown-active,
 .more-dropdown-menu a.dropdown-active {
   font-weight: 600;
 }
-
 /* =========================================================
    FIXED NAVBAR
-========================================================= */
-
+\========================================================= */
 .navbar {
   position: fixed;
-
   top: 20px;
   left: 50%;
-
   transform: translateX(-50%);
-
   width: calc(100% - 120px);
   max-width: 1450px;
-
   height: 65px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 28px;
-
   background: rgba(255, 255, 255, 0.96);
-
   border: 1px solid #e5e1e9;
   border-radius: 40px;
-
   box-shadow:
     0 8px 25px rgba(25, 15, 45, 0.08);
-
   z-index: 9999;
 }
-
 /* =========================================================
    NAVIGATION
-========================================================= */
-
+\========================================================= */
 .nav-links {
   display: flex;
   align-items: center;
-
   gap: 34px;
-
   height: 100%;
 }
-
 .nav-link {
   position: relative;
-
   display: flex;
   align-items: center;
-
   height: 100%;
-
   color: #171028;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 16px;
   font-weight: 600;
-
   white-space: nowrap;
 }
-
 .nav-link:hover {
   color: #6c5ce7;
 }
-
 /* =========================================================
    MORE BUTTON
    SAME SIZE AS OTHER NAV ITEMS
-========================================================= */
-
+\========================================================= */
 .more-dropdown-btn {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 4px;
-
   height: 100%;
-
   padding: 0;
-
   border: none;
   outline: none;
-
   background: transparent;
-
   color: #171028;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 16px;
   font-weight: 600;
-
   white-space: nowrap;
-
   cursor: pointer;
 }
-
 .more-dropdown-btn:hover {
   color: #6c5ce7;
 }
-
 /* =========================================================
    COURSES DROPDOWN
-========================================================= */
-
+\========================================================= */
 .courses-dropdown {
   position: relative;
 }
-
 .courses-dropdown-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 4px;
-
   height: 100%;
-
   padding: 0;
-
   border: none;
   outline: none;
-
   background: transparent;
-
   color: #171028;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 16px;
   font-weight: 600;
-
   cursor: pointer;
 }
-
 .courses-dropdown-btn:hover {
   color: #6c5ce7;
 }
-
 /* =========================================================
    COURSES DROPDOWN MENU
-========================================================= */
+\========================================================= */
 /* =========================================================
    COURSES DROPDOWN
-========================================================= */
-
+\========================================================= */
 .courses-dropdown {
   position: relative;
-
   height: 100%;
-
   display: flex;
   align-items: center;
 }
-
-
 /* =========================================================
    COURSES DROPDOWN BUTTON
-========================================================= */
-
+\========================================================= */
 .courses-dropdown-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 4px;
-
   height: 100%;
-
   padding: 0;
-
   border: none;
   outline: none;
-
   background: transparent;
-
   color: #171028;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 16px;
   font-weight: 600;
-
   cursor: pointer;
 }
-
 .courses-dropdown-btn:hover {
   color: #6c5ce7;
 }
-
-
 /* =========================================================
    COURSES DROPDOWN MENU
-========================================================= */
-
+\========================================================= */
 .courses-dropdown-menu {
   position: absolute;
-
   /* Visual gap below Courses */
   top: calc(100% + 12px);
-
   left: 50%;
-
   width: 265px;
-
   display: flex;
   flex-direction: column;
-
   padding: 12px;
-
   transform: translateX(-50%);
-
   background: #ffffff;
-
   border: 1px solid #e5e1e9;
-
   border-radius: 18px;
-
   box-shadow:
     0 10px 25px rgba(25, 15, 45, 0.12);
-
   opacity: 0;
-
   visibility: hidden;
-
   pointer-events: none;
-
   z-index: 99999;
-
   transition:
     opacity 0.2s ease,
     visibility 0.2s ease;
 }
-
-
 /* =========================================================
    INVISIBLE HOVER BRIDGE
    Fills the gap between Courses and dropdown
-========================================================= */
-
+\========================================================= */
 .courses-dropdown-menu::before {
   content: "";
-
   position: absolute;
-
   top: -14px;
-
   left: 0;
-
   width: 100%;
-
   height: 14px;
-
   background: transparent;
-
   pointer-events: auto;
 }
-
-
 /* =========================================================
    SHOW DROPDOWN
-========================================================= */
-
+\========================================================= */
 .courses-dropdown:hover .courses-dropdown-menu {
   opacity: 1;
-
   visibility: visible;
-
   pointer-events: auto;
 }
-
-
 /* =========================================================
    COURSES DROPDOWN LINKS
-========================================================= */
-
+\========================================================= */
 .courses-dropdown-menu a {
   display: flex;
   align-items: center;
-
   width: 100%;
-
   padding: 14px 16px;
-
   border-radius: 10px;
-
   color: #171028;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 15px;
-
   font-weight: 600;
-
   text-decoration: none;
-
   white-space: nowrap;
-
   transition:
     background 0.2s ease,
     color 0.2s ease;
 }
-
-
 .courses-dropdown-menu a:hover {
   background: #f3f0ff;
-
   color: #6c5ce7;
 }
 /* =========================================================
    GET IN TOUCH
-========================================================= */
-
+\========================================================= */
 .get-in-touch {
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-width: 160px;
   height: 46px;
-
   padding: 0 25px;
-
   border-radius: 30px;
-
   background: linear-gradient(
     90deg,
     #6c5ce7,
     #d65c7e
   );
-
   color: #ffffff;
-
   font-family: "Outfit", sans-serif;
-
   font-size: 16px;
   font-weight: 700;
-
   white-space: nowrap;
-
   transition: transform 0.2s ease;
 }
-
 .get-in-touch:hover {
   transform: translateY(-2px);
+}
+/* MOBILE AND TABLET RESPONSIVENESS */
+@media (max-width: 1100px) {
+.navbar { width: calc(100% - 48px); padding: 0 20px; }
+.nav-links { gap: 20px; }
+.nav-link, .more-dropdown-btn, .courses-dropdown-btn, .get-in-touch { font-size: 14px; }
+.get-in-touch { min-width: 135px; padding: 0 18px; }
+.dementee-logo { width: 115px; }
+}
+@media (max-width: 850px) {
+.navbar { top: 12px; width: calc(100% - 32px); height: auto; min-height: 64px; padding: 12px 18px; display: flex; flex-wrap: wrap; justify-content: space-between; row-gap: 10px; border-radius: 24px; }
+.dementee-logo { width: 112px; }
+.get-in-touch { min-width: 125px; height: 40px; font-size: 13px; padding: 0 16px; }
+.nav-links { order: 3; width: 100%; height: auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 22px; padding: 8px 0 2px; }
+.nav-link, .more-dropdown-btn, .courses-dropdown-btn { height: auto; font-size: 14px; }
+.more-dropdown { height: auto; }
+.nav-links > a.active::after, .courses-dropdown-btn.active::after, .more-dropdown-btn.active::after { bottom: -4px; }
+.courses-dropdown-menu, .more-dropdown-menu { top: calc(100% + 10px); width: 230px; }
+}
+@media (max-width: 600px) {
+.navbar { top: 8px; width: calc(100% - 20px); padding: 10px 12px; border-radius: 20px; }
+.dementee-logo { width: 96px; }
+.get-in-touch { min-width: 108px; height: 36px; padding: 0 12px; font-size: 12px; }
+.nav-links { gap: 12px 16px; padding-top: 7px; }
+.nav-link, .more-dropdown-btn, .courses-dropdown-btn { font-size: 12px; }
+.more-dropdown-menu, .courses-dropdown-menu { left: 50%; width: min(230px, calc(100vw - 40px)); }
+.more-dropdown-menu a, .courses-dropdown-menu a { padding: 11px 12px; font-size: 13px; }
+}
+@media (max-width: 380px) {
+.navbar { width: calc(100% - 14px); padding: 9px 10px; }
+.dementee-logo { width: 84px; }
+.get-in-touch { min-width: 98px; height: 34px; font-size: 11px; }
+.nav-links { column-gap: 11px; row-gap: 10px; }
+.nav-link, .more-dropdown-btn, .courses-dropdown-btn { font-size: 11px; }
+}
+@media (hover: none) {
+.more-dropdown:focus-within .more-dropdown-menu, .courses-dropdown:focus-within .courses-dropdown-menu { opacity: 1; visibility: visible; pointer-events: auto; }
+}
+/* NAVBAR RESPONSIVE - MATCHES THE EXISTING NAVBAR JSX */
+@media (max-width: 1100px) {
+  .navbar {
+    width: calc(100% - 48px);
+    padding: 0 20px;
+  }
+  .nav-links { gap: 20px; }
+  .nav-link, .more-dropdown-btn, .courses-dropdown-btn, .get-in-touch { font-size: 14px; }
+  .get-in-touch { min-width: 130px; padding: 0 16px; }
+  .dementee-logo { width: 112px; }
+}
+@media (max-width: 850px) {
+  .navbar {
+    top: 10px;
+    width: calc(100% - 24px);
+    height: auto;
+    min-height: 108px;
+    padding: 10px 16px 9px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    column-gap: 12px;
+    row-gap: 8px;
+    border-radius: 22px;
+  }
+  .navbar > .logo { flex: 0 0 auto; }
+  .dementee-logo { width: 105px; }
+  .navbar > .get-in-touch {
+    flex: 0 0 auto;
+    min-width: 112px;
+    height: 36px;
+    padding: 0 13px;
+    font-size: 12px;
+  }
+  .navbar > .nav-links {
+    order: 3;
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+    height: 34px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .navbar > .nav-links::-webkit-scrollbar { display: none; }
+  .navbar .nav-link,
+  .navbar .courses-dropdown-btn,
+  .navbar .more-dropdown-btn {
+    flex: 0 0 auto;
+    width: auto;
+    height: 34px;
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .navbar .courses-dropdown,
+  .navbar .more-dropdown {
+    flex: 0 0 auto;
+    height: 34px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar .courses-dropdown-menu,
+  .navbar .more-dropdown-menu {
+    top: calc(100% + 7px);
+    left: 50%;
+    width: 225px;
+    max-width: calc(100vw - 36px);
+    z-index: 100000;
+  }
+  .navbar .courses-dropdown-menu::before,
+  .navbar .more-dropdown-menu::before { height: 10px; top: -10px; }
+  .navbar .nav-links > a.active::after,
+  .navbar .courses-dropdown-btn.active::after,
+  .navbar .more-dropdown-btn.active::after { bottom: -2px; }
+  .navbar .contact-nav-link { margin-left: 0; }
+}
+@media (max-width: 600px) {
+  .navbar {
+    top: 8px;
+    width: calc(100% - 20px);
+    min-height: 100px;
+    padding: 9px 12px 8px;
+    column-gap: 8px;
+    row-gap: 7px;
+    border-radius: 20px;
+  }
+  .navbar .dementee-logo { width: 94px; }
+  .navbar > .get-in-touch {
+    min-width: 104px;
+    height: 34px;
+    padding: 0 11px;
+    font-size: 11px;
+  }
+  .navbar > .nav-links {
+    height: 32px;
+    gap: 0;
+  }
+  .navbar .nav-link,
+  .navbar .courses-dropdown-btn,
+  .navbar .more-dropdown-btn {
+    height: 32px;
+    min-height: 32px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  .navbar .courses-dropdown,
+  .navbar .more-dropdown { height: 32px; }
+  .navbar .courses-dropdown-menu,
+  .navbar .more-dropdown-menu {
+    top: calc(100% + 6px);
+    width: 205px;
+    padding: 8px;
+    border-radius: 14px;
+  }
+  .navbar .courses-dropdown-menu a,
+  .navbar .more-dropdown-menu a {
+    padding: 10px 11px;
+    font-size: 13px;
+    white-space: normal;
+  }
+}
+@media (max-width: 380px) {
+  .navbar {
+    width: calc(100% - 14px);
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .navbar .dementee-logo { width: 84px; }
+  .navbar > .get-in-touch {
+    min-width: 96px;
+    height: 32px;
+    font-size: 10px;
+    padding: 0 9px;
+  }
+  .navbar .nav-link,
+  .navbar .courses-dropdown-btn,
+  .navbar .more-dropdown-btn {
+    padding: 0 7px;
+    font-size: 11px;
+  }
+}
+@media (hover: none) {
+  .navbar .courses-dropdown:focus-within .courses-dropdown-menu,
+  .navbar .more-dropdown:focus-within .more-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+/* =====================================================
+   NAVBAR - USES THE EXISTING NAVBAR JSX; NO JSX CHANGES
+===================================================== */
+.navbar {
+  z-index: 9999;
+}
+.more-dropdown,
+.courses-dropdown {
+  position: relative;
+}
+.more-dropdown-menu,
+.courses-dropdown-menu {
+  z-index: 10050;
+}
+@media (hover: hover) and (pointer: fine) {
+  .more-dropdown:hover .more-dropdown-menu,
+  .courses-dropdown:hover .courses-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+@media (max-width: 850px) {
+  .navbar {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: calc(100% - 28px);
+    max-width: 100%;
+    min-height: 104px;
+    height: auto;
+    margin: 12px auto 0;
+    padding: 10px 14px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+    row-gap: 7px;
+    border-radius: 22px;
+    overflow: visible;
+  }
+  .navbar > .logo {
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+  .navbar .dementee-logo {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .navbar > .get-in-touch {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 112px;
+    height: 36px;
+    padding: 0 13px;
+    font-size: 12px;
+  }
+  .navbar > .nav-links {
+    order: 3;
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 32px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px 13px;
+    overflow: visible;
+  }
+  .navbar .nav-link,
+  .navbar .nav-links a,
+  .navbar .courses-dropdown-btn,
+  .navbar .more-dropdown-btn {
+    position: relative;
+    flex: 0 0 auto;
+    width: auto;
+    min-height: 32px;
+    height: 32px;
+    padding: 0 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 13px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .navbar .courses-dropdown,
+  .navbar .more-dropdown {
+    position: relative;
+    flex: 0 0 auto;
+    width: auto;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .navbar .courses-dropdown-menu,
+  .navbar .more-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    right: auto;
+    width: 220px;
+    max-width: calc(100vw - 36px);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border: 1px solid #e5e1e9;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(25, 15, 45, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10050;
+  }
+  /* Touch: tapping the existing button gives its dropdown focus. */
+  .navbar .more-dropdown:focus-within .more-dropdown-menu,
+  .navbar .courses-dropdown:focus-within .courses-dropdown-menu,
+  .navbar .more-dropdown:hover .more-dropdown-menu,
+  .navbar .courses-dropdown:hover .courses-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .navbar .more-dropdown-menu::before,
+  .navbar .courses-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 9px;
+    background: transparent;
+  }
+  .navbar .courses-dropdown-menu a,
+  .navbar .more-dropdown-menu a {
+    width: 100%;
+    min-height: 38px;
+    height: auto;
+    padding: 9px 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    line-height: 1.35;
+    white-space: normal;
+  }
+  .navbar .nav-links > a.active::after,
+  .navbar .courses-dropdown-btn.active::after,
+  .navbar .more-dropdown-btn.active::after {
+    bottom: -1px;
+  }
+}
+@media (max-width: 560px) {
+  .navbar {
+    width: calc(100% - 20px);
+    min-height: 98px;
+    margin-top: 9px;
+    padding: 9px 11px 7px;
+    border-radius: 20px;
+    row-gap: 5px;
+  }
+  .navbar .dementee-logo {
+    width: 92px;
+  }
+  .navbar > .get-in-touch {
+    min-width: 104px;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+  .navbar > .nav-links {
+    justify-content: center;
+    gap: 2px 11px;
+    min-height: 30px;
+  }
+  .navbar .nav-link,
+  .navbar .nav-links a,
+  .navbar .courses-dropdown-btn,
+  .navbar .more-dropdown-btn {
+    min-height: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .navbar .courses-dropdown,
+  .navbar .more-dropdown {
+    height: 30px;
+  }
+  .navbar .courses-dropdown-menu,
+  .navbar .more-dropdown-menu {
+    top: calc(100% + 7px);
+    width: 205px;
+  }
+}
+@media (max-width: 360px) {
+  .navbar {
+    width: calc(100% - 14px);
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .navbar .dementee-logo {
+    width: 82px;
+  }
+  .navbar > .get-in-touch {
+    min-width: 96px;
+    height: 32px;
+    font-size: 10px;
+  }
+  .navbar > .nav-links {
+    gap: 1px 8px;
+  }
+  .navbar .nav-link,
+  .navbar .nav-links a,
+  .navbar .courses-dropdown-btn,
+  .navbar .more-dropdown-btn {
+    font-size: 11px;
+  }
 }

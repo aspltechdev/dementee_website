@@ -17,13 +17,6 @@
    NAVBAR WIDTH ON THIS PAGE
 ===================================================== */
 
-.digital-marketing-page > .navbar {
-  width: 76%;
-  max-width: 1280px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* =====================================================
    HERO
@@ -352,7 +345,7 @@
 ===================================================== */
 
 @media (max-width: 1000px) {
-  .digital-marketing-page > .navbar {
+  .digital-marketing-page >  {
     width: 90%;
   }
 
@@ -383,7 +376,7 @@
     padding-top: 10px;
   }
 
-  .digital-marketing-page > .navbar {
+  .digital-marketing-page >  {
     width: calc(100% - 24px);
   }
 
@@ -2730,4 +2723,1448 @@ width: 100%;
   border: none;
   cursor: pointer;
   text-decoration: none;
+}
+
+
+/* =====================================================
+   TARGET AUDIENCE TYPOGRAPHY — INCREASED BY 2px
+   Keeps the existing colors, layout, and card styling.
+===================================================== */
+
+.dm-target-badge {
+  font-size: 15px;
+}
+
+.dm-target-heading h2 {
+  font-size: 44px;
+  line-height: 46px;
+}
+
+.dm-target-icon {
+  font-size: 28px;
+}
+
+.dm-target-card h3 {
+  font-size: 24px;
+}
+
+.dm-target-card p {
+  font-size: 18px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .dm-target-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .dm-target-heading h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .dm-target-badge {
+    font-size: 15px;
+  }
+
+  .dm-target-card h3 {
+    font-size: 24px;
+  }
+
+  .dm-target-card p {
+    font-size: 18px;
+  }
+
+  .dm-target-icon {
+    font-size: 28px;
+  }
+}
+
+
+/* =====================================================
+   FIGMA TYPOGRAPHY MATCH — DIGITAL MARKETING PAGE
+   Updated to match the reference screenshots.
+   Typography only: existing layout, colors, and content
+   are preserved.
+===================================================== */
+
+/* Skills section */
+.dm-skill-heading h2 {
+  font-size: 52px;
+  line-height: 1.12;
+}
+
+.dm-skill-card span {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.dm-skill-icon {
+  width: 42px;
+  height: 42px;
+  font-size: 29px;
+}
+
+/* Career scope heading and role cards */
+.dm-career-scope-heading h2 {
+  font-size: 50px;
+  line-height: 1.12;
+}
+
+.dm-job-badge {
+  font-size: 16px;
+}
+
+.dm-career-role-card h3 {
+  font-size: 27px;
+  line-height: 1.15;
+}
+
+/* Syllabus heading, week tabs, and phase content */
+.dm-syllabus-heading h2 {
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+.dm-syllabus-heading p {
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+.dm-week-tab {
+  min-height: 58px;
+  height: auto;
+  font-size: 25px;
+  gap: 16px;
+}
+
+.dm-week-tab-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.dm-week-tab-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.dm-phase-badge {
+  font-size: 18px;
+}
+
+.dm-phase-title-row h3 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.dm-phase-topic-card h4 {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.dm-phase-topic-card p {
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+/* Pricing section */
+.dm-pricing-badge {
+  font-size: 17px;
+}
+
+.dm-pricing-content h2 {
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.dm-pricing-details p {
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+.dm-pricing-box h3 {
+  font-size: 28px;
+}
+
+.dm-price {
+  font-size: 58px;
+}
+
+.dm-pricing-box > p {
+  font-size: 20px;
+}
+
+.dm-pricing-enroll-btn {
+  font-size: 22px;
+}
+
+/* Target audience section */
+.dm-target-badge {
+  font-size: 17px;
+}
+
+.dm-target-heading h2 {
+  font-size: 48px;
+  line-height: 1.08;
+}
+
+.dm-target-icon {
+  font-size: 32px;
+}
+
+.dm-target-card h3 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.dm-target-card p {
+  font-size: 22px;
+  line-height: 1.65;
+}
+
+/* Medium screens: retain Figma-like hierarchy without overflow */
+@media (max-width: 1100px) {
+  .dm-skill-heading h2,
+  .dm-career-scope-heading h2 {
+    font-size: 42px;
+    line-height: 1.12;
+  }
+
+  .dm-skill-card span {
+    font-size: 22px;
+  }
+
+  .dm-career-role-card h3 {
+    font-size: 24px;
+  }
+
+  .dm-syllabus-heading h2 {
+    font-size: 38px;
+  }
+
+  .dm-syllabus-heading p {
+    font-size: 20px;
+  }
+
+  .dm-week-tab {
+    font-size: 21px;
+  }
+
+  .dm-phase-title-row h3 {
+    font-size: 29px;
+  }
+
+  .dm-phase-topic-card h4 {
+    font-size: 21px;
+  }
+
+  .dm-phase-topic-card p {
+    font-size: 18px;
+  }
+
+  .dm-pricing-content h2 {
+    font-size: 50px;
+  }
+
+  .dm-pricing-details p {
+    font-size: 19px;
+  }
+
+  .dm-target-heading h2 {
+    font-size: 42px;
+  }
+
+  .dm-target-card h3 {
+    font-size: 29px;
+  }
+
+  .dm-target-card p {
+    font-size: 19px;
+  }
+}
+
+/* Mobile: preserve readable text and responsive headings */
+@media (max-width: 700px) {
+  .dm-skill-heading h2,
+  .dm-career-scope-heading h2,
+  .dm-syllabus-heading h2,
+  .dm-target-heading h2 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .dm-skill-card span {
+    font-size: 19px;
+  }
+
+  .dm-skill-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 25px;
+  }
+
+  .dm-job-badge,
+  .dm-target-badge,
+  .dm-phase-badge {
+    font-size: 14px;
+  }
+
+  .dm-career-role-card h3 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .dm-syllabus-heading p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .dm-week-tab {
+    min-height: 52px;
+    font-size: 19px;
+  }
+
+  .dm-week-tab-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .dm-week-tab-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .dm-phase-title-row h3 {
+    font-size: 25px;
+    line-height: 1.25;
+  }
+
+  .dm-phase-topic-card h4 {
+    font-size: 19px;
+  }
+
+  .dm-phase-topic-card p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .dm-pricing-badge {
+    font-size: 13px;
+  }
+
+  .dm-pricing-content h2 {
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+
+  .dm-pricing-details p {
+    font-size: 16px;
+  }
+
+  .dm-pricing-box h3 {
+    font-size: 23px;
+  }
+
+  .dm-price {
+    font-size: 45px;
+  }
+
+  .dm-pricing-box > p {
+    font-size: 16px;
+  }
+
+  .dm-pricing-enroll-btn {
+    font-size: 17px;
+  }
+
+  .dm-target-icon {
+    font-size: 28px;
+  }
+
+  .dm-target-card h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .dm-target-card p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+
+/* =====================================================
+   FINAL FIGMA SIZE MATCH — KEEP ALL EXISTING CONTENT
+   These are size-only refinements for the supplied
+   Figma references. Existing text and JSX are unchanged.
+===================================================== */
+
+/* Benefit cards: Figma reference shows 269px card height,
+   large 34px headings, and readable 22px descriptions. */
+.dm-benefits-grid {
+  grid-auto-rows: 269px;
+}
+
+.dm-benefit-card {
+  height: 269px;
+  min-height: 269px;
+  padding: 28px 34px;
+}
+
+.dm-benefit-number {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+.dm-benefit-card h3 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.dm-benefit-card p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Skill cards: match the larger Figma labels and icons. */
+.dm-skill-card span {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.dm-skill-icon {
+  width: 42px;
+  height: 42px;
+  font-size: 30px;
+}
+
+/* Career role cards: match the 270 × 244 Figma card reference. */
+.dm-career-role-card {
+  min-height: 244px;
+  padding: 28px 30px;
+}
+
+.dm-career-role-icon {
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+}
+
+.dm-career-role-card h3 {
+  font-size: 27px;
+  line-height: 1.18;
+}
+
+/* Learn From The Best: reference mentor group is about
+   936px wide and 282px high, with large circular photos. */
+.dm-mentors-container {
+  max-width: 1050px;
+}
+
+.dm-mentors-container > h2 {
+  font-size: 50px;
+  line-height: 1.12;
+}
+
+.dm-mentors-grid {
+  width: 100%;
+  max-width: 936px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.dm-mentor-card {
+  min-width: 0;
+  min-height: 282px;
+  padding: 28px 20px;
+  border-radius: 30px;
+}
+
+.dm-mentor-photo {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 24px;
+  padding: 3px;
+}
+
+.dm-mentor-card h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.dm-mentor-card p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.dm-linkedin {
+  width: 42px;
+  height: 42px;
+  right: 18px;
+  bottom: 18px;
+  font-size: 23px;
+}
+
+/* FAQ: match the Figma heading, 913 × 88 question rows,
+   larger question text, and 48px circular plus controls. */
+.dm-faq-wrap > h2 {
+  width: 100%;
+  margin: 0 auto 70px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+}
+
+.dm-faq-list {
+  width: 913px;
+  max-width: calc(100% - 40px);
+  gap: 14px;
+}
+
+.dm-faq-item {
+  border-radius: 14px;
+}
+
+.dm-faq-question {
+  min-height: 88px;
+  padding: 0 30px 0 48px;
+  gap: 24px;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.dm-faq-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 30px;
+}
+
+.dm-faq-answer p {
+  padding: 0 48px 25px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Tablet sizing: preserve readability without forcing desktop
+   text sizes into narrow cards. */
+@media (max-width: 1100px) {
+  .dm-benefit-card {
+    min-height: 240px;
+    height: auto;
+    padding: 26px 28px;
+  }
+
+  .dm-benefit-card h3 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .dm-benefit-card p {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .dm-benefit-number {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+  }
+
+  .dm-mentors-container > h2 {
+    font-size: 42px;
+  }
+
+  .dm-mentors-grid {
+    max-width: 850px;
+    gap: 20px;
+  }
+
+  .dm-mentor-card {
+    min-height: 260px;
+    padding: 24px 16px;
+  }
+
+  .dm-mentor-photo {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 20px;
+  }
+
+  .dm-mentor-card h3 {
+    font-size: 25px;
+  }
+
+  .dm-mentor-card p {
+    font-size: 18px;
+  }
+
+  .dm-linkedin {
+    width: 38px;
+    height: 38px;
+    font-size: 21px;
+  }
+
+  .dm-faq-wrap > h2 {
+    font-size: 42px;
+  }
+
+  .dm-faq-question {
+    font-size: 22px;
+    padding-left: 32px;
+  }
+}
+
+/* Mobile sizing: keep every item and all text; only scale sizes. */
+@media (max-width: 700px) {
+  .dm-benefits-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .dm-benefit-card,
+  .dm-benefit-dark,
+  .dm-benefit-wide,
+  .dm-benefit-card:nth-child(2),
+  .dm-benefit-card:nth-child(3) {
+    min-height: 0;
+    height: auto;
+    padding: 22px;
+  }
+
+  .dm-benefit-number {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+
+  .dm-benefit-card h3 {
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .dm-benefit-card p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .dm-skill-card span {
+    font-size: 19px;
+  }
+
+  .dm-skill-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 25px;
+  }
+
+  .dm-career-role-card {
+    min-height: 190px;
+    padding: 22px;
+  }
+
+  .dm-career-role-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 38px;
+  }
+
+  .dm-career-role-card h3 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .dm-mentors-section {
+    padding: 55px 0 65px;
+  }
+
+  .dm-mentors-container {
+    width: calc(100% - 32px);
+  }
+
+  .dm-mentors-container > h2 {
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 32px;
+  }
+
+  .dm-mentors-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    gap: 18px;
+  }
+
+  .dm-mentor-card {
+    min-height: 250px;
+    padding: 22px 18px;
+  }
+
+  .dm-mentor-photo {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 18px;
+  }
+
+  .dm-mentor-card h3 {
+    font-size: 24px;
+  }
+
+  .dm-mentor-card p {
+    font-size: 17px;
+  }
+
+  .dm-linkedin {
+    width: 36px;
+    height: 36px;
+    right: 14px;
+    bottom: 14px;
+    font-size: 20px;
+  }
+
+  .dm-faq-wrap {
+    padding: 55px 0 70px;
+  }
+
+  .dm-faq-wrap > h2 {
+    width: calc(100% - 32px);
+    margin: 0 auto 32px;
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .dm-faq-list {
+    width: calc(100% - 32px);
+    max-width: 913px;
+    gap: 12px;
+  }
+
+  .dm-faq-question {
+    min-height: 68px;
+    padding: 12px 14px 12px 18px;
+    gap: 12px;
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .dm-faq-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+  }
+
+  .dm-faq-answer p {
+    padding: 0 18px 18px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 380px) {
+  .dm-mentors-container > h2,
+  .dm-faq-wrap > h2 {
+    font-size: 29px;
+  }
+
+  .dm-mentor-card h3 {
+    font-size: 22px;
+  }
+
+  .dm-faq-question {
+    font-size: 16px;
+  }
+}
+
+
+/* =====================================================
+   FIGMA CARD TEXT FIT FIX — CONTENT PRESERVED
+   Align inner text sizes to the supplied Figma screenshots
+   and prevent headings/descriptions from being clipped.
+===================================================== */
+
+/* Benefit cards */
+.dm-benefits-grid {
+  grid-auto-rows: auto;
+  align-items: stretch;
+}
+
+.dm-benefit-card {
+  height: auto;
+  min-height: 269px;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.dm-benefit-card h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  overflow-wrap: break-word;
+}
+
+.dm-benefit-card p {
+  font-size: 20px;
+  line-height: 1.45;
+  overflow-wrap: break-word;
+}
+
+/* Keep the wide first and fourth cards visually prominent,
+   while using a slightly smaller size in narrow cards. */
+.dm-benefit-dark h3,
+.dm-benefit-wide h3 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.dm-benefit-dark p,
+.dm-benefit-wide p {
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.dm-benefit-card:nth-child(2) h3,
+.dm-benefit-card:nth-child(3) h3 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.dm-benefit-card:nth-child(2) p,
+.dm-benefit-card:nth-child(3) p {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+/* Skill tags: fit longer labels such as Google Marketing Tools. */
+.dm-skill-card {
+  min-width: 0;
+  box-sizing: border-box;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+.dm-skill-card span {
+  min-width: 0;
+  font-size: 23px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.dm-skill-icon {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  font-size: 27px;
+}
+
+/* Syllabus typography follows the Figma inspector values:
+   30px phase title, 20px topic title, readable body copy. */
+.dm-syllabus-heading h2 {
+  font-size: 42px;
+  line-height: 1.12;
+}
+
+.dm-syllabus-heading p {
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.dm-week-tab {
+  min-width: 0;
+  min-height: 58px;
+  height: auto;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 8px 16px;
+  gap: 14px;
+}
+
+.dm-week-tab-icon {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.dm-week-tab-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.dm-phase-card {
+  box-sizing: border-box;
+  width: min(86%, 1180px);
+  max-width: 1180px;
+  padding: 30px 32px 35px;
+}
+
+.dm-phase-title-row {
+  min-width: 0;
+  gap: 22px;
+}
+
+.dm-phase-badge {
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.dm-phase-title-row h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.dm-phase-content-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.dm-phase-topic-card {
+  min-width: 0;
+  min-height: 110px;
+  padding: 24px 30px;
+  box-sizing: border-box;
+}
+
+.dm-phase-topic-card h4 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 13px;
+  overflow-wrap: break-word;
+}
+
+.dm-phase-topic-card p {
+  font-size: 18px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+/* Tablet: reduce text gradually and keep every card readable. */
+@media (max-width: 1100px) {
+  .dm-benefits-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .dm-benefit-card,
+  .dm-benefit-dark,
+  .dm-benefit-wide,
+  .dm-benefit-card:nth-child(2),
+  .dm-benefit-card:nth-child(3) {
+    grid-column: auto;
+    grid-row: auto;
+    height: auto;
+    min-height: 0;
+    padding: 26px 28px;
+  }
+
+  .dm-benefit-card h3,
+  .dm-benefit-dark h3,
+  .dm-benefit-wide h3 {
+    font-size: 28px;
+  }
+
+  .dm-benefit-card p,
+  .dm-benefit-dark p,
+  .dm-benefit-wide p,
+  .dm-benefit-card:nth-child(2) p,
+  .dm-benefit-card:nth-child(3) p {
+    font-size: 18px;
+  }
+
+  .dm-skill-heading {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .dm-skill-card span {
+    font-size: 21px;
+  }
+
+  .dm-phase-card {
+    width: 90%;
+    padding: 26px;
+  }
+
+  .dm-phase-title-row h3 {
+    font-size: 27px;
+  }
+
+  .dm-phase-topic-card h4 {
+    font-size: 19px;
+  }
+
+  .dm-phase-topic-card p {
+    font-size: 17px;
+  }
+}
+
+/* Mobile: keep all content visible and scale text to the viewport. */
+@media (max-width: 700px) {
+  .dm-benefit-card,
+  .dm-benefit-dark,
+  .dm-benefit-wide,
+  .dm-benefit-card:nth-child(2),
+  .dm-benefit-card:nth-child(3) {
+    padding: 22px;
+    min-height: 0;
+    height: auto;
+  }
+
+  .dm-benefit-card h3,
+  .dm-benefit-dark h3,
+  .dm-benefit-wide h3,
+  .dm-benefit-card:nth-child(2) h3,
+  .dm-benefit-card:nth-child(3) h3 {
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .dm-benefit-card p,
+  .dm-benefit-dark p,
+  .dm-benefit-wide p,
+  .dm-benefit-card:nth-child(2) p,
+  .dm-benefit-card:nth-child(3) p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .dm-skill-section {
+    padding: 48px 0 65px;
+  }
+
+  .dm-skill-heading {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .dm-skill-card {
+    min-height: 76px;
+    padding: 15px 18px;
+    gap: 14px;
+  }
+
+  .dm-skill-card span {
+    font-size: 19px;
+    line-height: 1.25;
+  }
+
+  .dm-skill-icon {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .dm-syllabus-section {
+    padding: 50px 0 65px;
+  }
+
+  .dm-syllabus-heading {
+    width: calc(100% - 32px);
+    margin-bottom: 30px;
+  }
+
+  .dm-syllabus-heading h2 {
+    font-size: 31px;
+    line-height: 1.15;
+  }
+
+  .dm-syllabus-heading p {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+
+  .dm-week-tabs {
+    width: calc(100% - 32px);
+    max-width: 520px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .dm-week-tab {
+    min-height: 54px;
+    font-size: 19px;
+    padding: 8px 14px;
+    gap: 12px;
+  }
+
+  .dm-week-tab-icon {
+    flex-basis: 28px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .dm-week-tab-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .dm-phase-card {
+    width: calc(100% - 32px);
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .dm-phase-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .dm-phase-badge {
+    font-size: 15px;
+    padding: 7px 16px;
+  }
+
+  .dm-phase-title-row h3 {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .dm-phase-content-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .dm-phase-topic-card {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .dm-phase-topic-card h4 {
+    font-size: 18px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+
+  .dm-phase-topic-card p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 380px) {
+  .dm-benefit-card h3,
+  .dm-benefit-dark h3,
+  .dm-benefit-wide h3 {
+    font-size: 21px;
+  }
+
+  .dm-skill-card span {
+    font-size: 17px;
+  }
+
+  .dm-syllabus-heading h2 {
+    font-size: 28px;
+  }
+
+  .dm-phase-title-row h3 {
+    font-size: 21px;
+  }
+
+  .dm-phase-topic-card h4 {
+    font-size: 17px;
+  }
+}
+
+
+/* Career Scope cards — reduce job-title text size only.
+   Content, icons, card layout, and other sections are unchanged. */
+.dm-career-role-card h3 {
+  font-size: 21px;
+  line-height: 1.2;
+  max-width: 190px;
+}
+
+@media (max-width: 1100px) {
+  .dm-career-role-card h3 {
+    font-size: 20px;
+    line-height: 1.22;
+  }
+}
+
+@media (max-width: 700px) {
+  .dm-career-role-card h3 {
+    font-size: 19px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 380px) {
+  .dm-career-role-card h3 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+}
+
+
+/* Week tabs: remove the imposed height only; keep text, icons,
+   width, spacing, colours, and all other styling unchanged. */
+.dm-week-tab {
+  height: auto;
+  min-height: 0;
+}
+
+/* =========================================
+   COMMON FAQ STYLING — FIGMA REFERENCE
+========================================= */
+
+/* FAQ section headings */
+.site .faq-section > h2,
+.uiux-page .uiux-faq-heading h2,
+.digital-marketing-page .dm-faq-wrap > h2,
+.full-stack-page .fs-faq-container > h2,
+.career-gap-page .cg-faq-container h2,
+.creator-page .creator-faq h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* FAQ card dimensions and appearance */
+.site .faq-item,
+.uiux-page .uiux-faq-item,
+.digital-marketing-page .dm-faq-item,
+.full-stack-page .fs-faq-item,
+.career-gap-page .cg-faq-item,
+.creator-page .creator-faq-item {
+  min-height: 88px;
+  border-radius: 14px;
+  background: #F4F7FF;
+  border: 1px solid rgba(59, 59, 59, 0.2);
+}
+
+/* FAQ question text */
+.site .faq-question,
+.uiux-page .uiux-faq-question,
+.digital-marketing-page .dm-faq-question,
+.full-stack-page .fs-faq-item button,
+.career-gap-page .cg-faq-question,
+.creator-page .creator-faq-item button {
+  min-height: 86px;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* FAQ answer text */
+.site .faq-answer p,
+.uiux-page .uiux-faq-answer p,
+.digital-marketing-page .dm-faq-answer p,
+.full-stack-page .fs-faq-answer p,
+.career-gap-page .cg-faq-answer p,
+.creator-page .creator-faq-answer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .site .faq-section > h2,
+  .uiux-page .uiux-faq-heading h2,
+  .digital-marketing-page .dm-faq-wrap > h2,
+  .full-stack-page .fs-faq-container > h2,
+  .career-gap-page .cg-faq-container h2,
+  .creator-page .creator-faq h2 {
+    font-size: 38px;
+  }
+
+  .site .faq-question,
+  .uiux-page .uiux-faq-question,
+  .digital-marketing-page .dm-faq-question,
+  .full-stack-page .fs-faq-item button,
+  .career-gap-page .cg-faq-question,
+  .creator-page .creator-faq-item button {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .site .faq-section > h2,
+  .uiux-page .uiux-faq-heading h2,
+  .digital-marketing-page .dm-faq-wrap > h2,
+  .full-stack-page .fs-faq-container > h2,
+  .career-gap-page .cg-faq-container h2,
+  .creator-page .creator-faq h2 {
+    font-size: 30px;
+  }
+
+  .site .faq-question,
+  .uiux-page .uiux-faq-question,
+  .digital-marketing-page .dm-faq-question,
+  .full-stack-page .fs-faq-item button,
+  .career-gap-page .cg-faq-question,
+  .creator-page .creator-faq-item button {
+    min-height: 66px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .site .faq-answer p,
+  .uiux-page .uiux-faq-answer p,
+  .digital-marketing-page .dm-faq-answer p,
+  .full-stack-page .fs-faq-answer p,
+  .career-gap-page .cg-faq-answer p,
+  .creator-page .creator-faq-answer p {
+    font-size: 14px;
+  }
+}
+
+/* Fix section subheading alignment */
+section .section-subheading,
+section .section-subtitle,
+section .section-description,
+section > p {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Keep subheadings centered on mobile */
+@media (max-width: 600px) {
+  section .section-subheading,
+  section .section-subtitle,
+  section .section-description,
+  section > p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+}
+/* DIGITAL MARKETING PAGE - MOBILE RESPONSIVE */
+@media (max-width: 1000px) {
+.digital-marketing-page .dm-hero { width: calc(100% - 64px); margin-top: 85px; }
+.digital-marketing-page .dm-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.digital-marketing-page .dm-target-grid, .digital-marketing-page .dm-career-roles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.digital-marketing-page .dm-mentors-container, .digital-marketing-page .dm-pricing-content { width: calc(100% - 56px); }
+.digital-marketing-page .dm-mentors-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+.digital-marketing-page { padding-top: 0; }
+.digital-marketing-page .dm-hero { width: calc(100% - 36px); margin-top: 42px; }
+.digital-marketing-page .dm-course-badge { height: auto; min-height: 30px; max-width: 100%; margin-bottom: 22px; padding: 7px 12px; font-size: 10px; }
+.digital-marketing-page .dm-main-title { font-size: clamp(34px, 9vw, 46px); line-height: 1.1; letter-spacing: -1.4px; }
+.digital-marketing-page .dm-main-title br { display: none; }
+.digital-marketing-page .dm-hero-description { margin-top: 17px; font-size: 14px; line-height: 1.65; }
+.digital-marketing-page .dm-desktop-break { display: none; }
+.digital-marketing-page .dm-hero-buttons { margin-top: 25px; flex-direction: column; gap: 12px; }
+.digital-marketing-page .dm-enroll-btn, .digital-marketing-page .dm-syllabus-btn { width: 100%; max-width: 330px; min-height: 44px; height: auto; padding: 12px 18px; font-size: 14px; }
+.digital-marketing-page .dm-tools-section { margin-top: 48px; }
+.digital-marketing-page .dm-tools-section h3 { margin-bottom: 20px; font-size: 13px; line-height: 1.5; }
+.digital-marketing-page .dm-tools-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.digital-marketing-page .dm-tool-pill { min-width: 0; width: 100%; height: 40px; padding: 0 8px; gap: 6px; font-size: 13px; }
+.digital-marketing-page .dm-why-intro { width: calc(100% - 36px); margin: 55px auto 30px; }
+.digital-marketing-page .dm-why-intro h2 { font-size: clamp(27px, 7vw, 36px); line-height: 1.15; }
+.digital-marketing-page .dm-why-intro p { font-size: 14px; line-height: 1.65; }
+.digital-marketing-page .dm-benefits-section, .digital-marketing-page .dm-target-section, .digital-marketing-page .dm-career-scope-section, .digital-marketing-page .dm-skill-section, .digital-marketing-page .dm-syllabus-section, .digital-marketing-page .dm-mentors-section, .digital-marketing-page .dm-pricing-section, .digital-marketing-page .dm-final-section { padding-top: 42px; padding-bottom: 42px; }
+.digital-marketing-page .dm-benefits-grid, .digital-marketing-page .dm-target-grid, .digital-marketing-page .dm-career-roles-grid, .digital-marketing-page .dm-mentors-grid { width: calc(100% - 36px); margin-left: auto; margin-right: auto; grid-template-columns: 1fr; gap: 14px; }
+.digital-marketing-page .dm-benefit-card, .digital-marketing-page .dm-target-card, .digital-marketing-page .dm-career-role-card, .digital-marketing-page .dm-mentor-card { width: 100%; min-width: 0; }
+.digital-marketing-page .dm-benefit-wide { grid-column: auto; }
+.digital-marketing-page .dm-skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.digital-marketing-page .dm-week-tabs { overflow-x: auto; justify-content: flex-start; padding-bottom: 8px; }
+.digital-marketing-page .dm-week-tab { flex: 0 0 auto; }
+.digital-marketing-page .dm-phase-content-grid { grid-template-columns: 1fr; }
+.digital-marketing-page .dm-phase-title-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+.digital-marketing-page .dm-pricing-content { width: calc(100% - 36px); grid-template-columns: 1fr; gap: 20px; }
+.digital-marketing-page .dm-pricing-card, .digital-marketing-page .dm-pricing-box { width: 100%; }
+.digital-marketing-page .dm-faq-wrap { width: calc(100% - 36px); margin-left: auto; margin-right: auto; }
+.digital-marketing-page .dm-faq-item { padding: 15px 0; }
+.digital-marketing-page .dm-faq-question { gap: 12px; font-size: 14px; line-height: 1.45; }
+.digital-marketing-page .dm-faq-answer { font-size: 13px; line-height: 1.65; }
+.digital-marketing-page .dm-footer-container { width: calc(100% - 36px); }
+.digital-marketing-page .dm-footer { padding-top: 40px; }
+.digital-marketing-page .dm-footer-top { grid-template-columns: 1fr 1fr; gap: 24px 14px; }
+.digital-marketing-page .dm-footer-brand { grid-column: 1 / -1; }
+.digital-marketing-page .dm-footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+@media (max-width: 380px) {
+.digital-marketing-page .dm-hero, .digital-marketing-page .dm-why-intro, .digital-marketing-page .dm-benefits-grid, .digital-marketing-page .dm-target-grid, .digital-marketing-page .dm-career-roles-grid, .digital-marketing-page .dm-mentors-grid { width: calc(100% - 28px); }
+}
+/* FIX: SKILL CARDS ON SMALL SCREENS */
+@media (max-width: 700px) {
+.digital-marketing-page .dm-skill-grid {
+  width: calc(100% - 32px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.digital-marketing-page .dm-skill-card {
+  min-width: 0;
+  min-height: 88px;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.digital-marketing-page .dm-skill-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  font-size: 23px;
+}
+.digital-marketing-page .dm-skill-card span {
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+}
+@media (max-width: 380px) {
+.digital-marketing-page .dm-skill-grid {
+  grid-template-columns: 1fr;
+}
+.digital-marketing-page .dm-skill-card {
+  padding: 14px 16px;
+}
+.digital-marketing-page .dm-skill-card span {
+  font-size: 15px;
+}
+}
+/* MOBILE FIX: REDUCE GAP BEFORE BENEFIT CARDS */
+@media (max-width: 700px) {
+.digital-marketing-page .dm-why-intro {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.digital-marketing-page .dm-benefits-section {
+  padding-top: 0;
+  margin-top: 0;
+}
 }
