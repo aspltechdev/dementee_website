@@ -1193,3 +1193,13 @@ section > p {
   .alumni-page > .navbar .courses-dropdown-menu a,
   .alumni-page > .navbar .more-dropdown-menu a { width: 100%; min-height: 36px; height: auto; padding: 9px 10px; font-size: 13px; white-space: normal; }
 }
+/* Increase text size by 1px inside the All Graduates & Designers cards only */
+.alumni-page .alumni-card-role {
+  font-size: 9px;
+}
+.alumni-page .alumni-card h3 {
+  font-size: 14px;
+}
+.alumni-page .alumni-connect-btn {
+  font-size: 9px;
+}
